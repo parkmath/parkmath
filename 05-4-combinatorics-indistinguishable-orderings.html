@@ -1,0 +1,660 @@
+<article>
+  <div class="story">
+    <h1>Combinatorics: When Order Matters or Not</h1>
+
+    <h2>Introduction: Hey batta! Hey batta!</h2>
+
+    <p>Jan bats .500 in softball — i.e., on average, for each 10
+    at-bats she gets five hits. We wish to determine the
+    probability that she will get no hits if she comes to bat 5
+    times during a game. In order to calculate this probability we
+    must assume that she stays a “.500 hitter” from one at-bat to
+    the next, which is to say that success or failure at each
+    at-bat is not affected by the previous at-bats. Given this
+    assumption we can perform the following calculation:</p>
+
+    <p class="Lesson---Inline-Diagram"></p>
+
+    <div class="problem" data-problem-number="1">
+      <p>What is the probability that Jan will get exactly one hit
+      in 5 at-bats?</p>
+    </div>
+
+    <div class="problem" data-problem-number="2">
+      <p>What’s the probability that Jan will get exactly 4 hits in
+      5 at-bats?</p>
+    </div>
+
+    <div class="problem" data-problem-number="3">
+      <p>What’s the probability that Jan will get exactly 2
+      hits?</p>
+    </div>
+
+    <p>The last question probably took some time to calculate since
+    there are 10 different ways for Jan to get exactly 2 hits. For
+    example, one string of at-bats might look like HNHNN, where H =
+    “hit” and N = “no hit”. Imagine trying to calculate the
+    probability that Jan would get exactly 3 hits in 10 at-bats.
+    Don’t do this by listing all the strings of 10 at-bats with 3
+    hits. You will be cursing by the end of this process, if not
+    earlier. Fortunately, there is a more elegant way of counting
+    how many strings have exactly 3 hits in 10 at-bats. Let’s look
+    at one approach.</p>
+
+    <h2>Development</h2>
+
+    <p>This approach will require us, first, to review two basic
+    counting principles that you learned last year. Suppose you’re
+    setting up a password for a new account.</p>
+
+    <div class="problem" data-problem-number="4">
+      <p>If the password must be 3 letters followed by 3 digits,
+      then how many possible passwords are there? The password is
+      not case-sensitive so there’s no distinction between “a” and
+      “A”.</p>
+    </div>
+
+    <div class="problem" data-problem-number="5">
+      <p>If the password must be 3 letters followed by 3 digits,
+      but no letter or digit can be repeated, then how many
+      passwords are there? Again, the passwords are not
+      case-sensitive.</p>
+    </div>
+
+    <div class="problem" data-problem-number="6">
+      <p>If the password must be 10 digits, no letters, with no
+      repetition, then how many passwords are there? There’s a nice
+      shorthand way of writing this answer. Do you remember it?</p>
+    </div>
+
+    <p>The problems above involve a basic principle of counting
+    called the Multiplication Principle of Counting. You also
+    needed to pay attention to whether repetition mattered. Lastly,
+    Problem 6 alludes to some shorthand notation that comes in
+    handy when the final count gets very large. Keep in mind that
+    this is only notation and doesn’t solve problems for you. As
+    you progress through this lesson, you’ll need to remember that
+    the formulas you might derive are not all-purpose ones that
+    solve counting problems. They tend to work in highly
+    specialized situations. You will find more success if you read
+    each problem carefully, think about what is being counted
+    (visualize, even), and then apply basic principles like the
+    Multiplication Principle of Counting. Now, let’s see how to
+    tackle the batting problem by looking at a similar problem.</p>
+
+    <div class="problem" data-problem-number="7">
+      <p>The word error has 5 letters in it, two letters that
+      appear once and one that appears three times. We’re going to
+      look at different 5-letter “words” that can be formed by
+      rearranging these 5 letters. These words need not make any
+      sense, so “rroer” is a word.</p>
+
+      <p class="problem-part">. How many 5-letter words can be
+      formed, assuming that you can tell the difference between the
+      r’s? In other words, think of the r’s as being a red r, a
+      blue r, and a green r (or as ${r_1}$ , ${r_2}$ , and ${r_3}$
+      ). By the way, each of the letters can only be used once per
+      word.</p>
+
+      <p class="problem-part">. Write down two 5-letter words that
+      differ from each other only if the r’s are different colors.
+      How many other 5-letter words differ from these two only if
+      the r’s are different colors?</p>
+
+      <p class="problem-part">. Think of another 5-letter word that
+      is different from the ones in Part b. How many versions are
+      there of this<br>
+      5-letter word that are distinguishable from each other
+      only<br>
+      if the r’s are different colors? Would all of these 5-letter
+      words be part of the count you made in Part a?</p>
+
+      <p class="problem-part">. So, how many 5-letter words can be
+      formed by rearranging the letters in error, if each letter
+      can only be used once per word (and the r’s are
+      indistinguishable from each other)?</p>
+
+      <p class="problem-part">. Lastly, you should be able to write
+      your answer to Part d in the form ${\raise0.7ex\hbox{${5!}$}
+      \!\mathord{\left/ {\vphantom {{5!}
+      {n!}}}\right.\kern-\nulldelimiterspace}
+      \!\lower0.7ex\hbox{${n!}$}}$ . What is n?</p>
+    </div>
+
+    <div class="problem" data-problem-number="8">
+      <p>How many distinguishable 9-letter words can be formed from
+      the letters in freestone, where each letter can only be used
+      once per word?</p>
+    </div>
+
+    <div class="problem" data-problem-number="9">
+      <p>How many distinguishable 9-letter words can be formed from
+      the letters in freewheel, where each letter can only be used
+      once per word?</p>
+    </div>
+
+    <div class="problem" data-problem-number="10">
+      <p>How many distinguishable 9-letter words can be formed from
+      the letters in appraisal, where each letter can only be used
+      once per word?</p>
+    </div>
+
+    <div class="problem" data-problem-number="11">
+      <p>Using the letters H, H, H, H, H, N, N, N, N, N, N, N only,
+      how many 12-letter words can be formed? (Note: though the
+      word “distinguishable” is not appearing you should<br>
+      assume you are just counting words that are different from
+      each other.)</p>
+    </div>
+
+    <p>In the previous problems you were always counting letters.
+    If you think about what you were doing, however, you should
+    realize that the method of counting wasn’t dependent on
+    letters. Problem 11, for example, could have initially been a
+    problem about how many ways can you step right five times and
+    left seven times in a sequence of twelve steps.</p>
+
+    <div class="problem" data-problem-number="12">
+      <p>Bill is flipping a coin 8 times, keeping track of the
+      sequence of heads and tails. What is the probability that
+      he’ll get<br>
+      exactly 5 heads in total? Exactly 4 heads? 3 heads?</p>
+    </div>
+
+    <div class="problem" data-problem-number="13">
+      <p>Alix’s mathematics class wants to form a committee of 4
+      students to investigate whether AP classes should be taught
+      in the school. If there are 16 students in the class then how
+      many different committees can be formed?</p>
+    </div>
+
+    <p>The last problem may have seemed quite different from the
+    previous ones, but there is a way of seeing it as no different.
+    Imagine that you’re working with all 16 students and that you
+    have 16 Velcro labels. Twelve of these labels are a large N and
+    four of them are a large Y. You line the 16 students up and
+    then try to count how many different ways you can assign the
+    labels to the students. In this sense, you are trying to
+    determine how many different ways you can arrange 12 N’s and 4
+    Y’s in a sequence.</p>
+
+    <div class="problem" data-problem-number="14">
+      <p>The answer to the last sentence (and to Problem 13) can be
+      written in the form $\frac{{a!}}{{b!{\kern 1pt} {\kern 1pt}
+      {\kern 1pt} c!}}$ , where a, b, and c have specific meanings
+      in the context of the problem. What are a, b, and c and what
+      are their meanings?</p>
+    </div>
+
+    <div class="problem" data-problem-number="15">
+      <p>The fraction in Problem 14 can be simplified so that there
+      is only one factorial expression in the denominator. Do
+      this.</p>
+    </div>
+
+    <p>Look back at your answer to Problem 15 and remember that
+    this fraction is an answer to Problem 13. Now, use your
+    understanding of the relationship between this fraction and
+    Alix’s committee problem to answer the following question.</p>
+
+    <div class="problem" data-problem-number="16">
+      <p>You’re going to order a triple-scoop bowl of ice
+      cream.<br>
+      If you plan on choosing three different types of ice cream
+      from 8 possible choices, then how many different triple-scoop
+      combinations are there?</p>
+    </div>
+
+    <p>In this lesson you have seen some problems where two
+    different orderings of the same things are to be thought of as
+    being different — e.g., the passwords 3857210964 and
+    6710892534. In other problems, you’ve had to discount these
+    differences — e.g., the triple-scoop combination of
+    chocolate-vanilla-pistachio does not differ from the
+    combination pistachio-chocolate-vanilla. As you work through
+    the remaining problems in these lessons, bear in mind these
+    distinctions. Some problems will fall into one category and not
+    the other, while some will fall into both. And, of course, some
+    will fall into neither.</p>
+
+    <div class="problem" data-problem-number="17"></div>
+
+    <h2>Practice</h2>
+
+    <div class="problem" data-problem-number="18">
+      <p>John and Mary are ordering hamburgers that come with 3
+      types of toppings: cheese (cheddar, blue, swiss), vegetable
+      (lettuce, onion, tomato, mushroom), and sauce (mustard,
+      ketchup). They will each order one of each type of
+      topping.</p>
+
+      <p class="problem-part">. John doesn’t care about the order
+      of his toppings, figuring that the whole mess ends up in the
+      same place. How many different burgers does John think he can
+      order?</p>
+
+      <p class="problem-part">. Mary believes very strongly that
+      the order in which the<br>
+      toppings are on her burger does subtly change the taste of
+      the hamburger. How many different burgers does Mary think she
+      can order?</p>
+    </div>
+
+    <div class="problem" data-problem-number="19">
+      <p>There are 8 books on a shelf — five novels and three
+      biographies. How many different ways can you line the books
+      up on the shelf if</p>
+
+      <p class="problem-part">. you naturally think of the books as
+      being different from each other?</p>
+
+      <p class="problem-part">. you don’t distinguish the novels
+      from each other or the<br>
+      biographies from each other, but you do distinguish novels as
+      different from biographies?</p>
+    </div>
+
+    <div class="problem" data-problem-number="20">
+      <p>You shuffle a standard 52-card deck several times.</p>
+
+      <p class="problem-part">. How many different sequences of 5
+      cards are there at the top of the deck?</p>
+
+      <p class="problem-part">. You deal a hand of 5 cards to
+      yourself. How many possible 5-card hands are there?</p>
+
+      <p class="problem-part">. Estimate the amount of time it
+      would take to create all the possible 5-card hands of part b,
+      assuming you can create 1 new hand every second. Would it
+      take a day, a week, a month, a year, or a decade, or longer?
+      What if you were trying to create all the possible 7 card
+      hands? What about all the possible 52 card hands? Check your
+      3 estimates with a calculator and see if you were right in
+      each case within a factor of 10 (also known as an “order of
+      magnitude”).</p>
+    </div>
+
+    <div class="problem" data-problem-number="21">
+      <p>A true-false test has 25 questions on it. If you take the
+      test by randomly deciding that 10 of the questions are true
+      and the rest are false, then how many ways can you write down
+      the answers to the test?</p>
+    </div>
+
+    <div class="problem" data-problem-number="22">
+      <p>How many different ways can you arrange the letters in<br>
+      Mississippi?</p>
+    </div>
+
+    <div class="problem" data-problem-number="23">
+      <p>Horatio has 3 tulips, 4 irises, and 3 daffodils growing in
+      his yard. For each of ten days, he cuts one flower and
+      brings<br>
+      it to his math teacher. How many ten-day sequences of flowers
+      are there? (An example of one such sequence is
+      iris-tulip-iris-iris-daffodil-tulip-daffodil-daffodil-tulip-iris.)</p>
+    </div>
+
+    <div class="problem" data-problem-number="24">
+      <p>Using the seven digits 9, 9, 9, 3, 3, 3, and 3, once each,
+      how many 7-digit numbers can be formed?</p>
+    </div>
+
+    <div class="problem" data-problem-number="25">
+      <p>Each of the 240 students attending an Upper School dance
+      has a ticket with a number for a door prize. If three<br>
+      different numbers are randomly selected, how many ways are
+      there to award the prizes if the prizes are different from
+      each other? if the prizes are identical?</p>
+    </div>
+
+    <div class="problem" data-problem-number="26">
+      <p>In how many ways can you choose 3 letters from the word
+      problems, if the order in which you choose the letters is<br>
+      important? is unimportant?</p>
+    </div>
+
+    <div class="problem" data-problem-number="27"></div>
+  </div>
+
+  <div>
+    <div class="problem" data-problem-number="28">
+      <p>There are 20 cities in a certain country, and every pair
+      of them is connected by an air route. How many air routes are
+      there?</p>
+    </div>
+
+    <div class="problem" data-problem-number="29">
+      <p>Remember Jan who bats .500 in softball. What’s the
+      probability that she will get<br>
+      exactly 4 hits in 10 at-bats? What’s the probability that she
+      will get no more than<br>
+      4 hits in 10 at-bats?</p>
+    </div>
+
+    <div class="problem" data-problem-number="30">
+      <p>How many “words” can you form from<br>
+      5 A’s and no more than 3 B’s?</p>
+    </div>
+
+    <div class="problem" data-problem-number="31">
+      <p>There are 6 books on a shelf. How many ways are there to
+      arrange some (or all)<br>
+      of the books in a stack? The stack may consist of one
+      book.</p>
+    </div>
+
+    <div class="problem" data-problem-number="32">
+      <p>A teacher has a collection of 40 true-false questions. She
+      wishes to create a test using 5 of these questions. How many
+      different tests can she create if</p>
+
+      <p class="problem-part">. the order of the questions doesn’t
+      matter?</p>
+
+      <p class="problem-part">. the order of the questions does<br>
+      matter?</p>
+    </div>
+
+    <div class="problem" data-problem-number="33">
+      <p>How many three-letter words can be formed from the letters
+      A, B, C, D, E, F, G, H, and I, where each letter can only be
+      used once per word?</p>
+    </div>
+
+    <div class="problem" data-problem-number="34">
+      <p>The points A, B, C, D, E, F, G, H, and I are vertices of a
+      regular polygon. If three of the points are chosen, and
+      connected by line segments, a triangle is determined. How
+      many triangles can be formed in this way? If four points were
+      chosen to form a quadrilateral, then how many such
+      quadrilaterals will there be?</p>
+    </div>
+
+    <p class="Lesson---Inline-Diagram"><img src=
+    "images/05-4-combinatorics-indistinguishable-orderings/image7.tif"
+    alt="image7.tif"></p>
+
+    <div class="problem" data-problem-number="35">
+      <p>You have six sticks of lengths 1, 2, 3, 4, 5, and 6
+      inches. How many non-congruent triangles can be formed by
+      using three of these sticks as sides?</p>
+    </div>
+
+    <div class="problem" data-problem-number="36">
+      <p>There are three rooms in a dormitory: one single, one
+      double, and one for four students (called a “quad”). How many
+      ways are there to house 7 students in these rooms?</p>
+    </div>
+
+    <div class="problem" data-problem-number="37">
+      <p>Creamy Heaven serves 30 different ice cream flavors. A
+      customer can order a single-, double-, or triple-scoop
+      cone.</p>
+
+      <p class="problem-part">. How many double-scoop cones are
+      there if both scoops can be the same flavor and the order of
+      the scoops doesn’t matter?</p>
+
+      <p class="problem-part">. How many possible cones are there
+      if flavors can be repeated and the order of the scoops
+      doesn’t matter?</p>
+    </div>
+
+    <div class="problem" data-problem-number="38">
+      <p>Three couples go to the movies and sit together in a row
+      of seats. How many ways can they arrange themselves if each
+      couple sits together?</p>
+    </div>
+
+    <div class="problem" data-problem-number="39">
+      <p>Eight people are at Chen’s house for a party (Chen is one
+      of the eight). Chen<br>
+      has several options for sitting people for dinner.</p>
+
+      <p class="problem-part">. If Chen gets a long table she can
+      sit people on one side of the table so that they can watch a
+      movie while they’re eating. How many ways can she sit the
+      eight people in this situation?</p>
+
+      <p class="problem-part">. Chen can get a shorter, but
+      rectangular table, and sit four people on one side and the
+      other four on the opposite side. How many ways can she sit
+      the eight in this situation? Assume that two arrangements
+      that are reflections of each other over the long axis of the
+      table are indistinguishable from each other.</p>
+
+      <p class="problem-part">. Chen can sit the eight around a
+      circular table. How many ways, now? Assume that two
+      arrangements that are rotations of each other are
+      indistinguishable from each other?</p>
+
+      <p class="problem-part">. If Chen sits n people around a
+      circular table, then how many ways can this be done if two
+      arrangements that are rotations of each other are
+      indistinguishable?</p>
+    </div>
+
+    <div class="problem" data-problem-number="40">
+      <p>A bug jumps from lattice point to lattice point on a piece
+      of graph paper according to the following pattern: from
+      $\left( {a,b} \right)$ , the bug can jump only to or to . How
+      many different paths can the bug take if it wishes to start
+      at $\left( {0,0} \right)$ and end up at $\left( {6,4}
+      \right)$ ? Hint: tinker with this problem a bit so that you
+      can get a feel for what the bug is doing.</p>
+    </div>
+
+    <div class="problem" data-problem-number="41">
+      <p>Homer starts at the origin and performs a five-step random
+      walk along a number line. Each second he steps either one
+      unit to the left or one unit to the right.</p>
+
+      <p class="problem-part">. Describe all the places that Homer
+      can wind up at the end of this walk.</p>
+
+      <p class="problem-part">. How likely is Homer to end up 5
+      steps to the right? 3 steps to the right?</p>
+
+      <p class="problem-part">. If Homer were to perform this
+      5-step random walk 32000 times, what is your prediction of
+      the average of all the final positions? What is your
+      prediction of the average of all the distances from the
+      origin to Homer’s final position?</p>
+    </div>
+
+    <div class="problem" data-problem-number="42">
+      <p>How many diagonals are there in a pentagon? a hexagon? a
+      decagon? an n-gon? A diagonal is a straight line segment that
+      connects any two non-consecutive vertices.</p>
+    </div>
+
+    <div class="problem" data-problem-number="43">
+      <p>The rules of a checkers tournament indicate that each
+      contestant must play every other contestant exactly once. How
+      many games will be played if there are 12 participants? How
+      many will be played if there are n participants?</p>
+    </div>
+
+    <div class="problem" data-problem-number="44"></div>
+
+    <div class="problem" data-problem-number="45">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">. Reduce the fraction .</p>
+
+      <p class="problem-part">. Solve for x: ${x^2} - 5x = 14$
+      .</p>
+
+      <p class="problem-part">. Solve for x: \[{x^2} - x - 1 = 0\]
+      .</p>
+
+      <p class="problem-part">. Divide $\frac{2}{x} \div
+      \frac{4}{{{x^2}}}$ .</p>
+
+      <p class="problem-part">. Write as one fraction: \[{\left(
+      {\frac{b}{{2a}}} \right)^2} - \frac{c}{a}\] .</p>
+    </div>
+
+    <div class="problem" data-problem-number="46">
+      <p>How many ways can you split up 12 people into six
+      pairs?</p>
+    </div>
+
+    <div class="problem" data-problem-number="47">
+      <p>You have learned that any positive integer has a prime
+      factorization of the form ${2^a} \cdot {3^b} \cdot {5^c}
+      \cdot {7^d} \cdot {11^e} \cdot {13^f}...$ , where the “…”
+      represents the rest of the primes, and a, b, c, d, e, f, and
+      so on can each equal 0, 1, 2, 3, … . So for example, 360 is
+      equal to ${2^3} \cdot {3^2} \cdot {5^1}$ .<br>
+      <br>
+      Remembering that every possible factor of 360 comes from one
+      of the possible combinations of these prime factors (e.g. $20
+      = {2^2} \cdot {3^0} \cdot {5^1}$ and $90 = {2^1} \cdot {3^2}
+      \cdot {5^1}$ ), and using the principles of counting that you
+      learned studying combinatorics, determine the number of
+      factors that 360 has. Note that 1 is considered a factor of
+      360 in this problem, i.e. $1 = {2^0} \cdot {3^0} \cdot {5^0}$
+      . (You might try answering for 84 instead of 360 if you want
+      an easier example to start with.)</p>
+    </div>
+
+    <div class="problem" data-problem-number="48">
+      <p>Generalizing Problem 44, find a way to determine the
+      number of factors that any positive integer has. Try out your
+      method with at least 3 other positive integers to check to
+      see if it works.</p>
+    </div>
+
+    <div class="problem" data-problem-number="49">
+      <p>Let<img src=
+      "images/05-4-combinatorics-indistinguishable-orderings/Eqn30.ai"
+      alt="Eqn30.ai"> stand for $\frac{{n!}}{{r!\left( {n - r}
+      \right)!}}$ , where n and r are nonnegative integers, and
+      <img src=
+      "images/05-4-combinatorics-indistinguishable-orderings/Lesson3Problem46.pdf"
+      alt="Lesson3Problem46.pdf">.</p>
+
+      <p class="problem-part">$a$. Calculate<img src=
+      "images/05-4-combinatorics-indistinguishable-orderings/Eqn31.ai"
+      alt="Eqn31.ai">.</p>
+
+      <p class="problem-part">b. Calculate<img src=
+      "images/05-4-combinatorics-indistinguishable-orderings/Eqn32.ai"
+      alt="Eqn32.ai">.</p>
+
+      <p class="problem-part">$c$. Is<img src=
+      "images/05-4-combinatorics-indistinguishable-orderings/Eqn34.ai"
+      alt="Eqn34.ai"> ever not an integer?<br>
+      <br>
+      Explain.</p>
+
+      <p class="problem-part">. Prove: <img src=
+      "images/05-4-combinatorics-indistinguishable-orderings/Eqn35.ai"
+      alt="Eqn35.ai"></p>
+
+      <p class="problem-part">. Determine what should replace<br>
+      the question mark so that the<br>
+      following statement is true, then prove that the statement is
+      true. <img src=
+      "images/05-4-combinatorics-indistinguishable-orderings/Eqn36.ai"
+      alt="Eqn36.ai"></p>
+    </div>
+
+    <div class="problem" data-problem-number="50"></div>
+
+    <div class="problem" data-problem-number="51">
+      <p>How many different 5-person basketball teams can be chosen
+      from a group of 10 people? How many ways can you split up 10
+      people into two different 5-person<br>
+      basketball teams?</p>
+    </div>
+
+    <div class="problem" data-problem-number="52">
+      <p>The points A, B, C, D, E, and F are vertices of a regular
+      hexagon. What is the probability that three randomly chosen
+      vertices from this hexagon will form an equilateral triangle?
+      What’s the probability that four randomly chosen vertices
+      from this hexagon will form a rectangle?</p>
+    </div>
+
+    <div class="problem" data-problem-number="53">
+      <p>This is a continuation of Problem 38. In this problem you
+      will see a connection between algebra and counting.</p>
+
+      <p class="problem-part">. Expand ${\left( {r + u} \right)^5}$
+      and explain how this can help you determine how many paths
+      there are from $\left( {0,0} \right)$ to $\left( {2,3}
+      \right)$ . Recall that when simplifying and collecting
+      expressions such as rru, rur, and urr, we can write the final
+      result as $3{r^2}u$ .</p>
+
+      <p class="problem-part"></p>
+    </div>
+
+    <div class="problem" data-problem-number="54">
+      <p>(continued)</p>
+
+      <p class="problem-part">. What expression can you expand and
+      simplify in order to answer Problem 38?</p>
+
+      <p class="problem-part">. What is the coefficient of the
+      ${x^3}{y^5}$ r term in the expansion of ${\left( {x + y}
+      \right)^8}$ ?</p>
+
+      <p class="problem-part">. What is the coefficient of the
+      ${x^5}{y^7}$ r term in the expansion of ${\left( {2x + y}
+      \right)^{12}}$ ?</p>
+    </div>
+
+    <div class="problem" data-problem-number="55">
+      <p>What is the sum of all the 3-digit numbers that can be
+      formed using three different odd digits?</p>
+    </div>
+
+    <div class="problem" data-problem-number="56">
+      <p>Box Problems You probably didn’t realize that there are
+      combinatorial problems that involve boxes, but there are.</p>
+
+      <p class="problem-part">. Four boxes are numbered 1 through
+      4. How many ways are there to put 8 identical balls into
+      these boxes (some of the boxes can be empty)? Hint: Imagine
+      that you have 12 slots to work with.</p>
+
+      <p class="problem-part">. Four boxes are numbered 1 through
+      4. How many ways are there to put 8 identical balls into
+      these boxes so that none of them is empty?</p>
+    </div>
+
+    <div class="problem" data-problem-number="57">
+      <p>Below is shown a triangle of dots. Suppose you start at
+      dot A and move down through the triangle in the following
+      manner: from any dot you can only move to the next dot that
+      is down left or down right. So, if you are at dot A you can
+      move to either dots B or C, but not directly to D or E. Below
+      each dot in the triangle write the number of distinct paths
+      from dot A to that dot.</p>
+    </div>
+
+    <p class="Lesson---Inline-Diagram"><img src=
+    "images/05-4-combinatorics-indistinguishable-orderings/image32.tif"
+    alt="image32.tif"></p>
+
+    <div class="problem" data-problem-number="58">
+      <p>There is a well-known triangle called<br>
+      Pascal’s Triangle. What is this triangle<br>
+      and how does it relate to counting?</p>
+    </div>
+  </div>
+
+  <div class="story">
+    <h2>Exploring<br>
+    in<br>
+    Depth</h2>
+  </div>
+
+  <div>
+    <p>(continued on next page)</p>
+  </div>
+</article>

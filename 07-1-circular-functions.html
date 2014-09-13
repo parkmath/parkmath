@@ -1,0 +1,766 @@
+<article>
+  <div class="story">
+    <h1>Lesson 1:</h1>
+
+    <h1>Circular Functions</h1>
+
+    <h2>$<br>
+    $Introduction</h2>
+
+    <p>You’ve seen sine, cosine, and tangent before. In fact,
+    you’ve even used them to find missing sides in triangles.</p>
+
+    <div class="problem" data-problem-number="1">
+      <p>How would you define the sine of $\theta $ ? Cosine of
+      $\theta $ ?</p>
+    </div>
+
+    <div class="problem" data-problem-number="2">
+      <p>Use careful construction of a triangle to find \[\sin {37^
+      \circ }\] .<br>
+      Do not use the sine function on your calculator!</p>
+    </div>
+
+    <div class="problem" data-problem-number="3">
+      <p>Why can’t you use a construction to find \[\sin {102^
+      \circ }\] ?</p>
+    </div>
+
+    <p>Even though we can’t construct a triangle to find the sine
+    of \[{102^ \circ }\] , your<br>
+    calculator can tell you an approximate value! In this lesson,
+    we will discover<br>
+    a new way to think about sine and cosine—a way that makes
+    calculating the<br>
+    values of \[\sin {102^ \circ }\] , , and \[\tan \left( { -
+    {{10002}^ \circ }} \right)\] possible.</p>
+
+    <h2>Development</h2>
+
+    <p>Most of the problems in this section require carefully drawn
+    diagrams.</p>
+
+    <div class="problem" data-problem-number="4">
+      <p>A wheel of radius one foot is placed so that its center is
+      at the origin, and a pin on the rim is at (1, 0). The diagram
+      below shows the wheel after it has been spun an angle
+      ${\theta ^{}}$ in a counterclockwise direction.<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      Now consider the function $P(\theta )$ , which outputs
+      the<br>
+      coordinates of the pin after the wheel has been spun an angle
+      ${\theta ^{}}$ in a counterclockwise direction. So, for
+      example, $P({0^o}) = (1,0)$ and $P({270^o}) = (0, - 1)$ .
+      Find $P(\theta )$ when:</p>
+
+      <p class="problem-part">. \[\theta = {90^ \circ }\]</p>
+
+      <p class="problem-part">. \[\theta = {45^ \circ }\] . Give an
+      exact answer.</p>
+
+      <p class="problem-part">. $\theta = {30^o}$ . Give an exact
+      answer.</p>
+
+      <p class="problem-part">. $\theta = {57^o}$ .</p>
+
+      <p class="problem-part">. $\theta $ is some measure between
+      ${0^o}$ and ${90^o}$ . (Your answer should be expressed in
+      terms of $\theta $ .)</p>
+
+      <p class="problem-part">. For values of ${\theta ^{}}$
+      between ${0^o}$ and ${90^o}$ , how are $\cos \theta $ and
+      $P(\theta )$ related?</p>
+    </div>
+
+    <div class="problem" data-problem-number="5">
+      <p>Now, let’s consider angles greater than ${90^o}$ .</p>
+
+      <p class="problem-part">. Calculate , with P being the same
+      position function as in question 4.</p>
+
+      <p class="problem-part">. What is ?</p>
+
+      <p class="problem-part">. Compare these values to the sine
+      and cosine of 150° and 253°.</p>
+
+      <p class="problem-part">. Using the diagram and your
+      calculations, what do you think the tangent of 253° is? The
+      tangent of 150°? Check them on your calculator.</p>
+    </div>
+
+    <p>It is the convention for rotations that motion in a
+    counterclockwise direction<br>
+    is considered positive, while motion in a clockwise direction
+    is considered<br>
+    negative. So if our wheel is spun 57° counterclockwise we would
+    input 57°<br>
+    in our function $P(\theta )$ , as we did in problem 1, but if
+    our wheel is spun 57° clockwise we would input –57° in our
+    function $P(\theta )$ . So the output for would be the
+    coordinates of the pin after the wheel is spun 57°
+    clockwise.</p>
+
+    <div class="problem" data-problem-number="6">
+      <p>Find:</p>
+
+      <p class="problem-part">. $P( - 240^\circ )$ . Give an exact
+      answer.</p>
+
+      <p class="problem-part">. $P( - 2640^\circ )$ . Give an exact
+      answer.</p>
+
+      <p class="problem-part">. $P( - 237^\circ )$ .</p>
+
+      <p class="problem-part">. $\tan ( - 237^\circ )$ .</p>
+
+      <p class="problem-part">. $P( - \theta )$ , where $0^\circ
+      &lt; \theta &lt; 90^\circ $ . (Your answer should be
+      expressed in terms of $\theta $ .)</p>
+    </div>
+
+    <div class="problem" data-problem-number="7">
+      <p>Now define sine, cosine, and tangent of ${\theta ^{}}$ for
+      every value of ${\theta ^{}}$ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="8">
+      <p>For angles between 0 and 90 degrees, is using your
+      definition in problem 7 equivalent to using your definition
+      in problem 1? Why or why not?</p>
+    </div>
+
+    <div class="problem" data-problem-number="9">
+      <p>$P(46280^\circ ) = ( - 0.94, - 0.34)$ . Without using the
+      cosine button on your calculator, find the cosine of
+      $44480^\circ $ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="10">
+      <p>Let $\cos \theta = - 0.4$</p>
+
+      <p class="problem-part">. For how many angles is that
+      true?</p>
+
+      <p class="problem-part">. How many of these angles are
+      between –180° and 360°?</p>
+
+      <p class="problem-part">. With the help of your calculator
+      find all the angles in part b.</p>
+    </div>
+
+    <div class="problem" data-problem-number="11">
+      <p>Assuming that $\cos 80^\circ = 0.17$ , use the symmetry of
+      the circle to find $\cos 100^\circ $ , $\cos ( - 260^\circ )$
+      , $\cos 260^\circ $ , $\cos 280^\circ $ , $\sin 190^\circ $ ,
+      and $\sin ( - 10^\circ )$ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="12">
+      <p>Let’s revisit question 4, but with a wheel of radius 7
+      feet<br>
+      instead of 1 foot. The wheel is still centered at $(0,0)$ ,
+      and still with a pin at \[(7,0)\] . Let $Q(\theta )$ be the
+      function which outputs the coordinates of the pin after this
+      larger wheel has been spun an angle ${\theta ^{}}$ in a
+      counterclockwise direction.</p>
+
+      <p class="problem-part">. What is $Q(48^\circ )$ ?</p>
+
+      <p class="problem-part">. What is $Q(109^\circ )$ ?</p>
+
+      <p class="problem-part">. How would you define sine and
+      cosine of${\theta ^{}}$ using this $Q(\theta )$ function? How
+      would you define tangent?</p>
+
+      <p class="problem-part">. How would you define sine, cosine,
+      and tangent using a circle of radius r?</p>
+
+      <p class="problem-part"></p>
+    </div>
+
+    <div class="problem" data-problem-number="13">
+      <p>In the diagram below, there is a circle of radius 2
+      inches, with radii drawn at ${15^o}$ intervals.<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br></p>
+
+      <p class="problem-part">. Use careful estimates and the
+      conclusion of problem 12 to calculate the sines of ${30^o}$ ,
+      ${60^o}$ , ${90^o}$ , $120^\circ $ … ${360^o}$ .</p>
+
+      <p class="problem-part">. Using your calculations in part a,
+      sketch a graph with $\theta $ on the horizontal axis and
+      $\sin \theta $ on the vertical axis. (Use values of $\theta $
+      from $ - {360^o}$ to ${360^o}$ .)</p>
+    </div>
+
+    <p>Surprise! There are actually three more trigonometric ratios
+    (functions) in<br>
+    addition to the three you already know. Here are their names
+    and definitions:</p>
+
+    <p>Cosecant of angle \[\theta \] , written $\csc \theta $ is
+    defined thus: $\csc \theta = \frac{r}{y}$</p>
+
+    <p>Secant of angle \[\theta \] , written $\sec \theta $ is
+    defined thus: $\sec \theta = \frac{r}{x}$ .</p>
+
+    <p>Cotangent of angle \[\theta \] , written $\cot \theta $ is
+    defined thus: $\cot \theta = \frac{x}{y}$</p>
+
+    <div class="problem" data-problem-number="14">
+      <p>Use the unit circle to find $\csc \theta $ , $\sec \theta
+      $ and $\cot \theta $ for .</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem" data-problem-number="15">
+      <p>Use the symmetry of the circle to complete the following
+      chart. Give exact answers. Copy the chart into your
+      notebooks.</p>
+    </div>
+
+    <table id="table-1" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p>\[\theta \]</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">30°</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">45°</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">60°</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">315°</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">–210°</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">210°</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">–315°</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">150°</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">240°</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">$\sin \theta $</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text"><img src=
+            "images/07-1-circular-functions/Circular%20Functions%20%2315%20eqn%201.ai"
+            alt="Circular%20Functions%20%2315%20eqn%201.ai"></p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text"><img src=
+            "images/07-1-circular-functions/Circular%20Functions%20%2315%20eqn%202.ai"
+            alt="Circular%20Functions%20%2315%20eqn%202.ai"></p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem" data-problem-number="16">
+      <p>(For this problem use the circle of problem 13.)</p>
+
+      <p class="problem-part">. Use careful measurements and the
+      conclusion of problem 7 to calculate the cosines of ${30^o}$
+      , ${60^o}$ , ${90^o}$ , etc.</p>
+
+      <p class="problem-part">. Using your calculations in part a,
+      sketch a graph with $\theta $ on the horizontal axis and
+      $\cos \theta $ on the vertical axis. (Use values of $\theta $
+      from $ - {360^o}$ to ${360^o}$ .)</p>
+    </div>
+
+    <div class="problem" data-problem-number="17">
+      <p>Determine, without using your calculator, which of the<br>
+      following expressions are the same as $\sin {27^o}$ .<br>
+      <br>
+      $\sin {({180^o} - {27^o})^{}}$ , $\sin {({180^o} +
+      {27^o})^{}}$ , $\sin {( - {27^o})^{}}$ , $\sin {({360^o} +
+      {27^o})^{}}$ ,</p>
+    </div>
+
+    <div class="problem" data-problem-number="18">
+      <p>Find, without using your calculator, two of the following
+      expressions which are the same.<br>
+      <br>
+      $\sin {27^o}$ , $\cos {27^o}$ , , , $\cos {63^o}$</p>
+    </div>
+
+    <div class="problem" data-problem-number="19">
+      <p>Find at least two values for $\theta $ that fit the
+      equation $\sin {\theta ^o}$ =$\frac{{\sqrt 3 }}{2}$ . How
+      many such values are there?</p>
+    </div>
+
+    <div class="problem" data-problem-number="20"></div>
+  </div>
+
+  <div class="image"><img src=
+  "images/07-1-circular-functions/diagram%204.tif" alt=
+  "diagram%204.tif"></div>
+
+  <div>
+    <p>(0, 0)</p>
+  </div>
+
+  <div>
+    <p>(1, 0)</p>
+  </div>
+
+  <div class="image"><img src=
+  "images/07-1-circular-functions/diagram%2013.tif" alt=
+  "diagram%2013.tif"></div>
+
+  <div>
+    <div class="problem" data-problem-number="21">
+      <p>At constant speed, a wheel rotates once counterclockwise
+      every 8 seconds. The center of the wheel is $(0,0)$ and its
+      radius is 1 foot. A pin is initially at $(1,0)$ . Where is it
+      69 seconds later?</p>
+    </div>
+
+    <div class="problem" data-problem-number="22">
+      <p>A wheel whose radius is 1 is placed so that its center is
+      at $(3,2)$ . A pin on the rim is located at $(4,2)$ . The
+      wheel is spun $\theta $ degrees in the counterclockwise
+      direction. Now what are the coordinates of that pin? Does
+      your answer work for 90 degrees? 180 degrees?</p>
+    </div>
+
+    <div class="problem" data-problem-number="23">
+      <p>For the following equations use a circle of radius 2 (and
+      your calculator for part b only) to find all solutions
+      $\theta $ between ${0^o}$ and ${360^o}$ :</p>
+
+      <p class="problem-part">. $\cos \theta = - \frac{{\sqrt 3
+      }}{2}$</p>
+
+      <p class="problem-part">. $\tan \theta = 6.3138$</p>
+
+      <p class="problem-part">. $\sin \theta = - \frac{{\sqrt 2
+      }}{2}$</p>
+
+      <p class="problem-part">. $\cos \theta = \cos ({251^o})$</p>
+
+      <p class="problem-part">. $\sin \theta = \sin {580^o}$</p>
+
+      <p class="problem-part">. ${(\tan \theta )^2} = 3$</p>
+    </div>
+
+    <div class="problem" data-problem-number="24"></div>
+
+    <div class="problem" data-problem-number="25">
+      <p>Find all solutions t between ${360^o}$ and ${720^o}$ :</p>
+
+      <p class="problem-part">. $\cos t = \sin t$ (no
+      calculator)</p>
+
+      <p class="problem-part">. $\sin t = - 0.9397$</p>
+
+      <p class="problem-part">. $\cos t &lt; \frac{{\sqrt 3 }}{2}$
+      (no calculator)</p>
+    </div>
+
+    <p>In the next few problems you are asked to come up with
+    conjectures or to examine the validity of various statements.
+    You might want to see if the conclusion reached is even
+    plausible, by looking at specific, easy-to-check cases. A
+    simple check will either give the conclusion credence (and thus
+    makes it worth trying to prove) or disprove it instantly.</p>
+
+    <div class="problem" data-problem-number="26">
+      <p>Asked to simplify the expression $\sin ({180^o} - \theta
+      )$ , Alex volunteered the following solution: $\sin ({180^o}
+      - \theta ) = \sin {180^o} - \sin \theta $ , and, because
+      $\sin {180^o}$ is zero, it follows that $\sin ({180^o} -
+      \theta )$ is the same as $ - \sin \theta $ .</p>
+
+      <p class="problem-part">. Is this conclusion plausible?</p>
+
+      <p class="problem-part">. If it is plausible, try to prove
+      the result.&nbsp;If it isn’t, can you come up with a correct
+      way to express $\sin ({180^o} - \theta )$ in simpler
+      form?</p>
+
+      <p class="problem-part">. Answer the same questions for $\cos
+      ({180^o} - \theta )$ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="27">
+      <p>Find simpler, equivalent expressions for the
+      following:<br>
+      $\sin ({180^o} + \theta )$ , $\cos ({180^o} + \theta )$ ,
+      $\tan ({180^o} + \theta )$ , $\cos ({360^o} - \theta )$ ,
+      $\sin ({360^o} - \theta )$ , $\tan ({360^o} - \theta )$ ,
+      $\cos ({360^o} + \theta )$ , $\sin ({360^o} + \theta )$ ,
+      $\tan ({180^o} - \theta )$ , $\tan ({360^o} + \theta )$</p>
+    </div>
+
+    <div class="problem" data-problem-number="28">
+      <p>Is it the case that $\sin ({90^o} - \theta ) = \cos \theta
+      $ ? Explain. Then write simpler, equivalent expressions for
+      $\cos ({90^o} - \theta ),\,\,\sin ({90^o} + \theta ),\,\,\cos
+      ({90^o} + \theta )$ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="29">
+      <p>Is $\sin ( - \theta )$ always the same as<br>
+      $ - \sin (\theta )$ ? What can be said<br>
+      about $\cos ( - \theta )$ ?</p>
+    </div>
+
+    <div class="problem" data-problem-number="30">
+      <p>Do the following problems<br>
+      without using a calculator. Explain<br>
+      your reasoning.</p>
+
+      <p class="problem-part">. Which is larger: $\cos {311^o}$ or
+      $\cos {312^o}$ ?</p>
+
+      <p class="problem-part">. Which is larger: $\sin {311^o}$ or
+      $\sin {312^o}$ ?</p>
+    </div>
+
+    <div class="problem" data-problem-number="31">
+      <p>If $\sin A$ is known to be 0.96, then what is $\cos A$ ?
+      What if it is also known that A is an obtuse angle?</p>
+    </div>
+
+    <div class="problem" data-problem-number="32">
+      <p>Hendrickson is thinking of an angle $\theta $ where $\tan
+      \theta &gt; \sin \theta $ , and also where $\sin \theta &lt;
+      \cos \theta $ . Give two possible values for $\theta $ that
+      are in different quadrants.</p>
+    </div>
+
+    <div class="problem" data-problem-number="33">
+      <p>Rodney is running around the circular track ${x^2} + {y^2}
+      = 10000$ , whose radius<br>
+      is 100 meters, at 4 meters per second.<br>
+      Rodney starts at the point $(100,0)$ and runs in the
+      counterclockwise direction. After 30 minutes of running, what
+      are Rodney’s coordinates?<br>
+      Copyright Phillips Exeter Academy</p>
+    </div>
+
+    <div class="problem" data-problem-number="34">
+      <p>Below are the graphs of $y = \cos x$ and y = 0.7431
+      (dotted). Given that Q = (42, 0.7431), find coordinates for
+      the intersection points P, R, and S without using a
+      calculator. Use a calculator to check your answers.<br>
+      Copyright Phillips Exeter Academy</p>
+    </div>
+
+    <p class="Lesson---Inline-Diagram para-style-override-3">
+    <img src="images/07-1-circular-functions/diagram%2032.tif" alt=
+    "diagram%2032.tif"></p>
+
+    <div class="problem" data-problem-number="35">
+      <p>For how many angles in the first quadrant will $\sin
+      \theta $ be rational?</p>
+    </div>
+
+    <div class="problem" data-problem-number="36">
+      <p>You use a circle of radius 2 to find the sine of a 60
+      degree angle. Find the length of the arc of the circle that
+      is intercepted by this 60 degree angle.</p>
+    </div>
+
+    <div class="problem" data-problem-number="37">
+      <p>Choose an angle $\theta $ and calculate ${(\cos \theta
+      )^2} + {(\sin \theta )^2}$ . Repeat with several other values
+      of $\theta $ . Explain the results. (Note that it is
+      customary to write ${\cos ^2}\theta + {\sin ^2}\theta $
+      instead of ${(\cos \theta )^2} + {(\sin \theta )^2}$ .)</p>
+    </div>
+
+    <div class="problem" data-problem-number="38">
+      <p>For any angle $\theta $ , is it true that $1 + {\tan
+      ^2}\theta = {\sec ^2}\theta $ ? If so, prove it. If not,
+      produce a counterexample.</p>
+    </div>
+
+    <div class="problem" data-problem-number="39">
+      <p>Asked to find an expression that is<br>
+      equivalent to , Laura responded $\cos (\alpha ) + \cos (\beta
+      )$ . What do you think of Laura’s answer, and why?</p>
+    </div>
+
+    <div class="problem" data-problem-number="40">
+      <p>On your calculator, draw a graph of the function \[y =
+      \tan x\] with ${0^o} &lt; x &lt; {360^o}$ . Something appears
+      to be wrong here. Say what you think is wrong and explain
+      what’s going on.</p>
+    </div>
+
+    <div class="problem" data-problem-number="41">
+      <p>Solve the following without finding the angle $\theta $
+      .</p>
+
+      <p class="problem-part">. Given that $\sin \theta =
+      \frac{{12}}{{13}}$ , with ${0^o} &lt; \theta &lt; {90^o}$ ָz
+      , find the values of $\cos \theta $ and $\tan \theta $ .</p>
+
+      <p class="problem-part">. Given that $\cos \theta =
+      \frac{7}{{25}}$ , with ${270^o} &lt; \theta &lt; {360^o}$ ,
+      find $\sin \theta $ and $\tan \theta $ .</p>
+
+      <p class="problem-part">. Suppose that $\csc \theta = \frac{{
+      - 25}}{7}$ and $\tan \theta &lt; 0$ . Evaluate, in fractional
+      form, the remaining five trigonometric functions of $\theta $
+      .</p>
+
+      <p class="problem-part">. The point $P( - 12,16)$ is on a
+      circle whose center is the origin. Find the cosine of angle
+      $\theta $ , the angle between the positive x-axis and the
+      radius to P.</p>
+
+      <p class="problem-part">. The point P is on a circle whose
+      center is the origin, and the x-coordinate of P is five times
+      its y-coordinate. Find the cosine of angle $\theta $ , the
+      angle between the positive x-axis and the radius to P.</p>
+    </div>
+
+    <div class="problem" data-problem-number="42">
+      <p>Is it possible for $\sin \theta $ to be exactly twice the
+      size of $\cos \theta $ ? If so, find such an angle $\theta $
+      . If not, explain why not.</p>
+    </div>
+
+    <div class="problem" data-problem-number="43">
+      <p>Find the three smallest positive solutions to = –1.364</p>
+    </div>
+
+    <div class="problem" data-problem-number="44">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">. Reduce:</p>
+
+      <p class="problem-part">. Reduce:</p>
+
+      <p class="problem-part">. Solve for x: $2{x^2} - 3x - 2 =
+      0$</p>
+
+      <p class="problem-part">. Add: $\frac{7}{4} +
+      \frac{{3a}}{b}$</p>
+
+      <p class="problem-part">. Subtract:</p>
+
+      <p class="problem-part"></p>
+    </div>
+
+    <div class="problem" data-problem-number="45">
+      <p>Find all the solutions x, given .</p>
+
+      <p class="problem-part">. $(\cos x - .5)(\sin x +
+      \frac{{\sqrt 3 }}{2}) = 0$</p>
+
+      <p class="problem-part">. ${(\cos x)^2} - 5\cos x + 4 =
+      0$</p>
+
+      <p class="problem-part">. $3{(\tan x)^2} + 5\tan x = 0$</p>
+
+      <p class="problem-part">. $2{(\sin x)^2} + \sin x = 3$</p>
+
+      <p class="problem-part"></p>
+
+      <p class="problem-part"></p>
+
+      <p class="problem-part"></p>
+
+      <p class="problem-part"></p>
+
+      <p class="problem-part"></p>
+
+      <p class="problem-part"></p>
+
+      <p class="problem-part"></p>
+    </div>
+
+    <div class="problem" data-problem-number="46"></div>
+
+    <div class="problem" data-problem-number="47"></div>
+
+    <div class="problem" data-problem-number="48"></div>
+
+    <div class="problem" data-problem-number="49"></div>
+
+    <div class="problem" data-problem-number="50"></div>
+
+    <div class="problem" data-problem-number="51">
+      <p>Paul rides a Ferris wheel for five minutes. The diameter
+      of the wheel is 10 meters,<br>
+      and its center is 6 meters above the ground. Each revolution
+      of the wheel takes 30 seconds. Being more than 9 meters<br>
+      above the ground causes Paul to suffer an anxiety attack. For
+      how many seconds does Paul feel uncomfortable?</p>
+    </div>
+
+    <div class="problem" data-problem-number="52">
+      <p>Jasper’s bike has wheels that are 27 inches in diameter.
+      After the front wheel picks up a tack, Jasper rolls another
+      100 feet and stops. How far above the ground is the tack?</p>
+    </div>
+
+    <div class="problem" data-problem-number="53">
+      <p>You have a circular dartboard. Its target area is defined
+      in an unusual way. Take any point within the dartboard. Draw
+      a straight line that goes through this point and the center
+      of the board. Measure the angle this line makes with the line
+      going from the center to the “easternmost” point on the dart
+      board. If the tangent of this angle is between -0.2 and 0.6,
+      then the point is shaded. Otherwise, it is not shaded. What
+      are your chances of hitting this target area?</p>
+    </div>
+
+    <div class="problem" data-problem-number="54">
+      <p>Given that $\sin \theta = k$ , and that ${0^o} &lt; \theta
+      &lt; {90^o}$ n| , find expressions for $\cos \theta $ and
+      $\tan \theta $ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="55">
+      <p>What do the graphs of\[y = \sin x\] and \[y = \sin 2x\]
+      have in common, and how do they differ? How about the graphs
+      of \[y = \cos x\] and \[y = \cos mx\] , where m is any
+      positive integer?</p>
+    </div>
+
+    <div class="problem" data-problem-number="56">
+      <p>Starting at the same spot on a circular track that is 80
+      meters in diameter, Andy and Brandon run in opposite
+      directions,<br>
+      at 300 meters per minute and 240 meters per minute,
+      respectively. They run for 50 minutes. What distance
+      separates Andy and Brandon when they finish? Interpret the
+      word distance any way you wish.<br>
+      Copyright Phillips Exeter Academy<br></p>
+    </div>
+  </div>
+
+  <div class="story">
+    <h2>Exploring<br>
+    in<br>
+    Depth</h2>
+  </div>
+</article>
