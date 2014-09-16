@@ -1,0 +1,1359 @@
+<article>
+  <section>
+    <h1>Lesson 3: Recursion</h1>
+
+    <h2>Introduction</h2>
+
+    <div class="problem" data-problem-number="1">
+      <p>An ecologist is studying moose herds, to see if hunting
+      practices are depleting the herds. In each herd, every year,
+      $\frac{1}{3}$ of the population reproduces (1 baby moose
+      each). Every fall, though, after the moose reproduce, hunters
+      are allowed to hunt down 100 moose. In one herd, at the<br>
+      beginning of the study there are 270 moose. What would be the
+      size of the herd population after 5 years? (Each year, round
+      to the nearest moose.)</p>
+    </div>
+
+    <p>The situation above is an example of recursion — a process
+    in which the input at any particular stage depends on the
+    output of a previous stage (or previous stages). In this
+    particular case the size of the herd in any given year is
+    dependent on its size the year before.</p>
+
+    <p>If you understand exactly how the stages are related you can
+    then express that relationship with an equation, called a
+    recursive equation. These equations<br>
+    will allow you to model and track changes in all sorts of
+    populations — people, wildlife, bacteria, viruses, radioactive
+    material and a host of others. People who use these powerful
+    tools are interested in essentially three important questions:
+    Will the population continue to increase without bound, will it
+    level off at a<br>
+    certain number, or will it disappear after a certain
+    period?</p>
+
+    <p>Here is another example of a recursive process.</p>
+
+    <div class="problem" data-problem-number="2">
+      <p>Enter any number greater than 1 in your calculator and
+      find its square root. Then find the square root of your
+      answer. Continue finding square roots of previous answers
+      until something interesting develops. Do you think the same
+      thing would happen with any number greater than 1 that you
+      choose? How about any positive number less than 1?</p>
+    </div>
+
+    <h2>Development</h2>
+
+    <div class="problem" data-problem-number="3">
+      <p>A bacteria colony is placed into a Petri dish along with a
+      bacteria-eating fungus. Every day, the bacteria population
+      increases by 50%, but during the night at midnight, the
+      fungus devours 50 bacteria.</p>
+
+      <p class="problem-part">. Draw a chart and track the bacteria
+      population over the next week, if the initial population is
+      120:</p>
+    </div>
+
+    <table id="table-1" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header"># days later</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">0</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">6</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">7</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Pop. size</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">120</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="No-Paragraph-Style"><br></p>
+
+    <p class="problem-part">. A smaller colony would have a hard
+    time surviving in the same dish as the fungus. Find an initial
+    population size that would cause the population to drop
+    quickly. Draw a chart for this situation. You can assume that
+    if at the end of a day there are less than 50 bacteria left,
+    the fungus will simply eat all the bacteria that are left.</p>
+
+    <p class="problem-part">. Find an initial population size that
+    would cause the population to decline slowly. Draw a chart for
+    this situation.</p>
+
+    <p class="problem-part">. Is there a population size that would
+    remain unchanged despite the bacteria-eating fungus? (In this
+    sort of outcome, the system is said to be in a state of
+    equilibrium, or in a steady state.)</p>
+
+    <p class="problem-part">. Explain how you could figure out
+    ${B_n}$ , the number of bacteria after n days, by knowing the
+    population in the dish one day earlier. Write an equation for
+    ${B_n}$ in terms of ${B_{n - 1}}$ .</p>
+
+    <p class="problem-part">. Is there a number such that if the
+    population size falls below that number, the colony will
+    eventually die out?</p>
+
+    <p>The equation you wrote in problem 3e is a recursive
+    equation. To fully describe a recursion process one would write
+    the recursion equation together with the initial condition. In
+    the case of problem 3e, for example, we would write ${B_n} =
+    \frac{3}{2}{B_{n - 1}} - 50$ as well as ${B_0} = 120$ r . In
+    mathematics, the subscript zero is sometimes used to represent
+    the amount or number you started with.</p>
+
+    <div class="problem" data-problem-number="4">
+      <p>A buyer and seller are bargaining over the price of an
+      antique lamp. First, the buyer offers to pay $400. Next, the
+      seller makes a counter-offer — she’ll sell it for $800.
+      Trying to be fair, the buyer decides to average those two
+      prices for his next offer of $600. Also trying to be fair,
+      the seller then averages the two most recent prices, to make
+      her next offer. They continue bargaining, each using the
+      averaging method to come up with their next offer.<br>
+      <br>
+      Draw a table like the one below with the prices offered and
+      fill it out.</p>
+    </div>
+
+    <table id="table-2" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Buyer</p>
+          </td>
+
+          <td class="Basic-cell" colspan="2">
+            <p class="Table---Cell-Text">400</p>
+          </td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell" colspan="2">
+            <p class="Table---Cell-Header">Seller</p>
+          </td>
+
+          <td class="Basic-cell" colspan="2">
+            <p class="Table---Cell-Text">800</p>
+          </td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell" colspan="2"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="No-Paragraph-Style"><br></p>
+
+    <p class="problem-part">. Let $\{ {L_n}\} $ be the sequence of
+    prices that are offered<br>
+    (disregarding who makes which offers). So, since the buyer
+    makes the first offer of $400, and the seller then offers $800,
+    ${L_1}$ =400 and ${L_2}$ =800.</p>
+
+    <p class="problem-part">. What is ${L_5}$ ?</p>
+
+    <p class="problem-part">. Which offers would you need to know,
+    in order to find ${L_{100}}$ ? Write an equation for
+    ${L_{100}}$ in terms of those offers.</p>
+
+    <p class="problem-part">. Write a recursive equation for
+    ${L_n}$ , in terms of the previous offers.</p>
+
+    <p class="problem-part">. Who seems to be at an advantage in
+    this situation — that is, who is happier with the prices being
+    offered?</p>
+
+    <p class="problem-part">. Is there a point at which this
+    bargaining process would stop? Assume that payment will be made
+    in whole dollars.</p>
+
+    <div class="problem" data-problem-number="5">
+      <p>Write a recursive equation to describe the process in<br>
+      problem 2.</p>
+    </div>
+
+    <div class="problem" data-problem-number="6">
+      <p>When students were asked to create their own recursive
+      problem, Emdash came up with the following;<br>
+      <br>
+      ${G_{n + 2}}\,\, = \,\,\frac{{{G_{n + 1}}}}{{{G_n}}}$ ,
+      ${G_1}$ = 2. Find the first nine terms of the sequence.</p>
+
+      <p class="problem-part">. It is not possible to solve
+      Emdash’s problem. Why?</p>
+
+      <p class="problem-part">. Vasilla added to Emdash’s problem
+      the following: ${G_2}$ = 4. Is it possible to write down the
+      first nine terms of Vasilla’s sequence?</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem" data-problem-number="7">
+      <p>You are training for a race by running every day. On the
+      first day, you run 2000 meters. Every day after that, you
+      increase the past day’s run by 20%, and then add on an extra
+      100 meters.</p>
+
+      <p class="problem-part">. Fill in the chart with how much you
+      run each day:</p>
+    </div>
+
+    <table id="table-3" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Day</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">6</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">7</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Distance</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2000</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="No-Paragraph-Style"><br></p>
+
+    <p class="problem-part">. Write a recursive equation for
+    ${R_n}$ , the distance you run on day n.</p>
+
+    <div class="problem" data-problem-number="8">
+      <p>Back to our moose situation in problem 1 in which every
+      year $\frac{1}{3}$ of the population reproduces (1 baby moose
+      each), and every fall hunters are allowed to hunt down 100
+      moose, but only after the moose reproduce. (This time you do
+      not have to round to the nearest moose each year.)</p>
+
+      <p class="problem-part">. In one herd, at the beginning of
+      the study there are 270 moose. Write a recursive equation for
+      ${M_n}$ , the population of the moose herd after n years.
+      What do you think will ultimately happen to the population of
+      this herd?</p>
+
+      <p class="problem-part">. Suppose at the beginning of the
+      study there were 310 moose. What would be size of the herd
+      after 5 years? What do you think will ultimately happen to
+      the population of this herd?</p>
+
+      <p class="problem-part">. Another herd’s population is in an
+      equilibrium state — it doesn’t ultimately grow or shrink.
+      What was its starting population? Explain why this herd’s
+      population doesn’t change.</p>
+    </div>
+
+    <div class="problem" data-problem-number="9">
+      <p>Refer to problem 4, where a buyer and seller are trying to
+      agree on a price for a lamp. Recall that each new offer was
+      the average of the previous two offers. Again let $\{ {L_n}\}
+      $ be the sequence of prices that are offered (disregarding
+      who makes which offers). But now suppose that the seller
+      offers first. In this case ${L_1}$ =800 and ${L_2}$ =400.</p>
+
+      <p class="problem-part">. What is ${L_5}$ ?</p>
+
+      <p class="problem-part">. Who seems to be at an advantage in
+      this situation — that is, who is happier with the prices
+      being offered?</p>
+
+      <p class="problem-part">. What price do you think they will
+      settle on?</p>
+
+      <p class="problem-part">. Why is the final price they agree
+      on different, depending<br>
+      on who offers first?</p>
+    </div>
+
+    <div class="problem" data-problem-number="10">
+      <p>A sequence follows a recursive rule — every term is 9 more
+      than half of the previous term.</p>
+
+      <p class="problem-part">. If the first term ${T_1}$ is 12,
+      find the next 10 or so values of the sequence.</p>
+
+      <p class="problem-part">. Do the same thing for different
+      values of ${T_1}$ — try some small numbers, and some large
+      numbers.</p>
+
+      <p class="problem-part">. What would ${T_1}$ have to be in
+      order to produce an<br>
+      equilibrium solution?</p>
+
+      <p class="problem-part">. For which values of ${T_1}$ does
+      the sequence increase?<br>
+      For which does it decrease?</p>
+    </div>
+  </section>
+
+  <section>
+    <p>(continued on next page)</p>
+  </section>
+
+  <section>
+    <div class="problem" data-problem-number="11">
+      <p>Sweden and Croatia are locked in an<br>
+      escalating arms race. Every year, one of the countries builds
+      some bombs and missiles, and then inevitably, the next year,
+      the other country builds even more to compensate. In each
+      country, the Department of<br>
+      Defense has the following strategy:<br>
+      <br>
+      For every new bomb that the enemy built last year, we’ll
+      build 2 new bombs. For every new missile that the enemy built
+      last year, we’ll build 2 new missiles, AND a new bomb.<br>
+      <br>
+      Neither country can afford the expense of this pointless arms
+      race, and each one claims that the other country started the
+      whole situation by building the first few weapons.</p>
+
+      <p class="problem-part">. In 2008, Sweden built a total of 64
+      new bombs and 16 new missiles. What will happen in 2009? How
+      about 2010?</p>
+
+      <p class="problem-part">. Those 64 bombs and 16 missiles were
+      constructed in response to the weapons that Croatia built in
+      2007. What were those weapons?</p>
+
+      <p class="problem-part">. Continue working back in time to
+      determine who must have started the situation. What year did
+      it start, and what weapons were built?<br></p>
+    </div>
+
+    <div class="problem" data-problem-number="12">
+      <p>The fractal you see below is called the Koch
+      Snowflake.</p>
+    </div>
+
+    <p class="Problems---Problem-flow">It’s a fractal because if
+    you magnify any portion of the diagram, it will look like the
+    diagram itself — also called self similar. The image you see
+    above is actually just an approximation to the Koch Snowflake,
+    but one could define the snowflake recursively.<br>
+    <br>
+    First, start with an equilateral triangle. Let’s call that
+    stage 0.</p>
+
+    <figure>
+      <img src="images/09-3-recursion/image21.tif" alt=
+      "image21.tif">
+    </figure>
+
+    <p class="Problems---Problem-flow">For the first iteration,
+    stage 1, the middle one-third of each side is erased and two
+    line segments — whose lengths are equal to the length of the
+    erased segment — are added to form sides of smaller
+    equilateral<br>
+    triangles. In the second iteration, the process is repeated.
+    Each old segment is replaced with four new segments, each of
+    which is one-third as long as the segment they replace. (See
+    figure below)<br></p>
+
+    <p class="problem-part">. Draw stages 1 and 2 of the snowflake.
+    Be sure to use a pencil since at each step there’s some erasing
+    to do.</p>
+
+    <p class="problem-part">. Draw stage 3 of the snowflake.</p>
+
+    <p class="problem-part">. How many stages do you think were
+    completed for the image you saw at the beginning of this
+    problem?</p>
+
+    <div class="problem" data-problem-number="13">
+      <p>In problem 12 above:</p>
+
+      <p class="problem-part">. If the length of each side of the
+      original triangle is 1 unit, write a<br>
+      recursion equation for ${P_n}$ , the<br>
+      perimeter of the shape after n<br>
+      stages. Will the perimeter ever<br>
+      reach 1,000,000 units?</p>
+
+      <p class="problem-part">. Suppose that the area of the
+      original triangle was 1 cm2, what would be the area of the
+      shape after 1 stage? After 2 stages? After 3 stages?</p>
+
+      <p class="problem-part">. Write a recursive equation for
+      ${A_n}$ ,<br>
+      the area of the shape after n stages. Could the area get as
+      large as 5 cm2?</p>
+    </div>
+
+    <div class="problem" data-problem-number="14">
+      <p>2000 people are exposed to a particularly contagious cold
+      virus. Every day, $\frac{1}{4}$ of the people (rounded to the
+      nearest person) that were healthy the day before, have now
+      caught the virus. ${I_t}$ is the total number of people
+      infected, after t days.</p>
+
+      <p class="problem-part">. If ${I_1} = 0$ (no one is infected
+      on the first day), find ${I_t}$ up to t = 5.</p>
+
+      <p class="problem-part">. If ${I_1} = 40$ 䗵z , do the
+      same.</p>
+
+      <p class="problem-part">. Write a recursive equation for
+      ${I_t}$ .<br>
+      (In your formula, you may use Round(x, 0), which is the
+      operation on your calculator that rounds any number x to the
+      nearest integer.)</p>
+
+      <p class="problem-part">. What happens eventually to these
+      2000 people?</p>
+    </div>
+
+    <div class="problem" data-problem-number="15">
+      <p>Suppose that a less contagious cold virus infects 1/20 of
+      the healthy population on a given day.</p>
+
+      <p class="problem-part">. Find out how many days it takes for
+      a population of 2000 to go from 0 sick people to half of the
+      population being sick.</p>
+
+      <p class="problem-part">. If you double the population to
+      4000, how many days do you think it will take for half of the
+      population to get sick? Do the calculations to see if you are
+      right.</p>
+    </div>
+
+    <div class="problem" data-problem-number="16">
+      <p>You have 10 pet lizards and each gets fed 3 crickets at
+      the end of every week. You buy 80 crickets, thinking that as
+      the crickets reproduce at a rate of 50% per week, the
+      population will sustain itself even though some crickets will
+      be fed to the lizards. But the lizards reproduce at a rate of
+      10% per week. After the lizards and crickets both reproduce,
+      then the lizards get fed.</p>
+
+      <p class="problem-part">. At the end of the first week, how
+      large is each population?</p>
+
+      <p class="problem-part">. Draw a chart to track the
+      populations over the next few weeks. Each week, round to the
+      nearest whole number in your answers.</p>
+    </div>
+
+    <table id="table-4" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header"># weeks</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">0</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">6</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header"># lizards</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">10</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header"># crickets</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">80</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="problem-part">. Write recursive equations for ${L_t}$
+    and ${C_t}$ , the number of lizards and the number of crickets
+    after t weeks respectively. Your equation for ${C_t}$ ,<br>
+    the number of crickets, will have to depend on how many
+    crickets there were last week AND how many<br>
+    lizards there were this week.</p>
+
+    <p class="problem-part">. Do you think you’ll always have
+    enough crickets to feed the lizards, even though the lizard
+    population will continue to grow?</p>
+
+    <div class="problem" data-problem-number="17">
+      <p>A well-fed bacteria colony in a Petri dish grows as
+      follows:</p>
+    </div>
+
+    <table id="table-5" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header"># hours in dish</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">6</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header"># bacteria</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">60</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">180</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">540</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="problem-part">. Find a pattern, and fill in the
+    blanks.</p>
+
+    <p class="problem-part">. Write a recursive equation for
+    ${B_n}$ , the number of bacteria after n hours.</p>
+
+    <p>There are times when describing a set of data using
+    recursive equations is the most efficient and times when it is
+    the only thing you can do, but there are times when an explicit
+    equation would be better. An explicit (regular) equation allows
+    you to find any term without necessarily knowing the value of
+    any previous term. Let’s use problem 17 as an example.</p>
+
+    <div class="problem" data-problem-number="18">
+      <p>Check whether the pattern you discovered in problem 17
+      satisfies the equation, ${B_n} = 60 * {3^{n - 1}}$ . Find the
+      size of the colony after 24 hours, by using either your
+      recursive formula or the explicit formula.</p>
+    </div>
+
+    <div class="problem" data-problem-number="19">
+      <p>Let the sequence $\{ {R_n}\} $ be generated by the
+      quadratic equation ${R_n} = {n^2} + 1$ .</p>
+
+      <p class="problem-part">. Create a table for $\{ {R_n}\} $
+      .</p>
+
+      <p class="problem-part">. Write a recursive equation for $\{
+      {R_n}\} $ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="20">
+      <p>Repeat problem 19 for the:</p>
+
+      <p class="problem-part">. Quadratic equation, ${R_n} = 2{n^2}
+      - 3n + 1$ .</p>
+
+      <p class="problem-part">. Exponential equation .</p>
+
+      <p class="problem-part">. Exponential equation ${R_n} = 3
+      \cdot {2^n}$ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="21">
+      <p>For each chart below find a recursive<br>
+      equation and an explicit equation.</p>
+    </div>
+
+    <table id="table-6" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">n</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">${T_n}$</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">10</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">13</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">16</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">19</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">22</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="No-Paragraph-Style"><br></p>
+
+    <table id="table-7" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">n</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">${T_n}$</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">9</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">17</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">33</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="No-Paragraph-Style"><br></p>
+
+    <div class="problem" data-problem-number="22">
+      <p>You come across the following sequence in a textbook.</p>
+    </div>
+
+    <table id="table-8" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">n</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">6</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">${T_n}$</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">10</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">17</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">26</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">37</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="No-Paragraph-Style"><br></p>
+
+    <p class="problem-part">. Find an explicit formula for ${T_n}$
+    . (It might help to first carefully make a graph with $n$ as
+    your horizontal axis and ${T_n}$ as your vertical axis.)</p>
+
+    <p class="problem-part">. Find ${T_{100}}$ .</p>
+
+    <div class="problem" data-problem-number="23">
+      <p>A sequence follows this recursive rule: ${A_n} = {A_{n -
+      1}} - {A_{n - 2}}$ .</p>
+
+      <p class="problem-part">. Pick several different starting
+      values for the sequence, and find the<br>
+      next ten or so values. What always happens?</p>
+
+      <p class="problem-part">. How can you be sure of your<br>
+      conclusion in part a?</p>
+    </div>
+
+    <div class="problem" data-problem-number="24">
+      <p>Write a recursive equation to describe the pattern you see
+      in the Fibonacci sequence below.</p>
+    </div>
+
+    <table id="table-9" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">n</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">6</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">7</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">8</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">8</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">13</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">21</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem" data-problem-number="25">
+      <p>You take out a loan from a bank. At the end of each year,
+      you pay them $200, and then they charge 3% interest on the
+      amount that you still owe. For example, if you borrowed
+      $1200, you would owe $1,030 after 1 year.</p>
+
+      <p class="problem-part">. Find out how many years it would
+      take to pay off your loan of $1200. (Once you hit a negative
+      number, just assume the loan is now paid off.)</p>
+
+      <p class="problem-part">. In part a, did the amount of money
+      owed decrease faster and faster as time went on, or slower
+      and slower? Why?</p>
+
+      <p class="problem-part">. Write an equation ${M_t}$ for the
+      amount of money you owe after t years.</p>
+
+      <p class="problem-part">. What happens if instead you borrow
+      $5000? Track the loan over at least ten years.</p>
+
+      <p class="problem-part">. What happens if you borrow $10,000?
+      Track the loan over at least ten years.</p>
+
+      <p class="problem-part">. Find an initial loan amount that is
+      an equilibrium solution.</p>
+    </div>
+
+    <div class="problem" data-problem-number="26">
+      <p>One of the simplest models for population growth is based
+      on the idea that the growth rate of the population is
+      proportional to the current size of the population. So, for
+      example, we might expect that, each year, the number of frogs
+      in a pond will increase by 6% every year.</p>
+
+      <p class="problem-part">. Write a recursive equation for this
+      model of growth.</p>
+
+      <p class="problem-part">. Does this equation have any<br>
+      equilibria?</p>
+    </div>
+
+    <div class="problem" data-problem-number="27">
+      <p>The population model you looked at in the previous problem
+      has a major limitation: it doesn’t take into account the fact
+      that the frogs in the pond have a limited number of resources
+      (food, lily pad real estate, etc.). The following equation,
+      called<br>
+      the logistic model of population growth,<br>
+      attempts to take this into account:<br>
+      <br>
+      \[{F_{n + 1}} = {F_n} + 1.1{F_n} \cdot \left( {\frac{{40 -
+      {F_n}}}{{40}}} \right)\] ̔#~ .<br>
+      <br>
+      The idea here is that, the pond has a “carrying capacity” of
+      40 frogs — i.e., it has enough resources for 40 frogs to live
+      healthily. So, while the population’s growth rate is
+      proportional to the current population size, it is also
+      proportional to how close the population is to the carrying
+      capacity.</p>
+
+      <p class="problem-part">. Suppose that there were 15 frogs in
+      the pond. According to the equation, how much would the
+      population change the next year? How about if there were 35
+      frogs in the pond?</p>
+
+      <p class="problem-part">. Does it seem plausible that this
+      system (unlike the one in the previous problem) would have an
+      equilibrium solution other than 0?</p>
+
+      <p class="problem-part">. Starting with an initial population
+      of 2 frogs, use the equation above to track the frog
+      population over several years. What happens in the long
+      run?</p>
+
+      <p class="problem-part">. Predict what would happen if you
+      repeated part c, but with an initial population of 60 frogs.
+      Then try it and see.</p>
+    </div>
+
+    <div class="problem" data-problem-number="28">
+      <p>Connect the midpoints of the sides of a triangle. Now
+      connect the midpoints of the sides of your new triangle. If
+      you could repeat this operation indefinitely it seems as
+      though you would end up with a point. Where in the original
+      triangle would that point be located?</p>
+    </div>
+
+    <div class="problem" data-problem-number="29">
+      <p>Three kids sitting in a circle play a card game in which
+      they are given a number of cards and asked on each turn to
+      pass half of their cards to the kid sitting to their right.
+      If they have an odd number of cards they must round up — for
+      example, a kid who has 5 cards must pass 3. How is this game
+      going to turn out?</p>
+    </div>
+
+    <div class="problem" data-problem-number="30">
+      <p>Find the lowest value ever reached by the sequence $\{
+      {S_n}\} $ , and explain why you know it’s the lowest value,
+      given that:<br>
+      <br>
+      <br>
+      ${S_n} = {S_{n - 1}} \cdot \frac{n}{{10}}$</p>
+    </div>
+
+    <div class="problem" data-problem-number="31">
+      <p>A bank’s loan policy is that they calculate interest
+      monthly: .8% per month. ${M_n}$ will represent how much money
+      you owe the bank after n months.</p>
+
+      <p class="problem-part">. Suppose you start by borrowing
+      $1500 — so . How much do you owe after 1, 2, and 3
+      months?</p>
+
+      <p class="problem-part">. Write a recursive equation for
+      ${M_n}$ .</p>
+
+      <p class="problem-part">. If you choose to pay off the loan a
+      little bit at a time, by paying $100<br>
+      every month, calculate how much you’ll owe after 1, 2, and 3
+      months — assume that the $100 is paid before interest is
+      calculated for the month.</p>
+
+      <p class="problem-part">. Write a recursive equation for
+      ${M_n}$ , under the assumptions of part c.</p>
+
+      <p class="problem-part">. Now suppose the bank, hoping to
+      make more money, decides to calculate interest every month
+      before accepting your $100 payment for the month. How much
+      more will you owe at the end of 1, 2, and 3 months?</p>
+
+      <p class="problem-part">. Write a recursive equation for
+      ${M_n}$ , under the assumptions of part e.</p>
+    </div>
+
+    <div class="problem" data-problem-number="32">
+      <p>A sequence follows this recursive rule: ${F_n} = 2{F_{n -
+      1}}^2$ .</p>
+
+      <p class="problem-part">. Try starting with a few different
+      values for ${F_1}$ , and see what happens over the next 10 or
+      so values of n. For which starting values do the<br>
+      values of the sequence increase,<br>
+      and for which do they decrease?</p>
+
+      <p class="problem-part">. Without trying the numbers, say
+      what will happen for the following starting values, based on
+      what<br>
+      you noticed in part a — will the<br>
+      sequence’s values increase, decrease, or stay the same? The
+      starting values are: 1, 1/10, ½, .99.</p>
+
+      <p class="problem-part">. State and justify the “rule” you
+      were using to make decisions in part b.</p>
+    </div>
+
+    <div class="problem" data-problem-number="33">
+      <p>The recursive rule for a sequence $\{ {T_n}\} $ is that
+      each term equals 30 more than the (positive) square root of
+      the previous term.</p>
+
+      <p class="problem-part">. If , find the number they must
+      equal — call it C.</p>
+
+      <p class="problem-part">. If ${T_1} &gt; C$ , what will
+      happen to<br>
+      the value of ${T_n}$ , as n increases?<br>
+      How sure are you?</p>
+
+      <p class="problem-part">. What if ${T_1} &lt; C$ ? Are you
+      sure?</p>
+    </div>
+
+    <div class="problem" data-problem-number="34">
+      <p>Investigate what happens with the rule \[{T_n} =
+      \frac{{{{({T_{n - 1}})}^2}}}{n}\] when you use different
+      starting values. You should find at least 3 different types
+      of behavior.</p>
+    </div>
+
+    <div class="problem" data-problem-number="35">
+      <p>For each of the sequences below an explicit equation is
+      given. Start at $n = 1$ and figure out what happens to each
+      sequence eventually — as $n$ gets larger and larger.<br>
+      a. ${A_n} = 1 + \frac{1}{n}$<br>
+      b. ${B_n} = {(1 + \frac{1}{n})^2}$<br>
+      c. ${C_n} = {(1 + \frac{1}{n})^3}$</p>
+
+      <p class="problem-part">$d$. ${D_n} = {(1 +
+      \frac{1}{n})^{10000}}$</p>
+    </div>
+
+    <div class="problem" data-problem-number="36">
+      <p>Based on your answers to problem 35, what would you expect
+      to happen to the following sequence eventually? After your
+      guess, go ahead and check carefully on your calculator.<br>
+      <br>
+      ${E_n} = {(1 + \frac{1}{n})^n}$</p>
+    </div>
+
+    <div class="problem" data-problem-number="37">
+      <p>You might have been a bit surprised by the answer you got
+      for problem 36. This number happens to be quite an important
+      number in mathematics — so important in fact that it has a
+      special name and your calculator has a special button
+      dedicated to it. The number is e. Check it out on your
+      calculator.</p>
+    </div>
+
+    <div class="problem" data-problem-number="38">
+      <p>Two animal populations are interdependent, because the
+      predators (P) feed on the prey (Y). Here are recursive
+      equations for the sizes of each population, in terms of time
+      t (in years):<br>
+      <br>
+      ${Y_t} = (1.03 - .001{P_{t - 1}}){Y_{t - 1}}$<br>
+      ${P_t} = (.99 + .00002{Y_{t - 1}}){P_{t - 1}}$</p>
+
+      <p class="problem-part">. If the starting population of
+      predators is 0 and the starting population of prey is 100 (at
+      time t = 0), what will happen to the prey population over
+      time? Why does this make sense in context of the
+      situation?</p>
+
+      <p class="problem-part">. If on the other hand Y0 = 0 but P0
+      = 50, what will happen to the predator population over time?
+      Why does this make sense?</p>
+
+      <p class="problem-part">. If the starting populations are Y0
+      = 450 and P0 = 45, track what happens in the first ten
+      years.</p>
+
+      <p class="problem-part">. What should the starting
+      populations be, for both populations to remain stable? Use
+      what you saw in part c, or look at the equations themselves
+      to figure it out.</p>
+    </div>
+
+    <div class="problem" data-problem-number="39">
+      <p>You invest in a stock through a broker. ${M_t}$ is how
+      much money you have after t years. Every year, the value of
+      your stock increases by 9%, but your stockbroker also charges
+      a fee at the end of each year — $100 the 1st year, $200 the
+      2nd year, $300 the third year, and so on.</p>
+
+      <p class="problem-part">. If you invest $3000 initially, how
+      much money do you have each year over the next five years?
+      What’s the trend?</p>
+
+      <p class="problem-part">. Write a recursive equation for $\{
+      {M_t}\} $ .</p>
+
+      <p class="problem-part">. How much money would you have to
+      start with, so that after 1 year you have exactly the same
+      amount of money?</p>
+
+      <p class="problem-part">. If you invested more at the
+      beginning, would your money always grow, or would it still
+      eventually decrease?</p>
+    </div>
+
+    <div class="problem" data-problem-number="40">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">. Solve for x: ${x^2} - 6x = - 2$
+      :|</p>
+
+      <p class="problem-part">b. Simplify</p>
+
+      <p class="problem-part">c. Simplify ${\left(
+      {\frac{{2{x^2}{y^{ - 3}}}}{{3{x^{ - 1}}{y^4}}}} \right)^{ -
+      2}}$ {</p>
+
+      <p class="problem-part">d. Add $\frac{x}{5} +
+      \frac{4}{x}$</p>
+
+      <p class="problem-part">e. Simplify $\frac{{\sqrt {48}
+      }}{8}$</p>
+    </div>
+  </section>
+
+  <section>
+    <img src="images/09-3-recursion/image211.tif" alt=
+    "image21.tif">
+  </section>
+
+  <section>
+    <p>(continued on next page)</p>
+  </section>
+
+  <section>
+    <img src="images/09-3-recursion/diagram%20for%2012.tif" alt=
+    "diagram%20for%2012.tif">
+  </section>
+
+  <section>
+    <h2>Exploring<br>
+    in<br>
+    Depth</h2>
+  </section>
+</article>

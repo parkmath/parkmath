@@ -1,0 +1,725 @@
+<article>
+  <section>
+    <h1>Lesson 4: Logic and Finite Geometry</h1>
+
+    <h2>Introduction</h2>
+
+    <p>Last year, you discovered that whenever you inscribed a
+    triangle in a circle with one side being a diameter of the
+    circle, the triangle seemed to be a right triangle. And some of
+    you might have concluded, not without good reason, that
+    this<br>
+    must always be the case. This kind of reasoning is called
+    $inductive reasoning$ — when you use a set of examples to claim
+    a general theory.</p>
+
+    <p>Most of you, however, may have remained unconvinced that
+    this would be always the case, and set out to prove it using
+    some of the axioms of geometry. The kind of reasoning you used
+    is called $deductive reasoning$ — the kind of reasoning
+    preferred by mathematicians, and the kind which will be the
+    focus of this lesson.</p>
+
+    <p>In mathematics, inductive reasoning is often used to make a
+    guess at a property by examining some cases, and deductive
+    reasoning (deduction) to prove that the property generally
+    holds.</p>
+
+    <p>As in the case of the circle example above the conclusion
+    reached by inductive reasoning proved to be indeed correct, but
+    in many cases, conclusions reached by inductive reasoning will
+    turn out to be false. If you check the value of the expression
+    for the first 10 or so positive integer values of $n$ , you
+    might conclude that was a prime number for any positive integer
+    $n$ . It turns out that this is not the case.</p>
+
+    <p>Can you find a value for n such that the expression is not a
+    prime number?</p>
+
+    <div class="problem" data-problem-number="1">
+      <p>Which of the following do you think might be an example of
+      deductive reasoning? Inductive reasoning? “Reasoning” that is
+      neither inductive nor deductive? Explain.</p>
+
+      <p class="problem-part">. All dogs are friendly.<br>
+      All friendly things are huggable.<br>
+      If something is huggable then it’s a cat.<br>
+      Therefore, all dogs are cats.</p>
+
+      <p class="problem-part">. All dogs are blue.<br>
+      All animals are blue.<br>
+      Therefore, all dogs are animals.</p>
+
+      <p class="problem-part">. Every year since records were kept,
+      if it rained in Cyber City on a particular day, it has rained
+      three days later.<br>
+      It rained in Cyber City this past Monday.<br>
+      Therefore, it will rain in Cyber City this Thursday.</p>
+
+      <p class="problem-part">. Whenever the weather is fine, Rose
+      goes to the beach.<br>
+      Rose is now at the beach.<br>
+      So the weather must be fine.</p>
+    </div>
+
+    <p>In this lesson not only will we explore logic problems
+    including some similar to the ones in problem 1, but we will
+    also introduce a different kind of geometry, called $finite
+    geometry$. As its name suggests, finite geometry, unlike the
+    geometry to which you are accustomed with an infinity of
+    points, lines, planes, and so on, concerns itself solely with
+    finite numbers of elements.</p>
+
+    <p>We will study some of these geometries not only because of
+    their quirky elegance but also because they provide a look into
+    the nature of mathematical proof and help to sharpen your
+    skills in developing valid logical arguments. They also show
+    the power of visualization as an aid in solving more difficult
+    problems.</p>
+
+    <h2>Development</h2>
+
+    <p>As you know from your work in Euclidean Geometry, any system
+    of deductive reasoning consists of undefined terms,
+    definitions, postulates (axioms), rules of logic (akin to
+    common sense), and theorems (proved statements).</p>
+
+    <p>Recall that a $postulate$ ($axiom)$ is a statement whose
+    truth is to be accepted without proof, such as the line
+    postulate in Euclidean Geometry, which states that one and only
+    one line can be drawn through 2 distinct (different)
+    points.</p>
+
+    <p>And the truth of a $theorem$ is established by applying the
+    rules of logic to the postulates. At each step in the proof of
+    a theorem you must indicate which postulate you are applying,
+    or which previously proved theorem you are drawing upon.</p>
+
+    <p>Why must there be undefined terms? Is it possible to define
+    every word/term? Try defining the color blue for a person who
+    has no idea what blue is. And assume that if a person does not
+    know what blue is, it is likely that the person will not know a
+    host of other words associated with the color blue.</p>
+
+    <p>But, of more importance, would the correctness of your
+    reasoning be in<br>
+    question if some of the words used in the postulates were not
+    defined? For example, supposed we replaced some of the words in
+    problem 1a with words whose meanings you did not know, would
+    you still conclude that it was a case<br>
+    of deductive reasoning?</p>
+
+    <div class="problem" data-problem-number="2">
+      <p>Is the following an example of deductive reasoning?<br>
+      Inductive reasoning? “Reasoning” that is neither inductive
+      nor deductive?<br>
+      <br>
+      All blewters are sartoasted.<br>
+      All sartoasted things are ducated.<br>
+      If something is ducated then it’s an ook.<br>
+      Therefore, all blewters are ooks.</p>
+    </div>
+
+    <div class="problem" data-problem-number="3">
+      <p>Let’s try to draw a conclusion using all of the three
+      postulates below.<br>
+      <br>
+      Postulate 1. No ooks are acks.<br>
+      Postulate 2. All kooks are ooks.<br>
+      Postulate 3. All pocks are acks.</p>
+
+      <p class="problem-part">. Draw, if possible, a diagram
+      satisfying all three postulates using exactly 3 ooks, 2 kooks
+      and 4 acks.</p>
+
+      <p class="problem-part">. Compare your answer to part a with
+      others. How many ooks did you have that were not kooks? How
+      many acks did you have that were not pocks?</p>
+    </div>
+
+    <div class="problem" data-problem-number="4">
+      <p>In problem 3, is it correct to conclude that no kooks are
+      pocks? Prove your answer.</p>
+    </div>
+
+    <p>There are a few different ways to solve problem 4. You might
+    have used a kind of indirect argument, or, if you are more
+    visually inclined, you might have used a Venn diagram, as
+    suggested by problem 3.</p>
+
+    <div class="problem" data-problem-number="5">
+      <p>Let’s first look at an indirect argument.</p>
+
+      <p class="problem-part">. We’re eventually trying to prove
+      that no kooks are pocks,<br>
+      but to start out, suppose that the opposite were true. That
+      is, suppose there is some kook that is also a pock. Using<br>
+      Postulate 3, what conclusion can you draw about that
+      kook?</p>
+
+      <p class="problem-part">. Using your answer to part a, and
+      Postulate 1, what new<br>
+      conclusion can you draw about our kook?</p>
+
+      <p class="problem-part">. Now use Postulate 2 to complete
+      your argument.</p>
+    </div>
+
+    <p>This kind of argument you used in problem 5 is called $proof
+    by contradiction.$<br>
+    Here is how it works. First, assume that the original statement
+    you want to<br>
+    prove is false. Second, by reasoning from this assumption,
+    reach a conclusion that is impossible — impossible, either
+    because it contradicts a postulate or an established theorem,
+    or because it contradicts the given information. Third, since
+    assuming your original statement was false led to
+    contradictions of known facts, you can now conclude that the
+    original statement must instead be true.</p>
+
+    <p>This kind of argument, proof by contradiction, makes use of
+    a very important fact in the rules of logic — that any
+    statement is equivalent to (exactly the same as) its
+    $contrapositive$. Some of you may have encountered this term
+    before. Here’s an example of a statement and its
+    contrapositive.</p>
+
+    <p>Statement: To be selected for Eightnotes you have to be a
+    singing sensation.</p>
+
+    <p>Contrapositive: If you are not a singing sensation, then you
+    will not be selected to Eightnotes. [or you can kiss Eightnotes
+    goodbye.]</p>
+
+    <p>Here’s another:</p>
+
+    <p>Statement: If an animal is a zebra, then it has stripes.</p>
+
+    <p>Contrapositive: If an animal does not have stripes, then it
+    is not a zebra.</p>
+
+    <p>Would you agree that in the example above the statement and
+    its contrapositive are equivalent? What follows is a somewhat
+    less subtle use of the contrapositive. In the problem, x is
+    considered to be an integer.</p>
+
+    <div class="problem" data-problem-number="6">
+      <p>If x is not equal to 3, then ${x^3}$ is not equal to
+      27.</p>
+
+      <p class="problem-part">. Write the contrapositive of the
+      above statement.</p>
+
+      <p class="problem-part">. Is it easier to prove the statement
+      directly, or to prove its contrapositive?</p>
+    </div>
+
+    <p>Back to problem 4. For a more visual approach, you might
+    have represented each postulate by a Venn diagram (see below)
+    and used the final picture to reach your conclusion.</p>
+
+    <figure>
+      <img src="images/09-4-logic-and-finite-geometry/image4.tif"
+      alt="image4.tif"><br>
+      $Postulate 1<br>
+      $
+    </figure>
+
+    <figure>
+      <br>
+      <img src="images/09-4-logic-and-finite-geometry/image51.tif"
+      alt="image51.tif"><br>
+      $Postulate 2$<br>
+      <br>
+      <br>
+      <img src="images/09-4-logic-and-finite-geometry/image61.tif"
+      alt="image61.tif"><br>
+      $Postulate 3$
+    </figure>
+
+    <div class="problem" data-problem-number="7">
+      <p>Draw Venn diagrams for the postulates in problems 1a and
+      1b, and use them to check the answers you gave earlier.</p>
+    </div>
+
+    <p>Next we will take a look at some finite geometries. But
+    before we explore a more traditional example with “points”,
+    “lines”, etc., let’s look at one that might be a tad more
+    familiar.</p>
+
+    <div class="problem" data-problem-number="8">
+      <p>Postulate 1. There are six people and four
+      entrees.&nbsp;<br>
+      Postulate 2. Everyone is sharing at least one entree with at
+      least one other person.&nbsp;<br>
+      Postulate 3. Everyone is eating.&nbsp;<br>
+      <br>
+      Draw out two different actual dinners that satisfy the
+      postulates.&nbsp; In your diagrams you may use anything you
+      please to represent people and entrees, but you have no
+      choice regarding six and four.<br>
+      <br>
+      The diagrams you drew are called $models$.</p>
+    </div>
+
+    <p>Here is a more traditional one with three postulates. The
+    terms “lines” and “points” are undefined and you must resist
+    the temptation to think of these<br>
+    elements the way you did in Euclidean Geometry. For example, in
+    a finite<br>
+    geometry a “line” cannot contain an infinite number of “points”
+    since there<br>
+    are only a finite number of “points” in these geometries.</p>
+
+    <div class="problem" data-problem-number="9">
+      <p>Postulate 1. There are 5 points and 5 lines.<br>
+      Postulate 2. Every line contains at least 2 points.<br>
+      Postulate 3. Every point is on at least one line.</p>
+
+      <p class="problem-part">. Check that the following diagram
+      represents the set of<br>
+      postulates — that, in fact, it is a model.<br>
+      <br></p>
+    </div>
+
+    <figure>
+      <img src=
+      "images/09-4-logic-and-finite-geometry/diagram%209a.tif" alt=
+      "diagram%209a.tif"><br>
+      <br>
+    </figure>
+
+    <p class="problem-part">. The following is also a model for the
+    system, but is<br>
+    essentially the same as the one above. Why does this claim make
+    sense? (Think back to your graph theory lesson.)</p>
+
+    <figure>
+      <img src=
+      "images/09-4-logic-and-finite-geometry/diagram%209b.tif" alt=
+      "diagram%209b.tif">
+    </figure>
+
+    <div class="problem" data-problem-number="10">
+      <p>On a soccer team, 5 students are vying for 5 spots. The
+      coach wants to make sure that there are at least 2 players
+      for each position, and that each player gets to play in at
+      least one position. Draw a model for this system.</p>
+    </div>
+
+    <div class="problem" data-problem-number="11">
+      <p>Using the postulates and models of problem 9, one group of
+      students concluded that every point must be on at most two
+      lines. Draw a model different from those in problem 7 to
+      refute that claim.</p>
+    </div>
+
+    <p>Although models are extremely helpful in creating and
+    examining conjectures, you have to be careful not to rely on
+    models to construct proofs. In a very few cases it might be
+    possible to construct every possible model satisfying all the
+    postulates, but in general that would be very difficult to do.
+    And even if you could construct all possible models, it might
+    still be difficult to prove that you have done so. So to prove
+    conclusions, you should reason directly from the
+    postulates.</p>
+
+    <div class="problem" data-problem-number="12">
+      <p>Based on your models in problems 9 and 11, make a claim,
+      then try to refute it by drawing yet another model satisfying
+      all the postulates of problem 9.</p>
+    </div>
+
+    <div class="problem" data-problem-number="13">
+      <p>In the following geometry with four postulates, lines and
+      points are undefined.<br>
+      <br>
+      Postulate 1. There exist exactly 3 points.<br>
+      Postulate 2. Given any 2 points, there is exactly one line on
+      them.<br>
+      Postulate 3. Not all points are on the same line.<br>
+      Postulate 4. Given any 2 lines, they are on at least one
+      common point.</p>
+
+      <p class="problem-part">. Draw a model.</p>
+
+      <p class="problem-part">. Prove that 2 different lines cannot
+      have more than one<br>
+      point in common. (You may use postulate 2 and proof by
+      contradiction.)</p>
+
+      <p class="problem-part">. Can there be 4 lines?</p>
+
+      <p class="problem-part">. Prove that not all lines have the
+      same point in common.</p>
+
+      <p class="problem-part">. Are there parallel lines in this
+      system? (In finite geometries, two lines are $parallel$ if
+      they do not share a common point.)</p>
+    </div>
+
+    <p>Before working in any deductive system it is important to
+    examine the postulates for $consistency$ — is it possible for
+    all the postulates to be true at the same time? The rule of
+    thumb is that if you can draw a diagram to represent the set of
+    postulates, then the postulates are consistent. Can you come up
+    with some reasonable argument why drawing a diagram would allow
+    the claim that the<br>
+    postulates are consistent? The systems in problems 8 and 9
+    passed the test since we were able to construct a model for
+    each.</p>
+
+    <div class="problem" data-problem-number="14">
+      <p>Check the following system for consistency. Lines and
+      points are undefined terms.<br>
+      <br>
+      Postulate 1. There are 4 points and 5 lines.<br>
+      Postulate 2. Every line contains exactly 2 points.<br>
+      Postulate 3. Every point is on exactly 2 lines.</p>
+    </div>
+
+    <div class="problem" data-problem-number="15">
+      <p>Let’s now create a finite geometry that seems less
+      abstract than the previous two.</p>
+
+      <p class="problem-part">. Replace undefined terms “points”
+      and “lines” in problem 13 by new undefined terms “students”
+      and “committees” respectively, and rewrite the four
+      postulates, changing the language a bit to make sense with
+      the new terms.</p>
+
+      <p class="problem-part">. Draw a chart of students and
+      committees that would<br>
+      represent the postulates. (Your chart should have 3 rows<br>
+      for the 3 students, and as many columns for committees<br>
+      as you wish.)</p>
+
+      <p class="problem-part">. Are your postulates in part a
+      consistent?</p>
+
+      <p class="problem-part">. How many committees did you finally
+      end up with?</p>
+
+      <p class="problem-part">. Is there a student who is on all
+      committees?</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem" data-problem-number="16">
+      <p>Which of the following do you think might be an example of
+      deductive reasoning? Explain.</p>
+
+      <p class="problem-part">. Any student not voting is
+      irresponsible.<br>
+      Jumbo did not vote.<br>
+      Therefore, Jumbo is irresponsible.</p>
+
+      <p class="problem-part">. Any student not voting is
+      irresponsible.<br>
+      Jumbo is irresponsible.<br>
+      Therefore, Jumbo did not vote.</p>
+
+      <p class="problem-part">. If bruins win, then cardinals
+      weep.<br>
+      If students don’t turn in their papers, then teachers become
+      depressed.<br>
+      If students turn in their papers, then cardinals don’t
+      weep.<br>
+      Therefore, if bruins win, teachers become depressed.</p>
+    </div>
+
+    <div class="problem" data-problem-number="17">
+      <p>Write the contrapositives for the following
+      statements.</p>
+
+      <p class="problem-part">. If two angles are right angles,
+      then the two angles are<br>
+      congruent.</p>
+
+      <p class="problem-part">. If you are a Park student, then you
+      will seek the truth.</p>
+
+      <p class="problem-part">. If it doesn’t rain, I’ll go to the
+      park.</p>
+
+      <p class="problem-part">. All apples are red.</p>
+    </div>
+
+    <div class="problem" data-problem-number="18">
+      <p>Describe a geometry with postulates the same as in problem
+      13 except, instead of points and lines use birds and trees,
+      beads and wires, trees and rows of trees, stars and galaxies,
+      or some other pair of your choice.</p>
+    </div>
+
+    <div class="problem" data-problem-number="19">
+      <p>For the following geometry with three postulates, the<br>
+      undefined terms are “points” and “lines”.<br>
+      <br>
+      Postulate 1. There are 3 points.<br>
+      Postulate 2. Every line contains exactly 2 points.<br>
+      Postulate 3. Every point is on at least one line.</p>
+
+      <p class="problem-part">. Draw two different models.</p>
+
+      <p class="problem-part">. Could there be any parallel lines
+      in this geometry?</p>
+    </div>
+
+    <div class="problem" data-problem-number="20">
+      <p>In problem 19 above, it seems as though there can be no
+      more than 3 lines. What do you think?<br>
+      <br>
+      <br></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="problem" data-problem-number="21">
+      <p>Write a concluding statement for the<br>
+      following.<br>
+      <br>
+      If one is not a croot, then one is not a lurl.<br>
+      If one is a bleep, then one is a gurm.<br>
+      If one is a pift, then one is a lurl.<br>
+      If one is a croot, then one is not a gurm.<br>
+      <br>
+      Therefore, if . . . . . . . then . . . . . . .<br>
+      <br>
+      (Make sure your conclusion makes use of all of the
+      postulates.)</p>
+    </div>
+
+    <div class="problem" data-problem-number="22">
+      <p>What conclusion can you draw from the following?<br>
+      <br>
+      If the triangle is acute, then the problem will be easy.<br>
+      If you are in Tony’s class, then the<br>
+      problem will not be easy.<br>
+      If the triangle is acute, then you are in Tony’s class.</p>
+    </div>
+
+    <div class="problem" data-problem-number="23">
+      <p>Back to problem 13.</p>
+
+      <p class="problem-part">. Prove that there exist 3 and only 3
+      lines. (You may use the theorem you proved in part b as well
+      as postulates 4 and 1, and proof by contradiction.)</p>
+
+      <p class="problem-part">. Try to draw a model that is
+      different from your model in part a of<br>
+      problem 13.</p>
+    </div>
+
+    <div class="problem" data-problem-number="24">
+      <p>Determine the consistency of each of the following
+      systems.</p>
+
+      <p class="problem-part">. In this system, the following 3<br>
+      axioms hold. Squirrels and trees<br>
+      are the undefined terms.<br>
+      <br>
+      Postulate 1. There are exactly 3 squirrels.<br>
+      Postulate 2. Every squirrel climbs<br>
+      at least 2 trees.<br>
+      Postulate 3. No tree is climbed by more than 2 squirrels.</p>
+
+      <p class="problem-part">. In this system, the following 4
+      axioms hold. Hearts, spades and trump(s) are the undefined
+      terms.<br>
+      <br>
+      Postulate 1. There is at least one heart.<br>
+      Postulate 2. For each pair of spades, there is one and only
+      one heart that trumps them.<br>
+      Postulate 3. Each heart trumps at least 2 spades.<br>
+      Postulate 4. Given any heart, there is at least one spade it
+      does not trump.</p>
+    </div>
+
+    <div class="problem" data-problem-number="25">
+      <p>In this system, the following 5 postulates hold. Lines and
+      points are the undefined terms.<br>
+      <br>
+      Postulate 1. Each pair of lines has at least one point in
+      common.<br>
+      Postulate 2. Each pair of lines has no more than one point in
+      common.<br>
+      Postulate 3. Every point is on at least 2 lines.<br>
+      Postulate 4. Every point is not on more than 2 lines.<br>
+      Postulate 5. There exist exactly 4 lines.</p>
+
+      <p class="problem-part">. Is the system consistent?</p>
+
+      <p class="problem-part">. Prove that every pair of lines has
+      exactly one point in common.</p>
+
+      <p class="problem-part">. Prove that every point belongs to
+      exactly 2 lines.</p>
+
+      <p class="problem-part">. Prove that there are exactly 6
+      points.</p>
+
+      <p class="problem-part">. Prove that every line contains
+      exactly 3 points.</p>
+
+      <p class="problem-part">. Are there parallel lines in this
+      system?</p>
+    </div>
+
+    <div class="problem" data-problem-number="26">
+      <p>Here’s a chance for you to create your own geometry.</p>
+
+      <p class="problem-part">. Invent an axiom system and a model
+      for it.</p>
+
+      <p class="problem-part">. Prove a theorem in your
+      geometry.</p>
+
+      <p class="problem-part">. Now add an additional axiom that
+      would make the system inconsistent.</p>
+    </div>
+
+    <div class="problem" data-problem-number="27">
+      <p>Use postulates to describe a geometry that would fit the
+      model below.</p>
+    </div>
+
+    <figure>
+      <img src=
+      "images/09-4-logic-and-finite-geometry/diagram%2027.tif" alt=
+      "diagram%2027.tif"><br>
+      <br>
+    </figure>
+
+    <p class="Problems---Narrative-text para-style-override-5">In
+    the following three problems, make sure that your solution
+    constitutes a good argument.</p>
+
+    <div class="problem" data-problem-number="28">
+      <p>Three large containers are filled with marbles. One is
+      filled with red marbles, one with blue, and one with a
+      mixture of blue and red marbles. The problem is that the
+      containers have all been mislabeled, plus none of the
+      containers has the<br>
+      correct label. Describe how you would correctly label the
+      containers looking at the least number of marbles.</p>
+    </div>
+
+    <div class="problem" data-problem-number="29">
+      <p>And how about this quite famous one.<br>
+      Someone is looking at a picture and says: “Brothers and
+      sisters have I none, but this man’s father is my father’s
+      son.” Who is in the picture?</p>
+    </div>
+
+    <div class="problem" data-problem-number="30">
+      <p>In this system, the following 6 postulates hold. Lines and
+      points are the undefined terms.<br>
+      <br>
+      Postulate 1. Given any two points, there is at least one line
+      that contains them.<br>
+      Postulate 2. Given any two points, there is at most one line
+      that contains them.<br>
+      Postulate 3. Given any two lines, there is at least one point
+      that is contained in both lines.<br>
+      Postulate 4. Given any line, there are at least three points
+      that are contained in the line.<br>
+      Postulate 5. Given any line, there is at least one point that
+      is not on the line.<br>
+      Postulate 6. There is at least one line.</p>
+
+      <p class="problem-part">. Are there parallel lines in
+      this<br>
+      system?</p>
+
+      <p class="problem-part">. Prove that there exists at
+      least<br>
+      one point.</p>
+
+      <p class="problem-part">. Prove that any 2 points are on<br>
+      exactly one line.</p>
+
+      <p class="problem-part">. Prove that 2 lines have exactly<br>
+      one point in common.</p>
+
+      <p class="problem-part">. Prove that if P is any point, there
+      is at least one line that does not contain P.</p>
+
+      <p class="problem-part">. Prove that every point lies on at
+      least 3 lines.</p>
+    </div>
+
+    <div class="problem" data-problem-number="31">
+      <p>As we did in problem 15, let’s make<br>
+      problem 30 a little less abstract.</p>
+
+      <p class="problem-part">. Replace undefined terms “points”
+      and “lines” by new undefined terms (you use “students” and
+      “committees” again if you like), and rewrite the postulates,
+      changing the language a bit to accommodate the new terms.</p>
+
+      <p class="problem-part">. Draw a chart that would represent
+      the postulates. How many “points” did you end up with? How
+      many “lines”?</p>
+
+      <p class="problem-part">. Would the addition of another
+      “point” or “line” violate any of the postulates?</p>
+    </div>
+
+    <div class="problem" data-problem-number="32">
+      <p>Is the following diagram a model for the system in problem
+      30? If you think not, explain.</p>
+    </div>
+
+    <div class="problem" data-problem-number="33">
+      <p>Decide whether or not the following<br>
+      system is consistent:<br>
+      <br>
+      Postulate 1. The town of Fairhaven<br>
+      consists exclusively of married couples and their
+      children.<br>
+      Postulate 2. There are more adults than children.<br>
+      Postulate 3. Every boy has a sister.<br>
+      Postulate 4. There are more boys than girls.<br>
+      Postulate 5. There are no childless couples.</p>
+    </div>
+
+    <div class="problem" data-problem-number="34">
+      <p>A system is considered $dependent$ if at least one of the
+      axioms follows from the other axioms; otherwise it is
+      considered $independent$. To show that a system is dependent,
+      it is only necessary to show that one axiom follows from the
+      others. However to show that a system is independent, one
+      must show that no one axiom follows from the others.<br>
+      <br>
+      Construct two systems, one independent and one dependent.</p>
+    </div>
+
+    <div class="problem" data-problem-number="35">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">. Add $3x + \frac{1}{{2x}}$</p>
+
+      <p class="problem-part">. Subtract $\frac{{16}}{x} - \frac{{4
+      + x}}{{{x^2}}}$</p>
+
+      <p class="problem-part">. Simplify $\sqrt {75} - \sqrt {24} +
+      \sqrt {18} $ z</p>
+
+      <p class="problem-part">. Solve ${x^2} + 3x = 2$</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Exploring<br>
+    in<br>
+    Depth</h2>
+  </section>
+
+  <section>
+    <img src=
+    "images/09-4-logic-and-finite-geometry/diagram%2033.tif" alt=
+    "diagram%2033.tif">
+  </section>
+</article>
