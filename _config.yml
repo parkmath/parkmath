@@ -7,8 +7,8 @@ description: >
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/parkmath/" # the subpath of your site, e.g. /blog/
+url: "http://parkmath.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -22,3 +22,9 @@ defaults:
       path: lessons
     values:
       layout: lesson
+
+
+# Prose metadata
+prose:
+  siteurl: "http://parkmath.github.io/parkmath"
+  
