@@ -4,20 +4,14 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Park School Mathematics</h1>
 
-  <ul class="post-list">
+  <ul class="toc">
     {% for page in site.pages %}
       <li>
-        <h2>
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">
-            {{ page.path }}
-          </a>
-        </h2>
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.name }}</a>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

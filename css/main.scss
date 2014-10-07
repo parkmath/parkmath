@@ -24,7 +24,14 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// used by grid mixins
 $screen-sm-min:    768px;
+$screen-md-min:    922px;
+$screen-lg-min:    1200px;
+
+$container-sm:    (720px + $spacing-unit);
+$container-md:    (940px + $spacing-unit);
+$container-lg:    (1140px + $spacing-unit);
 
 
 // Using media queries with like this:
@@ -41,67 +48,10 @@ $screen-sm-min:    768px;
 }
 
 
-%clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-/*
-THE FOLLOWING THREE MIXINS TAKEN FROM TWITTER BOOTSTRAP SASS
-
-The MIT License (MIT)
-
-Copyright (c) 2013 Twitter, Inc
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
- */
- 
-// Generate the small columns
-@mixin make-sm-column($columns, $gutter: $spacing-unit) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
-
-  @media (min-width: $screen-sm-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
-}
-@mixin make-sm-column-offset($columns) {
-  @media (min-width: $screen-sm-min) {
-    margin-left: percentage(($columns / $grid-columns));
-  }
-}
-// Creates a wrapper for a series of columns
-@mixin make-row($gutter: $spacing-unit) {
-  margin-left:  ($gutter / -2);
-  margin-right: ($gutter / -2);
-  @extend %clearfix;
-}
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "normalize",
         "base",
         "layout",
         "lessons"
