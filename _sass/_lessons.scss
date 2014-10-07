@@ -1,0 +1,144 @@
+$font-size-problem-numbers: 3.5em;
+
+.lesson {
+  counter-reset: problem;
+  font-family: 'Garamond';
+
+  figure,
+  img { max-width: 100%; }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Gill Sans';
+  }
+
+
+  table {
+    border: 1px solid #666;
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          border: 1px solid #666;
+          padding: 0 .5em;
+        }
+      }
+    }
+    > thead > tr {
+      > th,
+      > td {
+        border-bottom-width: 2px;
+      }
+    }
+  }
+
+
+  /* Lesson title */
+  h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 3em;
+    text-align: right;
+    padding: 0 1em;
+  }
+  
+  /* for authors to use */
+  .fig-md { width: 50%; }
+  .fig-sm { width: 25%; }
+  
+  em.vocab {
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .problem {
+    counter-increment: problem;
+    counter-reset: part;
+    
+    margin-top: 3em;
+
+    /* Problem Numbers */
+    position: relative;
+    &:before {
+      content: counter(problem);
+      position: absolute;
+      right: calc(100%);
+      top: calc(-.5em + .5rem);
+      
+      font-family: 'Garamond';
+      font-size: $font-size-problem-numbers;
+      line-height: 1;
+      color: #aaa;
+    }
+    
+    .problem-part {
+      counter-increment: part;
+      &:before {
+        content: counter(part, lower-alpha);
+      }
+      
+    }
+  }
+
+
+
+  .development {
+    @include make-row();
+
+    h2 {
+      @include make-sm-column(9);
+      @include make-sm-column-offset(1);
+      font-weight: 400;
+      color: #777;
+      font-size: 3em;
+    }
+    
+    & > p {
+      @include make-sm-column(9);
+      @include make-sm-column-offset(1);
+    }
+    .problem {
+      @include make-sm-column(8);
+      @include make-sm-column-offset(2);
+    }
+  }
+
+
+  .problems, .exploring-in-depth {
+    @include make-row();
+        
+    & > p {
+      @include make-sm-column(6);
+      margin-top: 3em;
+    }
+    .problem {
+      @include make-sm-column(5);
+      @include make-sm-column-offset(1);
+    }
+  }
+  
+  .problems {
+    h2 {
+      @include make-sm-column(6);
+
+      font-weight: 700;
+      color: #bbb;
+      font-size: 4em;
+    }
+  }
+  
+  .exploring-in-depth {
+    h2 {
+      @include make-sm-column(3);
+      @include make-sm-column-offset(3);
+      font-weight: 400;
+      color: #777;
+      font-size: 3em;
+    }
+  }
+  
+}
