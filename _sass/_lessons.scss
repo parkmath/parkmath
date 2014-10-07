@@ -135,6 +135,7 @@ $font-size-problem-numbers: 3.5em;
     h2 {
       @include make-sm-column(3);
       @include make-sm-column-offset(3);
+      margin-top: 0;
       font-weight: 400;
       color: #777;
       font-size: 3em;
