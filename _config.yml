@@ -26,5 +26,29 @@ defaults:
 
 # Prose metadata
 prose:
+  rooturl: lessons
   siteurl: "http://parkmath.github.io/parkmath"
+  media: lessons/images
+  metadata:
+    lessons:
+      - name: book
+        field:
+          element: number
+          label: Book Number
+          value: 0
+      - name: lesson
+        field:
+          element: number
+          label: Lesson Number
+          value: 0
+      - name: title
+        field:
+          element: text
+          label: Title
+          value: ''
+      - name: layout
+        field:
+          element: hidden
+          value: lesson
+          
   
