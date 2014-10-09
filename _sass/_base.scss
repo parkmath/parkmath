@@ -1,4 +1,38 @@
 
+@mixin debug($color: #ff8888) {
+  background-color: $color;
+}
+
+// Using media queries with like this:
+// @include media-query(maxwidth) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// convenience shorthand for the mixin above,
+// also handling print.
+@mixin mq($condition) {
+  @if $condition == sm {
+    @include media-query($screen-sm-min) { @content; }
+  }
+  @else if $condition == md {
+    @include media-query($screen-md-min) { @content; }
+  }
+  @else if $condition == lg {
+    @include media-query($screen-lg-min) { @content; }
+  }
+  @else if $condition == print {
+    @media print { @content; }
+  }
+}
+
 /**
  * Box sizing:
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
@@ -13,16 +47,21 @@ html {
 /**
  * Basic styling
  */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+ 
+// This is in a mixin so we can also use it from the @page rule.
+@mixin base-style {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
 }
 
+body {
+  @include base-style();
+}
 
 
 /**
@@ -219,13 +258,20 @@ THE SOFTWARE.
   padding-left:  ($gutter / 2);
   padding-right: ($gutter / 2);
 
-  @media (min-width: $screen-sm-min) {
+  @include mq(sm) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+  @include mq(print) {
     float: left;
     width: percentage(($columns / $grid-columns));
   }
 }
 @mixin make-sm-column-offset($columns) {
-  @media (min-width: $screen-sm-min) {
+  @include mq(sm) {
+    margin-left: percentage(($columns / $grid-columns));
+  }
+  @include mq(print) {
     margin-left: percentage(($columns / $grid-columns));
   }
 }
@@ -241,14 +287,9 @@ THE SOFTWARE.
   padding: 0 ($spacing-unit / 2);
   @extend %clearfix;
 
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
-  }
-  @media (min-width: $screen-md-min) {
-    width: $container-md;
-  }
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
-  }
+  @include mq(sm) { width: $container-sm; }
+  @include mq(md) { width: $container-md; }
+  @include mq(lg) { width: $container-lg; }
+  @include mq(print) { width: 100%; }
 }
  

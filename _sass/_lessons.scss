@@ -9,11 +9,10 @@ $font-size-problem-numbers: 3.5em;
   text-transform: uppercase;
   
   h1 { 
-    font-size: $base-font-size; 
+    font-size: 1em; 
     letter-spacing: 0;
   }
   .book { float: right; text-align: right; }
-  
 }
 
 .lesson {
