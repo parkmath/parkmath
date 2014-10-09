@@ -1,0 +1,23 @@
+
+.book {
+  
+  .lesson {
+    counter-increment: LessonNumber;
+    &:before {
+      content: "LESSON " counter(LessonNumber)
+    }
+  }
+  
+  .toc .lessons {
+      margin-left: 0;
+      padding-left: 0;
+      list-style: none;
+
+      > li {
+          margin-bottom: $spacing-unit;
+          a:after {
+            content: leader(dotted) " " target-counter(attr(href), LessonNumber);
+          }
+      }
+  }
+}
