@@ -1,0 +1,13 @@
+
+.home {
+  .toc,
+  .lessons {
+      margin-left: 0;
+      padding-left: 0;
+      list-style: none;
+
+      > li {
+          margin-bottom: $spacing-unit;
+      }
+  }
+}

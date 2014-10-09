@@ -8,7 +8,7 @@ layout: default
     {% for book in books %}{% unless book.name == "" %}
       <li class="book">
         {% assign index = book.name | minus: 1 %}
-        <h2>Book {{ book.name }}: {{ site.data.books[index].title }}
+        <h2>Book {{ book.name }}: {{ site.data.books[index].title }}</h2>
         <ul class="lessons">
           {% for lesson in book.items %}
             <li>
