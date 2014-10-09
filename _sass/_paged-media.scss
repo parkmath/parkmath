@@ -1,0 +1,45 @@
+
+@mixin margin-text() {
+  @include base-style();
+  text-transform: uppercase;
+  font-size: $margin-font-size-print;
+}
+
+/**
+ * Page Setup:
+ * - margins
+ * - page numbers
+ * - running headers (book / lesson)
+ */
+@mixin page-setup() {
+  @page { 
+    size: US-Letter;
+    margin: $margin-print-outer;
+    padding: 0;
+    
+    @top-left { @include margin-text(); }
+    @top-right { @include margin-text(); }
+    @bottom-right { @include margin-text(); }
+    @bottom-left { @include margin-text(); }
+  }
+
+  @page:left {
+    margin-right: $margin-print-gutter;
+    @top-left {
+      content: string(book-title);
+    }
+    @bottom-left {
+      content: counter(page);
+    }
+  }
+
+  @page:right {
+    margin-left: $margin-print-gutter;
+    @top-right {
+      content: string(lesson-title);
+    }
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+}

@@ -101,24 +101,28 @@ $font-size-problem-numbers: 3.5em;
 
 
 
+  @mixin development-tube {
+    @include make-column(sm,9);
+    @include make-column-offset(sm,1);
+    @include make-column(print, 9);
+    @include make-column-offset(print, 1);
+  }
+
   .development {
     @include make-row();
 
     h2 {
-      @include make-sm-column(9);
-      @include make-sm-column-offset(1);
+      @include development-tube;
       font-weight: 400;
       color: #777;
       font-size: 3em;
     }
     
     & > p {
-      @include make-sm-column(9);
-      @include make-sm-column-offset(1);
+      @include development-tube;
     }
     .problem {
-      @include make-sm-column(8);
-      @include make-sm-column-offset(2);
+      @include development-tube;
     }
   }
 
@@ -127,18 +131,28 @@ $font-size-problem-numbers: 3.5em;
     @include make-row();
         
     & > p {
-      @include make-sm-column(6);
+      @include make-column(sm,6);
+      @include make-column(print, 12);
       margin-top: 3em;
     }
     .problem {
-      @include make-sm-column(5);
-      @include make-sm-column-offset(1);
+      @include make-column(sm,5);
+      @include make-column-offset(sm,1);
+
+      @include make-column(print, 10);
+      @include make-column-offset(print, 2);
+    }
+    
+    @include mq(print) {
+      column-count: 2;
+      -webkit-column-count: 2;
     }
   }
   
   .problems {
     h2 {
-      @include make-sm-column(12);
+      @include make-column(sm,12);
+      @include make-column(print, 12);
 
       font-weight: 700;
       color: #bbb;
@@ -148,13 +162,22 @@ $font-size-problem-numbers: 3.5em;
   
   .exploring-in-depth {
     h2 {
-      @include make-sm-column(3);
-      @include make-sm-column-offset(3);
+      @include make-column(sm,3);
+      @include make-column-offset(sm,3);
+
+      @include make-column(print, 6);
+      @include make-column-offset(print, 6);
+
       margin-top: 0;
       font-weight: 400;
       color: #777;
       font-size: 3em;
     }
   }
-  
+
+
+  @include mq(print) {
+    h1,h2 { page-break-after: avoid; }
+    .problem p { page-break-inside: avoid; }
+  }
 }
