@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% assign lessons = (site.lessons | where: 'book', page.book) %}
+<section class="book">
+  
+  <section class="toc">
+    <ul class="lessons">
+      {% for lesson in lessons %}
+        <li>
+          <a href="{{ page.url | prepend: site.baseurl }}#lesson-{{ page.book }}-{{ lesson.lesson }}">
+            {% include lesson-title.html lesson=lesson %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  
+  {% for lesson in lessons %}
+  {% if lesson.published %}
+  <section class="lesson" id="lesson-{{ page.book }}-{{ lesson.lesson }}">
+    {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
+    {{ lesson.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
+  </section>
+  {% endif %}
+  {% endfor %}
+  
+</section>

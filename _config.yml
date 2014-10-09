@@ -15,6 +15,12 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
+collections:
+  books:
+    output: true
+  lessons:
+    output: true
+
 # Defaults
 defaults:
   -

@@ -1,0 +1,7 @@
+{% if lesson.lesson != 0 %}
+Lesson {{ lesson.lesson }}:
+{% else %}
+Habits of Mind:
+{% endif %}
+{% assign words = (lesson.title | prepend: '' | split: ' ') %}
+{% for word in words %}{{ word | capitalize }} {% endfor %}
