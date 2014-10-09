@@ -1,8 +1,9 @@
 
 @mixin margin-text() {
   @include base-style();
+  font-size: $font-size-print-margin;
   text-transform: uppercase;
-  font-size: $margin-font-size-print;
+  color: #000;
 }
 
 /**

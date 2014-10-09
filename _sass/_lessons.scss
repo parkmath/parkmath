@@ -1,34 +1,64 @@
 
-$font-family-display: 'Gill Sans';
-$font-family-text: 'Garamond';
-$font-size-problem-numbers: 3.5em;
-
-
-.lesson-header {
-  font-family: $font-family-display;
-  text-transform: uppercase;
+/* helper mixins */
+@mixin lesson-section-heading {
+  color: $grey-color;
+  font-weight: 400;
+  text-align: right;
   
-  h1 { 
-    font-size: 1em; 
-    letter-spacing: 0;
-  }
-  .book { float: right; text-align: right; }
+  font-size: 2em;
+  margin-bottom: 1em;
+  @include mq(sm) { font-size: 3em; margin-bottom: (2em/3); }
+  @include mq(print) { font-size: 3em; margin-bottom: (2em/3); }
 }
 
+@mixin bookmark($level) {
+  @include mq(print) {
+    bookmark-level: $level; 
+    bookmark-state: closed;
+  }
+}
+
+@mixin offset-column-print-and-sm($offset, $width) {
+  @include make-column(sm, $width);
+  @include make-column-offset(sm, $offset);
+  @include make-column(print, $width);
+  @include make-column-offset(print, $offset);
+}
+
+
 .lesson {
-  counter-reset: problem;
-  font-family: 'Garamond';
-
-  figure,
-  img { max-width: 100%; }
-
-  h1,
-  h2,
-  h3 {
-    font-family: 'Gill Sans';
+  
+  /* convenience classes for lesson authors/editors to use */
+  .fig-md { width: 50%; }
+  .fig-sm { width: 25%; }
+  
+  em.vocab {
+    font-weight: bold;
+    font-style: normal;
   }
 
+  /* problem counter */  
+  counter-reset: problem;
+  
+  /* base body font */
+  font-family: $font-family-text;
 
+  /* base display font */
+  h1,
+  h2,
+  h3 { font-family: $font-family-display; }
+    
+  /* spacing for problems and narrative text between the problems.
+     (normally prefer to go with just bottom margins for consistency, 
+     but splitting it helps with some PrinceXML quirks
+  */
+  .problem,
+  & > article > section > p {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+  }
+
+  /* simple table with basic borders */
   table {
     border: 1px solid #666;
     > thead,
@@ -50,84 +80,77 @@ $font-size-problem-numbers: 3.5em;
     }
   }
 
-
-  /* Lesson title */
+  /* main lesson title */
   h1 {
+    color: $grey-color-light;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ccc;
-    font-size: 3em;
     text-align: right;
-    padding: 0 1em;
+    padding: 0;
+    
+    font-size: 2em;
+    @include mq(sm) { font-size: 3em; }
+    @include mq(print) { font-size: 3em; }
+
+    margin-bottom: 1em;
+
+    @include bookmark(1);
   }
   
-  /* for authors to use */
-  .fig-md { width: 50%; }
-  .fig-sm { width: 25%; }
+  /* subheadings for sections within lesson (Introduction, Development, etc.) */
+  h2 { @include bookmark(2); }
   
-  em.vocab {
-    font-weight: bold;
-    font-style: normal;
-  }
-  
+  /* a problem (see below for section-specific styling) */
   .problem {
     counter-increment: problem;
     counter-reset: part;
     
-    margin-top: 3em;
-
-    /* Problem Numbers */
+    /* problem numbers and problem parts */
     position: relative;
     &:before {
       content: counter(problem);
-      position: absolute;
-      right: calc(100%);
-      top: calc(-.5em + .5rem);
-      
-      font-family: 'Garamond';
-      font-size: $font-size-problem-numbers;
+      font-family: $font-family-text;
+      color: $grey-color;
       line-height: 1;
-      color: #aaa;
+      
+      font-size: 2em;
+      @include mq(sm) {
+        position: absolute;
+        right: 100%;
+        top: -.5em;
+        font-size: 3.5em;
+      }
+      /* duping code in anticipation of specialized tweaks */
+      @include mq(print) {
+        position: absolute;
+        right: 100%;
+        top: -.5em;
+        font-size: 3.5em;
+      }
     }
     
     .problem-part {
       counter-increment: part;
-      &:before {
-        content: counter(part, lower-alpha);
-      }
-      
+      &:before { content: counter(part, lower-alpha); }
     }
   }
 
 
-
-  @mixin development-tube {
-    @include make-column(sm,9);
-    @include make-column-offset(sm,1);
-    @include make-column(print, 9);
-    @include make-column-offset(print, 1);
-  }
-
+  /* the Development (and Intro and Practice) section */
   .development {
     @include make-row();
 
     h2 {
-      @include development-tube;
-      font-weight: 400;
-      color: #777;
-      font-size: 3em;
+      @include lesson-section-heading;
+      @include offset-column-print-and-sm(0, 11);
     }
     
-    & > p {
-      @include development-tube;
-    }
-    .problem {
-      @include development-tube;
-    }
+    & > p { @include offset-column-print-and-sm(1, 9); }
+    .problem { @include offset-column-print-and-sm(2, 8); }
   }
 
-
-  .problems, .exploring-in-depth {
+  /* the Problems (and Exploring in Depth) section */
+  .problems {
     @include make-row();
         
     & > p {
@@ -138,7 +161,6 @@ $font-size-problem-numbers: 3.5em;
     .problem {
       @include make-column(sm,5);
       @include make-column-offset(sm,1);
-
       @include make-column(print, 10);
       @include make-column-offset(print, 2);
     }
@@ -146,32 +168,32 @@ $font-size-problem-numbers: 3.5em;
     @include mq(print) {
       column-count: 2;
       -webkit-column-count: 2;
-    }
-  }
-  
-  .problems {
-    h2 {
+      column-fill: auto;
+      &:after {
+        column-break-after: always;
+      }
+    }  
+
+    /* Problems heading */
+    h2:first-of-type {
       @include make-column(sm,12);
-      @include make-column(print, 12);
 
       font-weight: 700;
-      color: #bbb;
-      font-size: 4em;
+      color: $grey-color-light;
+      
+      font-size: 2.5em;
+      @include mq(sm) { font-size: 4em; }
+      @include mq(print) { font-size: 4em; column-span: all; }
     }
-  }
-  
-  .exploring-in-depth {
-    h2 {
+
+    /* Exploring in Depth heading */
+    h2:nth-of-type(2) {
       @include make-column(sm,3);
       @include make-column-offset(sm,3);
-
       @include make-column(print, 6);
       @include make-column-offset(print, 6);
 
-      margin-top: 0;
-      font-weight: 400;
-      color: #777;
-      font-size: 3em;
+      @include lesson-section-heading;
     }
   }
 

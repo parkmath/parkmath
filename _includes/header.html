@@ -1,7 +1,6 @@
-<header class="site-header {% if page.book %}lesson-header{% endif %}">
+<header class="site-header">
   <div class="container">
     <h1>
-      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
       {% if page.book %}
       <div class="book">
         {% assign index = page.book | minus: 1 %}
@@ -9,6 +8,7 @@
         <a href="{{ book[0].url | prepend: site.baseurl }}">Book {{ page.book }}: {{ book[0].title }}</a>
       </div>
       {% endif %}
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
     </h1>
   </div>
 </header>

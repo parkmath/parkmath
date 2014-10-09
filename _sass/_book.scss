@@ -1,5 +1,5 @@
 
-body.book {
+.book-page {
   
   .toc .lessons {
       margin-left: 0;
@@ -23,10 +23,8 @@ $margin-print-gutter: 54pt;
   /**
    * Print-specific layout & style.
    */
-  body.book {
+  .book-page {
     counter-reset: page 1;
-    font-size: $base-font-size-print;
-
     .lesson { page-break-before: always; }
   }
   
