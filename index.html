@@ -3,15 +3,24 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Park School Mathematics</h1>
-
   <ul class="toc">
-    {% for page in site.pages %}
-      <li>
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.name }}</a>
+    {% assign books = (site.pages | group_by: "book" ) %}
+    {% for book in books %}{% unless book.name == "" %}
+      <li class="book">
+        {% assign index = book.name | minus: 1 %}
+        <h2>Book {{ book.name }}: {{ site.data.books[index].title }}
+        <ul class="lessons">
+          {% for lesson in book.items %}
+            <li>
+              <a href="{{ lesson.url | prepend: site.baseurl }}">
+                Lesson {{ lesson.lesson }}:
+                {% assign words = (lesson.title | prepend: '' | split: ' ') %}
+                {% for word in words %}{{ word | capitalize }} {% endfor %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       </li>
-    {% endfor %}
+    {% endunless %}{% endfor %}
   </ul>
-
 </div>
