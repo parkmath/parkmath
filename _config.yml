@@ -23,11 +23,16 @@ collections:
 
 # Defaults
 defaults:
-  -
-    scope:
-      path: lessons
+  - scope:
+      path: ""
+      type: lessons
     values:
       layout: lesson
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: book
 
 
 # Prose metadata
