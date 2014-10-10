@@ -2,11 +2,9 @@
   <div class="container">
     <h1>
       {% if page.book %}
-      <div class="book">
         {% assign index = page.book | minus: 1 %}
         {% assign book = (site.books | where: 'book', page.book) %}
-        <a href="{{ book[0].url | prepend: site.baseurl }}">Book {{ page.book }}: {{ book[0].title }}</a>
-      </div>
+        <a class="book" href="{{ book[0].url | prepend: site.baseurl }}">Book {{ page.book }}: {{ book[0].title }}</a>
       {% endif %}
       <a href="{{ site.baseurl }}/">{{ site.title }}</a>
     </h1>

@@ -4,7 +4,9 @@ layout: default
 
 {% assign lessons = (site.lessons | where: 'book', page.book) %}
   
-  <section class="toc">
+<section class="book">
+
+  <section class="container toc">
     <ul class="lessons">
       {% for lesson in lessons %}
       {% if lesson.published %}
@@ -33,8 +35,11 @@ layout: default
       {% if habit %}
         {% include habit-header.html habit=habit %}
       {% endif %}
+      <div class="container">
       {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
       {{ lesson.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
+      </div>
     </section>
   {% endif %}
   {% endfor %}
+</section>

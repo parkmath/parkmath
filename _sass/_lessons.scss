@@ -13,7 +13,7 @@
 
 @mixin bookmark($level) {
   @include mq(print) {
-    bookmark-level: $level; 
+    bookmark-level: $level;
     bookmark-state: closed;
   }
 }
@@ -37,7 +37,7 @@
     font-style: normal;
   }
 
-  /* problem counter */  
+  /* problem counter */
   counter-reset: problem;
   
   /* base body font */
@@ -49,7 +49,7 @@
   h3 { font-family: $font-family-display; }
     
   /* spacing for problems and narrative text between the problems.
-     (normally prefer to go with just bottom margins for consistency, 
+     (normally prefer to go with just bottom margins for consistency,
      but splitting it helps with some PrinceXML quirks
   */
   .problem,
@@ -172,7 +172,7 @@
       &:after {
         column-break-after: always;
       }
-    }  
+    }
 
     /* Problems heading */
     h2:first-of-type {
