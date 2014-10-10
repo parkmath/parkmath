@@ -133,11 +133,11 @@
 
     h2 {
       @include lesson-section-heading;
-      @include offset-column-print-and-sm(0, 11);
+      @include offset-column-print-and-sm(0, 10);
     }
     
-    & > p { @include offset-column-print-and-sm(1, 9); }
-    .problem { @include offset-column-print-and-sm(2, 8); }
+    & > p { @include offset-column-print-and-sm(2, 8); }
+    .problem { @include offset-column-print-and-sm(3, 7); }
   }
 
   /* the Problems (and Exploring in Depth) section */

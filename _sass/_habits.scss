@@ -1,3 +1,22 @@
+
+// cozy up to the site header.
+.habit-lesson-page {
+  .site-header {
+    margin-bottom: 0;
+  }
+}
+
+.habit-lesson {
+  page: habit-lesson;
+  // note: problem numbers are colored based on the containing book in
+  // habits-colors.scss
+}
+
+/**
+ *
+ * Our snazzy header.
+ *
+ */
 .habits-textfield {
   font-family: $font-family-display;
   text-transform: uppercase;
@@ -5,21 +24,31 @@
   color: $grey-color-light;
   line-height: 1;
   text-align: justify;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   word-break: break-all;
   overflow: hidden;
+  prince-text-justify: prince-cjk;
+  hyphens: auto;
 }
 
-.habit-lesson > header {
-  $lines: 4;
-  
-  font-size: .5em;
-  @include mq(sm, print) { font-size: 1em; }
-  
+.habit-header {
+  $lines: 6;
+
   margin-bottom: 1em * $lines;
+
+  font-size: .33em;
+  @include mq(sm) { font-size: 2em/3; }
+  @include mq(print) { font-size: 1em; }
   
   .left,
   .right {
+    height: 1em * $lines;
+    position: relative;
+    .habits-textfield {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+
     h1 {
       font-size: (1.33em) * $lines;
       line-height: 1;
@@ -38,33 +67,43 @@
         text-transform: none;
         font-size: .5em;
         
+        // the colorful triangle.
+        // ( note: color set in habit-colors.scss! )
         &:before {
           position: absolute;
           right: 102%;
           content: " ";
-        	width: 0;
-        	height: 0;
-        	border-top: .5em solid transparent;
-        	border-bottom: .5em solid transparent;
-        	border-right:.5em solid;
+          width: 0;
+          height: 0;
+          border-top: .5em solid transparent;
+          border-bottom: .5em solid transparent;
+          border-right:.5em solid;
           border-right-color: inherit;
         }
       }
     }
-
-    height: 1em * $lines;
-
-    position: relative;
-    .habits-textfield {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-    }
   }
-}
+  
+  @include mq(print) {
+    .left {
+      flow: static(header-left);
 
-// cozy up to the site header.
-.habit-lesson-page {
-  .site-header {
-    margin-bottom: 0;
+      h1 {
+        right: percentage(1/$grid-columns);
+        left: auto;
+      }
+    }
+    .right {
+      flow: static(header-right);
+
+      h1 {
+        right: auto;
+        left: percentage(1/$grid-columns);
+        small {
+          right: auto;
+          left: 0;
+        }
+      }
+    }
   }
 }

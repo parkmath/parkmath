@@ -13,7 +13,7 @@
  * - running headers (book / lesson)
  */
 @mixin page-setup() {
-  @page { 
+  @page {
     size: US-Letter;
     margin: $margin-print-outer;
     padding: 0;
@@ -41,6 +41,22 @@
     }
     @bottom-right {
       content: counter(page);
+    }
+  }
+  
+  @page habit-lesson {
+    margin-top: ($margin-print-outer * 3);
+  }
+  
+  @page habit-lesson:left {
+    @top-left {
+      content: flow(header-left);
+    }
+  }
+  
+  @page habit-lesson:right {
+    @top-right {
+      content: flow(header-right);
     }
   }
 }
