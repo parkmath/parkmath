@@ -36,54 +36,67 @@
 
   margin-bottom: 1em * $lines;
 
+  line-height: 1;
   font-size: .33em;
-  @include mq(sm) { font-size: 2em/3; }
-  @include mq(print) { font-size: 1em; }
+  height: 2.3em * $lines;
+  .left, .right { display: block; }
   
-  .left,
-  .right {
-    height: 1em * $lines;
-    position: relative;
-    .habits-textfield {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-    }
+  @include mq(sm) {
+    font-size: .5em;
+    height: 1.05em * $lines;
+    .left,.right { display: inline; }
+  }
+  @include mq(print) { font-size: 1em; }
 
-    h1 {
-      font-size: (1.33em) * $lines;
-      line-height: 1;
+  
+  position: relative;
+
+  .habits-textfield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  h1 {
+    font-size: (1.33em) * $lines;
+    line-height: 1;
+    
+    position: absolute;
+    right: -.04em;
+    
+    bottom: -.13em;
+
+    margin: 0;
+    
+    small {
       position: absolute;
-      bottom: -.11em;
-      right: -.04em;
+      bottom: .15em;
+      right: .1em;
       margin: 0;
-      small {
+      
+      font-weight: normal;
+      color: $grey-color-dark;
+      text-transform: none;
+      font-size: .5em;
+      
+      // the colorful triangle.
+      // ( note: color set in habit-colors.scss! )
+      &:before {
         position: absolute;
-        bottom: .15em;
-        right: .1em;
-        margin: 0;
-        
-        font-weight: normal;
-        color: $grey-color-dark;
-        text-transform: none;
-        font-size: .5em;
-        
-        // the colorful triangle.
-        // ( note: color set in habit-colors.scss! )
-        &:before {
-          position: absolute;
-          right: 102%;
-          content: " ";
-          width: 0;
-          height: 0;
-          border-top: .5em solid transparent;
-          border-bottom: .5em solid transparent;
-          border-right:.5em solid;
-          border-right-color: inherit;
-        }
+        right: 102%;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: .5em solid transparent;
+        border-bottom: .5em solid transparent;
+        border-right:.5em solid;
+        border-right-color: inherit;
       }
     }
   }
-  
+    
   @include mq(print) {
     .left {
       flow: static(header-left);
