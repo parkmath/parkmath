@@ -7,7 +7,7 @@
 
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    margin-bottom: 3em;
+    margin-bottom: lines(3);
 
     @include mq(sm, print) { min-height: 56px; }
 
@@ -42,11 +42,11 @@
   border-top: 1px solid $grey-color-light;
   margin-top: 3em;
   
-  padding: $spacing-unit 0;
+  padding: lines(2) 0;
   font-size: $small-font-size;
   color: $grey-color;
   
   h2 {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: lines(1);
   }
 }

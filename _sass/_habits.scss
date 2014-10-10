@@ -8,8 +8,14 @@
 
 .habit-lesson {
   page: habit-lesson;
+  
   // note: problem numbers are colored based on the containing book in
   // habits-colors.scss
+  
+  .development {
+    page-break-after: always;
+    margin-bottom: lines(3);
+  }
 }
 
 /**
@@ -34,7 +40,7 @@
 .habit-header {
   $lines: 6;
 
-  margin-bottom: 1em * $lines;
+  margin-bottom: lines($lines);
 
   font-size: .33em;
   @include mq(sm) { font-size: 2em/3; }

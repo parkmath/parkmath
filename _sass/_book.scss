@@ -7,7 +7,7 @@
       list-style: none;
 
       > li {
-          margin-bottom: $spacing-unit;
+          margin-bottom: lines(2);
           a:after {
             content: leader(dotted) " " target-counter(attr(href), page);
           }
@@ -19,7 +19,7 @@ $margin-print-outer:  36pt;
 $margin-print-gutter: 54pt;
 
 @import 'paged-media';
-@include mq(print) {  
+@include mq(print) {
   /**
    * Print-specific layout & style.
    */

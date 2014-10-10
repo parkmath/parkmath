@@ -14,10 +14,7 @@ $font-size-print:  11pt;
 $font-size-print-margin: 8pt;
 
 $small-font-size:  0.875em;
-$base-line-height: 1.5;
-
-$spacing-unit:     28px;
-$grid-columns:     12;
+$base-line-height: 1.3;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -28,13 +25,18 @@ $grey-color-light: lighten($grey-color, 22%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // used by grid mixins
+$grid-columns:     12;
+
+$gutter-sm:        36px;
+$gutter-print:     24px;
+
 $screen-sm-min:    768px;
 $screen-md-min:    922px;
 $screen-lg-min:    1200px;
 
-$container-sm:    (720px + $spacing-unit);
-$container-md:    (940px + $spacing-unit);
-$container-lg:    (1140px + $spacing-unit);
+$container-sm:    (720px + $gutter-sm);
+$container-md:    (940px + $gutter-sm);
+$container-lg:    (1140px + $gutter-sm);
 
 
 {% include habits-colors.scss %}
