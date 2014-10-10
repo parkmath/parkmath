@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% assign habits = (site.data.habits | where: 'name', page.title) %}
+{% assign habit = habits[0] %}
+
+<section class="lesson habit-lesson">
+  {% include habit-header.html habit=habit %}
+  {{ content }}
+</section>

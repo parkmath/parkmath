@@ -1,0 +1,67 @@
+.habits-textfield {
+  font-family: $font-family-display;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $grey-color-light;
+  line-height: 1;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.habit-lesson > header {
+  $lines: 4;
+  
+  font-size: .5em;
+  @include mq(sm) { font-size: 1em; }
+  @include mq(print) { font-size: 1em; }
+  
+  margin-bottom: 1em * $lines;
+  
+/*   .left { @include debug(#eeeeff); }
+.right { @include debug(#eeffee); }
+ */
+  .left,
+  .right {
+    h1 {
+      font-size: (1.33em) * $lines;
+      line-height: 1;
+      position: absolute;
+      bottom: -.11em;
+      right: -.04em;
+      margin: 0;
+      small {
+        position: absolute;
+        bottom: .15em;
+        right: .1em;
+        margin: 0;
+        
+        font-weight: normal;
+        color: $grey-color-dark;
+        text-transform: none;
+        font-size: .5em;
+        
+        &:before {
+          position: absolute;
+          right: 102%;
+          content: " ";
+        	width: 0;
+        	height: 0;
+        	border-top: .5em solid transparent;
+        	border-bottom: .5em solid transparent;
+        	border-right:.5em solid;
+          border-right-color: inherit;
+        }
+      }
+    }
+
+    height: 1em * $lines;
+
+    position: relative;
+    .habits-textfield {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+  }
+}

@@ -37,6 +37,8 @@ $container-md:    (940px + $spacing-unit);
 $container-lg:    (1140px + $spacing-unit);
 
 
+{% include habits-colors.scss %}
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -45,5 +47,6 @@ $container-lg:    (1140px + $spacing-unit);
         "layout",
         "home",
         "lessons",
+        "habits",
         "book"
 ;

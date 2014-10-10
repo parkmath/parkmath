@@ -1,0 +1,6 @@
+<div class="habits-textfield">
+{% assign habitnames = (site.data.habits | map: 'name') %}
+{% for num in (1...include.count) %}
+{% cycle habitnames %}
+{% endfor %}
+</div>

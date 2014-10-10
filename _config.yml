@@ -27,7 +27,9 @@ defaults:
       path: ""
       type: lessons
     values:
-      layout: lesson
+      layout: lesson # lesson | habit-lesson
+      type: content # content | habit
+      
   - scope:
       path: ""
       type: books
@@ -57,6 +59,15 @@ prose:
           element: text
           label: Title
           value: ''
+      - name: type
+        field:
+          element: select
+          label: Type
+          options:
+            - content
+            - habit
+          value: content
+          
       - name: layout
         field:
           element: hidden

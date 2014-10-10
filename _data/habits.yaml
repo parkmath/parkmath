@@ -1,0 +1,28 @@
+- name: look for patterns
+  definition: "to look for patterns amongst a set of numbers or figures"
+- name: tinker
+  definition: "to play around with numbers, figures, or other mathematical expressions in order to learn something more about them or the situation; experiment"
+- name: describe
+  definition: "to describe clearly a problem, a process, a series of steps to a solution; modu- late the language (its complexity or formalness) depending on the audience"
+- name: visualize
+  definition: "to draw, or represent in some fashion, a diagram in order to help understand a problem; to interpret or vary a given diagram"
+- name: represent symbolically
+  definition: "to use algebra to solve problems efficiently and to have more confidence in one’s answer, and also so as to communicate solutions more persuasively, to acquire deeper understanding of problems, and to investigate the possibility of multiple solutions"
+- name: prove
+  definition: "to desire that a statement be proved to you or by you; to engage in dialogue aimed at clarifying an argument; to establish a deductive proof; to use indirect reasoning or a counter-example as a way of constructing an argument"
+- name: check for plausibility
+  definition: "to routinely check the reasonableness of any statement in a problem or its proposed solution, regardless of whether it seems true or false on initial impression; to be particularly skeptical of results that seem contradictory or implausible, whether the source be peer, teacher, evening news, book, news- paper, internet or some other; and to look at special and limiting cases to see if a formula or an argument makes sense in some easily examined specific situations"
+- name: take things apart
+  definition: "to break a large or complex problem into smaller chunks or cases, achieve some understanding of these parts or cases, and rebuild the original problem; to focus on one part of a problem (or definition or concept) in order to un- derstand the larger problem"
+- name: conjecture
+  definition: "to generalize from specific examples; to extend or combine ideas in order to form new ones"
+- name: change or simplify the problem
+  definition: "to change some variables or unknowns to numbers; to change the value of a constant to make the problem easier; change one of the conditions of the problem; to reduce or increase the number of conditions; to specialize the problem; make the problem more general"
+- name: work backwards
+  definition: "to reverse a process as a way of trying to understand it or as a way of learning something new; to work a problem backwards as a way of solving"
+- name: re-examine the problem
+  definition: "to look at a problem slowly and carefully, closely examining it and thinking about the meaning and implications of each term, phrase, number and piece of information given before trying to answer the question posed"
+- name: change representations
+  definition: "to look at a problem from a different perspective by representing it using mathematical concepts that are not directly suggested by the problem; to invent an equivalent problem, about a seemingly different situation, to which the present problem can be reduced; to use a different field (mathematics or other) from the present problem’s field in order to learn more about its structure"
+- name: create
+  definition: "to invent mathematics both for utilitarian purposes (such as in constructing an algorithm) and for fun (such as in a mathematical game); to posit a series of premises (axioms) and see what can be logically derived from them"
