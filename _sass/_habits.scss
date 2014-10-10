@@ -18,25 +18,28 @@
     
     /* grey boxes */
     @include mq(sm, print) {
-      .problem p { @include offset-column-print-and-sm(2, 8); }
-
       .problem {
         /* reset column settings from base lesson style */
         margin-left: 0;
         width: 100%;
         
         background: $grey-color-light;
-        padding-top: lines(1);
+        padding: lines(1) 0;
         
         &:before {
           right: percentage(1 - 3/$grid-columns);
           top: lines(1)/3.5;
           z-index: 100;
         }
-        p {
+        .problem-content {
+          @include offset-column-print-and-sm(2, 8);
           background: $background-color;
-          padding: lines(1) percentage(1/24) lines(1) percentage(1/12);
           z-index: 50;
+          padding-top: lines(1);
+          padding-bottom: lines(1);
+          /* this would be cleaner as padding on problem-content, but
+             princexml was having issues. */
+          & > * { margin-left: percentage(1/8); }
           &:before {
             content: " ";
             position: absolute;
