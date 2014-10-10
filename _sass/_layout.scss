@@ -9,12 +9,7 @@
     border-bottom: 1px solid $grey-color-light;
     margin-bottom: 3em;
 
-    @include mq(print) {
-      min-height: 56px;
-    }
-    @include mq(sm) {
-      min-height: 56px;
-    }
+    @include mq(sm, print) { min-height: 56px; }
 
     position: relative;
 
@@ -25,11 +20,7 @@
 
       a { max-width: 50%; }
 
-      @include mq(print) {
-        font-size: 1em;
-        line-height: 56px;
-      }
-      @include mq(sm) {
+      @include mq(sm, print) {
         font-size: 1em;
         line-height: 56px;
       }

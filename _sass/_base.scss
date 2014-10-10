@@ -3,24 +3,51 @@
   background-color: $color;
 }
 
-@mixin media-query($device) {
-    @media screen and (min-width: $device) { @content; }
+@mixin min-width-query($size) {
+   @media screen and (min-width: $size) { @content; }
 }
 
-// convenience shorthand for the mixin above,
-// also handling print.
-@mixin mq($condition) {
-  @if $condition == sm {
-    @include media-query($screen-sm-min) { @content; }
-  }
-  @else if $condition == md {
-    @include media-query($screen-md-min) { @content; }
-  }
-  @else if $condition == lg {
-    @include media-query($screen-lg-min) { @content; }
-  }
-  @else if $condition == print {
-    @media print { @content; }
+/**
+ * Media query shorthand.  Usage:
+ *
+ * @include mq([condition1], [condition2], [condition3], [...]) {
+ *   // the stuff that should happen under the given conditions.
+ * }
+ *
+ * Each condition should be one of:
+ * - `sm`, `md`, `lg`: translates to `@media screen and (min-width: size) { ... }`, where
+ *   `size` is the Bootstrap-like variable, e.g. `$screen-sm-min`.  Useful
+ *   when you're being "mobile-first".
+ *
+ * - `print`: translates to `@media print`
+ *
+ * - `too-sm`: translates to `@media screen and (max-width: $screen-sm-min - 1) { ... }`.
+ *   Useful when you're being *not* "mobile-first".
+ *
+ * - an arbitrary media query: just does `@media (condition) { ... }`
+ *
+ */
+
+@mixin mq($conditions...) {
+  @each $condition in $conditions {
+    @if $condition == sm {
+      @include min-width-query($screen-sm-min) { @content; }
+    }
+    @else if $condition == md {
+      @include min-width-query($screen-md-min) { @content; }
+    }
+    @else if $condition == lg {
+      @include min-width-query($screen-lg-min) { @content; }
+    }
+    @else if $condition == too-sm {
+      @media screen and (max-width: ($screen-sm-min - 1)) { @content; }
+    }
+    @else if $condition == print {
+      @media print { @content; }
+    }
+    @else {
+      @media ($condition) { @content; }
+    }
   }
 }
 
@@ -46,15 +73,15 @@ html {
   line-height: $base-line-height;
   font-weight: 300;
   color: $text-color;
-  background-color: $background-color;  
+  background-color: $background-color;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   @include base-style();
   @include mq(sm) { font-size: $font-size-sm; }
-  @include mq(print) { 
-    font-size: $font-size-print; 
+  @include mq(print) {
+    font-size: $font-size-print;
     background-color: #fff;
     color: #000;
   }

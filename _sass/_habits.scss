@@ -14,14 +14,10 @@
   $lines: 4;
   
   font-size: .5em;
-  @include mq(sm) { font-size: 1em; }
-  @include mq(print) { font-size: 1em; }
+  @include mq(sm, print) { font-size: 1em; }
   
   margin-bottom: 1em * $lines;
   
-/*   .left { @include debug(#eeeeff); }
-.right { @include debug(#eeffee); }
- */
   .left,
   .right {
     h1 {
