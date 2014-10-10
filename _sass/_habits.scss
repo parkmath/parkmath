@@ -52,6 +52,7 @@
     h1 {
       font-size: (1.33em) * $lines;
       line-height: 1;
+      
       position: absolute;
       bottom: -.11em;
       right: -.04em;
@@ -85,6 +86,12 @@
   }
   
   @include mq(print) {
+    .left,
+    .right {
+      h1 {
+        bottom: -.13em;
+      }
+    }
     .left {
       flow: static(header-left);
 
@@ -102,6 +109,8 @@
         small {
           right: auto;
           left: 0;
+          color: black;
+          letter-spacing: -1px;
         }
       }
     }
