@@ -1,4 +1,14 @@
 
+/* based on something from Chris Coyier at http://www.css-tricks.com */
+@mixin triangle($size, $color) {
+  width: 0;
+  height: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-right: $size solid;
+  border-right-color: $color;
+}
+
 @mixin debug($color: #ff8888) {
   background-color: $color;
 }

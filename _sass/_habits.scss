@@ -15,6 +15,38 @@
   .development {
     page-break-after: always;
     margin-bottom: lines(3);
+    
+    /* grey boxes */
+    @include mq(sm, print) {
+      .problem p { @include offset-column-print-and-sm(2, 8); }
+
+      .problem {
+        /* reset column settings from base lesson style */
+        margin-left: 0;
+        width: 100%;
+        
+        background: $grey-color-light;
+        padding-top: lines(1);
+        
+        &:before {
+          right: percentage(1 - 3/$grid-columns);
+          top: lines(1)/3.5;
+          z-index: 100;
+        }
+        p {
+          background: $background-color;
+          padding: lines(1) percentage(1/24) lines(1) percentage(1/12);
+          z-index: 50;
+          &:before {
+            content: " ";
+            position: absolute;
+            right: 100%;
+            top: lines(.5);
+            @include triangle(lines(1), $background-color);
+          }
+        }
+      }
+    }
   }
 }
 
@@ -74,18 +106,12 @@
         text-transform: none;
         font-size: .5em;
         
-        // the colorful triangle.
         // ( note: color set in habit-colors.scss! )
         &:before {
           position: absolute;
           right: 102%;
           content: " ";
-          width: 0;
-          height: 0;
-          border-top: .5em solid transparent;
-          border-bottom: .5em solid transparent;
-          border-right:.5em solid;
-          border-right-color: inherit;
+          @include triangle(.5em, inherit);
         }
       }
     }
