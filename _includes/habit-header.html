@@ -1,6 +1,10 @@
 <header class="habit-header">
-  <div class="background">
-    {% include habits-list.html count=20 %}
+  <div class="left">
+    {% include habits-list.html count=10 %}
+    <h1>Habits</h1>
   </div>
-  <h1><span class="left">Habits</span> <span class="right">of Mind <small>{{ habit.name }}</small></span></h1>
+  <div class="right">
+    {% include habits-list.html count=10 %}
+    <h1>of Mind <small>{{ habit.name }}</small></h1>
+  </div>
 </header>
