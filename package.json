@@ -1,0 +1,23 @@
+{
+  "name": "parkmath",
+  "version": "1.0.0",
+  "description": "This curriculum was written by members (past and present) of the upper school math department at the \rPark School of Baltimore. This was possible thanks to Park School’s F. Parvin Sharpless Faculty and Curricular Advancement (FACA) program, which supports faculty every summer in major curricular projects. In addition to the support of FACA by the Nathan L. Cohen Faculty Enhancement fund and the Joseph Meyerhoff FACA fund, this project was also funded by grants from the E. E. Ford Foundation, the Benedict Foundation, Josh and Genine Fidler, and an anonymous donor.\r\rThis work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).\r\r© 2006-2014 Tony Asdourian, Arnaldo Cohen, Mimi Cukier, Angela Doyle, Rina Foygel, Tim Howell, Bill \rTabrisky, Anand Thakker, members of the mathematics faculty of the Park School of Baltimore, Inc. 2006- \r2014.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parkmath/parkmath.git"
+  },
+  "author": "Anand Thakker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parkmath/parkmath/issues"
+  },
+  "homepage": "https://github.com/parkmath/parkmath",
+  "dependencies": {
+    "cheerio": "^0.17.0",
+    "trumpet": "^1.7.0"
+  }
+}
