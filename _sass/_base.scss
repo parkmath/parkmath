@@ -190,20 +190,28 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
 
-    padding-left: $gutter-sm / 2;
-    @include mq(print) { padding-left: $gutter-print / 2; }
+    margin: 0;
+    padding-left: $gutter-sm;
+    @include mq(print) { padding-left: $gutter-print; }
 
     > :last-child {
         margin-bottom: 0;
     }
 }
 
+cite {
+  @include mq(print) {
+    a[href^=http] {
+      &:after {
+        content: "(" attr(href) ")";
+      }
+    }
+  }
+}
 
 
 /**
