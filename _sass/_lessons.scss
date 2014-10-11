@@ -194,6 +194,11 @@
 
       @include lesson-section-heading;
     }
+    
+    /* center figures by default within problems section. */
+    figure {
+      margin: 0 auto;
+    }
   }
 
 
