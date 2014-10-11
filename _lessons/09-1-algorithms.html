@@ -303,13 +303,13 @@ title: algorithms
       <p>You and your friend are planning to share lockers, so as
       soon as you get your combinations, you plan to exchange them
       over the phone. Each combination has three numbers in it –
-      for example, 11 – 2 – 41.
+      for example, 11 – 2 – 41.</p>
 
-      In case someone might be listening, though, you agree ahead
+      <p>In case someone might be listening, though, you agree ahead
       of time to use the following algorithm to encrypt each number
-      in the combination:
+      in the combination:</p>
 
-      ${\mathop{\rm EncryptNumber}\nolimits} \left( N \right)$
+<p>      ${\mathop{\rm EncryptNumber}\nolimits} \left( N \right)$
       If N is odd, then output $2 + N$ .
       Otherwise, output $2 \cdot N$ .</p>
     </div>
@@ -456,12 +456,12 @@ title: algorithms
       put them in bag C.
 
       You know that when I’m done, the contents of the bags are as
-      follows:
+      follows:</p>
 
-      Bag A Bag B Bag C
-      10 marbles 20 marbles 20 marbles
+      <p>Bag A Bag B Bag C
+      10 marbles 20 marbles 20 marbles</p>
 
-      Find out how many marbles were in the bags originally.</p>
+<p>      Find out how many marbles were in the bags originally.</p>
     </div>
 
     <div class="problem" data-problem-number="28">
@@ -494,9 +494,9 @@ title: algorithms
 
     <div class="problem" data-problem-number="32">
       <p>The ShiftCipher algorithm is a simple way of encrypting a
-      word. Here’s how it works:
+      word. Here’s how it works:</p>
 
-      Take a word, such as DOOR. Shift the first letter once – D
+      <p>Take a word, such as DOOR. Shift the first letter once – D
       becomes E.
       Then, since D is the 4th letter of the alphabet, shift all
       the other letters 4 times – OOR becomes SSV.
@@ -504,9 +504,9 @@ title: algorithms
       wrap back around to A.
       So, ShiftCipher(“DOOR”) = “ESSV”.
       (Another example: ShiftCipher(“EYES”) = “FDJX” –
-      try it).
+      try it).</p>
 
-      Write the DecryptShiftCypher algorithm.</p>
+<p>      Write the DecryptShiftCypher algorithm.</p>
     </div>
   </section>
 
@@ -718,11 +718,11 @@ title: algorithms
       <p>The shape below is called a “tromino.”
 
 
+</p>
 
+<p></p>
 
-
-
-      Each of the following “checkerboards” has had one square
+<p>      Each of the following “checkerboards” has had one square
       removed. For each board, find a way to cover $all$ of the
       remaining squares with trominoes.</p>
 
@@ -779,29 +779,29 @@ title: algorithms
       and returns the greatest integer that’s less than or equal to
       $x$. In other words, the Floor function always “rounds down”.
       Examples: ${\mathop{\rm Floor}\nolimits} (2.001) = 2$ ,
-      $Floor(\pi ) = 3$ , and .
+      $Floor(\pi ) = 3$ , and .</p>
 
-      The following algorithm, which uses Floor and some basic
+      <p>The following algorithm, which uses Floor and some basic
       arithmetic operations, only takes positive integers for its
       input. What does it do?
+</p>
 
-
-      ${\mathop{\rm Mystery}\nolimits} (n) = 5\left( {\frac{n}{5} -
+<p>      ${\mathop{\rm Mystery}\nolimits} (n) = 5\left( {\frac{n}{5} -
       {\mathop{\rm Floor}\nolimits} \left( {\frac{n}{5}} \right)}
       \right)$</p>
     </div>
 
     <div class="problem" data-problem-number="50">
       <p>The RightShift and LeftShift operations work for any
-      non-negative integers with five or fewer digits:
+      non-negative integers with five or fewer digits:</p>
 
-      ${\mathop{\rm RightShift}\nolimits} (N,d)$ chops off the
+      <p>${\mathop{\rm RightShift}\nolimits} (N,d)$ chops off the
       rightmost
       $d$ digits of N and outputs the result.
       Example: ${\mathop{\rm RightShift}\nolimits} (3214,2) = 32$
-      .
+      .</p>
 
-      ${\mathop{\rm Left}\nolimits} {\mathop{\rm Shift}\nolimits}
+<p>      ${\mathop{\rm Left}\nolimits} {\mathop{\rm Shift}\nolimits}
       (N,d)$ moves each digit $d$
       places to the left, and fills in 0’s in the empty spaces;
       then, it chops off all
@@ -871,15 +871,15 @@ title: algorithms
     <div class="problem" data-problem-number="56">
       <p>You have 4 identical-looking coins. Two of them are heavy
       and two of them are light (the two heavy ones weigh the same,
-      and the two light ones weigh the same).
+      and the two light ones weigh the same).</p>
 
-      Call the coins A, B, C, and D. Your goal is to find out which
+      <p>Call the coins A, B, C, and D. Your goal is to find out which
       two are heavy and which two are light. Your only instrument
       is a balance scale — you put some coins on the two sides of
       the scale, and it tells you which side is heavier (or that
-      the two sides weigh the same).
+      the two sides weigh the same).</p>
 
-      Describe an algorithm for finding the light coins in as few
+<p>      Describe an algorithm for finding the light coins in as few
       steps as possible.</p>
     </div>
 
@@ -892,11 +892,11 @@ title: algorithms
 
       Use this picture of a cell phone’s keypad to help you:
 
+</p>
 
+<p></p>
 
-
-
-      </p>
+<p>      </p>
     </div>
 
     <div class="problem" data-problem-number="58">
@@ -918,9 +918,9 @@ title: algorithms
       is a carrier pigeon. Due to its tiny brain, the pigeon can
       only remember one
       $whole$ number (though it can be as big
-      as you want).
+      as you want).</p>
 
-      Somehow, you need to fit the two numbers together into one
+<p>      Somehow, you need to fit the two numbers together into one
       number, but you need to make sure that the process is
       reversible, so that your companion can figure out what
       numbers you’re sending him.</p>
@@ -984,13 +984,13 @@ title: algorithms
       or more votes, it wins, and that’s that. On the other hand,
       if it fails to muster 50%, then the pirate who made the
       proposal is thrown overboard, and the process continues with
-      the next pirate down the hierarchy.
+      the next pirate down the hierarchy.</p>
 
-      What is the maximum number of bars that the most powerful
+      <p>What is the maximum number of bars that the most powerful
       pirate can get and what allocation to each pirate will ensure
-      him the 50% vote that he needs?
+      him the 50% vote that he needs?</p>
 
-      (from
+<p>      (from
       http://www.eogogics.com/talkgogics/ezine/tech-talk/pirates1)</p>
     </div>
 
@@ -1010,9 +1010,9 @@ title: algorithms
 
     <div class="problem" data-problem-number="64">
       <p>Sherlock and Watson create the following code to encrypt
-      their messages:
+      their messages:</p>
 
-      First, turn each letter into a number (A is 1, B is 2, etc).
+<p>      First, turn each letter into a number (A is 1, B is 2, etc).
       Then for each number, multiply it by 7 and add 1. Finally, if
       any numbers have 3 digits, just ignore the hundreds digit —
       so 141 just gets written as 41, and so on.</p>
@@ -1035,12 +1035,12 @@ title: algorithms
       combination:
 
       The new first number will be the sum of all three numbers in
-      the original.
+      the original.</p>
 
-      The new second number will be the sum of the first two
-      numbers in the original.
+      <p>The new second number will be the sum of the first two
+      numbers in the original.</p>
 
-      The new third number will be the sum of the last two numbers
+<p>      The new third number will be the sum of the last two numbers
       in the original.</p>
 
       <p class="problem-part">. Encode 12 – 8 – 1. Do you see how
@@ -1057,16 +1057,16 @@ title: algorithms
       <p>This is a famous problem that’s challenged many
       mathematicians. You have 12 coins that look alike. 11 are
       genuine and each have the same weight. 1 is counterfeit, and
-      is $either$ too heavy or too light.
+      is $either$ too heavy or too light.</p>
 
-      Write an algorithm for how to use a
+      <p>Write an algorithm for how to use a
       balance scale to find the fake coin, $and$
       determine whether it’s too heavy or too light, in as few
       steps as possible. (It can
       be done with three weighings! See if you can figure out
-      how.)
+      how.)</p>
 
-      Hint: it will probably help a lot to make
+<p>      Hint: it will probably help a lot to make
       a chart to keep track of the different
       possibilities.</p>
     </div>
