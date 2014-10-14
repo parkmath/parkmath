@@ -63,6 +63,8 @@
 
   /* simple table with basic borders */
   table {
+    font-size: $small-font-size;
+    margin-bottom: lines(1);
     border: 1px solid #666;
     > thead,
     > tbody,
