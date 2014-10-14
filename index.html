@@ -6,7 +6,10 @@ layout: default
     {% for book in site.books %}
     <li class="book">
       {% assign index = book.book | minus: 1 %}
-      <h2><a href="{{ book.url | prepend: site.baseurl }}">Book {{ book.book }}: {{ book.title }}</a></h2>
+      <h2>
+        <!-- <a href="{{ book.url | prepend: site.baseurl }}">Book {{ book.book }}: {{ book.title }}</a> -->
+        Book {{ book.book }}: {{ book.title }}
+      </h2>
       <ul class="lessons">
         {% assign lessons = (site.lessons | where: 'book', book.book) %}
         {% for lesson in lessons %}
