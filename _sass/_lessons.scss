@@ -147,7 +147,8 @@
       @include offset-column-print-and-sm(0, 10);
     }
     
-    & > p { @include offset-column-print-and-sm(2, 8); }
+    & > p,
+    & > figure { @include offset-column-print-and-sm(2, 8); }
     .problem { @include offset-column-print-and-sm(3, 7); }
   }
 
