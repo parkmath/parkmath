@@ -50,7 +50,7 @@ prose:
   siteurl: "http://parkmath.github.io/parkmath"
   media: lessons/images
   metadata:
-    lessons:
+    _lessons:
       - name: book
         field:
           element: number
