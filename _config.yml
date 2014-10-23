@@ -46,7 +46,7 @@ defaults:
 
 # Prose metadata
 prose:
-  rooturl: lessons
+  rooturl: _lessons
   siteurl: "http://parkmath.github.io/parkmath"
   media: lessons/images
   metadata:
