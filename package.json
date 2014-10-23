@@ -19,5 +19,8 @@
   "dependencies": {
     "cheerio": "^0.17.0",
     "trumpet": "^1.7.0"
+  },
+  "devDependencies": {
+    "tmp": "0.0.24"
   }
 }

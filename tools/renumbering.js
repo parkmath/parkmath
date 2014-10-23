@@ -1,5 +1,6 @@
 
 var fs = require('fs');
+var tmp = require('tmp');
 var trumpet = require('trumpet');
 
 var alphabetStart = 'a'.charCodeAt(0);
@@ -28,20 +29,26 @@ if(require.main === module) {
   }
   else {
     process.argv.slice(2).forEach(function(filename) {
-      var r;
-      var fileread = fs.createReadStream(filename);
-      var tempfile = 'temp/temp2';
-      var tempWrite = fs.createWriteStream(tempfile);
-      fileread
-      .pipe(r = renumber())
-      .pipe(tempWrite)
-      .on('finish', function() {
-        console.log('transformed; now rewriting.');
-        fs.createReadStream(tempfile).pipe(fs.createWriteStream(filename));
-      });
-      fileread.on('end', function() {
-        console.log("renumbering ended");
-        r.resume()
+      tmp.file(function (err, tempfile, fd) {
+        if(err) {
+          console.error(err);
+        }
+        else {
+          var r;
+          var fileread = fs.createReadStream(filename);
+          var tempWrite = fs.createWriteStream(tempfile);
+          fileread
+          .pipe(r = renumber())
+          .pipe(tempWrite)
+          .on('finish', function() {
+            console.log('transformed; now rewriting.');
+            fs.createReadStream(tempfile).pipe(fs.createWriteStream(filename));
+          });
+          fileread.on('end', function() {
+            console.log("renumbering ended");
+            r.resume()
+          })
+        }
       })
     })
   }
