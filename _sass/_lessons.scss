@@ -5,9 +5,6 @@
   font-weight: 400;
   text-align: right;
   
-  margin-top: lines(1);
-  margin-bottom: lines(1);
-
   font-size: 2em;
   @include mq(sm, print) {
     font-size: 3em;
@@ -57,15 +54,10 @@
   h1,
   h2,
   h3 { font-family: $font-family-display; }
-    
-  /* spacing for problems and narrative text between the problems.
-     (normally prefer to go with just bottom margins for consistency,
-     but splitting it helps with some PrinceXML quirks
-  */
-  .problem,
-  & > article > section > p {
-    margin-bottom: lines(1);
-    margin-top: lines(1);
+
+  /* extra line of space for a problem that follows other content */    
+  * + .problem {
+    margin-top: lines(2);
   }
 
   /* simple table with basic borders */

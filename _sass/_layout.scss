@@ -7,7 +7,7 @@
 
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    margin-bottom: lines(3);
+    margin-top: 0;
 
     @include mq(sm, print) { min-height: 56px; }
 
