@@ -145,15 +145,21 @@ figcaption {
  * Lists
  */
 ul, ol {
-    margin-left: $gutter-sm;
-    @include mq(print) { margin-left: $gutter-print; }
+  margin-left: $gutter-sm;
+  padding: 0;
+  @include mq(print) { margin-left: $gutter-print; }
+}
+
+ul {
+  list-style-type: none;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+  margin-top: 0;
+  > ul,
+  > ol {
+       margin-bottom: 0;
+  }
 }
 
 

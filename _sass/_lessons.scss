@@ -43,6 +43,18 @@
       page-break-before: always;
     }
   }
+  
+  ul.horizontal {
+    text-align: center;
+    li {
+      display: inline-block;
+      & + li {
+        margin-left: $gutter-sm;
+        @include mq(print) { margin-left: $gutter-print; }
+        margin-top: 0;
+      }
+    }
+  }
 
   /* problem counter */
   counter-reset: problem;
@@ -139,28 +151,25 @@
   .development {
     @include make-row();
     
-    margin-bottom: lines(3);
-
     h2 {
       @include lesson-section-heading;
       @include offset-column-print-and-sm(0, 10);
     }
     
-    & > p,
-    & > figure { @include offset-column-print-and-sm(2, 8); }
-    .problem { @include offset-column-print-and-sm(3, 7); }
+    & > * { @include offset-column-print-and-sm(2, 8); }
+    & > .problem { @include offset-column-print-and-sm(3, 7); }
   }
 
   /* the Problems (and Exploring in Depth) section */
   .problems {
     @include make-row();
     
-    & > p {
+    & > * {
       @include make-column(sm,6);
       @include make-column(print, 12);
       margin-top: lines(1);
     }
-    .problem {
+    & > .problem {
       @include make-column(sm,5);
       @include make-column-offset(sm,1);
       @include make-column(print, 10);
