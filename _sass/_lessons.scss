@@ -32,8 +32,8 @@
 .lesson {
   
   /* convenience classes for lesson authors/editors to use */
-  .fig-md { width: 50%; }
-  .fig-sm { width: 25%; }
+  .fig-50 > img { width: 50%; margin: 0 auto; }
+  .fig-25 > img { width: 25%; margin: 0 auto; }
   
   em.vocab {
     font-weight: bold;
