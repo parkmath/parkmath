@@ -39,6 +39,13 @@
     font-weight: bold;
     font-style: normal;
   }
+  
+  .new-page {
+    @include mq(page) {
+      display: block;
+      page-break-before: always;
+    }
+  }
 
   /* problem counter */
   counter-reset: problem;
