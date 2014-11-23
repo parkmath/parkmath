@@ -1,5 +1,8 @@
 
 .home {
+  @extend .container;
+  margin-top: lines(2);
+  
   .toc,
   .lessons {
       margin-left: 0;
