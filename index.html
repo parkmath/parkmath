@@ -10,10 +10,15 @@ layout: default
         <!-- <a href="{{ book.url | prepend: site.baseurl }}">Book {{ book.book }}: {{ book.title }}</a> -->
         Book {{ book.book }}: {{ book.title }}
       </h2>
+
       <ul class="lessons">
+
         {% assign lessons = (site.lessons | where: 'book', book.book) %}
+        {% assign summary = lessons | where: 'type', 'summary' | first %}
+        {% assign answers = lessons | where: 'type', 'answers' | first %}
+        
         {% for lesson in lessons %}
-          {% if lesson.published %}
+          {% if lesson.published and lesson.lesson %}
           <li>
             <a href="{{ lesson.url | prepend: site.baseurl }}">
               {% include lesson-title.html lesson=lesson %}
@@ -21,6 +26,18 @@ layout: default
           </li>
           {% endif %}
         {% endfor %}
+        
+        {% if summary.published %}
+        <li>
+          <a href="{{ summary.url | prepend: site.baseurl }}">Summary and Review</a>
+        </li>
+        {% endif %}
+        
+        {% if answers.published %}
+        <li>
+          <a href="{{ answers.url | prepend: site.baseurl }}">Selected Answers</a>
+        </li>
+        {% endif %}
       </ul>
     </li>
     {% endfor %}
