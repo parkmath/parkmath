@@ -1,5 +1,9 @@
+$habit-header-lines: 6;
+
 
 .habit-list {
+  page: habit-list;
+
   dl {
     @include make-row();
   }
@@ -10,6 +14,7 @@
   }
   dt {
     @include make-column(sm, 3);
+    @include make-column(print, 3);
     font-weight: 700;
     text-align: right;
     &:after {
@@ -18,6 +23,17 @@
   }
   dd {
     @include make-column(sm, 9);
+    @include make-column(print, 9);
+  }
+
+  @include mq(print) {
+    dt:nth-of-type(8) {
+      page-break-before: always;
+    }
+    dd:nth-of-type(8),
+    dt:nth-of-type(8) {
+      margin-top: lines($habit-header-lines);
+    }
   }
 }
 
@@ -95,9 +111,8 @@
 }
 
 .habit-header {
-  $lines: 6;
 
-  margin-bottom: lines($lines);
+  margin-bottom: lines($habit-header-lines);
 
   font-size: .33em;
   @include mq(sm) { font-size: 2em/3; }
@@ -105,7 +120,7 @@
 
   .left,
   .right {
-    height: 1em * $lines;
+    height: 1em * $habit-header-lines;
     position: relative;
     .habits-textfield {
       position: absolute;
@@ -113,7 +128,7 @@
     }
 
     h1 {
-      font-size: (1.33em) * $lines;
+      font-size: (1.33em) * $habit-header-lines;
       line-height: 1;
 
       position: absolute;

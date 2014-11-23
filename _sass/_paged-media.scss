@@ -17,7 +17,7 @@
     size: US-Letter;
     margin: $margin-print-outer;
     padding: 0;
-    
+
     @top-left { @include margin-text(); }
     @top-right { @include margin-text(); }
     @bottom-right { @include margin-text(); }
@@ -43,18 +43,34 @@
       content: counter(page);
     }
   }
-  
+
   @page habit-lesson {
     margin-top: ($margin-print-outer * 3);
   }
-  
+
   @page habit-lesson:left {
     @top-left {
       content: flow(header-left);
     }
   }
-  
+
   @page habit-lesson:right {
+    @top-right {
+      content: flow(header-right);
+    }
+  }
+
+  @page habit-list {
+    margin-top: ($margin-print-outer * 3);
+  }
+
+  @page habit-list:left {
+    @top-left {
+      content: flow(header-left);
+    }
+  }
+
+  @page habit-list:right {
     @top-right {
       content: flow(header-right);
     }

@@ -1,6 +1,5 @@
 
 .book-page {
-
   .toc .lessons {
       margin-left: 0;
       padding-left: 0;
@@ -26,6 +25,7 @@ $margin-print-gutter: 54pt;
   .book-page {
     counter-reset: page 1;
     .book > section { page-break-before: always; }
+    .book > .toc { page-break-before: right; }
   }
 
   // These string-sets are used by the paged-media for running headers.
