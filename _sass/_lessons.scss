@@ -4,7 +4,7 @@
   color: $grey-color;
   font-weight: 400;
   text-align: right;
-  
+
   font-size: 2em;
   @include mq(sm, print) {
     font-size: 3em;
@@ -27,23 +27,23 @@
 
 
 .lesson {
-  
+
   /* convenience classes for lesson authors/editors to use */
   .fig-50 > img { width: 50%; margin: 0 auto; }
   .fig-25 > img { width: 25%; margin: 0 auto; }
-  
+
   em.vocab {
     font-weight: bold;
     font-style: normal;
   }
-  
+
   .new-page {
     @include mq(page) {
       display: block;
       page-break-before: always;
     }
   }
-  
+
   ul.horizontal {
     text-align: center;
     li {
@@ -58,7 +58,7 @@
 
   /* problem counter */
   counter-reset: problem;
-  
+
   /* base body font */
   font-family: $font-family-text;
 
@@ -67,7 +67,7 @@
   h2,
   h3 { font-family: $font-family-display; }
 
-  /* extra line of space for a problem that follows other content */    
+  /* extra line of space for a problem that follows other content */
   * + .problem {
     margin-top: lines(2);
   }
@@ -103,7 +103,7 @@
     text-transform: uppercase;
     text-align: right;
     padding: 0;
-    
+
     font-size: 2em;
     @include mq(sm, print) { font-size: 3em; }
 
@@ -111,15 +111,15 @@
 
     @include bookmark(1);
   }
-  
+
   /* subheadings for sections within lesson (Introduction, Development, etc.) */
   h2 { @include bookmark(2); }
-  
+
   /* a problem (see below for section-specific styling) */
   .problem {
     counter-increment: problem;
     counter-reset: part;
-    
+
     /* problem numbers and problem parts */
     position: relative;
     &:before {
@@ -130,7 +130,7 @@
       font-size: 2.5em;
       padding-right: .25em;
       float: left;
-      
+
       @include mq(sm, print) {
         position: absolute;
         right: 100%;
@@ -139,7 +139,7 @@
         padding-right: 0;
       }
     }
-    
+
     .problem-part {
       counter-increment: part;
       &:before { content: counter(part, lower-alpha); }
@@ -150,12 +150,12 @@
   /* the Development (and Intro and Practice) section */
   .development {
     @include make-row();
-    
+
     h2 {
       @include lesson-section-heading;
       @include offset-column-print-and-sm(0, 10);
     }
-    
+
     & > * { @include offset-column-print-and-sm(2, 8); }
     & > .problem { @include offset-column-print-and-sm(3, 7); }
   }
@@ -163,7 +163,7 @@
   /* the Problems (and Exploring in Depth) section */
   .problems {
     @include make-row();
-    
+
     & > * {
       @include make-column(sm,6);
       @include make-column(print, 12);
@@ -176,7 +176,7 @@
       @include make-column-offset(print, 2);
       margin-top: lines(2);
     }
-    
+
     @include mq(print) {
       column-count: 2;
       -webkit-column-count: 2;
@@ -192,7 +192,7 @@
 
       font-weight: 700;
       color: $grey-color-light;
-      
+
       font-size: 2.5em;
       @include mq(sm, print) { font-size: 4em; column-span: all; }
     }
@@ -206,7 +206,7 @@
 
       @include lesson-section-heading;
     }
-    
+
     /* center figures by default within problems section. */
     figure {
       margin: 0 auto lines(1) auto;
