@@ -134,7 +134,7 @@
       @include mq(sm, print) {
         position: absolute;
         right: 100%;
-        top: -.5em;
+        top: -.33em;
         font-size: 3.5em;
         padding-right: 0;
       }
@@ -174,6 +174,7 @@
       @include make-column-offset(sm,1);
       @include make-column(print, 10);
       @include make-column-offset(print, 2);
+      margin-top: lines(2);
     }
     
     @include mq(print) {
