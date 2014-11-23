@@ -36,6 +36,7 @@
           background: $background-color;
           z-index: 50;
           padding-top: lines(1);
+          min-height: lines(3);
           /* this would be cleaner as padding on problem-content, but
              princexml was having issues. */
           & > * { margin-left: percentage(1/8); }
