@@ -11,7 +11,7 @@ layout: default
       {% for lesson in lessons %}
       {% if lesson.published %}
         <li>
-          <a href="{{ page.url | prepend: site.baseurl }}#lesson-{{ page.book }}-{{ lesson.lesson }}">
+          <a href="#lesson-{{ page.book }}-{{ lesson.lesson }}">
             {% include lesson-title.html lesson=lesson %}
           </a>
         </li>
