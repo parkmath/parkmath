@@ -2,17 +2,14 @@
 <html lang='en'>
 
   {% include head.html %}
-  
-  {% assign books = (site.books | where: 'book', page.book) %}
-  {% assign book = books[0] %}
-  
+
   {% capture bodyclass %}
     {{page.layout}}-page
     {% if page.book %} book-{{page.book}} {% endif %}
   {% endcapture %}
-  
+
   <body class="{{bodyclass | strip_newlines}}">
-    
+
     {% include header.html %}
 
     {{ content }}
@@ -21,6 +18,6 @@
 
     {% include mathjax-script.html %}
   </body>
-  
+
 
 </html>

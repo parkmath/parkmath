@@ -5,6 +5,6 @@
   </div>
   <div class="right">
     {% include habits-list.html count=20 %}
-    <h1>of Mind <small>{{ habit.name }}</small></h1>
+    <h1>of Mind {% if habit %}<small>{{ habit.name }}</small>{% endif %}</h1>
   </div>
 </header>

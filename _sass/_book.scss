@@ -1,6 +1,6 @@
 
 .book-page {
-  
+
   .toc .lessons {
       margin-left: 0;
       padding-left: 0;
@@ -25,11 +25,11 @@ $margin-print-gutter: 54pt;
    */
   .book-page {
     counter-reset: page 1;
-    .lesson { page-break-before: always; }
+    .book > section { page-break-before: always; }
   }
-  
+
   // These string-sets are used by the paged-media for running headers.
   h1 > .book { string-set: book-title content(); }
-  .lesson h1 { string-set: lesson-title content(); }
+  .book > section h1 { string-set: lesson-title content(); }
   @include page-setup();
 }

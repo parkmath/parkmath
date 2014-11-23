@@ -1,16 +1,5 @@
 
 /* helper mixins */
-@mixin lesson-section-heading {
-  color: $grey-color;
-  font-weight: 400;
-  text-align: right;
-
-  font-size: 2em;
-  @include mq(sm, print) {
-    font-size: 3em;
-  }
-}
-
 @mixin bookmark($level) {
   @include mq(print) {
     bookmark-level: $level;
@@ -59,54 +48,22 @@
   /* problem counter */
   counter-reset: problem;
 
-  /* base body font */
-  font-family: $font-family-text;
-
-  /* base display font */
-  h1,
-  h2,
-  h3 { font-family: $font-family-display; }
-
   /* extra line of space for a problem that follows other content */
   * + .problem {
     margin-top: lines(2);
   }
 
-  /* simple table with basic borders */
-  table {
-    font-size: $small-font-size;
-    margin-bottom: lines(1);
-    border: 1px solid #666;
-    > thead,
-    > tbody,
-    > tfoot {
-      > tr {
-        > th,
-        > td {
-          border: 1px solid #666;
-          padding: 0 .5em;
-        }
-      }
-    }
-    > thead > tr {
-      > th,
-      > td {
-        border-bottom-width: 2px;
-      }
-    }
+  /* right-align and size the headings */
+  h1,
+  h2 {
+    text-align: right;
+    font-size: 2em;
+    @include mq(sm, print) { font-size: 3em; }
   }
 
   /* main lesson title */
   h1 {
-    color: $grey-color-light;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: right;
     padding: 0;
-
-    font-size: 2em;
-    @include mq(sm, print) { font-size: 3em; }
-
     margin-bottom: 1em;
 
     @include bookmark(1);
@@ -152,7 +109,6 @@
     @include make-row();
 
     h2 {
-      @include lesson-section-heading;
       @include offset-column-print-and-sm(0, 10);
     }
 
@@ -190,9 +146,9 @@
     h2:first-of-type {
       @include make-column(sm,12);
 
-      font-weight: 700;
+      text-align: left;
       color: $grey-color-light;
-
+      font-weight: 700;
       font-size: 2.5em;
       @include mq(sm, print) { font-size: 4em; column-span: all; }
     }
@@ -203,8 +159,6 @@
       @include make-column-offset(sm,3);
       @include make-column(print, 6);
       @include make-column-offset(print, 6);
-
-      @include lesson-section-heading;
     }
 
     /* center figures by default within problems section. */

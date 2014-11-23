@@ -75,11 +75,11 @@ html {
 /**
  * Basic styling
  */
- 
+
 // This is in a mixin so we can also use it from the @page rule.
 @mixin base-style {
   font-size: $font-size-base;
-  font-family: $font-family-display;
+  font-family: $font-family-text;
   line-height: $base-line-height;
   font-weight: 300;
   color: $text-color;
@@ -162,6 +162,12 @@ li {
   }
 }
 
+dl {
+}
+dd,dt {
+  margin: 0;
+}
+
 
 
 /**
@@ -170,6 +176,18 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     line-height: 1;
+    font-family: $font-family-display;
+}
+
+h1 {
+  color: $grey-color-light;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $grey-color;
+  font-weight: 400;
 }
 
 
@@ -214,9 +232,34 @@ cite {
       }
     }
   }
-  
+
 }
 
+/**
+ * Simple table with basic borders
+ */
+table {
+  font-size: $small-font-size;
+  margin-bottom: lines(1);
+  border: 1px solid #666;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid #666;
+        padding: 0 .5em;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+    }
+  }
+}
 
 /**
  * Code formatting
@@ -306,7 +349,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
  */
- 
+
 // Generate the small columns
 @mixin make-column($condition, $columns) {
   position: relative;
@@ -334,7 +377,7 @@ THE SOFTWARE.
   margin-left:  ($gutter-sm / -2);
   margin-right: ($gutter-sm / -2);
   @extend %clearfix;
-  
+
   @include mq(print) {
     margin-left:  ($gutter-print / -2);
     margin-right: ($gutter-print / -2);
@@ -351,4 +394,4 @@ THE SOFTWARE.
   @include mq(lg) { width: $container-lg; }
   @include mq(print) { width: 100%; padding: 0 ($gutter-print / 2 - 1px); }
 }
- 
+

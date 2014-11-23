@@ -1,4 +1,26 @@
 
+.habit-list {
+  dl {
+    @include make-row();
+  }
+  dt,
+  dd {
+    font-family: $font-family-display;
+    margin-top: lines(1);
+  }
+  dt {
+    @include make-column(sm, 3);
+    font-weight: 700;
+    text-align: right;
+    &:after {
+      content: ":";
+    }
+  }
+  dd {
+    @include make-column(sm, 9);
+  }
+}
+
 // cozy up to the site header.
 .habit-lesson-page {
   .site-header {
@@ -8,24 +30,24 @@
 
 .habit-lesson {
   page: habit-lesson;
-  
+
   // note: problem numbers are colored based on the containing book in
   // habits-colors.scss
-  
+
   .development {
     page-break-after: always;
     margin-bottom: lines(3);
-    
+
     /* grey boxes */
     @include mq(sm, print) {
       .problem {
         /* reset column settings from base lesson style */
         margin-left: 0;
         width: 100%;
-        
+
         background: $grey-color-light;
         padding: lines(1) 0;
-        
+
         &:before {
           right: percentage(1 - 3/$grid-columns);
           top: lines(1)/3.5;
@@ -80,7 +102,7 @@
   font-size: .33em;
   @include mq(sm) { font-size: 2em/3; }
   @include mq(print) { font-size: 1em; }
-  
+
   .left,
   .right {
     height: 1em * $lines;
@@ -93,7 +115,7 @@
     h1 {
       font-size: (1.33em) * $lines;
       line-height: 1;
-      
+
       position: absolute;
       bottom: -.11em;
       right: -.04em;
@@ -103,12 +125,12 @@
         bottom: .15em;
         right: .1em;
         margin: 0;
-        
+
         font-weight: normal;
         color: $grey-color-dark;
         text-transform: none;
         font-size: .5em;
-        
+
         // ( note: color set in habit-colors.scss! )
         &:before {
           position: absolute;
@@ -119,7 +141,7 @@
       }
     }
   }
-  
+
   @include mq(print) {
     .left,
     .right {
