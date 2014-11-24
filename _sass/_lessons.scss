@@ -99,7 +99,10 @@
 
     .problem-part {
       counter-increment: part;
-      &:before { content: counter(part, lower-alpha); }
+      &:before {
+        content: counter(part, lower-alpha);
+        @include mq(print) { page-break-after: avoid; }
+      }
     }
   }
 
@@ -168,9 +171,13 @@
     h2:nth-of-type(2) {
       @include make-column(sm,6);
       @include make-column-offset(sm,6);
-      @include make-column(print, 12);
-      @include make-column-offset(print, 12);
-      word-spacing: 20em;
+      @include mq(print) {
+        /* reset from the make-column layout above */
+        padding: 0;
+        float: none;
+        width: 100%;
+        word-spacing: 20em;
+      }
     }
 
     /* center figures by default within problems section. */
@@ -181,7 +188,9 @@
 
 
   @include mq(print) {
-    h1,h2 { page-break-after: avoid; }
-    // .problem > p { page-break-inside: avoid; }
+    h1,h2 {
+      page-break-after: avoid;
+    }
+    .problem-part { page-break-inside: avoid; }
   }
 }

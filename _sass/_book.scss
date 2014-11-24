@@ -1,16 +1,25 @@
 
 .book-page {
+  .toc {
+    h1 {
+      font-size: 3em;
+      margin: 2em 0;
+      text-align: right;
+    }
+  }
   .toc .lessons {
-      margin-left: 0;
-      padding-left: 0;
-      list-style: none;
+    font-family: $font-family-display;
+    margin-left: 0;
+    padding-left: 5em;
+    padding-right: 10em;
+    list-style: none;
 
-      > li {
-          margin-bottom: lines(2);
-          a:after {
-            content: leader(dotted) " " target-counter(attr(href), page);
-          }
+    > li {
+      margin-bottom: lines(2);
+      a:after {
+        content: leader(dotted) " " target-counter(attr(href), page);
       }
+    }
   }
 }
 
@@ -31,15 +40,9 @@ $margin-print-gutter: 54pt;
     .book > #summary-and-review .problems { page-break-before: auto; }
   }
 
-  // These string-sets are used by the paged-media for running headers.
-  h1 > .book { string-set: book-title content(); }
+  /* These string-sets are used by the paged-media for running headers. */
+  .title-page h1 { string-set: book-title content(); }
   .book > section h1 { string-set: lesson-title content(); }
   @include page-setup();
-
-
-  /**
-   * book-specific exceptions to the above page-break scheme.
-   */
-
 
 }
