@@ -51,7 +51,6 @@ $habit-header-lines: 6;
   // habits-colors.scss
 
   .development {
-    page-break-after: always;
     margin-bottom: lines(3);
 
     /* grey boxes */
@@ -59,6 +58,10 @@ $habit-header-lines: 6;
       .problem {
         /* reset column settings from base lesson style */
         margin-left: 0;
+        margin-bottom: lines(3);
+
+        &.new-page { margin-top: lines(5); }
+
         width: 100%;
 
         background: $grey-color-light;

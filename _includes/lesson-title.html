@@ -1,7 +1,7 @@
-{% if lesson.lesson != 0 %}
-Lesson {{ lesson.lesson }}:
-{% else %}
+{% if lesson.type == 'habit' %}
 Habits of Mind:
+{% else %}
+Lesson {{ lesson.lesson }}:
 {% endif %}
 {% assign words = (lesson.title | prepend: '' | split: ' ') %}
 {% for word in words %}{{ word | capitalize }} {% endfor %}

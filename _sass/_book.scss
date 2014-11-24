@@ -24,12 +24,22 @@ $margin-print-gutter: 54pt;
    */
   .book-page {
     counter-reset: page 1;
-    .book > section { page-break-before: always; }
+    .book > section { page-break-before: right; }
+    .book > .habit-lesson { page-break-before: left; }
+    .book > .habit-list { page-break-before: left; }
     .book > .toc { page-break-before: right; }
+    .book > #summary-and-review .problems { page-break-before: auto; }
   }
 
   // These string-sets are used by the paged-media for running headers.
   h1 > .book { string-set: book-title content(); }
   .book > section h1 { string-set: lesson-title content(); }
   @include page-setup();
+
+
+  /**
+   * book-specific exceptions to the above page-break scheme.
+   */
+
+
 }
