@@ -63,6 +63,66 @@ like this:
 </article>
 ```
 
+## Book Structure
+
+```html
+<html>
+  <head>...</head>
+  <body>
+    <header class="site-header"></header>
+    
+    <section class="book book-2">
+
+      <section class="info">..."how to use this book", copyright, etc...</section>
+      <section class="title-page">...</section>
+      <section class="toc">
+        <h1>Table of Contents</h1>
+        <ul class="lessons">
+          <li><a href="#habits-of-mind">Mathematical Habits of Mind</a></li>
+          <li><a href="#lesson-2-0-1">Habits of Mind: Visualize</a></li>
+          <li><a href="#lesson-2-0-2">Habits of Mind: Represent Symbolically</a></li>
+          <li><a href="#lesson-2-1">Lesson 1: Linear Equations</a></li>
+          ... etc ...
+        </ul>
+      </section>
+      <section class="habit-list" id="habits-of-mind">
+        <div class="container">
+          ... habit list with definitions of each habit ...
+        </div>
+      </section>
+      <section class="lesson habit-lesson" id="lesson-2-0-1">
+        <div class="container">
+          <article>
+          ... lesson content ...
+          </article>
+        </div>
+      </section>
+      
+      <section class="lesson habit-lesson" id="lesson-2-0-2">
+        <div class="container">
+          <article>
+          ... lesson content ...
+          </article>
+        </div>
+      </section>
+      
+      <section class="lesson" id="lesson-2-1">
+        <div class="container">
+          <article>
+          ... lesson content ...
+          </article>
+        </div>
+      </section>
+      
+      ...
+    </section>
+    
+    <footer class="site-footer"></footer>
+  </body>
+
+</html>
+```
+
 ## Equations
 
 Equations, written in Latex, can go anywhere that plain text can go, simply by
