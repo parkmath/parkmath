@@ -1,6 +1,7 @@
 
 # Editing a Lesson
 
+
 ## About HTML
 
 - HTML documents have heirarchical structure.
