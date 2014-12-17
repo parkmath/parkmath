@@ -8,6 +8,7 @@ The entire content of the textbook, as well as the data assembling, formatting, 
 
 When you first go to Prose, it'll ask you to authorize access your Github account:
 
+![prose-authorize.png]({{site.baseurl}}/images/prose-authorize.png)
 
 Once that's done (and, warning, it might take a minute), you should be logged in.  You'll see something like this:
 
