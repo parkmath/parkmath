@@ -48,7 +48,7 @@ defaults:
 prose:
   rooturl: _lessons
   siteurl: "http://parkmath.github.io/parkmath"
-  media: lessons/images
+  media: images
   metadata:
     _lessons:
       - name: book
