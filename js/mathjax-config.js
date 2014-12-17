@@ -470,6 +470,9 @@ MathJax.Hub.Config({
   //  These parameters control the TeX input jax.
   //
   TeX: {
+    
+    // TeX extensions to load.
+    extensions: [ "AMSmath.js" ]
 
     //
     //  This specifies the side on which \tag{} macros will place the tags.
