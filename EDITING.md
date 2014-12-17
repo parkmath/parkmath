@@ -42,6 +42,7 @@ Then you're good to go--edit away!  When you click a lesson to edit it, you'll b
   - `<figure>...</figure>`: a figure.
   - `<img>`: an image; often goes inside a `figure`; note that `img` elements have
     **no closing tag**.
+  - `<ul>...</ul>`: an unordered list, full of list items like so: `<li>...</li>`.
 - Tags can be annotated with meta-information, like so: `<img src="http://blahblah.com/my-awesome-picture.jpg">` or `<div class="problem">...</section>`.
   In the first one, the required `src` attribute provides the location of an image file.  In
   the second one, the optional `class` attribute is a way to assign an author-defined
@@ -162,10 +163,23 @@ to have an actual dollar sign in the text, it must be preceeded with a backslash
 like so: `<p>...select 21 coins which have a total value of exactly
 \$1.00...</p>`.
 
-## Markup
+## Figures
 
-(TODO: fill this out)
+Figures should go within the `<div>` of the problem they're associated with, but outside of the `<p>` elements, which are primarily for text.  (Rare exceptions to this are possible when you want an image to be right in the flow of the text.)
 
-- `data-problem-number` and `data-problem-part`
-- `em.vocab`
-- `fig-50`
+Here's how:
+```html
+<figure class="fig-50">
+  <img src="../images/....">
+</figure>
+```
+
+`fig-50` scales the figure down so that its width is 50% of the width of the problem/section it's in. `fig-25` analogously makes it 25% of the width.
+
+
+## Other Markup
+
+- The `data-problem-number` and `data-problem-part` are purely informational: they're there to help you find the right problem; the actual editing
+- To emphasize text (i.e., italicize it), use `<em>blah blah blah</em>`; but to bold a vocabulary term, typically done in the sentence definining it, use `<em class="vocab">vocabulary term</em>`.
+- To force an element to appear on a new page add the `new-page` class to it.  E.g., `<div class="problem">` would become `<div class="problem new-page">`.
+- `<ul>` elements normally put each list item on a new line.  To make the list go horizontally, add the `horizontal` class: `<ul class="horizontal"> <li>thing 1</li> <li>thing 2</li> <li>thing 3</li> </ul>`.
