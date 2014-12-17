@@ -24,6 +24,7 @@ Then you're good to go--edit away!  When you click a lesson to edit it, you'll b
 - The {% raw %} and {% endraw %} at the beginning/end are annoying necessities--just leave 'em there.
 - The eye-shaped icon on the right allows you to preview your changes, including rendering LateX into pretty equations.  The headers and footers of the page are buggy in preview mode, but it should still give you a sense of what your changes will look like before you save them.
 - The "Published"/"Unpublished" button does basically what you'd expect: if a lesson is unpublished, it won't show up in the list on the live website.  Currently, most of the lessons unpublished because I'm in the process of going through and doing the final round of fixes on each lesson.  But feel free to publish them if you wanna see them live--easy enough to unpublish later.
+- Speaking of which, the live site, which gets updated every time you save a change in Prose, is here: [http://parkmath.anandthakker.net](http://parkmath.anandthakker.net)
 
 ![prose-editing.png](images/prose-editing.png)
 
