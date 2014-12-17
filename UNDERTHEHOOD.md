@@ -40,11 +40,20 @@ fixed everywhere.)
 ### Running Jekyll
 
 Normally, it's not actually necessary to run Jekyll yourself, because there's a
-'hook' setup so that every time a change is committed to the repository, the
+['hook'][9] setup so that every time a change is committed to the repository, the
 server automatically grabs the updates and runs Jekyll to regenerate the live site.
 If you do want to run it, though, you'll need to sync the github repository to your
-local computer, [install Jekyll](http://jekyllrb.com/docs/installation/), and then
-run [`jekyll build`](http://jekyllrb.com/docs/usage/).
+local computer, [install Jekyll][10], and then
+run [`jekyll build`][11].
+
+### Prerendering Math
+
+When the lessons or book pages are opened in a browser, MathJax converts the
+equations *on the fly* from the latex-between-dollarsigns that we've written
+into something the web browser knows how to render.  But for printing, because 
+PrinceXML doesn't have full Javascript support, we need to have MathJax do its
+thing ahead of time.  (The same 'hook' mentioned above is set up to do exactly
+this.)  The script we're using is the `page2mml` script from [here][12]: 
 
   
 [1]: https://github.com/parkmath/parkmath/tree/gh-pages/_lessons
@@ -55,3 +64,70 @@ run [`jekyll build`](http://jekyllrb.com/docs/usage/).
 [6]: https://github.com/parkmath/parkmath/tree/gh-pages/_data
 [7]: https://github.com/parkmath/parkmath/tree/gh-pages/_sass
 [8]: https://github.com/parkmath/parkmath/tree/gh-pages/_books
+[9]: https://github.com/anandthakker/jekyll-hook
+[10]: http://jekyllrb.com/docs/installation/
+[11]: http://jekyllrb.com/docs/usage/
+[12]: https://github.com/mathjax/MathJax-node
+
+
+# Book Structure
+
+The final structure of the *book* documents is like this.
+
+```html
+<html>
+<head>...</head>
+<body>
+<header class="site-header"></header>
+
+<section class="book book-2">
+
+<section class="info">..."how to use this book", copyright, etc...</section>
+<section class="title-page">...</section>
+<section class="toc">
+<h1>Table of Contents</h1>
+<ul class="lessons">
+<li><a href="#habits-of-mind">Mathematical Habits of Mind</a></li>
+<li><a href="#lesson-2-0-1">Habits of Mind: Visualize</a></li>
+<li><a href="#lesson-2-0-2">Habits of Mind: Represent Symbolically</a></li>
+<li><a href="#lesson-2-1">Lesson 1: Linear Equations</a></li>
+... etc ...
+</ul>
+</section>
+<section class="habit-list" id="habits-of-mind">
+<div class="container">
+... habit list with definitions of each habit ...
+</div>
+</section>
+<section class="lesson habit-lesson" id="lesson-2-0-1">
+<div class="container">
+<article>
+... lesson content ...
+</article>
+</div>
+</section>
+
+<section class="lesson habit-lesson" id="lesson-2-0-2">
+<div class="container">
+<article>
+... lesson content ...
+</article>
+</div>
+</section>
+
+<section class="lesson" id="lesson-2-1">
+<div class="container">
+<article>
+... lesson content ...
+</article>
+</div>
+</section>
+
+...
+</section>
+
+<footer class="site-footer"></footer>
+</body>
+
+</html>
+```
