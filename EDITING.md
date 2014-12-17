@@ -12,8 +12,10 @@ When you first go to Prose, it'll ask you to authorize access your Github accoun
 
 Once that's done (and, warning, it might take a minute), you should be logged in.  You'll see something like this:
 
-Over on the right under Groups, click on "parkmath", which should bring up a project--also called "parkmath"--in the center of the screen.  Click that.
+![prose-logged-in.png]({{site.baseurl}}/images/prose-logged-in.png)
 
+
+Over on the right under Groups, click on "parkmath", which should bring up a project--also called "parkmath"--in the center of the screen.  Click that.
 
 Now, if you see this: 
 
