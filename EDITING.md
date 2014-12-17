@@ -8,24 +8,24 @@ The entire content of the textbook, as well as the data assembling, formatting, 
 
 When you first go to Prose, it'll ask you to authorize access your Github account:
 
-![prose-authorize.png]({{site.baseurl}}/images/prose-authorize.png)
+![prose-authorize.png](images/prose-authorize.png)
 
 Once that's done (and, warning, it might take a minute), you should be logged in.  You'll see something like this:
 
-![prose-logged-in.png]({{site.baseurl}}/images/prose-logged-in.png)
+![prose-logged-in.png](images/prose-logged-in.png)
 
 Over on the right under Groups, click on "parkmath", which should bring up a project--also called "parkmath"--in the center of the screen.  Click that.
 
 Now, if you see this: 
 
-![prose-files.png]({{site.baseurl}}/images/prose-files.png)
+![prose-files.png](images/prose-files.png)
 
 Then you're good to go--edit away!  When you click a lesson to edit it, you'll be on a screen like the one below.  A few notes:
 - The {% raw %} and {% endraw %} at the beginning/end are annoying necessities--just leave 'em there.
 - The eye-shaped icon on the right allows you to preview your changes, including rendering LateX into pretty equations.  The headers and footers of the page are buggy in preview mode, but it should still give you a sense of what your changes will look like before you save them.
 - The "Published"/"Unpublished" button does basically what you'd expect: if a lesson is unpublished, it won't show up in the list on the live website.  Currently, most of the lessons unpublished because I'm in the process of going through and doing the final round of fixes on each lesson.  But feel free to publish them if you wanna see them live--easy enough to unpublish later.
 
-![prose-editing.png]({{site.baseurl}}/images/prose-editing.png)
+![prose-editing.png](images/prose-editing.png)
 
 
 
