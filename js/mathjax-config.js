@@ -474,7 +474,7 @@ MathJax.Hub.Config({
     // TeX extensions to load.
     //AMSmath contains many standard math formatting option.
     //AMSsymbols contains extra symbols to render.
-    extensions: [ "AMSmath.js", "AMSsymbols.js" ]
+    extensions: [ "AMSmath.js", "AMSsymbols.js" ],
 
     //
     //  This specifies the side on which \tag{} macros will place the tags.
