@@ -5,15 +5,15 @@
 	 width="216px" height="144px" viewBox="0 0 216 144" style="enable-background:new 0 0 216 144;" xml:space="preserve">
 <g>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="86.908" y1="81.545" x2="119.257" y2="81.545"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="86.908" y1="81.545" x2="119.257" y2="81.545"/>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="86.908" y1="81.545" x2="69.939" y2="114.424"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="86.908" y1="81.545" x2="69.939" y2="114.424"/>
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.5303;stroke-linecap:square;stroke-miterlimit:10;" x1="94.862" y1="47.076" x2="69.939" y2="114.424"/>
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.5303;stroke-linecap:square;stroke-miterlimit:10;" x1="94.862" y1="47.076" x2="119.257" y2="81.545"/>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="1" y1="7.833" x2="216.301" y2="97.454"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="1" y1="7.833" x2="216.301" y2="97.454"/>
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.5303;stroke-linecap:square;stroke-miterlimit:10;" x1="94.862" y1="47.076" x2="103.347" y2="114.424"/>
 	
@@ -21,13 +21,13 @@
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:1.5909;stroke-linecap:square;stroke-miterlimit:10;" x1="111.302" y1="97.454" x2="216.301" y2="97.454"/>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="94.862" y1="47.076" x2="94.862" y2="97.984"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="94.862" y1="47.076" x2="94.862" y2="97.984"/>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="111.302" y1="97.454" x2="94.862" y2="97.984"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="111.302" y1="97.454" x2="94.862" y2="97.984"/>
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.5303;stroke-linecap:square;stroke-miterlimit:10;" x1="69.939" y1="114.424" x2="103.347" y2="114.424"/>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="94.862" y1="47.076" x2="86.908" y2="81.545"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="94.862" y1="47.076" x2="86.908" y2="81.545"/>
 	<g>
 		<defs>
 			<polygon id="SVGID_1_" points="132.514,88.438 190.846,88.438 190.846,97.984 132.514,97.984 132.514,88.438 			"/>

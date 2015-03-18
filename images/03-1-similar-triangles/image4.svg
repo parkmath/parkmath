@@ -7,7 +7,7 @@
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.6887;stroke-linecap:square;stroke-miterlimit:10;" x1="94.453" y1="16.576" x2="94.453" y2="63.406"/>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="94.453" y1="16.576" x2="211.527" y2="63.406"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="94.453" y1="16.576" x2="211.527" y2="63.406"/>
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.6887;stroke-linecap:square;stroke-miterlimit:10;" x1="94.453" y1="63.406" x2="211.527" y2="63.406"/>
 	
@@ -15,7 +15,7 @@
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.6887;stroke-linecap:square;stroke-miterlimit:10;" x1="27.652" y1="115.744" x2="55.199" y2="115.744"/>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="27.652" y1="104.037" x2="55.199" y2="115.744"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="27.652" y1="104.037" x2="55.199" y2="115.744"/>
 	<g>
 		<defs>
 			<polygon id="SVGID_1_" points="2.172,106.104 26.964,106.104 26.964,117.122 2.172,117.122 2.172,106.104 			"/>

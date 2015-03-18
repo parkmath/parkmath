@@ -11,7 +11,7 @@
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.9438;stroke-linecap:square;stroke-miterlimit:10;" x1="79.795" y1="102.635" x2="210.995" y2="102.635"/>
 	
-		<line style="fill:none;stroke:#0E0E0E;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" x1="12.779" y1="28.072" x2="183.622" y2="102.635"/>
+		<line style="fill:none;stroke:#0E0E0E;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" x1="12.779" y1="28.072" x2="183.622" y2="102.635"/>
 	<g>
 		<defs>
 			<polygon id="SVGID_1_" points="78.851,81.869 110.942,81.869 110.942,98.858 78.851,98.858 78.851,81.869 			"/>

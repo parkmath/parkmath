@@ -29,7 +29,7 @@
 	
 		<line style="fill:none;stroke:#0E0E0E;stroke-width:1.1429;stroke-linecap:square;stroke-miterlimit:10;" x1="151.714" y1="39.286" x2="106" y2="78.143"/>
 	
-		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#4D4D4D;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" d="
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#4D4D4D;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" d="
 		M104.857,78.715c0-0.953,1.016-1.715,2.286-1.715c1.271,0,2.286,0.762,2.286,1.715c0,0.952-1.016,1.714-2.286,1.714
 		C105.873,80.429,104.857,79.667,104.857,78.715L104.857,78.715z"/>
 	<g>
@@ -44,7 +44,7 @@
 		</g>
 	</g>
 	
-		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#4D4D4D;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" d="
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#4D4D4D;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" d="
 		M108.286,18.714c0-1.27,0.762-2.286,1.714-2.286s1.714,1.016,1.714,2.286S110.952,21,110,21S108.286,19.984,108.286,18.714
 		L108.286,18.714z"/>
 	<g>
@@ -59,7 +59,7 @@
 		</g>
 	</g>
 	
-		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#4D4D4D;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-miterlimit:10;" d="
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#4D4D4D;stroke:#000000;stroke-width:0.25;stroke-linecap:square;stroke-miterlimit:10;" d="
 		M150.571,39.857c0-0.953,0.762-1.714,1.715-1.714c0.952,0,1.714,0.762,1.714,1.714c0,0.952-0.762,1.714-1.714,1.714
 		C151.333,41.572,150.571,40.81,150.571,39.857L150.571,39.857z"/>
 	<g>
