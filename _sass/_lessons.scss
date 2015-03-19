@@ -18,8 +18,19 @@
 .lesson {
 
   /* convenience classes for lesson authors/editors to use */
-  .fig-50 > img { width: 50%; margin: 0 auto; }
-  .fig-25 > img { width: 25%; margin: 0 auto; }
+  .fig-50 { width: 50%; margin: 0 auto; }
+  .fig-25 { width: 25%; margin: 0 auto; }
+  
+  %n-up {
+    @extend %clearfix;
+    & > * {
+      float: left;
+      margin-top: 0;
+    }
+  }
+  .two-up > * { width: 50%; }
+  .three-up > * { width: 33%; }
+  .four-up > * { width: 25%; }
 
   em.vocab {
     font-weight: bold;

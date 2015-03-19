@@ -124,3 +124,5 @@ Here's how:
 - To emphasize text (i.e., italicize it), use `<em>blah blah blah</em>`; but to bold a vocabulary term, typically done in the sentence definining it, use `<em class="vocab">vocabulary term</em>`.
 - To force an element to appear on a new page add the `new-page` class to it.  E.g., `<div class="problem">` would become `<div class="problem new-page">`.
 - `<ul>` elements normally put each list item on a new line.  To make the list go horizontally, add the `horizontal` class: `<ul class="horizontal"> <li>thing 1</li> <li>thing 2</li> <li>thing 3</li> </ul>`.
+- Sometimes, you want two images to go side-by-side.  Use the `two-up` class for
+  this: `<figure class="two-up"> <img src="...first image"> <img src="...second images"> </figure>`.  Similarly, `three-up` and `four-up` also work.

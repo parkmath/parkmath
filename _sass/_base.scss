@@ -134,6 +134,7 @@ figure {
 
 figure > img {
     display: block;
+    width: 100%;
 }
 
 figcaption {
@@ -394,4 +395,3 @@ THE SOFTWARE.
   @include mq(lg) { width: $container-lg; }
   @include mq(print) { width: 100%; padding: 0 ($gutter-print / 2 - 1px); }
 }
-
