@@ -21,6 +21,7 @@
     "concat-stream": "^1.4.6",
     "prerender-mathjax": "^1.0.1",
     "prince": "^1.0.0",
+    "through2": "^0.6.3",
     "trumpet": "^1.7.0"
   },
   "devDependencies": {
