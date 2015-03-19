@@ -1,4 +1,6 @@
 
+var fs = require('fs');
+var tmp = require('tmp');
 var tok = require('html-tokenize');
 var through = require('through2');
 
@@ -29,8 +31,8 @@ function getTag(open) {
   return open.match(/[^\s<>]+/)[0];
 }
 
-process.stdin
-  .pipe(tok())
+function collect(input) {
+  return input.pipe(tok())
   .pipe(through.obj(function(token, enc, next) {
     token[1] = token[1].toString();
     
@@ -84,4 +86,34 @@ process.stdin
 
     
   }))
-  .pipe(process.stdout);
+}
+
+
+
+  
+// cli
+if(require.main === module) {
+  if(process.argv.length <= 2) {
+    collect(process.stdin).pipe(process.stdout);
+  }
+  else {
+    process.argv.slice(2).forEach(function(filename) {
+      tmp.file(function (err, tempfile, fd) {
+        if(err) {
+          console.error(err);
+        }
+        else {
+          collect(fs.createReadStream(filename))
+          .on('end', function() {
+            console.log("collecting ended");
+          })
+          .pipe(fs.createWriteStream(tempfile))
+          .on('finish', function() {
+            console.log('transformed; now rewriting.');
+            fs.createReadStream(tempfile).pipe(fs.createWriteStream(filename));
+          })
+        }
+      })
+    })
+  }
+}
