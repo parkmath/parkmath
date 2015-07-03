@@ -1,0 +1,2804 @@
+---
+published: true
+book: 5
+lesson: 1
+title: graph theory
+---
+{% raw %}
+
+<article>
+  <section>
+    <h1>Lesson 1: Graph Theory</h1>
+
+    <h2>Introduction: Three Challenges</h2>
+
+    <p>Felix will fly into Birmingham tomorrow to visit some family
+    members. Today, he has his Alabama map spread out over a table
+    in the local coffee shop to determine the route he will drive with his
+    pay-per-mile rental car. He has a cousin in Birmingham, grandparents in
+    Huntsville, an aunt in Cottondale, and a brother in Tuscaloosa. When Felix
+    realized that he’ll soon be served some of his grandma’s chicken
+    liver-sardine-cranberry casserole, he gagged on his cappuccino and
+    accidentally spilled the whole cup on his map. The only usable part of the
+    map remaining is the mileage chart between cities. Here is the mileage
+    between the relevant cities:</p>
+
+    <table id="table-1" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td></td>
+
+          <td>
+            <p>Birmingham</p>
+          </td>
+
+          <td>
+            <p>Huntsville</p>
+          </td>
+
+          <td>
+            <p>Cottondale</p>
+          </td>
+
+          <td>
+            <p>Tuscaloosa</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Birmingham</p>
+          </td>
+
+          <td>
+            <p>X</p>
+          </td>
+
+          <td>
+            <p>95</p>
+          </td>
+
+          <td>
+            <p>50</p>
+          </td>
+
+          <td>
+            <p>56</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Huntsville</p>
+          </td>
+
+          <td>
+            <p>95</p>
+          </td>
+
+          <td>
+            <p>X</p>
+          </td>
+
+          <td>
+            <p>148</p>
+          </td>
+
+          <td>
+            <p>143</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Cottondale</p>
+          </td>
+
+          <td>
+            <p>50</p>
+          </td>
+
+          <td>
+            <p>148</p>
+          </td>
+
+          <td>
+            <p>X</p>
+          </td>
+
+          <td>
+            <p>9</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Tuscaloosa</p>
+          </td>
+
+          <td>
+            <p>56</p>
+          </td>
+
+          <td>
+            <p>143</p>
+          </td>
+
+          <td>
+            <p>9</p>
+          </td>
+
+          <td>
+            <p>X</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem" data-problem-number="1">
+      <p>In what order should Felix visit his relatives to minimize
+      the number of miles he drives with the rental car? Remember
+      that he has to return to Birmingham to return the rental
+      car.</p>
+    </div>
+
+    <p>Here is a map of part of the Middle East. You have different
+    colors you can use to color in the different countries. If two
+    countries are touching, then you should make them different
+    colors so someone can easily tell they’re different
+    countries.</p>
+
+    <figure>
+      <img src=
+      "images/05-1-graph-theory/mide%20east%20map%20with%20israel%20l.png"
+      alt="mide%20east%20map%20with%20israel%20label.png">
+    </figure>
+
+    <p>(For your reference and edification, the numbered countries
+    are 4-Jordan, 5-Lebanon, 6-Syria, 7-Turkey, 8a-Georgia,
+    8b-Russia, 9-Armenia, 10-Azerbaijan, 12-Iraq, 13-Kuwait)<br>
+    <br>
+    $(image from
+    http://catholic-resources.org/Courses/SCTR19-Spring2007-Worksheets.htm)$</p>
+
+    <div class="problem" data-problem-number="2">
+      <p>Color the map using as few colors as possible.<br>
+      (If you don’t have markers, just write the name of<br>
+      the color or use shading.)</p>
+    </div>
+
+    <p>Kim is figuring out the schedule for next year. It’s tough,
+    because out of<br>
+    thirteen electives, several students have expressed interest in
+    taking more than one of them. She doesn’t want to schedule two
+    classes in the same block if<br>
+    there are students who want to take both of those classes.</p>
+
+    <p>In the grid below, an “x” indicates that at least one
+    student has expressed an interest in taking both classes in
+    that row and column of the grid.<br></p>
+
+    <table id="table-2" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell"></td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Poetry</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Adv calc</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Crim law</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Foren.</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Pract.</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Stat</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Prod.</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Animal behavior</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Civ. Lib.</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Java</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Shakespeare</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Astro</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Discrete</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Poetry</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Adv Calc</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Crim Law</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Forensics</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Practicum</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Stat</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Production</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Animal</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Civ Lib</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Java</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Shakespeare</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Astro</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Discrete</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="No-Paragraph-Style"><br></p>
+
+    <div class="problem" data-problem-number="3">
+      <p>a. Assign each class a block (A through F) so that you
+      never put two classes in the same block if there’s<br>
+      anyone who wants to take both classes.</p>
+    </div>
+
+    <p class="Development---Problem-Flow">b. Now, suppose that all
+    of these electives are to be<br>
+    scheduled on an ABC day. Can Kim create a successful,
+    conflict-free schedule with only three blocks? If not, what is
+    the fewest number of blocks that would<br>
+    accommodate these electives?</p>
+
+    <h2>Development</h2>
+
+    <p>To determine Felix’s driving route, you probably recognized
+    a way to represent the situation visually — whether you
+    sketched out a map or drew a diagram.</p>
+
+    <p>The second and third problems, however, didn’t have an
+    obvious new representation<br>
+    to apply. Some people probably applied labels; others may have
+    made lists. It turns out, though, if we use the method of the
+    first problem with the second and third, we can learn much more
+    from the data!</p>
+
+    <p>Most likely, the diagram you used in the first problem was
+    actually a graph. A graph, in its most general sense, is a
+    collection of dots (called “nodes”) and lines connecting them
+    (called “edges”). In your graph of Felix’s problem, the nodes
+    represented cities, and the edges related the nodes by showing
+    the distances between.</p>
+
+    <p>We can represent the second situation with a graph, too, if
+    we let each country be represented by a node. We can draw an
+    edge between nodes when those countries border each other. Our
+    graph comes out to look like this:</p>
+
+    <figure>
+      <img src="images/05-1-graph-theory/mid%20east%20graph.png"
+      alt="mid%20east%20graph.png">
+    </figure>
+
+    <p>The problem now becomes to color each dot in such a way that
+    any two dots connected by lines are always different
+    colors.</p>
+
+    <div class="problem" data-problem-number="4">
+      <p>What is the minimum number of colors you need now?</p>
+    </div>
+
+    <div class="problem" data-problem-number="5">
+      <p>Did you think this version of the “coloring” problem was
+      easier than in the introduction? Why or why not?</p>
+    </div>
+
+    <p>Similarly, we can represent the scheduling problem as a
+    graph. The nodes can represent classes, and an edge can connect
+    the nodes in the cases where some student wants to take both
+    classes, as in the figure below.</p>
+
+    <figure>
+      <img src="images/05-1-graph-theory/schedule%20planar.png"
+      alt="schedule%20planar.png">
+    </figure>
+
+    <div class="problem" data-problem-number="6">
+      <p>Solve the scheduling problem using this representation.
+      What minimum number of blocks can you identify now?</p>
+    </div>
+
+    <div class="problem" data-problem-number="7">
+      <p>Was this version of the schedule problem easier than in
+      the introduction? Why or why not?</p>
+    </div>
+
+    <p>The tools you have been using so far in this lesson are the
+    tools of graph theory.<br>
+    Already, graph theory has been über-useful in helping us
+    represent relationships in a very streamlined way. What’s more,
+    we can now see that the map-coloring problem and the scheduling
+    problem — initially very different — are actually remarkably
+    similar.</p>
+
+    <p>In fact, the identically structured graphs of the
+    map-coloring problem and the scheduling problem are isomorphic.
+    Two graphs are isomorphic when each node in one graph has a
+    “partner” node in the other — a “partner” with the same
+    connections. For example, Georgia in the first graph and
+    Astronomy in the second correspond to one another. So do
+    Lebanon and Advanced Calc. This correspondence comes from their
+    identically structured connections, not their actual position
+    on the page.</p>
+
+    <p>The following two graphs are not isomorphic.<br></p>
+
+    <p>An easy way to see that the graphs are not isomorphic is to
+    see that node B has no “partner.” In the left hand graph, B has
+    three edges coming out of it. On the right, no node has three
+    edges coming out of it, so B has no possible “partner.” The
+    number of edges connected to a node is a very important
+    characteristic. The degree of a node (abbreviated deg(n)) is
+    the number of edges coming out of it. So in the left-hand graph
+    deg(A) = 1 and deg(B) = 3. What is deg(C)?</p>
+
+    <p>Isomorphisms can be trickier to spot than we’ve seen so far.
+    For example, someone else with the task of drawing the
+    scheduling graph might have come up with the following:</p>
+
+    <figure>
+      <img src=
+      "images/05-1-graph-theory/nonplanar%20schedule%20NS.tif" alt=
+      "nonplanar%20schedule%20NS.tif">
+    </figure>
+
+    <div class="problem" data-problem-number="8">
+      <p>Check to see if this graph is still an accurate
+      representation of the scheduling problem. Explain, in
+      language a sixth-grader could understand, what you need to do
+      to check if two graphs are isomorphic.</p>
+    </div>
+
+    <p>One final important concept that we will use is planarity.
+    In the second<br>
+    version of the schedule graph, some edges crossed at places
+    other than nodes. (For example, the edge connecting Animal
+    Behavior to Shakespeare crosses the edge connecting Astro to
+    Discrete.) In these cases, you can think of the edges passing
+    under or over each other.</p>
+
+    <p>Graphs where you don’t have to do this — where there is a
+    way you can draw them without crossing the edges — are called
+    planar.</p>
+
+    <div class="problem" data-problem-number="9">
+      <p>Why do you think the word “planar” might be used?</p>
+    </div>
+
+    <p>Note that a graph might be drawn with the edges crossing,
+    and yet be<br>
+    isomorphic to a graph that is clearly planar, as the following
+    two graphs<br>
+    (with pairing 1-d, 2-a, 3-b, 4-c):</p>
+
+    <figure>
+      <img src="images/05-1-graph-theory/planar.png" alt=
+      "planar.png">
+    </figure>
+
+    <p>In this case, we still say the first graph is planar because
+    it can be drawn with no edges crossing and still represent the
+    same information. Imagine picking up nodes 1 and 2, with their
+    edges still attached, and “uncrossing” them to get something
+    with the same shape as the second graph.</p>
+
+    <div class="problem" data-problem-number="10">
+      <p>Draw a nonplanar graph.</p>
+    </div>
+
+    <div class="problem" data-problem-number="11">
+      <p>Find some degrees of nodes in the Middle East graph.</p>
+
+      <p class="problem-part">a. What is deg(Saudi Arabia)?</p>
+
+      <p class="problem-part">b. What is deg(Syria)?</p>
+
+      <p class="problem-part">c. What country’s node has the
+      highest degree?</p>
+    </div>
+
+    <p>Practice</p>
+
+    <div class="problem" data-problem-number="12">
+      <p>A shelter needs to find homes for nine cats. The table
+      below indicates with an “x” which pairs of cats do not get
+      along. Assuming that cats who do not get along cannot go with
+      the same family, what is the minimum number of families
+      needed to adopt all of these cats?</p>
+    </div>
+
+    <table id="table-3" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">A</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">B</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">C</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">D</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">E</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">F</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">G</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">H</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">I</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">A</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">B</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">C</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">D</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">E</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">F</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">G</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">H</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">I</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem" data-problem-number="13">
+      <p>Which of these pairs of graphs are isomorphic? For graphs
+      that are isomorphic, give the pairing of the nodes.<br>
+      <br>
+      Now is a good time to think about visualizing the edges
+      stretching and bending to see if you can make the shape on
+      the left look like the shape on the right.</p>
+    </div>
+
+    <div class="problem" data-problem-number="14">
+      <p>Below is a map of the region surrounding Maryland.<br>
+      (image from http://www.maps4.com/maryland_map.gif)</p>
+    </div>
+
+    <figure>
+      <img src="images/05-1-graph-theory/maryland%20map2%20BW.tif"
+      alt="maryland%20map2%20BW.tif">
+    </figure>
+
+    <figure>
+      <br>
+      Which of the next three graphs is an accurate representation
+      of the borders shared by the states on the map?
+    </figure>
+
+    <div class="problem" data-problem-number="15">
+      <p>What’s the degree of each node in each of these
+      graphs?</p>
+    </div>
+
+    <div class="problem" data-problem-number="16">
+      <p>Which of these graphs are planar? For the ones that<br>
+      are planar, show how you can draw them with no edges
+      crossing.</p>
+    </div>
+
+    <div class="problem" data-problem-number="17">
+      <p>A school has four exam periods. If one student is enrolled
+      in two different courses, the exams for those courses need to
+      be scheduled in different periods so that the student may
+      take both exams. The following chart shows the pairs of
+      courses having at least one student enrolled in both.</p>
+    </div>
+
+    <table id="table-4" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Vertical-Cell"></td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Graphic<br>
+            Design</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Philosophy</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Architecture</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Russian<br>
+            History</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            French</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Statistics</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            Chemistry</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header para-style-override-1">
+            20th Century Lit</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Graphic Design</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Philosophy</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Architecture</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Russian History</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            French</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Statistics</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            Chemistry</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header para-style-override-2">
+            20th<br>
+            Century Lit</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">x</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="problem-part">. Represent this situation as a
+    graph.</p>
+
+    <p class="problem-part">. Is it possible to create an exam
+    schedule so that no student has to be in two places at
+    once?</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/graphs.tif" alt=
+    "graphs.tif">
+  </section>
+
+  <section>
+    <p>a.</p>
+  </section>
+
+  <section>
+    <p>b.</p>
+  </section>
+
+  <section>
+    <p>c.</p>
+  </section>
+
+  <section>
+    <p>d.</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/isomorphic%204.png" alt=
+    "isomorphic%204.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/isomorphic1.png" alt=
+    "isomorphic1.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/isomorphic%202.png" alt=
+    "isomorphic%202.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/iso%203.png" alt=
+    "iso%203.png">
+  </section>
+
+  <section>
+    <p>b.</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/Lesson1Problem14Partb.png"
+    alt="Lesson1Problem14Partb.png">
+  </section>
+
+  <section>
+    <p>a.</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/maryland%20graph1.png" alt=
+    "maryland%20graph1.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/maryland%20graph3.png" alt=
+    "maryland%20graph3.png">
+  </section>
+
+  <section>
+    <p>c.</p>
+  </section>
+
+  <section>
+    <p>a.</p>
+  </section>
+
+  <section>
+    <p>b.</p>
+  </section>
+
+  <section>
+    <p>c.</p>
+  </section>
+
+  <section>
+    <p>d.</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/degree%202.png" alt=
+    "degree%202.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/degree%203.png" alt=
+    "degree%203.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/Degree%201.png" alt=
+    "Degree%201.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/degree%204.png" alt=
+    "degree%204.png">
+  </section>
+
+  <section>
+    <p>a.</p>
+  </section>
+
+  <section>
+    <p>b.</p>
+  </section>
+
+  <section>
+    <p>c.</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/planar3.png" alt=
+    "planar3.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/planar2.png" alt=
+    "planar2.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/planar1.png" alt=
+    "planar1.png">
+  </section>
+
+  <section>
+    <p>d.</p>
+  </section>
+
+  <section>
+    <p>e.</p>
+  </section>
+
+  <section>
+    <p>f.</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/planar6.png" alt=
+    "planar6.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/planar4.png" alt=
+    "planar4.png">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/planar5.png" alt=
+    "planar5.png">
+  </section>
+
+  <section>
+    <div class="problem" data-problem-number="18">
+      <p>(From Finkbeiner and Lindstrom) The Board of Directors of
+      XYZ Corporation has 16 members and 6 committees of 5 persons
+      each as indicated by the following chart.</p>
+    </div>
+
+    <table id="table-5" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Committee</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Members</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">A, D, G, K, N</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">2</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">A, B, G, L, M</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">3</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">H, J, L, P, R</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">4</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">C, E, F, M, Q</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">5</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">C, J, K, N, R</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">6</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">D, E, H, P, Q</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="Problems---Problem-flow">How many distinct meeting
+    times are needed to conduct the committee meetings of the
+    board?</p>
+
+    <div class="problem" data-problem-number="19">
+      <p>Draw a graph in which the total degree — that is, the sum
+      of the degrees of each node — is odd.</p>
+    </div>
+
+    <div class="problem" data-problem-number="20">
+      <p>The graph we used to represent bordering countries in
+      problem 4 was planar. Create a map of your own countries for
+      which the corresponding graph is nonplanar.<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      A graph is complete when every node is connected to every
+      other node by an edge. Here’s a complete graph with four
+      nodes:</p>
+    </div>
+
+    <div class="problem" data-problem-number="21">
+      <p>Draw:</p>
+
+      <p class="problem-part">. A complete graph with five
+      nodes.</p>
+
+      <p class="problem-part">. A complete graph with six
+      nodes.</p>
+
+      <p class="problem-part">. A complete graph with three
+      nodes.</p>
+    </div>
+
+    <div class="problem" data-problem-number="22">
+      <p>How many edges will a complete graph with each of the
+      following number of nodes have?</p>
+
+      <p class="problem-part">. Five nodes</p>
+
+      <p class="problem-part">. Six nodes</p>
+
+      <p class="problem-part">. Three nodes</p>
+    </div>
+
+    <div class="problem" data-problem-number="23">
+      <p>How would you calculate the number of edges of a complete
+      graph with…</p>
+
+      <p class="problem-part">. A hundred nodes?</p>
+
+      <p class="problem-part">. n nodes?</p>
+    </div>
+
+    <div class="problem" data-problem-number="24">
+      <p>Now that you know how the number<br>
+      of nodes and edges in a complete graph are related,
+      investigate this relationship further.</p>
+
+      <p class="problem-part">. Are the number of nodes and the
+      number of edges in a complete graph related directly? That
+      is, if you double the number of nodes, does the number of
+      edges double, too?</p>
+
+      <p class="problem-part">. Are the number of nodes and edges
+      in a complete graph related linearly? Or does the number of
+      edges go up “faster” or “slower” than in a linear
+      relationship?</p>
+    </div>
+
+    <div class="problem" data-problem-number="25">
+      <p>What’s the minimum number of nodes needed for a graph with
+      1000 edges, if at most one edge can connect two nodes, and no
+      edge can connect a node to itself?</p>
+    </div>
+
+    <div class="problem" data-problem-number="26">
+      <p>If a complete graph has 500 nodes, can you estimate the
+      number of edges quickly? Is it more likely to be roughly
+      12500, 125000, or 1250000 edges?</p>
+    </div>
+
+    <div class="problem" data-problem-number="27">
+      <p>In the complete graph with four nodes, pictured earlier,
+      the graph is drawn so that some of the edges crossed.
+      However,<br>
+      just because it is drawn that way in that particular diagram
+      does not mean the graph is not planar.</p>
+
+      <p class="problem-part">. Is the complete graph with four
+      nodes planar?</p>
+
+      <p class="problem-part">. Is the complete graph with five
+      nodes planar?</p>
+
+      <p class="problem-part">. How about complete graphs with more
+      than five nodes?</p>
+    </div>
+
+    <div class="problem" data-problem-number="28">
+      <p>The symbol “Deg,” as in the degree of a node, represents a
+      function. What kinds of objects does Deg take as input? What
+      kinds of objects does it output? By the way, the set of
+      allowable inputs to a function is called its domain, and the
+      set of allowable outputs is called its range.</p>
+    </div>
+
+    <p>For the next seven problems, it will be useful to change the
+    representation of the problem using the tools of graph theory.
+    The first question to<br>
+    ask yourself is always, “what should the nodes<br>
+    represent, and what should the edges represent?”</p>
+
+    <div class="problem" data-problem-number="29">
+      <p>In this “Clue” game board, draw a graph in which you show
+      which rooms can be reached from the others by the roll of a 6
+      on a die. Include the secret passages that you can take no
+      matter what you roll from the Lounge to the Conservatory and
+      from the Kitchen to the Study. If you roll a number higher
+      than the number of spaces you need, you can still go in the
+      room. By the way, is the Clue graph planar?</p>
+    </div>
+
+    <div class="problem" data-problem-number="30">
+      <p>A group of six sophomores is going down to the Lower
+      School to read to a group of six first-graders. The teachers
+      asked for a list of preferences, both from the first-graders
+      and the sophomores, as to who would read to whom.</p>
+    </div>
+
+    <p class="Problems---Problem-flow">Here are the first graders’
+    lists:<br>
+    <br>
+    (First grader) (would like to be read to by)<br>
+    Algernon Xenophon, Yvonne, Ulysses<br>
+    Bartleby Ulysses, Vlad, Yvonne, Zaphod<br>
+    Curio Vlad, Winnifred, Zaphod<br>
+    Duncan Winnifred, Zaphod, Xenophon<br>
+    Evangeline Ulysses, Xenophon<br>
+    Francine Ulysses, Vlad, Winnifred, Zaphod</p>
+
+    <p class="Problems---Problem-flow">And here are the sophomores’
+    lists:<br>
+    <br>
+    (Sophmore) (would like to read to)<br ulysses="" francine="">
+    <br>
+    Vlad Bartleby, Curio, Francine<br>
+    Winnifred Bartleby, Curio, Duncan,<br>
+    Evangeline, Francine<br>
+    Xenophon Algernon, Evangeline<br>
+    Yvonne Algernon, Duncan, Francine<br>
+    Zaphod Bartleby, Curio, Francine<br>
+    <br>
+    Is there a way to form partners that will make everybody
+    happy?</p>
+
+    <div class="problem" data-problem-number="31">
+      <p>(From Epp) A traveler in Europe wants to visit each of six
+      cities shown on this map exactly once, starting and ending in
+      Brussels.<br>
+      The distance (in kilometers) between each pair of cities is
+      given in the table. Suggest<br>
+      a sequence of cities she can visit that<br>
+      minimizes the distance traveled.</p>
+    </div>
+
+    <div class="problem" data-problem-number="32">
+      <p>Wiki-Racing! The game of wiki-racing involves starting on
+      a randomly generated<br>
+      Wikipedia page and taking Wikipedia links to navigate through
+      until you reach a designated ending page. For example, two
+      players on two different computers might agree to end on the
+      page for “Fruit Bat.” The first player to arrive at the Fruit
+      Bat Wikipedia page using only the links on Wikipedia pages
+      would win.<br>
+      <br>
+      Below is a list of webpages in our miniature<br>
+      version of wiki-racing. Each webpage links to some, but not
+      necessarily all, of the others.<br>
+      <br></p>
+    </div>
+
+    <table id="table-6" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>Wikipedia Page</p>
+          </td>
+
+          <td>
+            <p>Links on that page</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Toy Story</p>
+          </td>
+
+          <td>
+            <p>Walt Disney Pictures</p>
+
+            <p>Pixar Animation Studios</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Toy Story 3</p>
+          </td>
+
+          <td>
+            <p>Buzz Lightyear</p>
+
+            <p>Toy Story</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Pixar Animation Studios</p>
+          </td>
+
+          <td>
+            <p>Meet the Robinsons</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Buzz Lightyear</p>
+          </td>
+
+          <td>
+            <p>Pixar Animation Studios</p>
+
+            <p>Walt Disney Pictures</p>
+
+            <p>Toy Story</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Meet the Robinsons</p>
+          </td>
+
+          <td>
+            <p>Walt Disney Pictures</p>
+
+            <p>Toy Story 3</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>Walt Disney Pictures</p>
+          </td>
+
+          <td>
+            <p>Pixar Animation Studios</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="problem-part">. How could you represent this<br>
+    situation using a graph?</p>
+
+    <p class="problem-part">. What is the fewest number of clicks
+    it will take to go from the Toy Story page to the Toy Story 3
+    page? From the Toy Story page to the Buzz Lightyear page?</p>
+
+    <div class="problem" data-problem-number="33">
+      <p>Oh, no — your parents just announced that they’re dropping
+      by your apartment for a surprise visit. But your place is a
+      mess. Fortunately, you’ve got some elves — as many as you
+      need — to help you clean the place, but even an elf can’t
+      wash lights with darks. Here’s what you and the elves have
+      got to do, and the time it takes to do each thing:</p>
+    </div>
+
+    <ul class="List-2">
+      <li class="Problems---Problem-flow para-style-override-4">
+      Wash your load of light-colored laundry<br>
+      (30 mins)</li>
+
+      <li class="Problems---Problem-flow para-style-override-4">
+      Wash your load of dark-colored laundry<br>
+      (30 mins, and remember you’ve only got<br>
+      one washer)</li>
+
+      <li class="Problems---Problem-flow para-style-override-4">Dry
+      your lights (45 mins, and you have to<br>
+      wash the lights first)</li>
+
+      <li class="Problems---Problem-flow para-style-override-4">Dry
+      your darks (45 mins, you have to wash<br>
+      the darks first, and you’ve only got one dryer)</li>
+
+      <li class="Problems---Problem-flow para-style-override-4">
+      Scrape off the dishes in your sink (10 mins)</li>
+
+      <li class="Problems---Problem-flow para-style-override-4">
+      Load and run the dishwasher<br>
+      (60 mins, and you have to scrape first)</li>
+
+      <li class="Problems---Problem-flow para-style-override-4">
+      Pick your stuff up off of the floor<br>
+      (20 minutes)</li>
+
+      <li class="Problems---Problem-flow para-style-override-4">
+      Vacuum (10 minutes, and you have to pick<br>
+      up your stuff first)</li>
+    </ul>
+
+    <p class="problem-part">. Find a good graph-theory way to
+    represent this problem. How long will it take you to put your
+    apartment in order?</p>
+
+    <p class="problem-part">. What is the minimum number of elves
+    you need to do everything in that amount of time?</p>
+
+    <div class="problem" data-problem-number="34">
+      <p>You have a \[3 \times 3\] } chessboard. The black knights
+      are in the top two corners, and the white knights are in the
+      bottom two corners. No other pieces are on the board. (Recall
+      that the only moves knights are allowed to make is “2 up or
+      down, 1 left or right,” or “1 up or down, 2 left or right,”
+      but that they can “jump” pieces.)</p>
+
+      <p class="problem-part">. How many moves will it take to
+      switch the position of the knights, so that the black knights
+      are now in the bottom two corners and the white knights are
+      in the top two corners?</p>
+
+      <p class="problem-part">. How many moves will it take just to
+      switch the two rightmost knights?</p>
+    </div>
+
+    <div class="problem" data-problem-number="35">
+      <p>Below is a map of the town of Königsberg,<br>
+      Prussia, as it existed in the 18th Century.<br>
+      A popular puzzle at the time was to cross all seven bridges
+      without ever going<br>
+      back over a bridge you’ve crossed, and wind up at your
+      starting point. Solve the puzzle yourself. (The mathematician
+      Leonhard Euler invented graph theory by analyzing this
+      problem.)</p>
+    </div>
+
+    <p><br>
+    <br>
+    Image from http://www.solipsys.co.uk/new/<br>
+    KoenigsbergImages.html?InternalLinks</p>
+
+    <div class="problem" data-problem-number="36">
+      <p>For each figure, say whether you can trace it with your
+      pencil without going over any segment twice, ending at your
+      starting point.</p>
+    </div>
+
+    <figure>
+      a.<br>
+    </figure>
+
+    <figure>
+      b.<br>
+      <img src="images/05-1-graph-theory/euler%20circuit2.png" alt=
+      "euler%20circuit2.png">
+    </figure>
+
+    <figure>
+      c.<br>
+      <img src="images/05-1-graph-theory/euler%20circuit3.png" alt=
+      "euler%20circuit3.png">
+    </figure>
+
+    <figure>
+      d. <img src="images/05-1-graph-theory/euler%20circuit4.png"
+      alt="euler%20circuit4.png">
+    </figure>
+
+    <div class="problem" data-problem-number="37">
+      <p>A graph that can be traced in the manner of the previous
+      problem is said to have<br>
+      an Euler Circuit, named after the<br>
+      mathematician who invented graph theory. Propose a method for
+      determining if a given graph has an Euler circuit or not.
+      (Are any of the concepts you’ve learned in this lesson
+      relevant?) Make up new examples to test, if necessary.</p>
+    </div>
+
+    <div class="problem" data-problem-number="38">
+      <p>Which complete graphs have Euler<br>
+      circuits?</p>
+    </div>
+
+    <div class="problem" data-problem-number="39">
+      <p>The Irish mathematician William Rowan Hamilton invented a
+      game in the 1850s called the Icosian Game. In it, you had to
+      visit a list of cities connected by roads, as represented by
+      the graph below.<img src=
+      "images/05-1-graph-theory/39%20graph%20bw.tif" alt=
+      "39%20graph%20bw.tif"></p>
+    </div>
+
+    <p class="Problems---Problem-flow">(image from
+    mathworld.wolfram.com/<br>
+    IcosianGame.html)<br></p>
+
+    <p class="Problems---Problem-flow">The challenge was to start
+    in one city and follow the roads to visit all the cities,
+    winding up at your starting city without ever having visited a
+    city twice. Solve the Icosian Game.</p>
+
+    <div class="problem" data-problem-number="40">
+      <p>If you read the previous problem carefully, you won’t be
+      surprised to learn that<br>
+      a circuit of the type you found — one where you need to visit
+      each node exactly once and return to your starting node —<br>
+      is called a Hamiltonian circuit. Find<br>
+      Hamiltonian circuits for each graph below.</p>
+    </div>
+
+    <figure>
+      a.<br>
+      <img src="images/05-1-graph-theory/hamiltonian1.tif" alt=
+      "hamiltonian1.tif"><br>
+    </figure>
+
+    <figure>
+      b.<br>
+      <img src="images/05-1-graph-theory/hamiltonian2.png" alt=
+      "hamiltonian2.png"><br>
+    </figure>
+
+    <figure>
+      c.<br>
+      <img src="images/05-1-graph-theory/hamiltonian3.png" alt=
+      "hamiltonian3.png"><br>
+    </figure>
+
+    <div class="problem" data-problem-number="41">
+      <p>Do you suppose that all graphs have<br>
+      Hamiltonian circuits?</p>
+    </div>
+
+    <div class="problem" data-problem-number="42">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">. Factor \[{x^2} + 8x + 16\]</p>
+
+      <p class="problem-part">. Factor \[{x^2} - 16\]</p>
+
+      <p class="problem-part">. Solve for x: \[{x^2} - 5x + 6 =
+      0\]</p>
+
+      <p class="problem-part">. Subtract</p>
+
+      <p class="problem-part">. If and<br>
+      \[{(x + y)^2} = 48\] , what is\[xy\] ?</p>
+    </div>
+
+    <div class="problem" data-problem-number="43">
+      <p>The diagram below shows a blueprint of three different
+      utility companies and three houses. You want to add to the
+      blueprint lines running from each utility company to each
+      house, but the lines cannot cross one another. Suggest a way
+      to do this or argue that it is impossible.<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br></p>
+    </div>
+
+    <p class="Problems---Problem-flow para-style-override-6">You
+    may not have needed a graph to fully analyze the previous
+    problem — but clearly, you could have drawn a graph to
+    represent the situation. Graphs like the one in problem 43 that
+    have two different groupings of nodes are called bipartite. In
+    a bipartite graph, edges may only be drawn between nodes in two
+    different groups (like house and utility); they never connect
+    nodes in the same group. When you solved Problem 30, you also
+    would have used a bipartite graph; however that graph was not a
+    complete bipartite graph, whereas the graph in 43 is complete
+    bipartite. Do you<br>
+    see why?<br></p>
+
+    <div class="problem" data-problem-number="44">
+      <p>Draw a complete bipartite graph between two groups of two
+      nodes. This graph is abbreviated K2,2. Now draw K2,4. Using
+      this notation, what graph were you<br>
+      working with in Problem 43?</p>
+    </div>
+
+    <div class="problem" data-problem-number="45">
+      <p>How many colors are needed to color<br>
+      the graph K2,4? How about Km,n?</p>
+    </div>
+
+    <div class="problem" data-problem-number="46">
+      <p>Find a formula for the total degree<br>
+      of Km,n.</p>
+    </div>
+
+    <div class="problem" data-problem-number="47">
+      <p>In the three-utilities puzzle (see problem 43), suppose
+      now that lines are allowed to cross, and so the lines are
+      actually run that way. If you accidentally cut one of the
+      pipes without knowing which one it is, what’s the probability
+      that the gas in the leftmost house will go out? How about if
+      there are m houses and n utilities, instead?</p>
+    </div>
+
+    <div class="problem" data-problem-number="48">
+      <p>Any graph that could represent “who beat whom” in a
+      situation where each team plays every other team once is
+      called a tournament. Which of the graphs below are
+      tournaments?</p>
+    </div>
+
+    <figure>
+      a.<br>
+      <img src="images/05-1-graph-theory/tournament1.png" alt=
+      "tournament1.png">
+    </figure>
+
+    <figure>
+      b.<br>
+      <img src="images/05-1-graph-theory/tournament2.png" alt=
+      "tournament2.png"><br>
+      <br>
+      c.<br>
+      <img src="images/05-1-graph-theory/tournament3.png" alt=
+      "tournament3.png"><br>
+    </figure>
+
+    <figure>
+      d.<br>
+      <img src="images/05-1-graph-theory/tournament4.png" alt=
+      "tournament4.png"><br>
+    </figure>
+
+    <figure>
+      e.<br>
+      <img src="images/05-1-graph-theory/tournament5.png" alt=
+      "tournament5.png">
+    </figure>
+
+    <div class="problem" data-problem-number="49">
+      <p>The Game of Sprouts: Mark a few dots on a piece of paper.
+      A move consists of two actions: connect two different dots
+      with a single edge then place a dot at around the middle of
+      this edge. You can only connect two dots if each has a degree
+      of less than 3, and you may not repeat an edge or cross
+      edges. The person who has no move is the loser.</p>
+
+      <p class="problem-part">. If you start with only two dots,
+      then how many moves can the game last?</p>
+
+      <p class="problem-part">. At the end of the two-dot sprouts
+      game, what will be the total degree of the diagram?</p>
+
+      <p class="problem-part">. At the end of the n-dot sprouts
+      game, what will be the total degree of the diagram?</p>
+
+      <p class="problem-part">. How many moves will the n-dot
+      sprouts game take?</p>
+    </div>
+
+    <div class="problem" data-problem-number="50">
+      <p>The following is a floor plan of a house. Is it possible
+      to enter the house in room A, travel through every interior
+      doorway of the house exactly once, and exit out of room
+      E?</p>
+    </div>
+
+    <div class="problem" data-problem-number="51">
+      <p>Earlier we learned that if two graphs are isomorphic,
+      their nodes can be matched into “partners” with each partner
+      having the same degree. Is it also true that when nodes can
+      be matched into partners of the same degree, the two graphs
+      must be isomorphic?</p>
+    </div>
+
+    <div class="problem" data-problem-number="52">
+      <p>An Euler path is a way of tracing a graph so that you
+      trace all the edges but end up in a different place than
+      where you started. Which of these graphs have Euler
+      paths?</p>
+    </div>
+
+    <figure>
+      a. b.<br>
+      <img src="images/05-1-graph-theory/degree%204.png" alt=
+      "degree%204.png"><img src=
+      "images/05-1-graph-theory/euler%20path1.png" alt=
+      "euler%20path1.png">
+    </figure>
+
+    <figure>
+      c.<br>
+      <img src="images/05-1-graph-theory/euler%20path%202.png" alt=
+      "euler%20path%202.png">
+    </figure>
+
+    <figure>
+      d.<br>
+      <img src="images/05-1-graph-theory/euler%20path3.png" alt=
+      "euler%20path3.png">
+    </figure>
+
+    <figure>
+      e.<br>
+      <img src="images/05-1-graph-theory/euler%20path4.png" alt=
+      "euler%20path4.png">
+    </figure>
+
+    <figure>
+      f.<br>
+      <img src="images/05-1-graph-theory/euler%20path%205.png" alt=
+      "euler%20path%205.png">
+    </figure>
+
+    <figure>
+      g.<br>
+      <img src="images/05-1-graph-theory/euler%20path6.png" alt=
+      "euler%20path6.png">
+    </figure>
+
+    <div class="problem" data-problem-number="53">
+      <p>The following diagram represents land connected by
+      bridges. Can you walk these bridges without retracing your
+      steps? (Though not necessarily winding up in<br>
+      the same place you started.)</p>
+    </div>
+
+    <figure>
+      <img src=
+      "images/05-1-graph-theory/bridges%20modified%202.png" alt=
+      "bridges%20modified%202.png">
+    </figure>
+
+    <div class="problem" data-problem-number="54">
+      <p>Propose a criterion by which you’d be able to tell if a
+      graph has an Euler path. Does it matter which nodes are your
+      starting and ending points? Remember to examine a similar
+      problem by making up specific cases for yourself.</p>
+    </div>
+
+    <div class="problem" data-problem-number="55">
+      <p>In problem 32 and the tournament<br>
+      problem (see problem 48), you drew a directed graph — a graph
+      where the edges are one-way. The question of finding Euler
+      circuits is more complicated on directed graphs. Do some
+      experiments and propose criteria for whether a directed graph
+      has an Euler circuit.</p>
+    </div>
+
+    <div class="problem" data-problem-number="56">
+      <p>Does every tournament have a Hamiltonian path? What does
+      it mean for the team rankings if there is more than one path
+      through a tournament?</p>
+    </div>
+
+    <div class="problem" data-problem-number="57">
+      <p>Come up with your own system to<br>
+      determine the winner of a tournament. It may help to create
+      some of your own examples of tournaments.</p>
+    </div>
+
+    <div class="problem" data-problem-number="58">
+      <p>The following graph represents streets<br>
+      and corners; the portion of a street<br>
+      between two corners is a “block”. The neighborhood
+      association decides to place streetlights at some of the
+      various corners<br>
+      so that the neighborhood never gets too dark at night. They
+      want there to be enough streetlights so that every home is on
+      a block that has a streetlight on at least one of its
+      corners. Assume that there are homes between each pair of
+      adjacent corners. Find the smallest number of street lights
+      needed.</p>
+    </div>
+
+    <figure>
+      <img src="images/05-1-graph-theory/mailboxes.png" alt=
+      "mailboxes.png">
+    </figure>
+
+    <div class="problem" data-problem-number="59">
+      <p>Use a graph to represent and solve the<br>
+      following maze.</p>
+    </div>
+
+    <figure>
+      <img src="images/05-1-graph-theory/maze.png" alt="maze.png">
+    </figure>
+
+    <div class="problem" data-problem-number="60">
+      <p>The “doughnut” shape below is called<br>
+      a torus. You know you can’t draw a<br>
+      complete graph with five nodes on a<br>
+      flat surface. But can you draw it on the surface of a
+      torus?</p>
+    </div>
+
+    <figure>
+      <img src="images/05-1-graph-theory/60%20graph%20BW.tif" alt=
+      "60%20graph%20BW.tif">
+    </figure>
+
+    <div class="problem" data-problem-number="61">
+      <p>If the blueprint for the houses and utilities (see problem
+      43) were printed on paper shaped like a torus, could you run
+      the<br>
+      wiring with no overlaps?</p>
+    </div>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/20%20graph.tif" alt=
+    "20%20graph.tif">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/clue%20BW.tif" alt=
+    "clue%20BW.tif">
+  </section>
+
+  <section>
+    <p>(continued on next page)</p>
+  </section>
+
+  <section>
+    <table id="table-7" class=
+    "No-Table-Style table-style-override-1">
+      <tbody>
+        <tr>
+          <td class="Vertical-Cell"></td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header">Berlin</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header">Brussels</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header">Dusseldorf</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header">Luxembourg</p>
+          </td>
+
+          <td class="Vertical-Cell">
+            <p class="Table---Cell-Header">Munich</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Brussels</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">783</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">--</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Dusseldorf</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">564</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">223</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">--</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Luxembourg</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">764</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">219</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">224</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">--</p>
+          </td>
+
+          <td class="Basic-cell"></td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Munich</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">585</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">771</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">613</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">517</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">--</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="Basic-cell">
+            <p class="Table---Cell-Header">Paris</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">1,057</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">308</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">497</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">375</p>
+          </td>
+
+          <td class="Basic-cell">
+            <p class="Table---Cell-Text">832</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <img src=
+    "images/05-1-graph-theory/Konigsberg.jpeg%20-%20better.tif"
+    alt="Konigsberg.jpeg%20-%20better.tif">
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/euler%20circuit1.png" alt=
+    "euler%20circuit1.png">
+  </section>
+
+  <section>
+    <p>(continued on next page)</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/utilities.png" alt=
+    "utilities.png">
+  </section>
+
+  <section>
+    <p>(continued on next page)</p>
+  </section>
+
+  <section>
+    <img src="images/05-1-graph-theory/house.png" alt="house.png">
+  </section>
+
+  <section>
+    <h2>Exploring<br>
+    in<br>
+    Depth</h2>
+  </section>
+
+  <section>
+    <p>(continued on next page)</p>
+  </section>
+</article>
+
+{% endraw %}
