@@ -1,4 +1,4 @@
-# [EDIT LESSONS NOW](http://prose.anandthakker.net)
+# [EDIT LESSONS NOW](http://prose.anandthakker.net/#parkmath/parkmath)
 
 -------
 
