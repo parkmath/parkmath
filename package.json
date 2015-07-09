@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/parkmath/parkmath",
   "dependencies": {
-    "cheerio": "^0.17.0",
-    "concat-stream": "^1.4.6",
+    "chalk": "^1.1.0",
+    "cheerio": "cheeriojs/cheerio#8ee743e89ee03f04bba971ade430490b079abdaf",
+    "concat-stream": "^1.5.0",
     "next-stream": "^2.2.2",
     "prerender-mathjax": "^1.0.1",
     "prince": "^1.0.0",
