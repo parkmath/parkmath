@@ -443,7 +443,8 @@ type: content
     <div class="problem" data-problem-number="38">
       <p>A bug jumps from lattice point to lattice point on a piece
       of graph paper according to the following pattern: from
-      $\left( {a,b} \right)$, the bug can jump only to or to . How
+      $\left( {a,b} \right)$, the bug can jump only to $\left( {a+1, b} \right)$
+      or to $\left( {a, b+1} \right)$. How
       many different paths can the bug take if it wishes to start
       at $\left( {0,0} \right)$ and end up at $\left( {6,4}
       \right)$? Hint: tinker with this problem a bit so that you
@@ -470,7 +471,7 @@ type: content
 
     <div class="problem" data-problem-number="40">
       <p>How many diagonals are there in a pentagon? a hexagon? a
-      decagon? an n-gon? A diagonal is a straight line segment that
+      decagon? an $n$-gon? A diagonal is a straight line segment that
       connects any two non-consecutive vertices.</p>
     </div>
 
@@ -484,7 +485,7 @@ type: content
     <div class="problem" data-problem-number="42">
       <p>Don’t use a calculator for this problem.</p>
 
-      <p class="problem-part">. Reduce the fraction .</p>
+      <p class="problem-part">. Reduce the fraction $\frac{6a^2}{4a^2-6a}$ .</p>
 
       <p class="problem-part">. Solve for x: ${x^2} - 5x = 14$.</p>
 
@@ -506,7 +507,7 @@ type: content
       <p>You have learned that any positive integer has a prime
       factorization of the form ${2^a} \cdot {3^b} \cdot {5^c}
       \cdot {7^d} \cdot {11^e} \cdot {13^f}...$, where the “…”
-      represents the rest of the primes, and a, b, c, d, e, f, and
+      represents the rest of the primes, and $a$, $b$, $c$, $d$, $e$, $f$, and
       so on can each equal 0, 1, 2, 3, … . So for example, 360 is
       equal to ${2^3} \cdot {3^2} \cdot {5^1}$.
       
@@ -528,24 +529,24 @@ type: content
     </div>
 
     <div class="problem" data-problem-number="46">
-      <p>Let<img src="../images/05-4-combinatorics-indistinguishable-orderings/Eqn30.svg" > stand for $\frac{{n!}}{{r!\left( {n - r}
-      \right)!}}$, where n and r are nonnegative integers, and
-      <img src="../images/05-4-combinatorics-indistinguishable-orderings/Lesson3Problem46.pdf.jpg" >.</p>
+      <p>Let $n \choose r$ stand for $\frac{{n!}}{{r!\left( {n - r}
+      \right)!}}$, where $n$ and $r$ are nonnegative integers, and
+    $r \leq n$.</p>
 
-      <p class="problem-part">. Calculate<img src="../images/05-4-combinatorics-indistinguishable-orderings/Eqn31.svg" >.</p>
+      <p class="problem-part">. Calculate $6 \choose 2$.</p>
 
-      <p class="problem-part">. Calculate<img src="../images/05-4-combinatorics-indistinguishable-orderings/Eqn32.svg" >.</p>
+      <p class="problem-part">. Calculate$7 \choose 1$.</p>
 
-      <p class="problem-part">. Is<img src="../images/05-4-combinatorics-indistinguishable-orderings/Eqn34.svg" > ever not an integer?
+      <p class="problem-part">. Is $n \choose r$ ever not an integer?
       
       Explain.</p>
 
-      <p class="problem-part">. Prove: <img src="../images/05-4-combinatorics-indistinguishable-orderings/Eqn35.svg" ></p>
+      <p class="problem-part">. Prove: $\frac{n(n-1)(n-2) \cdots (n-r+1)}{r(r-1)(r-2) \cdots 2 \cdot 1} = {n \choose r}$</p>
 
       <p class="problem-part">. Determine what should replace
       the question mark so that the
       following statement is true, then prove that the statement is
-      true. <img src="../images/05-4-combinatorics-indistinguishable-orderings/Eqn36.svg" ></p>
+      true. ${n+1 \choose r} = {? \choose r-1} + {? \choose r}$</p>
     </div>
 
     <h2>Exploring inDepth</h2>
