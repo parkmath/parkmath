@@ -1,0 +1,2510 @@
+---
+published: true
+book: 10
+lesson: 4
+title: modeling with data
+---
+{% raw %}
+
+<article>
+  <h1>Lesson 4: Modeling with Data</h1>
+  <section class="development">
+
+    <h2>Introduction</h2>
+
+    <div class="problem" data-problem-number="1">
+      <p>The following data, taken from facebook.com, describe the
+      approximate number of Facebook users at various times since
+      the beginning of 2004.</p>
+    </div>
+
+    <table id="table-1" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$t$<br>
+            (months since January 2004)</p>
+          </td>
+
+          <td>
+            <p>$P$<br>
+            (millions of Facebook users)</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>12</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>24</p>
+          </td>
+
+          <td>
+            <p>5.5</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>36</p>
+          </td>
+
+          <td>
+            <p>12</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>46</p>
+          </td>
+
+          <td>
+            <p>50</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>56</p>
+          </td>
+
+          <td>
+            <p>100</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>61</p>
+          </td>
+
+          <td>
+            <p>150</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>62</p>
+          </td>
+
+          <td>
+            <p>175</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>64</p>
+          </td>
+
+          <td>
+            <p>200</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>67</p>
+          </td>
+
+          <td>
+            <p>250</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>69</p>
+          </td>
+
+          <td>
+            <p>300</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Use your calculator to plot these data, with the Facebook
+    population on the $y$-axis, and time in months on the $x$-axis.
+    Then, try to predict how many people were on Facebook at the
+    beginning of 2010.</p>
+
+    <p>Looking at the data, it’s quite clear that the Facebook
+    population has been growing over time, and it’s also pretty
+    easy to see that the $rate$ at which it’s growing is
+    increasing, too. Even if we take those two observations into
+    account, though, there seems to be quite a wide range of
+    plausible predictions in problem 1. It’s hard to know how to
+    decide whether, say, 375 million users or 500 million users is
+    the better prediction.</p>
+
+    <p>What if we could find an equation that appeared to fit the
+    existing data very well? In that case, we would have reason to
+    believe that the equation was a good mathematical model for
+    Facebook population growth, and we could therefore make more
+    specific, confident predictions.</p>
+
+    <p>If you’ve studied biology, you might have seen that
+    exponential models are one of the simplest and most common
+    types of models used for population growth. Even though
+    Facebook isn’t quite same as, say, bacteria in a Petri dish, it
+    turns out that these data indeed appear to exhibit exponential
+    growth. Let’s find an exponential function that fits the data.
+    Recall that, by definition, an exponential function has an
+    equation in the form $y = a \cdot {b^x}$ , where a and b are
+    constants.</p>
+
+    <div class="problem" data-problem-number="2">
+      <p>To find constants for our data, we’ll need to substitute
+      two points into the general exponential equation, and then
+      solve the resulting pair of equations for $a$ and $b$.</p>
+
+      <p class="problem-part">. We have more points than we need:
+      since there are only two constants to solve for, we actually
+      only need two points. Which of the following pairs of points
+      do you think we should use to get the best fit for the whole
+      data set? Why?<br>
+      <br>
+      $\left( {12,1} \right)$ and $\left( {24,5.5} \right)$<br>
+      <br>
+      $\left( {24,5.5} \right)$ and $\left( {64,200}
+      \right)$<br>
+      <br>
+      $\left( {36,12} \right)$ and $\left( {62,175}
+      \right)$</p>
+
+      <p class="problem-part">. For each of the pairs of points in
+      part a, find the equation of an exponential function that
+      goes through the two points. Then, use your calculator to
+      graph each of these three equations together with the actual
+      data. Which one was the best fit? Which was worst? Why?</p>
+    </div>
+
+    <div class="problem" data-problem-number="3">
+      <p>Using whichever equation from problem 2 fit the data best,
+      predict the Facebook population at the beginning of 2010.
+      Compare your predictions to the actual data, available at:
+      http://www.facebook.com/press/info.php?timeline.</p>
+    </div>
+
+    <h2>Development</h2>
+
+    <p>Jenn Jeffings, ecologist extraordinaire, has taken some
+    data, shown below, on chestnut oak trees in the woods around
+    her house. She used the house as home base, and counted the
+    number of chestnut oaks within certain distances. So, for
+    example, the second row in the table indicates that Jenn
+    counted 63 chestnut oaks that were each no more than 10 meters
+    away from the house. Plot these data using your calculator.</p>
+
+    <table id="table-2" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>Distance (meters)</p>
+          </td>
+
+          <td>
+            <p>Number of chestnut oaks</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>5</p>
+          </td>
+
+          <td>
+            <p>16</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>10</p>
+          </td>
+
+          <td>
+            <p>63</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>12</p>
+          </td>
+
+          <td>
+            <p>90</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>15</p>
+          </td>
+
+          <td>
+            <p>141</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>20</p>
+          </td>
+
+          <td>
+            <p>251</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>24</p>
+          </td>
+
+          <td>
+            <p>362</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>You can see clearly that, just as with the Facebook data,
+    the $y$ values are increasing<br>
+    at a faster and faster rate.</p>
+
+    <div class="problem" data-problem-number="4">
+      <p>Are the data exponential? Either use an equation and some
+      algebra, or else work directly with the numbers to answer
+      this question.</p>
+    </div>
+
+    <p>It turns out that Jenn’s tree data can be modeled accurately
+    using a power<br>
+    function, which is any function that can be described with an
+    equation of the form $y = a \cdot {x^n}$ , where $a$ and $n$
+    are constants.</p>
+
+    <div class="problem" data-problem-number="5">
+      <p>Strategically pick two points, and use them to solve for
+      the constants $a$ and $n$. Check out the particular equation
+      that results by graphing it on your calculator together with
+      the data.</p>
+    </div>
+
+    <div class="problem" data-problem-number="6">
+      <p>According to the model you made in problem 5, how many
+      chestnut oaks are within 100 meters of Jenn’s house?</p>
+    </div>
+
+    <p>The equation you came up with in problem 5 is just one
+    example of a power function. Let’s take a brief look at these
+    functions in general.</p>
+
+    <div class="problem" data-problem-number="7">
+      <p>Is the graph of $y = 5{x^2}$ exactly five times steeper
+      than the graph of $y = {x^2}$ ? Is it exactly five times
+      higher? Experiment with some values of $a$ other than 5, and
+      see if you can get any different effects. In each case, it
+      will be helpful to compare your graph to the more basic $y =
+      {x^2}$ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="8">
+      <p>Graph $y = {x^4}$ and $y = {x^5}$ on your calculator.
+      Compare them to $y = {x^2}$ and $y = {x^3}$ . Now predict
+      what $y = {x^{94}}$ and $y = {x^{95}}$ will look like.
+      Check your prediction. What can you say in general about
+      power functions where n is a positive integer?</p>
+    </div>
+
+    <div class="problem" data-problem-number="9">
+      <p>Find the coordinates of a specific point that $must$ be on
+      the graph of $y = 3{x^n}$ , regardless of the value of $n$.
+      Then find one more.</p>
+    </div>
+
+    <p>Let’s go back to the Facebook data we looked at in the
+    introduction. In problem 2, you should have seen that the
+    equation $P = 0.637 \cdot {1.094^t}$ fit the data best. For
+    consistency, let’s use that equation for the following
+    problems.</p>
+
+    <div class="problem" data-problem-number="10">
+      <p>Suppose you were writing a $Postscript$ article about
+      Facebook’s incredible exponential growth, and you wanted to
+      include a prediction about when we would expect the Facebook
+      population to reach 1 billion users. According to the
+      equation, when will this happen?</p>
+    </div>
+
+    <div class="problem" data-problem-number="11">
+      <p>According to the equation, how long will it be after your
+      answer to the previous problem until the population reaches 2
+      billion users? And how long after $that$ until it hits 4
+      billion users?</p>
+    </div>
+
+    <div class="problem" data-problem-number="12">
+      <p>Write an equation that expresses the time $t$, as a
+      function of the population $P$. In other words, rewrite the
+      equation $P = 0.637 \cdot {1.094^t}$ in “$t = $ ”
+      form.</p>
+    </div>
+
+    <p>On the one hand, you could think of this equation as being
+    the same as, or equivalent to, the original “$P = $ ”
+    equation. On the other hand, though, it’s quite clear that in
+    this equation, the “input” and “output” variables have been
+    reversed. As you might recall from the lesson on algorithms,
+    this means that the equation you wrote in problem 12 represents
+    the inverse of the original function. (Actually,<br>
+    they are inverses of each other.)</p>
+
+    <div class="problem" data-problem-number="13">
+      <p>Equations of the form $y = a{\log _b}\left( x \right) +
+      c$ are called<br>
+      logarithmic functions. If you haven’t already, use a bit of
+      algebra to show that the equation you wrote in problem<br>
+      12 is, indeed, a logarithmic function. Why does it make sense
+      that the inverse of an exponential function would be a
+      logarithmic function?</p>
+    </div>
+
+    <div class="problem" data-problem-number="14">
+      <p>Below is a graph of the equation $P = 0.637 \cdot
+      {1.094^t}$ .</p>
+
+      <p class="problem-part">. Using the graph above, and without
+      using your calculator, make a large (at least half-page) and
+      accurate graph of your equation from problem 12. (Remember
+      that, typically, we put the output on the vertical axis and the
+      input on the<br>
+      horizontal axis.) What do you notice about the graph?</p>
+
+      <p class="problem-part">. Plot your answers to problems 10 and
+      11 both on the graph above and also on your graph.</p>
+    </div>
+
+    <h2>Practice</h2>
+
+    <div class="problem" data-problem-number="15">
+      <p>Fit a power function to each set of data.</p>
+
+      <p class="problem-part">.</p>
+
+      <table id="table-3" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>$x$</p>
+            </td>
+
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>3</p>
+            </td>
+
+            <td>
+              <p>5</p>
+            </td>
+
+            <td>
+              <p>10</p>
+            </td>
+
+            <td>
+              <p>14</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>$y$</p>
+            </td>
+
+            <td>
+              <p>24</p>
+            </td>
+
+            <td>
+              <p>81</p>
+            </td>
+
+            <td>
+              <p>375</p>
+            </td>
+
+            <td>
+              <p>3000</p>
+            </td>
+
+            <td>
+              <p>8232</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part">.</p>
+
+      <table id="table-4" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>$x$</p>
+            </td>
+
+            <td>
+              <p>4</p>
+            </td>
+
+            <td>
+              <p>9</p>
+            </td>
+
+            <td>
+              <p>11</p>
+            </td>
+
+            <td>
+              <p>17</p>
+            </td>
+
+            <td>
+              <p>22</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>$y$</p>
+            </td>
+
+            <td>
+              <p>52.8</p>
+            </td>
+
+            <td>
+              <p>139.7</p>
+            </td>
+
+            <td>
+              <p>177.7</p>
+            </td>
+
+            <td>
+              <p>299.6</p>
+            </td>
+
+            <td>
+              <p>408.2</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part">.</p>
+
+      <table id="table-5" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>$x$</p>
+            </td>
+
+            <td>
+              <p>10</p>
+            </td>
+
+            <td>
+              <p>20</p>
+            </td>
+
+            <td>
+              <p>30</p>
+            </td>
+
+            <td>
+              <p>40</p>
+            </td>
+
+            <td>
+              <p>50</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>$y$</p>
+            </td>
+
+            <td>
+              <p>3.2</p>
+            </td>
+
+            <td>
+              <p>17.9</p>
+            </td>
+
+            <td>
+              <p>49.3</p>
+            </td>
+
+            <td>
+              <p>101.2</p>
+            </td>
+
+            <td>
+              <p>176.8</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="problem" data-problem-number="16">
+      <p>Fit a logarithmic function to the following data.</p>
+
+      <table id="table-6" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>$x$</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>10</p>
+            </td>
+
+            <td>
+              <p>50</p>
+            </td>
+
+            <td>
+              <p>100</p>
+            </td>
+
+            <td>
+              <p>1000</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>$y$</p>
+            </td>
+
+            <td>
+              <p>4</p>
+            </td>
+
+            <td>
+              <p>5.5</p>
+            </td>
+
+            <td>
+              <p>6.5</p>
+            </td>
+
+            <td>
+              <p>7</p>
+            </td>
+
+            <td>
+              <p>8.5</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="problem" data-problem-number="17">
+      <p>Find the inverse of each of the following functions.</p>
+
+      <p class="problem-part">. $H = 3t + 5$</p>
+
+      <p class="problem-part">.</p>
+
+      <p class="problem-part">. $K = 65 + 30 \cdot {0.8^t}$</p>
+
+      <p class="problem-part">. $T = {\log _2}\left( n \right) +
+      2$</p>
+    </div>
+  </section>
+
+
+  <section class="problems">
+    <h2>Problems</h2>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2014.tif.jpg"
+    alt="Lesson%204%20-%20graph%2014.tif.jpg">
+
+    <div class="problem" data-problem-number="18">
+      <p>In each of the following datasets, it<br>
+      appears that y increases at a faster<br>
+      and faster rate as $x$ increases. Which<br>
+      of them are exponential?</p>
+    </div>
+
+    <div class="problem" data-problem-number="19">
+      <p>When a rock is dropped from the top of a large cliff, it
+      falls to the Earth in a very predictable way. Assuming air
+      resistance is negligible (for the first few seconds at least,
+      not a ridiculous assumption), here is a chart of time vs.
+      distance fallen in the previous second. For example, at $t =
+      3$ seconds, the rock fell 80 feet in the previous<br>
+      second.<br>
+      <br></p>
+    </div>
+
+    <table id="table-7" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>Time (secs)</p>
+          </td>
+
+          <td>
+            <p>Distance this second (feet)</p>
+          </td>
+
+          <td>
+            <p>Total Distance (feet)</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>16</p>
+          </td>
+
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>2</p>
+          </td>
+
+          <td>
+            <p>48</p>
+          </td>
+
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>80</p>
+          </td>
+
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>4</p>
+          </td>
+
+          <td>
+            <p>112</p>
+          </td>
+
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>5</p>
+          </td>
+
+          <td>
+            <p>144</p>
+          </td>
+
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>6</p>
+          </td>
+
+          <td>
+            <p>176</p>
+          </td>
+
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="No-Paragraph-Style">Can you write an equation that
+    relates total distance fallen (i.e. distance fallen from the
+    top of the cliff) to time elapsed?</p>
+
+    <div class="problem" data-problem-number="20">
+      <p>Suppose that you had the following data on the number of
+      downloads $D$ of Lady Gaga’s latest single, as a function of
+      time<br>
+      $t$ in days since it came out.<br>
+      <br></p>
+
+      <table id="table-8" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>$t$ (days)</p>
+            </td>
+
+            <td>
+              <p>$D$ (millions of downloads)</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>10</p>
+            </td>
+
+            <td>
+              <p>42</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>15</p>
+            </td>
+
+            <td>
+              <p>60</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>50</p>
+            </td>
+
+            <td>
+              <p>300</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part">. Fit an exponential function to the
+      data provided, and use your equation to predict the number of
+      downloads on the 100th day after release.</p>
+
+      <p class="problem-part">. Now, fit a power function to the
+      data, and use that equation to predict $D(100{\rm{ days}})$
+      .</p>
+
+      <p class="problem-part">. How much confidence do you have in
+      each of these models? Explain.</p>
+    </div>
+
+    <div class="problem" data-problem-number="21">
+      <p>Graph $y = {\left( {{\raise0.5ex\hbox{$\scriptstyle 3$}
+      \kern-0.1em/\kern-0.15em \lower0.25ex\hbox{$\scriptstyle
+      5$}}} \right)^x}$ in the standard window on your calculator.
+      It appears that this graph eventually touches the
+      $x$-axis.<br>
+      Estimate at what value of $x$ this happens.</p>
+    </div>
+
+    <div class="problem" data-problem-number="22">
+      <p>In the previous problem, you probably saw that as $x$ gets
+      larger and larger, the graph of $y = {(\frac{3}{5})^x}$ and
+      the $x$-axis become nearly indistinguishable. When this
+      happens, we say that the graph of $y = {\left(
+      {{\raise0.5ex\hbox{$\scriptstyle 3$} \kern-0.1em/\kern-0.15em
+      \lower0.25ex\hbox{$\scriptstyle 5$}}} \right)^x}$ and the
+      $x$-axis are asymptotic to each other. We can also say that
+      the $x$-axis is an asymptote of the graph of $y = {\left(
+      {{\raise0.5ex\hbox{$\scriptstyle 3$} \kern-0.1em/\kern-0.15em
+      \lower0.25ex\hbox{$\scriptstyle 5$}}} \right)^x}$ .</p>
+
+      <p class="problem-part">. Is the graph of every equation of
+      the form $y = {b^x}$ asymptotic to the $x$-axis?
+      Explain.</p>
+
+      <p class="problem-part">. The $x$-axis is a horizontal
+      asymptote of $y = {\left( {{\raise0.5ex\hbox{$\scriptstyle
+      3$} \kern-0.1em/\kern-0.15em \lower0.25ex\hbox{$\scriptstyle
+      5$}}} \right)^x}$ . What $vertical$ line is the graph of $y
+      = {\left( {{\raise0.5ex\hbox{$\scriptstyle 3$}
+      \kern-0.1em/\kern-0.15em \lower0.25ex\hbox{$\scriptstyle
+      5$}}} \right)^x}$ asymptotic to?</p>
+    </div>
+
+    <div class="problem" data-problem-number="23">
+      <p>It’s hard to experience it without going<br>
+      into space, but it turns out that your weight actually
+      depends on how far you are from the center of the earth. Here
+      are some data showing how an individual’s weight would
+      vary:<br>
+      <br></p>
+
+      <table id="table-9" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>Distance (miles)</p>
+            </td>
+
+            <td>
+              <p>Weight (pounds)</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>10000</p>
+            </td>
+
+            <td>
+              <p>18.9035532</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>20000</p>
+            </td>
+
+            <td>
+              <p>4.7258883</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>40000</p>
+            </td>
+
+            <td>
+              <p>1.181472075</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>80000</p>
+            </td>
+
+            <td>
+              <p>0.295368019</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part">. These data can actually be modeled by
+      a power function. Using that fact, and the definition of a
+      power function, find an equation for the data.</p>
+
+      <p class="problem-part">. According to your equation, how would
+      your weight change if you doubled your present distance away
+      from the center of the earth? (Note: the radius of Earth is
+      about 3969 miles… but does that even matter?)</p>
+
+      <p class="problem-part">. How far up would you have to go in
+      order for your weight to be 1% of what it is on the Earth’s
+      surface?</p>
+
+      <p class="problem-part">. Graph the equation you found in part
+      a. Does it have any asymptotes? If so, what do they mean in
+      terms<br>
+      of the situation being modeled?</p>
+    </div>
+
+    <div class="problem" data-problem-number="24">
+      <p>The equation you found in the previous<br>
+      problem is an example of an inverse power function — that is,
+      a function of the form $y = a{x^n}$ , where $n$ is
+      negative.<br>
+      Experiment with a few different values of $a$ and $n$ to get
+      a sense for what inverse power functions can look like. Is
+      it<br>
+      true that every inverse power function<br>
+      is asymptotic to both axes? Why?</p>
+    </div>
+
+    <div class="problem" data-problem-number="25">
+      <p>The following data show the number of hours of sunlight in
+      northern Maine based on the number of days since the winter
+      solstice, which in 2009 was on December 21. (So, for example,
+      the first row shows the number of hours of sunlight on<br>
+      December 21, the shortest day of the year.)<br>
+      <br></p>
+    </div>
+
+    <table id="table-10" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>Sunlight hours</p>
+          </td>
+
+          <td>
+            <p>Days after winter solstice</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>8.5</p>
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>8.6</p>
+          </td>
+
+          <td>
+            <p>7</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>8.7</p>
+          </td>
+
+          <td>
+            <p>14</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>8.9</p>
+          </td>
+
+          <td>
+            <p>21</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>9.2</p>
+          </td>
+
+          <td>
+            <p>28</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>9.5</p>
+          </td>
+
+          <td>
+            <p>35</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem" data-problem-number="26">
+      <p><br>
+      (data from
+      http://astro.unl.edu/classaction/animations/coordsmotion/daylighthoursexplorer.html)<br>
+
+      <br>
+      One night, at their vacation home in Maine, Brad Pitt and
+      Angelina Jolie had a fight. Brad couldn’t sleep that night,
+      and so he was up when the sun rose at 7:04am. By the time it
+      set at 4:22pm, they still hadn’t made up. Using the data in
+      the table, is it possible to say which day of the year
+      Brangelina had their fight?</p>
+    </div>
+
+    <div class="problem" data-problem-number="27">
+      <p>Often, when we are trying to model a<br>
+      phenomenon using mathematics, we’re interested in using one
+      variable, called<br>
+      the $input$, to predict the value of another<br>
+      variable, the $output$. This is generally only<br>
+      possible, however, if the input uniquely<br>
+      determines the output — or, in other words, when there is at
+      most one output for any given input. When this is the case,
+      we say that the relationship is a function. This was true,
+      for example, in the Facebook population example at the
+      beginning of the lesson, but it was $not$ the case in problem
+      25. In each of the following,<br>
+      determine whether the given relationship<br>
+      is a function.</p>
+
+      <p class="problem-part">. $\lambda = \frac{{3 \cdot
+      {{10}^8}{\rm{m/s}}}}{f}$ ($\lambda $ is the output.)</p>
+
+      <p class="problem-part">. Your equation from problem 23.</p>
+
+      <p class="problem-part">. In parts c and d, the input is on
+      the horizontal axis, and the output is on the vertical axis
+      is the output.</p>
+
+      <p class="problem-part"><br>
+      <br>
+      <br>
+      <br></p>
+
+      <p class="problem-part">.</p>
+
+      <p class="problem-part">. Input: birth date. Output: age.</p>
+
+      <p class="problem-part">. Input: month of the year<br>
+      (e.g., “January”, “June”, etc.).<br>
+      Output: average temperature<br>
+      in Baltimore city.</p>
+    </div>
+
+    <div class="problem" data-problem-number="28">
+      <p>How many vertical asymptotes does<br>
+      the graph of$y = 2{x^5}$ 9 have?</p>
+    </div>
+
+    <div class="problem" data-problem-number="29">
+      <p>Does$y = \log x$ have any vertical or<br>
+      horizontal asymptotes? Explain.</p>
+    </div>
+
+    <div class="problem" data-problem-number="30">
+      <p>Google and others roughly measure the popularity of a
+      given website based on the number of other pages on the
+      Internet that link to the site. The following dataset shows
+      how many blogs there are at different levels of popularity.
+      As you might expect, there are significantly more unpopular
+      blogs than there are popular ones.</p>
+
+      <table id="table-11" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>Popularity<br>
+              (number of links from other sites)</p>
+            </td>
+
+            <td>
+              <p>Number of Blogs</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>5</p>
+            </td>
+
+            <td>
+              <p>50</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>10</p>
+            </td>
+
+            <td>
+              <p>40</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>16</p>
+            </td>
+
+            <td>
+              <p>30</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>35</p>
+            </td>
+
+            <td>
+              <p>20</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>132</p>
+            </td>
+
+            <td>
+              <p>10</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>530</p>
+            </td>
+
+            <td>
+              <p>4</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>4014</p>
+            </td>
+
+            <td>
+              <p>1</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part">. Find a power function that fits these
+      data.</p>
+
+      <p class="problem-part">. Based on your equation, how does the
+      number of blogs with 1000 people linking to them compare<br>
+      with the number of blogs 500 people linking them?</p>
+
+      <p class="problem-part">. Is the asymptotic nature of inverse
+      power functions relevant to the<br>
+      situation being modeled? Explain.</p>
+
+      <p class="problem-part">. According to this equation, how many
+      links would the single most popular blog have?</p>
+    </div>
+
+    <div class="problem" data-problem-number="31">
+      <p>Come up with a function whose graph is<br>
+      asymptotic to the line $y = 3$ . Can you make one that is
+      $also$ asymptotic to the<br>
+      line $x = 5$ ?</p>
+    </div>
+
+    <div class="problem" data-problem-number="32">
+      <p>In the chart below, there are four functions<br>
+      (, , , and $j$ ) that are either “regular”<br>
+      power functions ($k{x^n}$ , $n$ positive) or inverse<br>
+      power functions ($k{x^n}$ , $n$ negative). For each
+      function in the chart, determine which<br>
+      of these types of functions it is, and then find $k$ and
+      $n$.<br>
+      <br>
+      <br></p>
+    </div>
+
+    <div class="problem" data-problem-number="33">
+      <p>If you graphed the data and equations in the previous
+      problem, you can clearly see four distinct shapes that a
+      power function can have, depending on whether the power is
+      even, odd, negative, or positive. The data below have yet
+      another shape — and this data, too, can be modeled by a power
+      function. Find an equation for the data. Does the graph of
+      your equation have a horizontal asymptote?</p>
+    </div>
+
+    <table id="table-12" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$x$</p>
+          </td>
+
+          <td>1</td>
+
+          <td>8</td>
+
+          <td>27</td>
+
+          <td>36</td>
+
+          <td>43</td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$y$</p>
+          </td>
+
+          <td>5</td>
+
+          <td>10</td>
+
+          <td>15</td>
+
+          <td>16.5</td>
+
+          <td>17.5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem" data-problem-number="34">
+      <p>The following data from the 2006 census shows the
+      distribution of wealth in the United States. The second row,
+      for example, says that there are 8,138,000 households having
+      an income of $60-70 thousand dollars per year.</p>
+    </div>
+
+    <p class="Problems---Problem-flow para-style-override-7">(Data
+    from:
+    http://pubdb3.census.gov/macro/032006/hhinc/new06_000.htm.)<br>
+    <br>
+    a. Based on what you know about the<br>
+    shapes of different functions, what<br>
+    types of functions $could$ model these<br>
+    data? Does one type seem more<br>
+    promising?<br>
+    <br>
+    b. Find an equation that accurately<br>
+    models the data above.<br>
+    <br>
+    c. Using your equation, predict how<br>
+    many U.S. households have an income<br>
+    of $80,000.<br>
+    <br>
+    d. Check out this visualization of the<br>
+    data above: http://www.visualizing<br>
+    economics.com/2006/11/05/2005-<br>
+    us-income-distribution/</p>
+
+    <div class="problem" data-problem-number="35">
+      <p>The data you’ve seen in the previous problem, as well as
+      in problem 29, are examples of what’s called the “80-20
+      rule,” or the<br>
+      “Pareto principle.” Vilfredo Pareto, an economist in the late
+      1800’s, made two oddly related observations: 80 percent of
+      Italy’s wealth was owned by roughly 20 percent of the
+      population, and 80 percent of the peas he harvested in his
+      garden came from roughly 20 percent of the pea plants.
+      (http://en.wikipedia.org/wiki/Pareto_principle.)<br>
+      <br>
+      Since then, a surprising number of phenomena<br>
+      have been discovered to follow this general rule. Here’s
+      another example. The data set below comes from a study of how
+      often different words appear in a large sample of English
+      text. The first column represents a certain level of rarity
+      or commonness for a word, and the second column shows how
+      many words had appeared with that frequency.<br>
+      So, for example, there were 586 words that appeared around
+      200 times, whereas there were only 73 words that appeared 600
+      times.</p>
+
+      <table id="table-13" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>Approximate word<br>
+              frequency</p>
+            </td>
+
+            <td>
+              <p>Number of words with (approximately) this
+              frequency</p>
+            </td>
+
+            <td>
+              <p>Example words with this frequency</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>200</p>
+            </td>
+
+            <td>
+              <p>586</p>
+            </td>
+
+            <td>
+              <p>“congress”, “traffic”</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>300</p>
+            </td>
+
+            <td>
+              <p>236</p>
+            </td>
+
+            <td>
+              <p>“particularly”, “restaurant”</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>400</p>
+            </td>
+
+            <td>
+              <p>147</p>
+            </td>
+
+            <td>
+              <p>“dinner”, “dollar”</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>500</p>
+            </td>
+
+            <td>
+              <p>88</p>
+            </td>
+
+            <td>
+              <p>“question”, “lives”</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>600</p>
+            </td>
+
+            <td>
+              <p>73</p>
+            </td>
+
+            <td>
+              <p>“sit”, “neat”</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="Problems---Problem-Part para-style-override-7">. Is
+      there evidence directly in the data above to suggest whether
+      this situation would be modeled better with an exponential or a
+      power function?</p>
+
+      <p class="problem-part">. Find an equation that models the data
+      above.</p>
+
+      <p class="problem-part">. Use your equation to predict how many
+      words would appear approximately 2010 times in the sample
+      text.</p>
+    </div>
+
+    <div class="problem" data-problem-number="36">
+      <p>You probably know that as you gain altitude, the
+      temperature decreases. Here’s some data that provides detail
+      on this<br>
+      phenomenon for a particular location.</p>
+    </div>
+
+    <table id="table-14" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>Height above sea level (m)</p>
+          </td>
+
+          <td>
+            <p>Temp (C)</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>1000</p>
+          </td>
+
+          <td>
+            <p>8.5</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>2000</p>
+          </td>
+
+          <td>
+            <p>2</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>3000</p>
+          </td>
+
+          <td>
+            <p>-4.5</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>4000</p>
+          </td>
+
+          <td>
+            <p>-11</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>5000</p>
+          </td>
+
+          <td>
+            <p>-17.5</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="problem" data-problem-number="37">
+      <p><br>
+      (Data from: http://www.usatoday.com/weather/wstdatmo.htm)</p>
+
+      <p class="problem-part">. If you wanted to fit an equation to
+      these data, what type of function do you think you should try
+      first?</p>
+
+      <p class="problem-part">. Find an equation for the data, and
+      use it to predict the temperature at an altitude of 7
+      kilometers above<br>
+      sea level.</p>
+    </div>
+
+    <div class="problem" data-problem-number="38">
+      <p>At 10:00 am Tim left his hot cup of tea on the table in
+      his classroom. The air conditioning in the room was on, so
+      the temperature of the tea dropped fairly quickly, as
+      indicated in the table below. The time is in minutes after
+      10:00 am and the temperature is in °F.</p>
+
+      <table id="table-15" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>Time</p>
+            </td>
+
+            <td>
+              <p>Temperature</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>0</p>
+            </td>
+
+            <td>
+              <p>170.5</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>5</p>
+            </td>
+
+            <td>
+              <p>130.5</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>10</p>
+            </td>
+
+            <td>
+              <p>106.5</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>15</p>
+            </td>
+
+            <td>
+              <p>92.1</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>20</p>
+            </td>
+
+            <td>
+              <p>83.46</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>25</p>
+            </td>
+
+            <td>
+              <p>78.28</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>30</p>
+            </td>
+
+            <td>
+              <p>75.17</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>35</p>
+            </td>
+
+            <td>
+              <p>73.3</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>40</p>
+            </td>
+
+            <td>
+              <p>72.18</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part">. Plot these data on a coordinate axis
+      system. To what temperature does the tea’s temperature appear
+      to be converging?</p>
+
+      <p class="problem-part">. According to Newton’s Law of Cooling,
+      the temperature should be an exponential function of time. Try
+      to fit an exponential equation to the data above. What happens?
+      Why?</p>
+
+      <p class="problem-part">. Find an equation that accurately
+      models the given data. Based on your equation, predict the time
+      at which Tim’s tea will be within 1 degree of room
+      temperature.</p>
+    </div>
+
+    <div class="problem" data-problem-number="39">
+      <p>Sketch a graph of the equation you came up with in the
+      previous problem. Now, estimate the slope of this curve at
+      four<br>
+      different points.</p>
+
+      <p class="problem-part">. What are the units of your
+      slope<br>
+      values? What do these numbers mean about Tim’s cup of
+      tea?</p>
+
+      <p class="problem-part">. Newton’s Law of Cooling is actually
+      stated thus: the rate of heat loss of an object is directly
+      proportional to the difference between the object’s
+      temperature and room temperature. Do some calculations to
+      verify this, using your answers to part a.</p>
+    </div>
+
+    <div class="problem" data-problem-number="40">
+      <p>Suppose that the following data shows the height of a
+      soccer ball as a function of<br>
+      time. As you probably learned in physics,<br>
+      these data should be parabolic, and therefore can be modeled
+      using a quadratic equation.</p>
+
+      <table id="table-16" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>Time(s)</p>
+            </td>
+
+            <td>
+              <p>Height(m)</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>0</p>
+            </td>
+
+            <td>
+              <p>0</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>0.5</p>
+            </td>
+
+            <td>
+              <p>11</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>19</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>1.5</p>
+            </td>
+
+            <td>
+              <p>25</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>2</p>
+            </td>
+
+            <td>
+              <p>28</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>2.5</p>
+            </td>
+
+            <td>
+              <p>29</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>3</p>
+            </td>
+
+            <td>
+              <p>27</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>3.5</p>
+            </td>
+
+            <td>
+              <p>23</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>4</p>
+            </td>
+
+            <td>
+              <p>17</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part">. Find an equation that accurately
+      models the data.</p>
+
+      <p class="problem-part">. Mick Jagger, who was watching the
+      game, took a picture on his cell phone when the ball was 22
+      meters above the field. How many seconds after the ball was
+      kicked did Mick take the photo?</p>
+
+      <p class="problem-part">. Is it possible to write a single
+      equation that gives you $t$ as a function<br>
+      of $h$?</p>
+    </div>
+
+    <div class="problem" data-problem-number="41">
+      <p>For each of the relationships in problem 26 that you
+      decided was a function,<br>
+      determine whether or not it has an inverse function.</p>
+    </div>
+
+    <div class="problem" data-problem-number="42">
+      <p>For each graph below, determine what type of function it
+      is. If it’s possible to<br>
+      be even more specific, then do so.</p>
+    </div>
+
+    <div class="problem" data-problem-number="43">
+      <p>$Continued$</p>
+    </div>
+
+    <div class="problem" data-problem-number="44">
+      <p>$Continued$</p>
+    </div>
+
+    <div class="problem" data-problem-number="45">
+      <p>The 1000 employees of the Acme<br>
+      Utensil Factory have been playing an<br>
+      absurdly long game of Blammo. They<br>
+      collected the following data on the number of surviving
+      players on few different days.</p>
+
+      <table id="table-17" class="Basic-Table">
+        <tbody>
+          <tr>
+            <td>
+              <p>Days</p>
+            </td>
+
+            <td>
+              <p>Survivors</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>0</p>
+            </td>
+
+            <td>
+              <p>1000</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>1</p>
+            </td>
+
+            <td>
+              <p>950</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>10</p>
+            </td>
+
+            <td>
+              <p>599</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>20</p>
+            </td>
+
+            <td>
+              <p>358</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>30</p>
+            </td>
+
+            <td>
+              <p>215</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>40</p>
+            </td>
+
+            <td>
+              <p>129</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="problem-part">. Based on what you know about<br>
+      the shapes of different functions, what types of functions
+      $could$ model these data?</p>
+
+      <p class="problem-part">. Find an equation that models the data
+      above.</p>
+
+      <p class="problem-part">. RJ hypothesizes that the death rate
+      in Blammo games is directly proportional to the population. Use
+      your equation to estimate the Blammo death rate on days 1, 3,
+      10, and 12, and then test RJ’s hypothesis.</p>
+    </div>
+
+    <div class="problem" data-problem-number="46">
+      <p>Don’t use a calculator for this problem.</p>
+
+      <p class="problem-part">. Find $x$ if ${\log _2}x = 6$
+      .</p>
+
+      <p class="problem-part">. Solve for $x$: $(x - 1){(x -
+      3)^2}(x + 4) = 0$</p>
+
+      <p class="problem-part">. Subtract: $\frac{3}{a} - \frac{{7 -
+      b}}{{ab}}$<br>
+      <br></p>
+
+      <p class="problem-part">. Simplify: $\frac{{\frac{x}{y} +
+      1}}{{2 - \frac{x}{y}}}$<br></p>
+
+      <p class="problem-part">. $\sqrt[{3{\kern 1pt} {\kern 1pt}
+      }]{{162}}$ can be written in the form $a\sqrt[{3{\kern 1pt}
+      {\kern 1pt} }]{b}$ , where $a$ and $b$ are integers and b is
+      as small as possible. What are $a$ and $b$?</p>
+    </div>
+
+    <div class="problem" data-problem-number="47">
+      <p>In the beginning of this lesson, you saw that the inverse
+      of an exponential function is a logarithmic function. Now,
+      prove that the inverse of a power function is always a power
+      function.</p>
+    </div>
+
+    <div class="problem" data-problem-number="48">
+      <p>Prove that every equation of the form can be written in
+      the form $y = {\log _B}x + c$ .</p>
+    </div>
+
+    <div class="problem" data-problem-number="49">
+      <p>Look back at the equation you wrote for $h$ as a function
+      of $t$ in problem 38. Using that equation…</p>
+
+      <p class="problem-part">. Write an equation that tells you
+      $t$ as a function of the height h of the ball on its way up
+      to its highest point.</p>
+
+      <p class="problem-part">. Write an equation that tells you
+      $t$ as a function of the height of the ball on the way
+      $down$.</p>
+    </div>
+
+    <div class="problem" data-problem-number="50">
+      <p>Why isn’t there only a single answer to the question “What
+      angle has a sine of .4221”?</p>
+    </div>
+
+    <div class="problem" data-problem-number="51">
+      <p>Your answer to the previous problem implies that the sine
+      function does not have an inverse function. If that is the
+      case, what the heck is your calculator doing when you do
+      ${\sin ^{ - 1}}$ ?</p>
+    </div>
+
+    <div class="problem" data-problem-number="52">
+      <p>Is it possible to have an inverse function for $part$ of
+      the sine function? What part?</p>
+    </div>
+  </section>
+
+  <section>
+    <table id="table-18" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$x$</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>3.3</p>
+          </td>
+
+          <td>
+            <p>7.5</p>
+          </td>
+
+          <td>
+            <p>15</p>
+          </td>
+
+          <td>
+            <p>27.8</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$y$</p>
+          </td>
+
+          <td>
+            <p>0.75</p>
+          </td>
+
+          <td>
+            <p>8.17</p>
+          </td>
+
+          <td>
+            <p>42.19</p>
+          </td>
+
+          <td>
+            <p>168.75</p>
+          </td>
+
+          <td>
+            <p>579.63</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="table-19" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$x$</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>10</p>
+          </td>
+
+          <td>
+            <p>21</p>
+          </td>
+
+          <td>
+            <p>34</p>
+          </td>
+
+          <td>
+            <p>42</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$y$</p>
+          </td>
+
+          <td>
+            <p>2</p>
+          </td>
+
+          <td>
+            <p>63.2</p>
+          </td>
+
+          <td>
+            <p>192.5</p>
+          </td>
+
+          <td>
+            <p>396.5</p>
+          </td>
+
+          <td>
+            <p>544.4</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="table-20" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$x$</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>5</p>
+          </td>
+
+          <td>
+            <p>7</p>
+          </td>
+
+          <td>
+            <p>9</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$y$</p>
+          </td>
+
+          <td>
+            <p>3.14</p>
+          </td>
+
+          <td>
+            <p>28.26</p>
+          </td>
+
+          <td>
+            <p>78.5</p>
+          </td>
+
+          <td>
+            <p>153.86</p>
+          </td>
+
+          <td>
+            <p>254.34</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2031%20c.tif.jpg"
+    alt="Lesson%204%20-%20graph%2031%20c.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2031%20d.tif.jpg"
+    alt="Lesson%204%20-%20graph%2031%20d.tif.jpg">
+  </section>
+
+  <section>
+    <table id="table-21" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>$x$</p>
+          </td>
+
+          <td>
+            <p>-4</p>
+          </td>
+
+          <td>
+            <p>-3</p>
+          </td>
+
+          <td>
+            <p>-2</p>
+          </td>
+
+          <td>
+            <p>-1</p>
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>2</p>
+          </td>
+
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>4</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$f(x)$</p>
+          </td>
+
+          <td>
+            <p>-.0156</p>
+          </td>
+
+          <td>
+            <p>-.037</p>
+          </td>
+
+          <td>
+            <p>-.125</p>
+          </td>
+
+          <td>
+            <p>-1</p>
+          </td>
+
+          <td>
+            <p>---</p>
+          </td>
+
+          <td>
+            <p>1</p>
+          </td>
+
+          <td>
+            <p>.125</p>
+          </td>
+
+          <td>
+            <p>.037</p>
+          </td>
+
+          <td>
+            <p>.0156</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$g(x)$ |</p>
+          </td>
+
+          <td>
+            <p>48</p>
+          </td>
+
+          <td>
+            <p>27</p>
+          </td>
+
+          <td>
+            <p>12</p>
+          </td>
+
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+
+          <td>
+            <p>3</p>
+          </td>
+
+          <td>
+            <p>12</p>
+          </td>
+
+          <td>
+            <p>27</p>
+          </td>
+
+          <td>
+            <p>48</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$h(x)$ z</p>
+          </td>
+
+          <td>
+            <p>5.2</p>
+          </td>
+
+          <td>
+            <p>3.9</p>
+          </td>
+
+          <td>
+            <p>2.6</p>
+          </td>
+
+          <td>
+            <p>1.3</p>
+          </td>
+
+          <td>
+            <p>0</p>
+          </td>
+
+          <td>
+            <p>-1.3</p>
+          </td>
+
+          <td>
+            <p>-2.6</p>
+          </td>
+
+          <td>
+            <p>-3.9</p>
+          </td>
+
+          <td>
+            <p>-5.2</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>$j(x)$ y</p>
+          </td>
+
+          <td>
+            <p>-.3125</p>
+          </td>
+
+          <td>
+            <p>-.5555</p>
+          </td>
+
+          <td>
+            <p>-1.25</p>
+          </td>
+
+          <td>
+            <p>-5</p>
+          </td>
+
+          <td>
+            <p>---</p>
+          </td>
+
+          <td>
+            <p>-5</p>
+          </td>
+
+          <td>
+            <p>-1.25</p>
+          </td>
+
+          <td>
+            <p>-.5555</p>
+          </td>
+
+          <td>
+            <p>-.3125</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <table id="table-22" class="Basic-Table">
+      <tbody>
+        <tr>
+          <td>
+            <p>Income range</p>
+          </td>
+
+          <td>
+            <p>Thousands of households</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>10,000-20,000</p>
+          </td>
+
+          <td>
+            <p>14,447</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>60,000-70,000</p>
+          </td>
+
+          <td>
+            <p>8,138</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>110,000-120,000</p>
+          </td>
+
+          <td>
+            <p>2,920</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>160,000-170,000</p>
+          </td>
+
+          <td>
+            <p>992</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>210,000-220,000</p>
+          </td>
+
+          <td>
+            <p>336</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>240,000-250,000</p>
+          </td>
+
+          <td>
+            <p>245</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <p class="Problems---Problem-flow para-style-override-7">(Data
+    from: http://www.americannationalcorpus.org/frequency.html
+    )</p>
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%2040%20-%20graph%2040%20a.tif.jpg"
+    alt="Lesson%2040%20-%20graph%2040%20a.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2040%20b.tif.jpg"
+    alt="Lesson%204%20-%20graph%2040%20b.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2040%20c.tif.jpg"
+    alt="Lesson%204%20-%20graph%2040%20c.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2040%20d.tif.jpg"
+    alt="Lesson%204%20-%20graph%2040%20d.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2040%20e.tif.jpg"
+    alt="Lesson%204%20-%20graph%2040%20e.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2040%20f.tif.jpg"
+    alt="Lesson%204%20-%20graph%2040%20f.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2040%20g.tif.jpg"
+    alt="Lesson%204%20-%20graph%2040%20g.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2040%20h.tif.jpg"
+    alt="Lesson%204%20-%20graph%2040%20h.tif.jpg">
+  </section>
+
+  <section>
+    <img src=
+    "../images/10-4-modeling-with-data/Lesson%204%20-%20graph%2040%20i.tif.jpg"
+    alt="Lesson%204%20-%20graph%2040%20i.tif.jpg">
+  </section>
+
+  <section>
+    <h2>Exploring<br>
+    in<br>
+    Depth</h2>
+  </section>
+</article>
+{% endraw %}
