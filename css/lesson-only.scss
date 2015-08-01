@@ -5,12 +5,4 @@
 
 @import "variables", "mixins";
 {% include habits-colors.scss %}
-@import
-        "normalize",
-        "base",
-        "layout",
-        "home",
-        "lessons",
-        "habits",
-        "book"
-;
+@import "lessons", "habits";

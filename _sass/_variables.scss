@@ -1,0 +1,34 @@
+// Our variables
+$font-family-display: 'Gill Sans', Helvetica, Arial, sans-serif;
+$font-family-text: 'Garamond', 'Adobe Garamond Pro', Georgia, serif;
+
+$font-size-base:   18px;
+$font-size-sm:     21px;
+$font-size-print:  11pt;
+$font-size-print-margin: 8pt;
+
+$small-font-size:  0.875em;
+$base-line-height: 1.3;
+
+$text-color:       #111;
+$background-color: white;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #9e9e9e;
+$grey-color-light: lighten($grey-color, 22%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// used by grid mixins
+$grid-columns:     12;
+
+$gutter-sm:        36px;
+$gutter-print:     24px;
+
+$screen-sm-min:    768px;
+$screen-md-min:    922px;
+$screen-lg-min:    1200px;
+
+$container-sm:    (720px + $gutter-sm);
+$container-md:    (940px + $gutter-sm);
+$container-lg:    (1140px + $gutter-sm);
+
