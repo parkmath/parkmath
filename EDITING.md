@@ -125,6 +125,7 @@ Here's how:
 - Similarly, use the `new-column` class to force something to break to the next column.
 - Problems will attempt to NOT be broken up across pages or columns.  If there's a long problem that you want to allow this for, use the class `allow-break`.
 - `<ul>` elements normally put each list item on a new line.  To make the list go horizontally, add the `horizontal` class: `<ul class="horizontal"> <li>thing 1</li> <li>thing 2</li> <li>thing 3</li> </ul>`.
+- `<ul>` elements are, by default, not bulleted.  To add bullets, use the `<ul class="bulleted">...</ul>`
 - To include 'subparts' within a problem part (`i.`, `ii.`, `iii.`, etc.), use an ordered list with the `subparts` class: `<ol class="subparts"><li>Thing 1</li><li>Thing 2</li></ol>`
 - Sometimes, you want two images to go side-by-side.  Use the `two-up` class for
   this: `<figure class="two-up"> <img src="...first image"> <img src="...second images"> </figure>`.  Similarly, `three-up` and `four-up` also work.
