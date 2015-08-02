@@ -120,9 +120,10 @@ Here's how:
 
 ## Other Markup
 
-- The `data-problem-number` and `data-problem-part` are purely informational: they're there to help you find the right problem; the actual editing
 - To emphasize text (i.e., italicize it), use `<em>blah blah blah</em>`; but to bold a vocabulary term, typically done in the sentence definining it, use `<em class="vocab">vocabulary term</em>`.
 - To force an element to appear on a new page add the `new-page` class to it.  E.g., `<div class="problem">` would become `<div class="problem new-page">`.
+- Similarly, use the `new-column` class to force something to break to the next column.
+- Problems will attempt to NOT be broken up across pages or columns.  If there's a long problem that you want to allow this for, use the class `allow-break`.
 - `<ul>` elements normally put each list item on a new line.  To make the list go horizontally, add the `horizontal` class: `<ul class="horizontal"> <li>thing 1</li> <li>thing 2</li> <li>thing 3</li> </ul>`.
 - Sometimes, you want two images to go side-by-side.  Use the `two-up` class for
   this: `<figure class="two-up"> <img src="...first image"> <img src="...second images"> </figure>`.  Similarly, `three-up` and `four-up` also work.
