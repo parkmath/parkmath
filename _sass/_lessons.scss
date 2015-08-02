@@ -68,6 +68,10 @@
     }
   }
 
+  ol.subparts {
+    list-style-type: lower-roman
+  }
+
   /* problem counter */
   counter-reset: problem;
 
@@ -130,9 +134,10 @@
     }
 
     .problem-part {
+      counter-reset: subpart;
       counter-increment: part;
       &:before {
-        content: counter(part, lower-alpha);
+        content: counter(part, lower-alpha) ". ";
         @include mq(print) { page-break-after: avoid; }
       }
     }
