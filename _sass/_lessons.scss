@@ -14,7 +14,6 @@
   @include make-column-offset(print, $offset);
 }
 
-
 .lesson {
 
   /* convenience classes for lesson authors/editors to use */
@@ -45,6 +44,16 @@
       display: block;
       page-break-before: always;
     }
+  }
+
+  .new-column {
+    @include mq(print) {
+      column-break-before: always;
+    }
+  }
+
+  .allow-break {
+    page-break-inside: auto;
   }
 
   ul.horizontal {
@@ -91,6 +100,9 @@
     counter-increment: problem;
     counter-reset: part;
 
+    /* don't break up problems */
+    page-break-inside: avoid;
+
     /* problem numbers and problem parts */
     position: relative;
     &:before {
@@ -100,14 +112,20 @@
       line-height: 1;
       font-size: 2.5em;
       padding-right: .25em;
-      float: left;
 
       @include mq(sm, print) {
-        position: absolute;
-        right: 100%;
-        top: -.33em;
+        float: none;
+        display: inline-block;
+        width: 100px;
+        margin-left: -100px;
         font-size: 3.5em;
-        padding-right: 0;
+        text-align: right;
+      }
+    }
+    /* move the problem content up, relative to the problem number */
+    @include mq(sm, print) {
+      & > *:first-child {
+        margin-top: -2.33em;
       }
     }
 
