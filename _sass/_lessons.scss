@@ -20,19 +20,24 @@
   .fig-50 > * { width: 50%; margin: 0 auto; }
   .fig-25 > * { width: 25%; margin: 0 auto; }
   
-  %n-up {
-    @extend %clearfix;
-    & > * {
-      float: left;
-      margin-top: 0;
-    }
-  }
   .two-up,
   .three-up,
-  .four-up { @extend %n-up; }
-  .two-up > * { width: 50%; }
-  .three-up > * { width: 33%; }
-  .four-up > * { width: 25%; }
+  .four-up {
+    & > :first-child { padding-left: 0; }
+    & > :last-child { padding-right: 0; }
+  }
+  .two-up > * {
+    @include make-column(print, 6);
+    @include make-column(sm, 6);
+  }
+  .three-up > * {
+    @include make-column(print, 4);
+    @include make-column(sm, 4);
+  }
+  .four-up > * {
+    @include make-column(print, 3);
+    @include make-column(sm, 3);
+  }
 
   em.vocab {
     font-weight: bold;
