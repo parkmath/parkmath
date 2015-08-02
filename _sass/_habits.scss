@@ -68,6 +68,9 @@ $habit-header-lines: 6;
         padding: lines(1) 0;
 
         &:before {
+          position: absolute;
+          width: auto;
+          margin: 0;
           right: percentage(1 - 3/$grid-columns);
           top: lines(1)/3.5;
           z-index: 100;
@@ -77,6 +80,7 @@ $habit-header-lines: 6;
           background: $background-color;
           z-index: 50;
           padding-top: lines(1);
+          padding-bottom: lines(1);
           min-height: lines(3);
           /* this would be cleaner as padding on problem-content, but
              princexml was having issues. */
@@ -88,6 +92,9 @@ $habit-header-lines: 6;
             top: lines(.5);
             @include triangle(lines(1), $background-color);
           }
+        }
+        & > *:first-child {
+          margin-top: 0;
         }
       }
     }
