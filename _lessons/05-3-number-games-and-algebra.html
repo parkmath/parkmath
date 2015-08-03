@@ -14,6 +14,7 @@ type: content
 
 
 
+
 {% raw %}
 <article>
 <h1>lesson 3: Number Games and Algebra</h1>
@@ -237,10 +238,17 @@ type: content
     
     <style>
       .lesson .development > .algebra-examples {
-      	list-style-type: upper-roman;
+      	list-style-type: none;
+        counter-reset: li;
         margin-left: 25%;
         float: left;
         width: 58.33333%;
+      }
+      .lesson .development > .algebra-examples li { position: relative; }
+      .lesson .development > .algebra-examples li:before {
+        counter-increment: li;
+      	content: counter(li, upper-roman) ".";
+        position: absolute;
       }
     </style>
     
