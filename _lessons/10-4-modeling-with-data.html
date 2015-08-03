@@ -1,9 +1,12 @@
 ---
+layout: lesson
 published: true
 book: 10
 lesson: 4
 title: modeling with data
+type: content
 ---
+
 {% raw %}
 
 <article>
@@ -21,113 +24,113 @@ title: modeling with data
     <table id="table-1" class="Basic-Table">
       <tbody>
         <tr>
-          <td>
+          <td align="center">
             <p>$t$<br>
             (months since January 2004)</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>$P$<br>
             (millions of Facebook users)</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>12</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>1</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>24</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>5.5</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>36</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>12</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>46</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>50</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>56</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>100</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>61</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>150</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>62</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>175</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>64</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>200</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>67</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>250</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>69</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>300</p>
           </td>
         </tr>
@@ -161,7 +164,7 @@ title: modeling with data
     turns out that these data indeed appear to exhibit exponential
     growth. Let’s find an exponential function that fits the data.
     Recall that, by definition, an exponential function has an
-    equation in the form $y = a \cdot {b^x}$ , where a and b are
+    equation in the form $y = a \cdot {b^x}$ , where $a$ and $b$ are
     constants.</p>
 
     <div class="problem">
@@ -173,12 +176,12 @@ title: modeling with data
       since there are only two constants to solve for, we actually
       only need two points. Which of the following pairs of points
       do you think we should use to get the best fit for the whole
-      data set? Why?<br>
+      data set? Why?
       <br>
-      $\left( {12,1} \right)$ and $\left( {24,5.5} \right)$<br>
+      $\left( {12,1} \right)$ and $\left( {24,5.5} \right)$
       <br>
       $\left( {24,5.5} \right)$ and $\left( {64,200}
-      \right)$<br>
+      \right)$
       <br>
       $\left( {36,12} \right)$ and $\left( {62,175}
       \right)$</p>
@@ -210,71 +213,71 @@ title: modeling with data
     <table id="table-2" class="Basic-Table">
       <tbody>
         <tr>
-          <td>
+          <td align="center">
             <p>Distance (meters)</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>Number of chestnut oaks</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>5</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>16</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>10</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>63</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>12</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>90</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>15</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>141</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>20</p>
           </td>
 
-          <td>
+          <td align="center">
             <p>251</p>
           </td>
         </tr>
 
         <tr>
-          <td>
+          <td align="center">
             <p>24</p>
           </td>
 
-          <td>
+          <td align="center"> 
             <p>362</p>
           </td>
         </tr>
@@ -292,13 +295,11 @@ title: modeling with data
     </div>
 
     <p>It turns out that Jenn’s tree data can be modeled accurately
-    using a power<br>
-    function, which is any function that can be described with an
-    equation of the form $y = a \cdot {x^n}$ , where $a$ and $n$
+      using a <em class="vocab">power function</em>, which is any function that can be described with an equation of the form $y = a \cdot {x^n}$ , where $a$ and $n$
     are constants.</p>
 
     <div class="problem">
-      <p>Strategically pick two points, and use them to solve for
+      <p>Strategically pick two points and use them to solve for
       the constants $a$ and $n$. Check out the particular equation
       that results by graphing it on your calculator together with
       the data.</p>
@@ -327,11 +328,11 @@ title: modeling with data
       Compare them to $y = {x^2}$ and $y = {x^3}$ . Now predict
       what $y = {x^{94}}$ and $y = {x^{95}}$ will look like.
       Check your prediction. What can you say in general about
-      power functions where n is a positive integer?</p>
+      power functions where $n$ is a positive integer?</p>
     </div>
 
     <div class="problem">
-      <p>Find the coordinates of a specific point that $must$ be on
+      <p>Find the coordinates of a specific point that <em>must</em> be on
       the graph of $y = 3{x^n}$ , regardless of the value of $n$.
       Then find one more.</p>
     </div>
@@ -343,7 +344,7 @@ title: modeling with data
     problems.</p>
 
     <div class="problem">
-      <p>Suppose you were writing a $Postscript$ article about
+      <p>Suppose you were writing a <em>Postscript</em> article about
       Facebook’s incredible exponential growth, and you wanted to
       include a prediction about when we would expect the Facebook
       population to reach 1 billion users. According to the
@@ -353,15 +354,14 @@ title: modeling with data
     <div class="problem">
       <p>According to the equation, how long will it be after your
       answer to the previous problem until the population reaches 2
-      billion users? And how long after $that$ until it hits 4
+        billion users? And how long after <em>that</em> until it hits 4
       billion users?</p>
     </div>
 
     <div class="problem">
       <p>Write an equation that expresses the time $t$, as a
       function of the population $P$. In other words, rewrite the
-      equation $P = 0.637 \cdot {1.094^t}$ in “$t = $ ”
-      form.</p>
+      equation $P = 0.637 \cdot {1.094^t}$ in “$t = $ ” form.</p>
     </div>
 
     <p>On the one hand, you could think of this equation as being
@@ -370,16 +370,11 @@ title: modeling with data
     this equation, the “input” and “output” variables have been
     reversed. As you might recall from the lesson on algorithms,
     this means that the equation you wrote in problem 12 represents
-    the inverse of the original function. (Actually,<br>
-    they are inverses of each other.)</p>
+      the <em class="vocab">inverse</em> of the original function. (Actually, they are inverses of each other.)</p>
 
     <div class="problem">
       <p>Equations of the form $y = a{\log _b}\left( x \right) +
-      c$ are called<br>
-      logarithmic functions. If you haven’t already, use a bit of
-      algebra to show that the equation you wrote in problem<br>
-      12 is, indeed, a logarithmic function. Why does it make sense
-      that the inverse of an exponential function would be a
+      c$ are called <em class="vocab">logarithmic functions</em>. If you haven’t already, use a bit of algebra to show that the equation you wrote in problem 12 is, indeed, a logarithmic function. Why does it make sense that the inverse of an exponential function would be a
       logarithmic function?</p>
     </div>
 
