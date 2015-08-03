@@ -143,7 +143,7 @@ MathJax.Hub.Config({
   //  displayed equations.  When the alignment is not "center", the second determines
   //  an indentation from the left or right side for the displayed equations.
   //
-  displayAlign: "center",
+  displayAlign: "left",
   displayIndent: "0em",
 
   //
