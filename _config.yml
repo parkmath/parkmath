@@ -21,6 +21,7 @@ exclude:
   - Gemfile.lock
   - package.json
   - node_modules
+  - bundle/cache
 
 # Content-specific settings
 collections:
