@@ -18,12 +18,11 @@
   },
   "homepage": "https://github.com/parkmath/parkmath",
   "dependencies": {
+    "MathJax-node": "^0.3.0",
     "chalk": "^1.1.0",
     "cheerio": "cheeriojs/cheerio#8ee743e89ee03f04bba971ade430490b079abdaf",
     "concat-stream": "^1.5.0",
     "next-stream": "^2.2.2",
-    "prerender-mathjax": "^1.0.1",
-    "prince": "^1.0.0",
     "split": "^1.0.0",
     "through2": "^0.6.3",
     "trumpet": "^1.7.0"
