@@ -8,6 +8,8 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
     echo "Prerendering equations for $filename"
     ./tools/prerender.js --no-speech --extensions TeX/cancel < "$filename" > "_site/books-prerendered/`basename $filename`";
   done
+  mkdir -p _site/pdf
+  ./tools/render-pdfs.js
 else
   echo "Not building, so long and thanks for all the fish!"
 fi
