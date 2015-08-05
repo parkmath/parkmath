@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+{% assign lessons = include.lessons %}
+{% assign summary = include.summary %}
+{% assign answers = include.answers %}
+
+<html lang='en'>
+
+  {% include head.html %}
+
+  <body class="book-page">
+
+    {% include header.html %}
+
+    <section class="book book-{{page.book}}">
+
+      <section class="info"></section>
+
+      <section class="container title-page">
+        <h1>Book {{page.book}}: {{ page.title }}</h1>
+      </section>
+
+      <section class="container toc">
+        <h1>Table of Contents</h1>
+        <ul class="lessons">
+          <li>
+            <a href="#habits-of-mind">
+              Mathematical Habits of Mind
+            </a>
+          </li>
+          {% for lesson in lessons %}
+          {% assign content = (site.lessons | where: 'book', lesson.book | where: 'lesson', lesson.lesson | first %}
+          {% if content.published and lesson.lesson %}
+            <li>
+              <a href="#{{lesson.lesson}}-{{content.title | slugify}}">
+                {% include lesson-title.html lesson=lesson content=content %}
+              </a>
+            </li>
+          {% endif %}
+          {% endfor %}
+          {% if summary.published %}
+          <li>
+            <a href="#summary-and-review">Summary and Review</a>
+          </li>
+          {% endif %}
+
+          {% if answers.published %}
+          <li>
+            <a href="#answers">Selected Answers</a>
+          </li>
+          {% endif %}
+        </ul>
+      </section>
+
+
+
+      <section class="habit-list" id="habits-of-mind">
+        {% include habit-header.html %}
+        <div class="container">
+          <dl>
+            {% for habit in site.data.habits %}
+            <dt>{{habit.name}}</dt>
+            <dd>{{habit.definition}}</dd>
+            {% endfor %}
+          </dl>
+        </div>
+      </section>
+
+
+      {% for lesson in lessons %}
+      {% assign content = (site.lessons | where: 'book', lesson.book | where: 'lesson', lesson.lesson | first %}
+      {% if content.published and lesson.lesson %}
+        {% assign habits = (site.data.habits | where: 'name', content.title) %}
+        {% unless habits == empty %}
+          {% assign habit = habits[0] %}
+          {% assign habitclass = 'habit-lesson' %}
+        {% else %}
+          {% assign habit = false %}
+          {% assign habitclass = '' %}
+        {% endunless %}
+
+        <section class="lesson {{habitclass}}" id="{{lesson.lesson}}-{{content.title | slugify}}">
+          {% if habit %}
+            {% include habit-header.html habit=habit %}
+          {% endif %}
+          <div class="container">
+            <h1>{% include lesson-title.html lesson=lesson content=content %}</h1>
+          {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
+          {{ content.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
+          </div>
+        </section>
+      {% endif %}
+      {% endfor %}
+
+      {% if summary.published %}
+      <section class="lesson" id="summary-and-review">
+        <div class="container">
+        {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
+        {{ summary.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if answers.published %}
+      <section class="answers" id="answers">
+        <div class="container">
+        {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
+        {{ answers.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
+        </div>
+      </section>
+      {% endif %}
+
+    </section>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
+

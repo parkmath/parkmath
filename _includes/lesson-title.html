@@ -1,7 +1,12 @@
-{% if lesson.type == 'habit' %}
+{% if include.lesson.order %}
+  {% assign lessonNumber = include.lesson.order %}
+{% else %}
+  {% assign lessonNumber = include.content.lesson %}
+{% endif %}
+{% if include.content.type == 'habit' %}
 Habits of Mind:
 {% else %}
-Lesson {{ lesson.lesson }}:
+Lesson {{ lessonNumber }}:
 {% endif %}
-{% assign words = (lesson.title | prepend: '' | split: ' ') %}
+{% assign words = (include.content.title | prepend: '' | split: ' ') %}
 {% for word in words %}{{ word | capitalize }} {% endfor %}
