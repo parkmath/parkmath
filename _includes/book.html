@@ -17,7 +17,7 @@
       <section class="info"></section>
 
       <section class="container title-page">
-        <h1>Book {{page.book}}: {{ page.title }}</h1>
+        <h1>{% if page.book %} Book {{page.book}}: {% endif %}{{ page.title }}</h1>
       </section>
 
       <section class="container toc">
@@ -86,7 +86,7 @@
           <div class="container">
           {% unless habit %}
             <h1>{% include lesson-title.html lesson=lesson content=content %}</h1>
-          {% endif %}
+          {% endunless %}
           {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
           {{ content.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
           </div>

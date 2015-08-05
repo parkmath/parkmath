@@ -128,3 +128,37 @@ Here's how:
 - To include 'subparts' within a problem part (`i.`, `ii.`, `iii.`, etc.), use an ordered list with the `subparts` class: `<ol class="subparts"><li>Thing 1</li><li>Thing 2</li></ol>`
 - Sometimes, you want two images to go side-by-side.  Use the `two-up` class for
   this: `<figure class="two-up"> <img src="...first image"> <img src="...second images"> </figure>`.  Similarly, `three-up` and `four-up` also work.
+
+## Custom Books
+
+To add a custom book made of exiting lessons from other books, just add a file
+like 99-my-custom-book.html in the [`_books/`](https://github.com/parkmath/parkmath/tree/editing/_books) directory that looks like this:
+
+```yaml
+---
+layout: custom-book
+book: 99
+title: My Custom Book
+habits-color: rgb(0, 179, 208)
+lessons:
+- book: 7
+  lesson: 0
+- book: 10
+  lesson: 0
+- book: 7
+  lesson: 1
+  order: 1
+- book: 7
+  lesson: 2
+  order: 2
+- book: 10
+  lesson: 1
+  order: 3
+---
+```
+
+Notes:
+
+ - Be careful to match the indentation shown above.
+ - The `order` property lets you renumber the lessons within the custom book.
+ - The `book` property can be omitted, in which case the title of the book will be printed as 'My Custom Book' instead of 'Book 99: My Custom Book'
