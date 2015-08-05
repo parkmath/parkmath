@@ -59,7 +59,6 @@ like this:
 
 ```html
 <article>
-  <h1>Lesson 1: ...</h1>
   <section class="development">
 
     <h2>Introduction</h2>

@@ -84,7 +84,9 @@
             {% include habit-header.html habit=habit %}
           {% endif %}
           <div class="container">
+          {% unless habit %}
             <h1>{% include lesson-title.html lesson=lesson content=content %}</h1>
+          {% endif %}
           {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
           {{ content.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
           </div>
@@ -95,6 +97,7 @@
       {% if summary.published %}
       <section class="lesson" id="summary-and-review">
         <div class="container">
+          <h1>Summary and Review</h1>
         {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
         {{ summary.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
         </div>
