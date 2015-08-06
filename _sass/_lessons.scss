@@ -19,7 +19,7 @@
   /* convenience classes for lesson authors/editors to use */
   .fig-50 > * { width: 50%; margin: 0 auto; }
   .fig-25 > * { width: 25%; margin: 0 auto; }
-  
+
   .two-up,
   .three-up,
   .four-up {
@@ -157,12 +157,9 @@
   .development {
     @include make-row();
 
-    h2 {
-      @include offset-column-print-and-sm(0, 10);
-    }
-
-    & > * { @include offset-column-print-and-sm(2, 8); }
-    & > .problem { @include offset-column-print-and-sm(3, 7); }
+    h2 { @include offset-column-print-and-sm(0, 10.5); }
+    & > * { @include offset-column-print-and-sm(1.5, 9); }
+    & > .problem { @include offset-column-print-and-sm(2.5, 8); }
   }
 
   /* the Problems (and Exploring in Depth) section */

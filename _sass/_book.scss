@@ -41,8 +41,8 @@ $margin-print-gutter: 54pt;
   }
 
   /* These string-sets are used by the paged-media for running headers. */
-  .title-page h1 { string-set: book-title content(); }
   .book > section h1 { string-set: lesson-title content(); }
+  .book > .title-page h1 { string-set: book-title content(); }
   @include page-setup();
 
 }
