@@ -20,9 +20,12 @@ var booknames = fs.readdirSync(books).map(function (book) {
 
 ;(function next (err, result) {
   if (err) { console.error('ERROR', err) }
-  if (result) { console.error(result) }
+  if (result) {
+    console.log(result.stdout)
+    console.error(result.stderr)
+  }
   if (booknames.length === 0) {
-    console.log('Finished rendering PDFs.')
+    console.log('\nFinished rendering PDFs.')
     process.exit()
   }
   var book = booknames.shift()
@@ -31,6 +34,7 @@ var booknames = fs.readdirSync(books).map(function (book) {
   Prince()
     .inputs(url.resolve('http://localhost:8080/books-prerendered/', book))
     .output(path.join(site, 'pdf', pdf))
+    .option('style', 'local-fonts.css')
     .timeout(60000)
     .execute()
     .then(function (result) { next(null, result) })
