@@ -6,7 +6,6 @@ layout: default
     {% for book in site.books %}
     <li class="book">
       Book {{ book.book }}: {{ book.title }}
-      <a href="{{ book.url | prepend: site.baseurl }}">[HTML]</a>
       {% assign pdf = book.path | split: "/" | last | split: '.' | first | append: '.pdf' | prepend: '/pdf/' | prepend: site.baseurl %}
       <a href="{{ pdf }}">[PDF]</a>
     </li>
