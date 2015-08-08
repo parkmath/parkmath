@@ -22,3 +22,6 @@
   font-style: italic;
   src: url('.fonts/GaramondNo8-Bold-Italic.ttf');
 }
+
+/* prevent weird rendering of square roots */
+math { font-family: serif; }
