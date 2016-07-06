@@ -24,4 +24,6 @@
 }
 
 /* prevent weird rendering of square roots */
-math { font-family: serif; }
+math {
+  font-family: serif;
+}
