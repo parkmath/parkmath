@@ -1,5 +1,7 @@
 # [EDIT LESSONS NOW](http://prose.anandthakker.net/#parkmath/parkmath)
 
+![](https://travis-ci.org/parkmath/parkmath.svg)
+
 -------
 
 For info and instructions on editing, please see [EDITING.md](EDITING.md).
