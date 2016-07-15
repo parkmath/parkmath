@@ -25,7 +25,7 @@
     "ecstatic": "^0.8.0",
     "jsdom": "3.1.1",
     "next-stream": "^2.2.2",
-    "prince": "^1.1.4",
+    "prince": "^1.2.0",
     "split": "^1.0.0",
     "through2": "^0.6.3",
     "trumpet": "^1.7.0",
