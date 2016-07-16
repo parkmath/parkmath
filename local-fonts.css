@@ -37,6 +37,21 @@
   src: url('.fonts/GillSans-Bold.ttf');
 }
 
+/* PrinceXML might be using Times New Roman for all math... */
+@font-face {
+  font-family: 'TimesNewRoman';
+  font-weight: normal;
+  font-style: normal;
+  src: url('.fonts/GaramondNo8-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'TimesNewRoman';
+  font-weight: normal;
+  font-style: italic;
+  src: url('.fonts/GaramondNo8-Italic.ttf');
+}
+
 /* prevent weird rendering of square roots */
 math {
   font-family: serif;

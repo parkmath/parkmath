@@ -3,6 +3,7 @@
 _site:
 	bundle exec jekyll build
 
+.PRECIOUS: _site/books-prerendered/%.html
 _site/books-prerendered/%.html: _site
 	mkdir -p $(dir $@)
 	cat _site/books/$*.html \
