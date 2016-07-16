@@ -9,6 +9,7 @@ _site/books-prerendered/%.html: _site
 		| ./tools/prerender.js --no-speech \
 		  --extensions TeX/cancel \
 		| sed 's/¯/_/g' \
+		| sed 's/\\\$$/$$/' \
 		> $@
 
 _site/pdf/%.pdf: _site/books-prerendered/%.html
