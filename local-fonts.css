@@ -23,6 +23,20 @@
   src: url('.fonts/GaramondNo8-Bold-Italic.ttf');
 }
 
+@font-face {
+  font-family: 'Gill Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('.fonts/GillSans.ttf');
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  font-weight: bold;
+  font-style: normal;
+  src: url('.fonts/GillSans-Bold.ttf');
+}
+
 /* prevent weird rendering of square roots */
 math {
   font-family: serif;
