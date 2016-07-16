@@ -170,13 +170,12 @@ blockquote {
 
 cite {
   @include mq(print) {
-    a[href^=http] {
+    a.expand-link {
       &:after {
         content: "(" attr(href) ")";
       }
     }
   }
-
 }
 
 /**
