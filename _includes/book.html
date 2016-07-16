@@ -29,11 +29,10 @@
             </a>
           </li>
           {% for lesson in lessons %}
-          {% assign content = (site.lessons | where: 'book', lesson.book | where: 'lesson', lesson.lesson | where: 'title', lesson.title | first) %}
-          {% if content.published and lesson.lesson and lesson.type != 'summary' %}
+          {% if lesson.published and lesson.lesson and lesson.type != 'summary' %}
             <li>
-              <a href="#{{lesson.lesson}}-{{content.title | slugify}}">
-                {% include lesson-title.html lesson=lesson content=content %}
+              <a href="#{{lesson.lesson}}-{{lesson.title | slugify}}">
+                {% include lesson-title.html lesson=lesson %}
               </a>
             </li>
           {% endif %}
@@ -52,8 +51,6 @@
         </ul>
       </section>
 
-
-
       <section class="habit-list" id="habits-of-mind">
         {% include habit-header.html %}
         <div class="container">
@@ -67,9 +64,8 @@
       </section>
 
       {% for lesson in lessons %}
-      {% assign content = (site.lessons | where: 'book', lesson.book | where: 'lesson', lesson.lesson | where: 'title', lesson.title | first) %}
-      {% if content.published and lesson.lesson and lesson.type != 'summary' %}
-        {% assign habits = (site.data.habits | where: 'name', content.title) %}
+      {% if lesson.published and lesson.lesson and lesson.type != 'summary' %}
+        {% assign habits = (site.data.habits | where: 'name', lesson.title) %}
         {% unless habits == empty %}
           {% assign habit = habits[0] %}
           {% assign habitclass = 'habit-lesson' %}
@@ -78,16 +74,16 @@
           {% assign habitclass = '' %}
         {% endunless %}
 
-        <section class="lesson {{habitclass}}" id="{{lesson.lesson}}-{{content.title | slugify}}">
+        <section class="lesson {{habitclass}}" id="{{lesson.lesson}}-{{lesson.title | slugify}}">
           {% if habit %}
             {% include habit-header.html habit=habit %}
           {% endif %}
           <div class="container">
           {% unless habit %}
-            <h1>{% include lesson-title.html lesson=lesson content=content %}</h1>
+            <h1>{% include lesson-title.html lesson=lesson %}</h1>
           {% endunless %}
           {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
-          {{ content.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
+          {{ lesson.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
           </div>
         </section>
       {% endif %}
