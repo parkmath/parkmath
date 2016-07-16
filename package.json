@@ -24,6 +24,7 @@
     "concat-stream": "^1.5.0",
     "ecstatic": "^0.8.0",
     "jsdom": "3.1.1",
+    "minimist": "^1.2.0",
     "next-stream": "^2.2.2",
     "prince": "^1.2.0",
     "split": "^1.0.0",

@@ -13,9 +13,8 @@ cache:
   - node_modules
   - bundle/cache
 before_install:
-- chmod +x ./tools/build.sh
 - chmod +x ./tools/deploy.sh
 script:
-- travis_wait ./tools/build.sh
+- travis_wait make all
 after_success:
 - travis_wait ./tools/deploy.sh
