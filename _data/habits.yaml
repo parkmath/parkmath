@@ -3,17 +3,17 @@
 - name: tinker
   definition: "to play around with numbers, figures, or other mathematical expressions in order to learn something more about them or the situation; experiment"
 - name: describe
-  definition: "to describe clearly a problem, a process, a series of steps to a solution; modu- late the language (its complexity or formalness) depending on the audience"
+  definition: "to describe clearly a problem, a process, a series of steps to a solution; modulate the language (its complexity or formalness) depending on the audience"
 - name: visualize
   definition: "to draw, or represent in some fashion, a diagram in order to help understand a problem; to interpret or vary a given diagram"
 - name: represent symbolically
   definition: "to use algebra to solve problems efficiently and to have more confidence in one’s answer, and also so as to communicate solutions more persuasively, to acquire deeper understanding of problems, and to investigate the possibility of multiple solutions"
 - name: prove
-  definition: "to desire that a statement be proved to you or by you; to engage in dialogue aimed at clarifying an argument; to establish a deductive proof; to use indirect reasoning or a counter-example as a way of constructing an argument"
+  definition: "to desire that a statement be proved to you or by you; to engage in dialogue aimed at clarifying an argument; to establish a deductive proof; to use indirect reasoning or a counterexample as a way of constructing an argument"
 - name: check for plausibility
-  definition: "to routinely check the reasonableness of any statement in a problem or its proposed solution, regardless of whether it seems true or false on initial impression; to be particularly skeptical of results that seem contradictory or implausible, whether the source be peer, teacher, evening news, book, news- paper, internet or some other; and to look at special and limiting cases to see if a formula or an argument makes sense in some easily examined specific situations"
+  definition: "to routinely check the reasonableness of any statement in a problem or its proposed solution, regardless of whether it seems true or false on initial impression; to be particularly skeptical of results that seem contradictory or implausible, whether the source be peer, teacher, evening news, book, newspaper, internet or some other; and to look at special and limiting cases to see if a formula or an argument makes sense in some easily examined specific situations"
 - name: take things apart
-  definition: "to break a large or complex problem into smaller chunks or cases, achieve some understanding of these parts or cases, and rebuild the original problem; to focus on one part of a problem (or definition or concept) in order to un- derstand the larger problem"
+  definition: "to break a large or complex problem into smaller chunks or cases, achieve some understanding of these parts or cases, and rebuild the original problem; to focus on one part of a problem (or definition or concept) in order to understand the larger problem"
 - name: conjecture
   definition: "to generalize from specific examples; to extend or combine ideas in order to form new ones"
 - name: change or simplify the problem
