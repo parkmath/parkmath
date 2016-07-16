@@ -29,8 +29,8 @@
             </a>
           </li>
           {% for lesson in lessons %}
-          {% assign content = (site.lessons | where: 'book', lesson.book | where: 'lesson', lesson.lesson | first %}
-          {% if content.published and lesson.lesson %}
+          {% assign content = (site.lessons | where: 'book', lesson.book | where: 'lesson', lesson.lesson | where: 'title', lesson.title | first) %}
+          {% if content.published and lesson.lesson and lesson.type != 'summary' %}
             <li>
               <a href="#{{lesson.lesson}}-{{content.title | slugify}}">
                 {% include lesson-title.html lesson=lesson content=content %}
@@ -66,10 +66,9 @@
         </div>
       </section>
 
-
       {% for lesson in lessons %}
-      {% assign content = (site.lessons | where: 'book', lesson.book | where: 'lesson', lesson.lesson | first %}
-      {% if content.published and lesson.lesson %}
+      {% assign content = (site.lessons | where: 'book', lesson.book | where: 'lesson', lesson.lesson | where: 'title', lesson.title | first) %}
+      {% if content.published and lesson.lesson and lesson.type != 'summary' %}
         {% assign habits = (site.data.habits | where: 'name', content.title) %}
         {% unless habits == empty %}
           {% assign habit = habits[0] %}

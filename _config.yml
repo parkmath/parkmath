@@ -74,11 +74,9 @@ prose:
           options:
             - content
             - habit
+            - summary
           value: content
-          
       - name: layout
         field:
           element: hidden
           value: lesson
-          
-  
