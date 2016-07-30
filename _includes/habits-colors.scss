@@ -1,10 +1,9 @@
 {% for book in site.books %}
 
 .book-{{ book.book }} {
-  h1 > small {
+  h1 + h2 {
     border-right-color: {{book.habits-color}};
   }
-  
   .habit-lesson {
     .problem:before {
       color: {{book.habits-color}};

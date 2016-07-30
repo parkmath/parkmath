@@ -1,6 +1,7 @@
 $habit-header-lines: 6;
 
 
+
 .habit-list {
   page: habit-list;
 
@@ -120,6 +121,10 @@ $habit-header-lines: 6;
   hyphens: auto;
 }
 
+[id="0.2-change-or-simplify-the-problem"] .habit-header h2 {
+  font-size: (1.33em) * $habit-header-lines / 3;
+}
+
 .habit-header {
 
   margin-bottom: lines($habit-header-lines);
@@ -145,24 +150,31 @@ $habit-header-lines: 6;
       bottom: -.11em;
       right: -.04em;
       margin: 0;
-      small {
+    }
+
+    h2 {
+      line-height: 0.92;
+      position: absolute;
+      bottom: .15em;
+      right: .1em;
+      margin: 0;
+
+      font-size: (1.33em) * $habit-header-lines / 2;
+      font-weight: bold;
+      color: $grey-color-dark;
+      text-transform: none;
+
+      // special case for this super long header
+      [id="0.2-change-or-simplify-the-problem"] & {
+        font-size: (1.33em) * $habit-header-lines / 3;
+      }
+
+      // ( note: color set in habit-colors.scss! )
+      &:before {
         position: absolute;
-        bottom: .15em;
-        right: .1em;
-        margin: 0;
-
-        font-weight: normal;
-        color: $grey-color-dark;
-        text-transform: none;
-        font-size: .5em;
-
-        // ( note: color set in habit-colors.scss! )
-        &:before {
-          position: absolute;
-          right: 102%;
-          content: " ";
-          @include triangle(.5em, inherit);
-        }
+        right: 100%;
+        content: " ";
+        @include triangle(.5em, inherit);
       }
     }
   }
@@ -178,8 +190,8 @@ $habit-header-lines: 6;
       flow: static(header-left);
 
       h1 {
-        right: percentage(1/$grid-columns);
         left: auto;
+        right: percentage(1/$grid-columns);
       }
     }
     .right {
@@ -188,12 +200,13 @@ $habit-header-lines: 6;
       h1 {
         right: auto;
         left: percentage(1/$grid-columns);
-        small {
-          right: auto;
-          left: 0;
-          color: black;
-          letter-spacing: -1px;
-        }
+      }
+      h2 {
+        right: 0;
+        bottom: -.06em;
+        color: black;
+        letter-spacing: -1px;
+        max-width: 90%;
       }
     }
   }
