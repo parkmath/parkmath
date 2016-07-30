@@ -54,7 +54,16 @@ body {
     margin-bottom: 0;
 }
 
+/*
+ * MathJax/Prince hacks
+ */
 
+// don't use the owl within equations
+.mjx-math * + * { margin: 0; }
+// simulate line-height: 0, because Prince seems not to like it.
+.mjx-chtml.mjx-chtml {
+  line-height: 1px;
+}
 
 /**
  * Images & Figures
