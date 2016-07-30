@@ -47,7 +47,7 @@
   .new-page {
     @include mq(print) {
       display: block;
-      page-break-before: always;
+      page-break-before: always !important;
     }
   }
 

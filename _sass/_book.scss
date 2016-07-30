@@ -38,11 +38,12 @@ $margin-print-gutter: 54pt;
     .book > .habit-list { page-break-before: left; }
     .book > .toc { page-break-before: right; }
     .book > #summary-and-review .problems { page-break-before: auto; }
+    footer { page-break-before: always; column-break-before: always; }
   }
 
   /* These string-sets are used by the paged-media for running headers. */
-  .book > section h1 { string-set: lesson-title content(); }
+  .book > section h1,
+  .book-page > footer h2 { string-set: lesson-title content(); }
   .book > .title-page h1 { string-set: book-title content(); }
   @include page-setup();
-
 }
