@@ -3,11 +3,19 @@ language: node_js
 node_js:
 - '6.2'
 env:
+  - CXX=g++-4.8
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - DEPLOY_BRANCH=editing
   - GH_REF=github.com/parkmath/parkmath.github.io.git
   - secure: RSFxphPrCJdZVynbvvB87sXm6TYiyDhQN4FGFLL/Y5V45vILeKK05qMzsDnXkU6anazXcP9VwGeVpgpkt0uWEn+0PyHP2HHVtSmuKlwUAL9o6OFqkaIa0YGSnMLkSkjZvC0S9FOQm/0uNZCI+eMyFtMrEW4wBf1+H0wG6ubCRLg=
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+    - g++-4.8
 cache:
   directories:
   - node_modules
