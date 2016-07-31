@@ -23,6 +23,6 @@ cache:
 before_install:
 - chmod +x ./tools/deploy.sh
 script:
-- travis_wait make all
+- travis_wait 30 make all
 after_success:
 - travis_wait ./tools/deploy.sh
