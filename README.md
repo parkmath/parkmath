@@ -1,6 +1,6 @@
 # [EDIT LESSONS NOW](http://prose.anandthakker.net/#parkmath/parkmath)
 
-![](https://travis-ci.org/parkmath/parkmath.svg)
+[![Build Status](https://travis-ci.org/parkmath/parkmath.svg?branch=editing)](https://travis-ci.org/parkmath/parkmath)
 
 -------
 

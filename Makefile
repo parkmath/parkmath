@@ -1,4 +1,4 @@
-
+SHELL=/bin/bash -o pipefail
 
 _site:
 	bundle exec jekyll build
