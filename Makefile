@@ -4,7 +4,7 @@ _site/books:
 	bundle exec jekyll build
 
 .PRECIOUS: _site/books-prerendered/%.html
-_site/books-prerendered/%.html: _site
+_site/books-prerendered/%.html: _site/books
 	mkdir -p $(dir $@)
 	cat _site/books/$*.html \
 		| node_modules/mathjax-node/bin/page2html \
