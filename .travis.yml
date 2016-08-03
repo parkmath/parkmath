@@ -25,8 +25,8 @@ before_install:
 - chmod +x ./tools/deploy.sh
 script:
 - travis_wait make _site/pdf/01-reasoning-and-proving.pdf && ./tools/deploy.sh
-- travis_wait time make _site/pdf/99-custom-1.pdf && ./tools/deploy.sh
-- travis_wait time make _site/pdf/99-custom-2.pdf && ./tools/deploy.sh
+- date && travis_wait make _site/pdf/99-custom-1.pdf && date && ./tools/deploy.sh
+- travis_wait make _site/pdf/99-custom-2.pdf && ./tools/deploy.sh
 - ls -l _site/pdf
 - travis_wait make all
 - ./tools/deploy.sh
