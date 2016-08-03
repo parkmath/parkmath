@@ -28,11 +28,12 @@
               Mathematical Habits of Mind
             </a>
           </li>
-          {% for lesson in lessons %}
+          {% for d in lessons %}
+          {% assign lesson = (site.lessons | where: 'book', d.book | where: 'lesson', d.lesson | first) %}
           {% if lesson.published and lesson.lesson and lesson.type != 'summary' %}
             <li>
               <a href="#{{lesson.lesson}}-{{lesson.title | slugify}}">
-                {% include lesson-title.html lesson=lesson %}
+                {% include lesson-title.html lesson=lesson order=d.order %}
               </a>
             </li>
           {% endif %}
@@ -63,7 +64,8 @@
         </div>
       </section>
 
-      {% for lesson in lessons %}
+      {% for d in lessons %}
+      {% assign lesson = (site.lessons | where: 'book', d.book | where: 'lesson', d.lesson | first) %}
       {% if lesson.published and lesson.lesson and lesson.type != 'summary' %}
         {% assign habits = (site.data.habits | where: 'name', lesson.title) %}
         {% unless habits == empty %}
