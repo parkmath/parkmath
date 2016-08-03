@@ -2,7 +2,7 @@
 set -e # halt script on error
 
 # If this is the deploy branch, push it up to gh-pages
-if [ $TRAVIS_PULL_REQUEST = "false" ] && [ $TRAVIS_BRANCH = ${DEPLOY_BRANCH} ]; then
+if [[ $CIRCLE_BRANCH = ${DEPLOY_BRANCH} ]] || [[ $TRAVIS_BRANCH = ${DEPLOY_BRANCH} ]]; then
   echo "Get ready, we're pushing!"
   cd _site
   if [ ! -d .git ]; then
