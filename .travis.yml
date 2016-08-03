@@ -23,5 +23,9 @@ cache:
 before_install:
 - chmod +x ./tools/deploy.sh
 script:
-- ./tools/build_and_deploy.sh
+- travis_wait make _site/pdf/01-reasoning-and-proving.pdf
+- ./tools/deploy.sh
+- travis_wait 30 make _site/pdf/05-reasoning-and-proving-2.pdf
+- travis_wait make all
+- ./tools/deploy.sh
 
