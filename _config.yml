@@ -22,6 +22,7 @@ exclude:
   - package.json
   - node_modules
   - bundle/cache
+  - vendor
 
 # Content-specific settings
 collections:
