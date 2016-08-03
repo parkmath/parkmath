@@ -1,6 +1,6 @@
 SHELL=/bin/bash -o pipefail
 
-_site:
+_site/books:
 	bundle exec jekyll build
 
 .PRECIOUS: _site/books-prerendered/%.html

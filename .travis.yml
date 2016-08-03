@@ -23,10 +23,5 @@ cache:
 before_install:
 - chmod +x ./tools/deploy.sh
 script:
-- travis_wait make _site/pdf/01-reasoning-and-proving.pdf
-- travis_wait make _site/pdf/05-reasoning-and-proving-2.pdf
-- travis_wait make _site/pdf/07-trigonometry-in-the-coordinate-plane.pdf
-- travis_wait make _site/pdf/99-custom-1.pdf
-after_success:
-- travis_wait ./tools/deploy.sh
+- ./tools/build_and_deploy.sh
 
