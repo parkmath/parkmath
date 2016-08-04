@@ -29,12 +29,10 @@ Prince()
   .then(done)
   .catch(done)
 
-function done (err, result) {
-  if (err) { console.error('ERROR', err) }
-  if (result) {
-    console.log(result.stdout)
-    console.error(result.stderr)
-  }
+function done (result) {
+  if (result && result.error) { console.error('ERROR', result.error) }
+  if (result && result.stdout) { console.log(result.stdout) }
+  if (result && result.stderr) { console.error(result.stderr) }
   process.exit()
 }
 

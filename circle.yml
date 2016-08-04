@@ -6,5 +6,5 @@ deployment:
   production:
     branch: editing
     commands:
-      - ./ci.sh
+      - ./ci.sh:
         timeout: 1800
