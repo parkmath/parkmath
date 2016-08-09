@@ -143,6 +143,7 @@
     }
 
     .problem-part {
+      text-indent: -1em;
       counter-reset: subpart;
       counter-increment: part;
       &:before {
