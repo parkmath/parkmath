@@ -14,14 +14,15 @@ _site/prerendered/%.html: _site/%.html
 		| node_modules/mathjax-node/bin/page2html \
 			--no-speech \
 		  --extensions TeX/cancel \
-		| sed 's/\\\$$/$$/' \
+		| sed 's/\\\$$/$$/g' \
+		| sed 's/<script.*MathJax.js.*>/<script>/' \
 		> $@
 
 _site/pdf/%.pdf: _site/prerendered/%.html
 	mkdir -p $(dir $@)
 	./tools/render-pdf.js $^ -o $@
 
-books := $(patsubst _books/%.html,_site/pdf/%.pdf,$(wildcard _books/*.html))
+books := $(patsubst _books/%.html,_site/pdf/books/%.pdf,$(wildcard _books/*.html))
 .PHONY: all
 all: $(books)
 
