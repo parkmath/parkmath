@@ -81,6 +81,30 @@
     list-style-type: lower-roman
   }
 
+  table.vertical-headers {
+    table-layout: fixed;
+    th {
+      text-align:center;
+      white-space:nowrap;
+      transform-origin:50% 50%;
+      transform: rotate(-90deg);
+
+      p {
+        margin: 0 -100%;
+        display: inline-block;
+        &:before {
+          content:'';
+          width:0;
+          padding-top:105%;/* takes width as reference, + 10% for faking some extra padding */
+          display:inline-block;
+          vertical-align:middle;
+        }
+      }
+    }
+  }
+
+  /* --- end convenience classes --- */
+
   /* problem counter */
   counter-reset: problem;
 
