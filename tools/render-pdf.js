@@ -4,18 +4,20 @@ var url = require('url')
 var path = require('path')
 var Prince = require('prince')
 var http = require('http')
+var express = require('express')
 var ecstatic = require('ecstatic')
 var argv = require('minimist')(process.argv.slice(2))
 
 var site = path.join(__dirname, '../_site')
 
 // start a local server that Prince can target
-http.createServer(
-  ecstatic({ root: site })
-).listen(8080)
+var app = express()
+app.use(ecstatic({ root: site + '/prerendered', handleErrors: false }))
+app.use(ecstatic({ root: site }))
+http.createServer(app).listen(8080)
 console.log('Listening on :8080')
 
-var book = argv._[0].replace('_site/', '')
+var book = argv._[0].replace('_site/prerendered/', '')
 var pdf = argv.o
 
 console.log('Rendering ' + book + ' to ' + pdf)
