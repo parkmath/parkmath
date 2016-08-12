@@ -61,6 +61,10 @@
     page-break-inside: auto !important;
   }
 
+  .disallow-break {
+    page-break-inside: avoid !important;
+  }
+
   ul.horizontal {
     text-align: center;
     li {
