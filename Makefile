@@ -1,19 +1,23 @@
 SHELL=/bin/bash -o pipefail
 
-_site/books:
+_site/books/%.html:
 	bundle exec jekyll build
 
-.PRECIOUS: _site/books-prerendered/%.html
-_site/books-prerendered/%.html: _site/books
+_site/lessons/%.html:
+	bundle exec jekyll build
+
+.PRECIOUS: _site/prerendered/%.html
+
+_site/prerendered/%.html: _site/%.html
 	mkdir -p $(dir $@)
-	cat _site/books/$*.html \
+	cat $^ \
 		| node_modules/mathjax-node/bin/page2html \
 			--no-speech \
 		  --extensions TeX/cancel \
 		| sed 's/\\\$$/$$/' \
 		> $@
 
-_site/pdf/%.pdf: _site/books-prerendered/%.html
+_site/pdf/%.pdf: _site/prerendered/%.html
 	mkdir -p $(dir $@)
 	./tools/render-pdf.js $^ -o $@
 
