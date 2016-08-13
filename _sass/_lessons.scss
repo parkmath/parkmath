@@ -112,8 +112,8 @@
   /* problem counter */
   counter-reset: problem;
 
-  /* extra line of space for a problem that follows other content */
-  * + .problem {
+  /* extra line of space between a problem an narrative text that follows it */
+  .problem + p {
     margin-top: lines(2);
   }
 
