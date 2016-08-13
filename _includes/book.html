@@ -82,7 +82,7 @@
           {% endif %}
           <div class="container">
           {% unless habit %}
-            <h1>{% include lesson-title.html lesson=lesson %}</h1>
+            <h1>{% include lesson-title.html lesson=lesson order=d.order %}</h1>
           {% endunless %}
           {% capture emptytag %}{% raw %}{%  %}{% endraw %}{% endcapture %}
           {{ lesson.content | remove_first: 'raw' | remove: 'endraw' | remove: emptytag }}
