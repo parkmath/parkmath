@@ -250,11 +250,19 @@ type: content
         position: relative;
         padding-left: 18px;
       }
+      .lesson .development .algebra-examples li + li {
+        margin-top: 1em;
+      }
+      .lesson .development .algebra-examples li > * {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
       .lesson .development .algebra-examples li:before {
         counter-increment: li;
         content: counter(li, upper-roman) ".";
         position: absolute;
         left: -18px;
+        top: 1px;
       }
     </style>
     <div class='disallow-break'>
