@@ -14,6 +14,28 @@
   @include make-column-offset(print, $offset);
 }
 
+.new-page.new-page {
+  @include mq(print) {
+    display: block;
+    page-break-before: always !important;
+  }
+}
+
+.new-column.new-column {
+  @include mq(print) {
+    column-break-before: always;
+  }
+}
+
+.allow-break.allow-break {
+  page-break-inside: auto !important;
+}
+
+.disallow-break.disallow-break {
+  page-break-inside: avoid !important;
+}
+
+
 .lesson {
 
   /* convenience classes for lesson authors/editors to use */
@@ -42,27 +64,6 @@
   em.vocab {
     font-weight: bold;
     font-style: normal;
-  }
-
-  .new-page {
-    @include mq(print) {
-      display: block;
-      page-break-before: always !important;
-    }
-  }
-
-  .new-column {
-    @include mq(print) {
-      column-break-before: always;
-    }
-  }
-
-  .allow-break {
-    page-break-inside: auto !important;
-  }
-
-  .disallow-break {
-    page-break-inside: avoid !important;
   }
 
   ul.horizontal {

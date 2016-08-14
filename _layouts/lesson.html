@@ -1,8 +1,22 @@
 ---
 layout: default
 ---
-<section class="lesson">
+{% assign habits = (site.data.habits | where: 'name', title) %}
+{% unless habits == empty %}
+  {% assign habit = habits[0] %}
+  {% assign habitclass = 'habit-lesson' %}
+{% else %}
+  {% assign habit = false %}
+  {% assign habitclass = '' %}
+{% endunless %}
+<section class="lesson {{habitclass}} new-page">
+  {% if habit %}
+    {% include habit-header.html habit=habit %}
+  {% endif %}
   <div class="container">
+    {% unless habit %}
+      <h1>{% include lesson-title.html lesson=page %}</h1>
+    {% endunless %}
     {{ content }}
   </div>
 </section>
