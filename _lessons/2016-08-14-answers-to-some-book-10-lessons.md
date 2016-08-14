@@ -40,8 +40,8 @@ d. discuss
 <li>--</li>
 <li>--</li>
 <li>--</li>
-<li>$\theta \approx 14.66^\circ + 360^\circ n, 165.34 + 360^\circ n$</li>
-<li>$\theta \approx 75.33^\circ + 360^\circ n, 284.66 + 360^\circ n$</li>
+<li>$\theta \approx 14.66^\circ + 360^\circ n, 165.34^\circ + 360^\circ n$</li>
+<li>$\theta \approx 75.33^\circ + 360^\circ n, 284.66^\circ + 360^\circ n$</li>
 <li>--</li>
 <li>--</li>
 <li>--</li>
@@ -83,9 +83,14 @@ f. $-\frac{1}{\sqrt{2}}$ <br>
 </li>
 
 
-<li></li>
-<li></li>
-<li></li>    
+<li>discuss</li>
+<li>discuss</li>
+
+<li> <br>
+a. $\theta \approx 62.34^\circ + 360^\circ n, 297.66^\circ + 360^\circ n$ <br>
+b. $\theta \approx 59.16^\circ + 360^\circ n, 120.84^\circ + 360^\circ n$ <br>
+c. $\theta \approx 13.57^\circ + 360^\circ n, 193.57^\circ + 360^\circ n$ <br>
+d. $\theta \approx 62.11^\circ + 360^\circ n, 147.89^\circ + 360^\circ n$ </li>    
 <li></li>
 <li></li>
 <li></li>
