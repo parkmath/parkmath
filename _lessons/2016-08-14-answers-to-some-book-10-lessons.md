@@ -46,15 +46,28 @@ d. discuss
 <li>--</li>
 <li>--</li>
 <li>$\theta \approx 42.00\circ + 360^\circ n, 138.00 + 360^\circ n$</li>
+<li>the same!</li>
+<li>$150^\circ$ and $330^\circ$</li>
+<li>$152.06^\circ$ and $207.94^\circ$</li>
+<li>Negative in the second and fourth quadrants.</li>
+<li>$2\pi r$</li>
+<li>discuss</li>
+<li>discuss</li>
+<li>discuss</li>
+<li>discuss</li>
+<li></li>    
 <li></li>
 <li></li>
 <li></li>
+<li></li> 
 <li></li>
 <li></li>
 <li></li>
+<li></li>    
 <li></li>
 <li></li>
-    
+<li></li>
+<li></li> 
 
 </ol>
 
