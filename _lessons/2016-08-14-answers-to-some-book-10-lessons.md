@@ -55,6 +55,36 @@ d. discuss
 <li>discuss</li>
 <li>discuss</li>
 <li>discuss</li>
+<li>Two.</li>    
+<li><br>
+a. $\frac{2\pi}{3}$ <br>
+b. $\frac{4\pi}{3}$<br>
+c. $\frac{\pi}{6}$ <br>
+d. $\frac{\pi}{12}$</li>
+
+<li><br>
+a. $\frac{5\pi}{12}$ <br>
+b. $\frac{5\pi}{6}$ <br>
+c. $\frac{11\pi}{6}$</li>
+
+<li><br>
+a. $135^\circ$<br>
+b. $315^\circ$<br>
+c. $180^\circ$</li>
+
+<li>--</li> 
+<li><br>
+a. $\frac{\sqrt{3}}{2}$ <br>
+b. $\frac{1}{2}$ <br>
+c. $\frac{\sqrt{3}}{2}$ <br>
+d. $-\frac{1}{2}$ <br>
+e. $-1$ <br>
+f. $-\frac{1}{\sqrt{2}}$ <br>
+</li>
+
+
+<li></li>
+<li></li>
 <li></li>    
 <li></li>
 <li></li>
@@ -62,12 +92,26 @@ d. discuss
 <li></li> 
 <li></li>
 <li></li>
+<li></li>    
+<li></li>
+<li></li>
+<li></li>
+<li></li> 
+<li></li>
 <li></li>
 <li></li>    
 <li></li>
 <li></li>
 <li></li>
 <li></li> 
+<li></li>
+<li></li>
+<li></li>    
+<li></li>
+<li></li>
+<li></li>
+<li></li> 
+
 
 </ol>
 
