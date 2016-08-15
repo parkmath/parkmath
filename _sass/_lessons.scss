@@ -172,6 +172,7 @@
     }
 
     .problem-part {
+      padding-left: 1em;
       text-indent: -1em;
       counter-reset: subpart;
       counter-increment: part;
