@@ -45,6 +45,23 @@
     }
   }
 
+  @page title-page {
+    size: US-Letter;
+    margin: $margin-print-outer;
+    padding: 0;
+  }
+
+  @page title-page:left {
+    @bottom-left {
+      content: counter(page, lower-roman);
+    }
+  }
+  @page title-page:right {
+    @bottom-right {
+      content: counter(page, lower-roman);
+    }
+  }
+
   @page habit-lesson {
     margin-top: ($margin-print-outer * 3);
   }

@@ -43,17 +43,20 @@ $content-height-print: 11 * 72pt - 2 * $margin-print-outer;
     /* default: start new section on a right-hand page */
     .book > section { page-break-before: right; }
     /* specific cases: */
-    .book > .title-page { page-break-before: auto; } // don't force a page break for title page
+    .book > .title-page { page-break-before: auto; counter-reset: page 1; } // don't force a page break for title page
     .book > .habit-lesson { page-break-before: left; }
     .book > .habit-list { page-break-before: left; }
-    .book > .toc { page-break-before: right; }
+    .book > .toc { page-break-before: right; counter-reset: page 1; }
     .book > #summary-and-review .problems { page-break-before: auto; }
     footer { page-break-before: always; column-break-before: always; }
-    .book > .title-page h1 {
+    .book > .title-page {
+      page: title-page;
       // vertically center the book title on the page
       height: $content-height-print;
       line-height: $content-height-print;
-      margin: 0 0 1em 0;
+      h1 {
+        display: inline-block;
+      }
     }
   }
 
