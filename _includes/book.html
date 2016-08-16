@@ -17,7 +17,10 @@
       <section class="info"></section>
 
       <section class="container title-page">
-        <h1>{% if page.book %} Book {{page.book}}: {% endif %}{{ page.title }}</h1>
+        <h1>
+          {% unless page.custom-book %} Book {{page.book}}: {% endunless %}
+          {{ page.title }}
+        </h1>
       </section>
 
       <section class="container toc">
