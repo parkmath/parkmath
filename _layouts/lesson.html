@@ -10,6 +10,17 @@ layout: default
   {% assign habitclass = '' %}
 {% endunless %}
 <section class="lesson {{habitclass}} new-page">
+  <div style='display: none'>
+    site.data.habits:
+    {{ habits }}
+  </div>
+  <div style='display: none'>
+    habit: {{ habit }}<br>
+    habitclass: {{ habitclass }}<br>
+  </div>
+  <div style='display: none'>
+    site metadata: {{ site }}
+  </div>
   {% if habit %}
     {% include habit-header.html habit=habit %}
   {% endif %}
