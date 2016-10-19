@@ -17,18 +17,20 @@ app.use(ecstatic({ root: site }))
 http.createServer(app).listen(8080)
 console.log('Listening on :8080')
 
-var book = argv._[0].replace('_site/prerendered/', '')
-var pdf = argv.o
+if (argv._.length) {
+  var book = argv._[0].replace('_site/prerendered/', '')
+  var pdf = argv.o
 
-console.log('Rendering ' + book + ' to ' + pdf)
-Prince()
-  .inputs(url.resolve('http://localhost:8080/', book))
-  .output(pdf)
-  .option('style', 'local-fonts.css')
-  .timeout(30 * 60 * 1000)
-  .execute()
-  .then(done)
-  .catch(done)
+  console.log('Rendering ' + book + ' to ' + pdf)
+  Prince()
+    .inputs(url.resolve('http://localhost:8080/', book))
+    .output(pdf)
+    .option('style', 'local-fonts.css')
+    .timeout(30 * 60 * 1000)
+    .execute()
+    .then(done)
+    .catch(done)
+}
 
 function done (result) {
   if (result && result.error) { console.error('ERROR', result.error) }
