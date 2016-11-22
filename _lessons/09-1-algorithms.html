@@ -1,9 +1,12 @@
 ---
+layout: lesson
 published: true
 book: 9
 lesson: 1
 title: algorithms
+type: content
 ---
+
 {% raw %}
 
 <article>
@@ -18,7 +21,11 @@ title: algorithms
     knows that she started her journey at the southwest corner, and
     since there hasn’t been any new snow for a while, they also
     know that they’ll be able to see her tracks.</p>
-
+    
+ <figure class="fig-50">
+    <img src="../images/09-1-algorithms/Wilderness.tif.jpg" >
+  </figure>
+    
     <p>Obviously, the team wants to find the lost explorer as
     quickly as possible. There are different ideas about how to do
     this, though, so they decide to split into
@@ -35,6 +42,12 @@ title: algorithms
       conclude about where the explorer must be now? How about if
       they’d crossed the trail 8 times?</p>
     </div>
+
+
+
+
+
+
 
     <div class="problem">
       <p>As you can see, Group B’s west-to-east walk allows them to
@@ -61,11 +74,22 @@ title: algorithms
       same speed, and that as soon as a group comes within
       a mile or so, they’ll see the explorer’s signal flares.)</p>
 
-      <p class="problem-part">.</p>
+      <p class="problem-part">
+        <figure class="fig-50">
+    <img src="../images/09-1-algorithms/Explorer%20Scenario%20A.tif.jpg" >
+  </figure>
+      </p>
 
-      <p class="problem-part">.</p>
+      <p class="problem-part">  
+        <figure class="fig-50">
+    <img src="../images/09-1-algorithms/Explorer%20Scenario%20B.tif.jpg" >
+  </figure>
+      </p>
 
-      <p class="problem-part">.</p>
+      <p class="problem-part">  <figure class="fig-50">
+    <img src="../images/09-1-algorithms/Explorer%20Scenario%20C.tif.jpg" >
+  </figure>
+      </p>
     </div>
 
     <h2>Development</h2>
@@ -162,7 +186,7 @@ title: algorithms
 
     <div class="problem">
       <p>Play the following game with a classmate:</p>
-    </div>
+    
 
     <p class="Development---Problem-Flow">Your partner should write
     five different numbers on slips of paper. Then shuffle the
@@ -190,7 +214,9 @@ title: algorithms
     finding the largest
     number in a list of numbers, using as few comparisons
     as possible.</p>
-
+      
+      </div>
+    
     <div class="problem">
       <p>Aaron has an algorithm that he claims can find the largest
       number every time using only three comparisons. Either figure
@@ -248,9 +274,9 @@ title: algorithms
     <div class="problem">
       <p>Describe the mental algorithm a street vendor might
       use
-      to quickly make change for a \$20 bill. Make sure your
+      to quickly make change for a $\$20$ bill. Make sure your
       algorithm works by testing it out the following sale amounts:
-      $1.50, $3.00, $11.45, $17.26.</p>
+      $\$1.50$, $\$3.00$, $\$11.45$, $\$17.26$.</p>
     </div>
 
     <div class="problem">
@@ -273,11 +299,11 @@ title: algorithms
       problem:</p>
     </div>
 
-    <p class="Development---Problem-Flow">$Starting at floor 1,
+    <p class="Development---Problem-Flow">Starting at floor 1,
     drop the first egg off of odd-numbered floors until it breaks.
     Then, go back down one floor and drop the second egg. If it
     breaks, that’s the answer. If not, then the floor above is the
-    answer.$</p>
+    answer.</p>
 
     <p class="Development---Problem-Flow">Say you get to decide how
     tough the eggs are, and you want to force the strategy above to
@@ -315,7 +341,7 @@ title: algorithms
     <p class="Development---Problem-Flow">Notice that the notation
     being used here is similar to the “function notation” that
     you’ve seen in some previous
-    lessons. “EncryptNumber” is the name of the algorithm, and N is
+    lessons. “EncryptNumber” is the name of the algorithm, and $N$ is
     a name for the input to the algorithm.</p>
 
     <p class="problem-part">Your combination is 12 – 7 – 11. What
@@ -382,8 +408,8 @@ title: algorithms
     </div>
 
     <p>You saw with the compression and encryption algorithms above
-    that they’re only useful if they also have $de$compression and
-    $de$cryption algorithms to go with them. These are two examples
+      that they’re only useful if they also have <em>de</em>compression and
+      <em>de</em>cryption algorithms to go with them. These are two examples
     of a more general type of algorithm called an inverse
     algorithm. When you have two algorithms, and each one reverses
     the other, then the two algorithms are called inverses of each
@@ -399,10 +425,10 @@ title: algorithms
     </div>
 
     <p class="Narrative-Block">${\mathop{\rm GymCode}\nolimits}
-    \left( N \right)$:
+    \left( N \right)$:<br>
 
-    If N is odd, then output $$2N$$.
-    Otherwise, if N is a multiple of 4, output $N + 1$.
+    If N is odd, then output 2.<br>
+    Otherwise, if N is a multiple of 4, output $N + 1$.<br>
     Otherwise, output $2N + 3$.</p>
 
     <p class="Development---Problem-Flow">Write an inverse for this
@@ -425,7 +451,8 @@ title: algorithms
 
     <p>Recall that ${\mathop{\rm GymCode}\nolimits} \left( N
     \right)$ just means “the output of GymCode when you
-    input N”. Similarly, “” means, “the output
+    input $N$”. Similarly, “${\mathop{\rm EncryptNumber(GymCode}\nolimits} \left( N
+    \right))$” means, “the output
     of EncryptNumber when you input ${\mathop{\rm
     GymCode}\nolimits} \left( N \right)$”.</p>
 
@@ -507,21 +534,7 @@ title: algorithms
     </div>
   </section>
 
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/Wilderness.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/Explorer%20Scenario%20A.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/Explorer%20Scenario%20B.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/Explorer%20Scenario%20C.tif.jpg" >
-  </figure>
+ 
 
   <section class="problems">
   <h2>Problems</h2>
@@ -552,24 +565,43 @@ title: algorithms
       to sort the stack so that the smallest pancake ends up on top
       and the pancakes increase in size as you go down the
       stack.</p>
-    </div>
 
-    <div class="problem">
+  <figure class="fig-50">
+    <img src="../images/09-1-algorithms/pancakes%20-%201.tif.jpg" >
+  </figure>
+
+  <figure class="fig-50">
+    <img src="../images/09-1-algorithms/pancakes%20-%202.tif.jpg" >
+  </figure>
+
+
       <p class="problem-part">Sort each of the following
       stacks,
       using as few flips as possible.
+        
+        <ol class="subparts">
 
-      i)</p>
+      <li><figure class="fig-50">
+    <img src="../images/09-1-algorithms/pancakes%20-%203b.tif.jpg" >
+        </figure></li>
+    
+  <li><figure class="fig-50">
+    <img src="../images/09-1-algorithms/pancakes%20-%203a.tif.jpg" >
+    </figure></li>
+          
+        <li><figure class="fig-50">
+    <img src="../images/09-1-algorithms/pancakes%20-%203c.tif.jpg" >
+          </figure></li>
+          
+      </ol></p>
 
-      <p class="problem-part">
-      ii)</p>
 
-      <p class="problem-part">
+      
 
-      iii)</p>
-    </div>
 
-    <div class="problem">
+
+
+
       <p class="problem-part">Write a general algorithm for
       sorting any stack, and try it out on a few different initial
       arrangements of pancakes.</p>
@@ -584,9 +616,9 @@ title: algorithms
       diabolical arch nemesis has decided
       to exploit this opportunity. He’ll
       make calculations for you — for a
-      price! Multiplication costs \$1, whereas
-      exponentiation costs \$6. Unfortunately, you desperately need
-      to compute ${7^{10}}$, and you’ve only got \$5. What will
+      price! Multiplication costs $\$1$, whereas
+      exponentiation costs $\$6$. Unfortunately, you desperately need
+      to compute ${7^{10}}$, and you’ve only got $\$5$. What will
       you do?</p>
     </div>
 
@@ -693,12 +725,12 @@ title: algorithms
       <p class="problem-part">Simplify
       $\frac{{20{a^4}{b^7}}}{{30{a^3}{b^{ - 2}}}}$</p>
 
-      <p class="problem-part">Reduce the fraction</p>
+      <p class="problem-part">Reduce the fraction $\frac{x^3 +2x}{x^2 + x}$</p>
 
       <p class="problem-part">Solve for $x$: ${x^{\frac{2}{3}}} =
       64$</p>
 
-      <p class="problem-part">Solve for $x$: ${x^2} + 8x + 9 = 0$ r</p>
+      <p class="problem-part">Solve for $x$: ${x^2} + 8x + 9 = 0$ </p>
 
       <p class="problem-part">Solve for $x$: $3{x^2} + 7x + 3 =
       0$</p>
@@ -713,42 +745,35 @@ title: algorithms
     <div class="problem">
       <p>The shape below is called a “tromino.”
 
-
+  <figure class="fig-50">
+    <img src="../images/09-1-algorithms/tromino.tif.jpg" >
+  </figure>
 </p>
 
-<p></p>
-
 <p>      Each of the following “checkerboards” has had one square
-      removed. For each board, find a way to cover $all$ of the
+  removed. For each board, find a way to cover <em>all</em> of the
       remaining squares with trominoes.</p>
 
-      <p class="problem-part">.
+      <p class="problem-part">
+          <figure class="fig-50">
+    <img src="../images/09-1-algorithms/tromino%20-%204x4%20-%201.tif.jpg" >
+        </figure></p>
 
+      <p class="problem-part">
+  <figure class="fig-50">
+    <img src="../images/09-1-algorithms/tromino%20-%204x4%20-%202.tif.jpg" >
+        </figure></p>
 
+   <p class="problem-part">
+  <figure class="fig-50">
+    <img src="../images/09-1-algorithms/tromino%20-%208x8%20-%201.tif.jpg" >
+  </figure></p>
 
+   <p class="problem-part">
+  <figure class="fig-50">
+    <img src="../images/09-1-algorithms/tromino%20-%208x8%20-%202.tif.jpg" >
+  </figure></p>
 
-
-
-
-
-
-
-
-      </p>
-
-      <p class="problem-part">.
-
-
-
-
-
-
-
-      </p>
-
-      <p class="problem-part">.</p>
-
-      <p class="problem-part">.</p>
     </div>
 
     <div class="problem">
@@ -816,6 +841,7 @@ title: algorithms
     <div class="problem">
       <p>What does the following algorithm do, assuming that $N$ is
       a positive, five-digit integer?</p>
+      $$\rm{Ffleba}(N) = \rm{LeftShift}(N,2) + 10 \cdot \rm{RightShift}(N,4) + \rm{RightShift}(\rm{LeftShift}(N,1),4)$$
     </div>
 
     <div class="problem">
@@ -829,8 +855,7 @@ title: algorithms
     <div class="problem">
       <p>Come up with a non-trivial numerical
       algorithm that reverses itself. In other words, come up with
-      an algorithm Boing such that, for every $N$, $${\mathop{\rm
-      Boing}\nolimits} ({\mathop{\rm Boing}\nolimits} (N)) = N$$.</p>
+      an algorithm Boing such that, for every $N$, $$(\rm{Boing{(\rm{Boing}(N))=N$$</p>
     </div>
 
     <div class="problem">
@@ -885,12 +910,10 @@ title: algorithms
 
 </p>
 
-<p></p>
+  <figure class="fig-50">
+    <img src="../images/09-1-algorithms/phone%20key%20pad.tif.jpg" >
+  </figure>
 
-<p>      </p>
-    </div>
-
-    <div class="problem">
       <p class="problem-part">I typed 7 7 7 7 , 7 3 3 , 3 3 2 2 2
       4 4. (Here the commas represent pauses). What word did I
       type?</p>
@@ -903,7 +926,7 @@ title: algorithms
       <p>You and a fellow explorer need to be able to communicate
       two numbers to each
       other — coordinates for your location, which will always be
-      positive $whole$ numbers, but can be small or large. The only means of
+        positive <em>whole</em> numbers, but can be small or large. The only means of
       communication you have
       is a carrier pigeon. Due to its tiny brain, the pigeon can
       only remember one
@@ -933,7 +956,11 @@ title: algorithms
       <p class="problem-part">Create your own strategy, and show
       that it works — that it is reversible.</p>
     </div>
-
+  
+    <h2>Exploring
+    in
+    Depth</h2>
+  
     <div class="problem">
       <p>Look back at the sorting algorithm you wrote for problem
       39.</p>
@@ -1013,7 +1040,7 @@ title: algorithms
       <p class="problem-part">Sherlock sends Watson the message
       36 34 22 8 13 36. Decode it.</p>
 
-      <p class="problem-part">Even though the code ���erases”
+      <p class="problem-part">Even though the code "erases”
       hundreds digits, it’s still perfectly reversible — you can
       always decode any message and know exactly
       what was written. Explain why it’s reversible.</p>
@@ -1038,8 +1065,8 @@ title: algorithms
 
       <p class="problem-part">Decode 17 – 14 – 5.</p>
 
-      <p class="problem-part">You receive a coded combination: A
-      – B – C (A, B, and C represent the numbers you receive).
+      <p class="problem-part">You receive a coded combination: <nobr>A
+        – B – C</nobr> (A, B, and C represent the numbers you receive).
       Write instructions or equations for decoding it.</p>
     </div>
 
@@ -1061,75 +1088,7 @@ title: algorithms
     </div>
   </section>
 
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/pancakes%20-%201.tif.jpg" >
-  </figure>
 
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/pancakes%20-%202.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/pancakes%20-%203b.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/pancakes%20-%203a.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/pancakes%20-%203c.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/tromino.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/tromino%20-%204x4%20-%201.tif.jpg" >
-  </figure>
-
-  <section>
-    <p>$(continued on next page)$</p>
-  </section>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/tromino%20-%204x4%20-%202.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/tromino%20-%208x8%20-%201.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/tromino%20-%208x8%20-%202.tif.jpg" >
-  </figure>
-
-  <section>
-    $Ffleba(N) = {\mathop{\rm LeftShift}\nolimits} (N,2) + 10
-    \cdot {\mathop{\rm RightShift}\nolimits} (N,4) + {\mathop{\rm
-    RightShift}\nolimits} ({\mathop{\rm LeftShift}\nolimits}
-    (N,1),4)$
-  </section>
-
-  <section>
-    <p>$(continued on next page)$</p>
-  </section>
-
-  <figure class="fig-50">
-    <img src="../images/09-1-algorithms/phone%20key%20pad.tif.jpg" >
-  </figure>
-
-  <section>
-    <h2>Exploring
-    in
-    Depth</h2>
-  </section>
-
-  <section>
-    <p>$(continued on next page)$</p>
-  </section>
 </article>
 
 {% endraw %}
-
