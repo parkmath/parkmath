@@ -7,6 +7,7 @@ title: algorithms
 type: content
 ---
 
+
 {% raw %}
 
 <article>
@@ -297,8 +298,7 @@ type: content
     <div class="problem">
       <p>Consider the following strategy to the egg-drop
       problem:</p>
-    </div>
-
+  
     <p class="Development---Problem-Flow">Starting at floor 1,
     drop the first egg off of odd-numbered floors until it breaks.
     Then, go back down one floor and drop the second egg. If it
@@ -310,11 +310,11 @@ type: content
     make the largest possible number of drops before it
     succeeds.</p>
 
-    <p class="Development---Problem-Flow">a. What is the worst-case
+    <p class="problem-part">What is the worst-case
     input for this strategy?
     i.e., how tough should you make the eggs?</p>
 
-    <p class="Development---Problem-Flow">b. What’s the worst-case
+    <p class="problem-part"> What’s the worst-case
     number of drops?</p>
 
     <h2>Going Further</h2>
@@ -334,7 +334,7 @@ type: content
       of time to use the following algorithm to encrypt each number
       in the combination:</p>
 
-<p>      ${\mathop{\rm EncryptNumber}\nolimits} \left( N \right)$ If N is odd, then output $2 + N$.
+<p>      ${\mathop{\rm EncryptNumber}\nolimits} \left( N \right)$ If $N$ is odd, then output $2 + N$.
       Otherwise, output $2 \cdot N$.</p>
     </div>
 
@@ -422,7 +422,6 @@ type: content
       from the one in problem 18. But she and your other friend
       don’t get along, so you need a different code for this
       locker. Here’s the one you use:</p>
-    </div>
 
     <p class="Narrative-Block">${\mathop{\rm GymCode}\nolimits}
     \left( N \right)$:<br>
@@ -482,8 +481,10 @@ type: content
       You know that when I’m done, the contents of the bags are as
       follows:</p>
 
-      <p>Bag A Bag B Bag C
-      10 marbles 20 marbles 20 marbles</p>
+      <p>Bag A: 10 marbles<br>
+        Bag B: 20 marbles<br>
+        Bag C: 20 marbles
+      </p>
 
 <p>      Find out how many marbles were in the bags originally.</p>
     </div>
@@ -503,8 +504,8 @@ type: content
 
     <div class="problem">
       <p>An algorithm takes a number, multiplies it by 2, and then
-      adds 5. If the output from the algorithm is X, what was its
-      input, in terms of X?</p>
+      adds 5. If the output from the algorithm is $X$, what was its
+      input, in terms of $X$?</p>
     </div>
 
     <div class="problem">
@@ -769,10 +770,11 @@ type: content
     <img src="../images/09-1-algorithms/tromino%20-%208x8%20-%201.tif.jpg" >
   </figure></p>
 
+      <nobr>
    <p class="problem-part">
   <figure class="fig-50">
     <img src="../images/09-1-algorithms/tromino%20-%208x8%20-%202.tif.jpg" >
-  </figure></p>
+     </figure></p></nobr>
 
     </div>
 
@@ -855,7 +857,7 @@ type: content
     <div class="problem">
       <p>Come up with a non-trivial numerical
       algorithm that reverses itself. In other words, come up with
-      an algorithm Boing such that, for every $N$, $$(\rm{Boing{(\rm{Boing}(N))=N$$</p>
+      an algorithm Boing such that, for every $N$, $$(\rm{Boing}(\rm{Boing}(N))=N$$</p>
     </div>
 
     <div class="problem">
