@@ -8,6 +8,7 @@ type: content
 ---
 
 
+
 {% raw %}
 
 <article>
@@ -316,6 +317,7 @@ type: content
 
     <p class="problem-part"> What’s the worst-case
     number of drops?</p>
+    </div>
 
     <h2>Going Further</h2>
 
@@ -336,7 +338,7 @@ type: content
 
 <p>      ${\mathop{\rm EncryptNumber}\nolimits} \left( N \right)$ If $N$ is odd, then output $2 + N$.
       Otherwise, output $2 \cdot N$.</p>
-    </div>
+ 
 
     <p class="Development---Problem-Flow">Notice that the notation
     being used here is similar to the “function notation” that
@@ -351,6 +353,7 @@ type: content
     <p class="problem-part">Your friend tells you 80 – 28 – 29.
     What was her
     combination?</p>
+    </div>
 
     <div class="problem">
       <p>Your brother wants to use the same system with his friend,
@@ -424,7 +427,7 @@ type: content
       locker. Here’s the one you use:</p>
 
     <p class="Narrative-Block">${\mathop{\rm GymCode}\nolimits}
-    \left( N \right)$:<br>
+    \left( N \right)$:<br><br>
 
     If N is odd, then output 2.<br>
     Otherwise, if N is a multiple of 4, output $N + 1$.<br>
@@ -432,6 +435,7 @@ type: content
 
     <p class="Development---Problem-Flow">Write an inverse for this
     algorithm called GymDecode.</p>
+    </div>
 
     <p>Now, let’s say you wanted to write down all your passwords
     so you don’t forget them. Since someone else might see the
@@ -444,7 +448,8 @@ type: content
     follows:</p>
 
     <p class="Narrative-Block">${\mathop{\rm
-    SuperSecretCode}\nolimits} \left( N \right)$:
+    SuperSecretCode}\nolimits} \left( N \right)$:<br>
+      
     Output ${\mathop{\rm EncryptNumber}\nolimits} \left(
     {{\mathop{\rm GymCode}\nolimits} \left( N \right)} \right)$.</p>
 
@@ -582,15 +587,15 @@ type: content
         
         <ol class="subparts">
 
-      <li><figure class="fig-50">
+      <li><br><figure class="fig-50">
     <img src="../images/09-1-algorithms/pancakes%20-%203b.tif.jpg" >
-        </figure></li>
+        </figure></li><br>
     
-  <li><figure class="fig-50">
+  <li><br><figure class="fig-50">
     <img src="../images/09-1-algorithms/pancakes%20-%203a.tif.jpg" >
-    </figure></li>
+    </figure></li><br>
           
-        <li><figure class="fig-50">
+        <li><br><figure class="fig-50">
     <img src="../images/09-1-algorithms/pancakes%20-%203c.tif.jpg" >
           </figure></li>
           
@@ -746,7 +751,7 @@ type: content
     <div class="problem">
       <p>The shape below is called a “tromino.”
 
-  <figure class="fig-50">
+  <figure class="fig-25">
     <img src="../images/09-1-algorithms/tromino.tif.jpg" >
   </figure>
 </p>
@@ -799,7 +804,7 @@ type: content
     <div class="problem">
       <p>The Floor operation takes any number whatsoever as an
       input. ${\mathop{\rm Floor}\nolimits} (x)$ simply takes $x$ and returns the greatest integer that’s less than or equal to
-      $x$. In other words, the Floor function always “rounds down”.
+      $x$. In other words, the Floor function always “rounds down.”
       Examples: ${\mathop{\rm Floor}\nolimits} (2.001) = 2$,
       $Floor(\pi ) = 3$, and .</p>
 
@@ -857,7 +862,7 @@ type: content
     <div class="problem">
       <p>Come up with a non-trivial numerical
       algorithm that reverses itself. In other words, come up with
-      an algorithm Boing such that, for every $N$, $$(\rm{Boing}(\rm{Boing}(N))=N$$</p>
+        an algorithm Boing such that, for every $N$, $$(\rm{Boing}(\rm{Boing}(<em>N</em>))=<em>N</em> $$</p>
     </div>
 
     <div class="problem">
