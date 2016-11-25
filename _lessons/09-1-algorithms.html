@@ -9,6 +9,7 @@ type: content
 
 
 
+
 {% raw %}
 
 <article>
@@ -97,8 +98,8 @@ type: content
     <h2>Development</h2>
 
     <p>The two strategies in the situation above are both examples
-    of $algorithms$— though, of course, Group A’s is a rather
-    simple one. An algorithm is simply a clearly defined,
+      of <em class="vocab">algorithms</em>— though, of course, Group A’s is a rather
+    simple one. An <em class="vocab">algorithm</em> is simply a clearly defined,
     step-by-step process for accomplishing a desired task. You can
     think of every algorithm as having three main parts: input,
     process and output. In the search and rescue situation, for
@@ -126,7 +127,7 @@ type: content
     <p>Was there anything in common between your strategy in the
     previous problem and Group B’s approach to finding the missing
     explorer? Group B’s strategy — and, likely, yours — is an
-    example of a $binary search$ algorithm. (The Latin root $bini$ means “two-by-two”.) Here’s another application of it.</p>
+    example of a <em class="vocab">binary search</em> algorithm. (The Latin root $bini$ means “two-by-two”.) Here’s another application of it.</p>
 
     <div class="problem">
       <p>Your English teacher has an alphabetized stack of 15
@@ -156,7 +157,7 @@ type: content
     <div class="problem">
       <p>Now, you decide to play a little trick on the teacher.
       Carefully rearrange the ordering of names you made in part
-      (b) of the previous problem so that, when your teacher uses
+      b of the previous problem so that, when your teacher uses
       binary search, she’ll end up mistakenly concluding that
       Gabi’s paper is not in the stack.</p>
     </div>
@@ -172,8 +173,7 @@ type: content
     </div>
 
     <p>In addition to thinking carefully about the input, it’s also
-    helpful when working with algorithms to identify the $basic
-    operations$ your algorithm can use. The basic operations are
+    helpful when working with algorithms to identify the <em class="vocab">basic operations</em> your algorithm can use. The basic operations are
     always based on the situation you’re dealing with: they are
     the
     actions you’re able to do as a single “step” of your algorithm.
@@ -806,7 +806,7 @@ type: content
       input. ${\mathop{\rm Floor}\nolimits} (x)$ simply takes $x$ and returns the greatest integer that’s less than or equal to
       $x$. In other words, the Floor function always “rounds down.”
       Examples: ${\mathop{\rm Floor}\nolimits} (2.001) = 2$,
-      $Floor(\pi ) = 3$, and .</p>
+      $\mathrm{Floor}(\pi ) = 3$, and .</p>
 
       <p>The following algorithm, which uses Floor and some basic
       arithmetic operations, only takes positive integers for its
@@ -824,7 +824,7 @@ type: content
 
       <p>${\mathop{\rm RightShift}\nolimits} (N,d)$ chops off the
       rightmost
-      $d$ digits of N and outputs the result.
+      $d$ digits of $N$ and outputs the result.
       Example: ${\mathop{\rm RightShift}\nolimits} (3214,2) = 32$.</p>
 
 <p>      ${\mathop{\rm Left}\nolimits} {\mathop{\rm Shift}\nolimits}
@@ -837,9 +837,9 @@ type: content
 
       <p class="problem-part">Starting with the number 6789, how
       can you use only the LeftShift and RightShift operations to
-      end up with the number ‘7’?</p>
+      end up with the number 7?</p>
 
-      <p class="problem-part">Generalize your work from part (a)
+      <p class="problem-part">Generalize your work from part a
       to create the PickADigit algorithm, where ${\mathop{\rm
       PickADigit}\nolimits} (N,d)$ outputs
       the $d$th digit of a positive integer $N$.</p>
@@ -848,7 +848,7 @@ type: content
     <div class="problem">
       <p>What does the following algorithm do, assuming that $N$ is
       a positive, five-digit integer?</p>
-      $$\rm{Ffleba}(N) = \rm{LeftShift}(N,2) + 10 \cdot \rm{RightShift}(N,4) + \rm{RightShift}(\rm{LeftShift}(N,1),4)$$
+      $$\rm{Ffleba}(N) =<br>\rm{LeftShift}(N,2) + 10 \cdot \rm{RightShift}(N,4) + \rm{RightShift}(\rm{LeftShift}(N,1),4)$$
     </div>
 
     <div class="problem">
@@ -862,7 +862,8 @@ type: content
     <div class="problem">
       <p>Come up with a non-trivial numerical
       algorithm that reverses itself. In other words, come up with
-        an algorithm Boing such that, for every $N$, $$(\rm{Boing}(\rm{Boing}(<em>N</em>))=<em>N</em> $$</p>
+        an algorithm Boing such that, for every $N$, 
+        $$(Boing(Boing(<em>N</em>))=<em>N</em> $$</p>
     </div>
 
     <div class="problem">
