@@ -1,7 +1,7 @@
 ---
 layout: custom-book
 book: 97
-title: Logarithm and Sundries
+title: Logarithms and Sundries
 habits-color: rgb(37, 82, 159)
 lessons:
 - book: 9
@@ -17,7 +17,7 @@ lessons:
   order: 3
 - book: 9
   lesson: 5
-  order: 
+  order: 4
 - book: 10
   lesson: 4
   order: 5
