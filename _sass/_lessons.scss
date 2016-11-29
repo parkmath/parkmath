@@ -35,6 +35,13 @@
   page-break-inside: avoid !important;
 }
 
+.allow-break .continued {
+  float: bottom;
+  text-align: right;
+  font-style: italic;
+  &:before { content: "Problem continued on next page"; }
+}
+
 
 .lesson {
 
