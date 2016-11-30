@@ -842,8 +842,10 @@ type: content
     <div class="problem">
       <p>What does the following algorithm do, assuming that $N$ is
       a positive, five-digit integer?</p>
-      $\rm{Ffleba}(N) =$<br>
-      $\rm{LeftShift}(N,2) + 10 \cdot \rm{RightShift}(N,4) + \rm{RightShift}(\rm{LeftShift}(N,1),4)$
+      $$\begin{split}\rm{Ffleba}(N) &amp;= \rm{LeftShift}(N,2) \\
+      &amp;+ 10 \cdot \rm{RightShift}(N,4) \\
+      &amp;+ \rm{RightShift}(\rm{LeftShift}(N,1),4)
+      \end{split}$$
     </div>
 
     <div class="problem">
