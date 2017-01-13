@@ -6,3 +6,4 @@ _site/
 Gemfile.lock
 temp/
 node_modules/
+tools/MathTypeSDK6.9
