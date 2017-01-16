@@ -1,5 +1,5 @@
 
-## lesson 2: Primes, Products, and Exponents
+## Primes, Products, and Exponents
 
 
 |problem|answer|

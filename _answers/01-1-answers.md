@@ -1,5 +1,5 @@
 
-## lesson 1: Defining New Symbols
+## Defining New Symbols
 
 
 |problem|answer|

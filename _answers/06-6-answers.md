@@ -1,5 +1,5 @@
 
-## Lesson 6 Summary &amp; Review
+## Summary &amp; Review
 
 
 |problem|answer|

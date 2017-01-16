@@ -1,5 +1,5 @@
 
-## lesson 1: Linear Equations
+## Linear Equations
 
 
 |problem|answer|

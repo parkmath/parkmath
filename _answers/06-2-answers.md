@@ -1,5 +1,5 @@
 
-## lesson 2: congruent triangles
+## congruent triangles
 
 
 |problem|answer|

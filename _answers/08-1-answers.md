@@ -1,5 +1,5 @@
 
-## lesson 1: Geometric sequences and series
+## Geometric sequences and series
 
 
 |problem|answer|

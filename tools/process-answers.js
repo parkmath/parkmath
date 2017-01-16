@@ -87,9 +87,7 @@ $('table').each(function () {
   lesson++
   var title = table.prev('p')
   title = clean(title ? title.text() : '')
-  if (!/^\s*lesson/i.test(title)) {
-    title = `Lesson ${lesson} ${title}`
-  }
+  title = title.replace(/^\s*lesson\s*\d+:?\s*/i, '')
 
   var outfile = path.join(__dirname, `../_answers/${book}-${lesson}-answers.md`)
   var out = fs.createWriteStream(outfile)

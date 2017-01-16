@@ -1,5 +1,5 @@
 
-## lesson 3: rates of change
+## rates of change
 
 
 |problem|answer|

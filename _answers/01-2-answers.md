@@ -1,5 +1,5 @@
 
-## lesson 2: Combinatorics
+## Combinatorics
 
 
 |problem|answer|

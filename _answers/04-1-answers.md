@@ -1,5 +1,5 @@
 
-## lesson 1: quadratic models and algebra
+## quadratic models and algebra
 
 
 |problem|answer|

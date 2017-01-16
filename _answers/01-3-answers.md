@@ -1,5 +1,5 @@
 
-## lesson 3: Arithmetic Sequences and Series
+## Arithmetic Sequences and Series
 
 
 |problem|answer|

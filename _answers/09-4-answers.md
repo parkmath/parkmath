@@ -1,5 +1,5 @@
 
-## lesson 4: Logic and Finite Geometry
+## Logic and Finite Geometry
 
 
 |problem|answer|

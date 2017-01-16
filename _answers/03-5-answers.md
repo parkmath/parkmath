@@ -1,5 +1,5 @@
 
-## lesson 3: Trig and Shapes
+## Trig and Shapes
 
 
 |problem|answer|

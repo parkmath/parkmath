@@ -1,5 +1,5 @@
 
-## lesson 4: Combinatorics: when order matters not
+## Combinatorics: when order matters not
 
 
 |problem|answer|

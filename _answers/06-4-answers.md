@@ -1,5 +1,5 @@
 
-## lesson 4: logic and geometry
+## logic and geometry
 
 
 |problem|answer|

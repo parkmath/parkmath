@@ -1,5 +1,5 @@
 
-## lesson 3: number games and Algebra
+## number games and Algebra
 
 
 |problem|answer|

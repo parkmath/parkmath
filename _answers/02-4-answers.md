@@ -1,5 +1,5 @@
 
-## lesson 4: Coordinate Geometry
+## Coordinate Geometry
 
 
 |problem|answer|

@@ -1,5 +1,5 @@
 
-## lesson 1: Algorithms
+## Algorithms
 
 
 |problem|answer|

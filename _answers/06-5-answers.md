@@ -1,5 +1,5 @@
 
-## lesson 5: building up more theorems
+## building up more theorems
 
 
 |problem|answer|

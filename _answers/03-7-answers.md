@@ -1,5 +1,5 @@
 
-## Lesson 7 Summary and review
+## Summary and review
 
 
 |problem|answer|

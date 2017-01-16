@@ -1,5 +1,5 @@
 
-## lesson 2: Solutions of linear equations
+## Solutions of linear equations
 
 
 |problem|answer|

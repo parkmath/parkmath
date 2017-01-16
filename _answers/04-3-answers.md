@@ -1,5 +1,5 @@
 
-## lesson 3: completing the square
+## completing the square
 
 
 |problem|answer|

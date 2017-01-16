@@ -1,5 +1,5 @@
 
-## lesson 1: graph theory
+## graph theory
 
 
 |problem|answer|

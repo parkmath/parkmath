@@ -1,5 +1,5 @@
 
-## Lesson 4 Summary &amp; Review Chapter 1
+## Summary &amp; Review Chapter 1
 
 
 |problem|answer|

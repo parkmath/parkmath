@@ -1,5 +1,5 @@
 
-## lesson 3: geometry of lines
+## geometry of lines
 
 
 |problem|answer|

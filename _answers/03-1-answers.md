@@ -1,5 +1,5 @@
 
-## lesson 1: Similar Triangles
+## Similar Triangles
 
 
 |problem|answer|

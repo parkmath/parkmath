@@ -1,5 +1,5 @@
 
-## lesson 2: modeling with exponential functions
+## modeling with exponential functions
 
 
 |problem|answer|

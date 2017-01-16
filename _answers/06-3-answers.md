@@ -1,5 +1,5 @@
 
-## lesson 3: geometric proof
+## geometric proof
 
 
 |problem|answer|

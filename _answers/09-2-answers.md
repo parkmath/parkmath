@@ -1,5 +1,5 @@
 
-## lesson 2: Introduction to Logarithms
+## Introduction to Logarithms
 
 
 |problem|answer|

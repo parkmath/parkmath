@@ -1,5 +1,5 @@
 
-## lesson 1: parallel lines and first principles
+## parallel lines and first principles
 
 
 |problem|answer|

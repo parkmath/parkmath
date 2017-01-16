@@ -1,5 +1,5 @@
 
-## lesson 2: Intro To Trig
+## Intro To Trig
 
 
 |problem|answer|

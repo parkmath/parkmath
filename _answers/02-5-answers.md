@@ -1,5 +1,5 @@
 
-## lesson 5: Linear Systems
+## Linear Systems
 
 
 |problem|answer|

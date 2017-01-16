@@ -1,5 +1,5 @@
 
-## lesson 3: Recursion
+## Recursion
 
 
 |problem|answer|

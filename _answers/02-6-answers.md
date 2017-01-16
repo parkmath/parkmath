@@ -1,5 +1,5 @@
 
-## lesson 6: Transformations
+## Transformations
 
 
 |problem|answer|
