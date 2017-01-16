@@ -4,7 +4,6 @@
 
 |problem|answer|
 |-------|------|
-|Problem|Answer|
 |1|-----|
 |2|Side lengths and slopes|
 |3|-----|
