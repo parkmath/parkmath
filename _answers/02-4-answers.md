@@ -1,7 +1,6 @@
 
 ## Coordinate Geometry
 
-
 |problem|answer|
 |-------|------|
 |1|-----|
@@ -28,7 +27,7 @@
 |16 f|Non-rectangle parallelogram|
 |17|<span>$\left( {a,b} \right)$</span>|
 |18|They are equal.|
-|19|<span>$\sqrt {2053} $</span>|
+|19|<span> $\sqrt {2053} $</span>|
 |20|-----|
 |21 a|Answers may vary. <span>$5\sqrt 2 $</span>.|
 |22 a|Answers may vary.|
@@ -54,7 +53,7 @@
 |36|Yes|
 |37|Yes|
 |38 a|-----|
-|38 b|<span>$\overline {AD} $</span>: <span>$y = - 4x + 1$</span><br><br><span>$\[\overline {BE} \]{$</span>: <span>$y = - 0.4x + 4.6$</span><br><br><span>$\overline {CF} $</span>: <span>$y = 0.5x + 5.5$</span><br>|
+|38 b|<span>$\overline {AD} $</span>: <span>$y = - 4x + 1$</span><br><span>$\overline {BE}$</span>: <span>$y = - 0.4x + 4.6$</span><br><span>$\overline {CF} $</span>: <span>$y = 0.5x + 5.5$</span><br>|
 |38 c|True|
 |39|-----|
 |40|Yes, No|
