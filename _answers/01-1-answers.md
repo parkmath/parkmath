@@ -16,7 +16,7 @@
 |8 b|No|
 |9 a|32|
 |9 b|35|
-|9 c|<span>$x\&amp; y = x + xy$</span>|
+|9 c|<span>$x\& y = x + xy$</span>|
 |9 d|Yes|
 |10 a|1|
 |10 b|6|
