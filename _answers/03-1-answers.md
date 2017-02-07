@@ -26,19 +26,19 @@
 |10 c|Answers may vary.|
 |11 a|12 and 15|
 |11 b|15|
-|11 c|<span>${{39} \mathord{\left/ {\vphantom {{39} 5}} \right. \kern-\nulldelimiterspace} 5}$</span>|
+|11 c|<span>$\frac{39}{5}$</span>|
 |11 d|1,160|
 |12 a|12|
 |12 b|2|
 |12 c|2|
 |12 d|4|
-|13|<span>${2 \mathord{\left/ {\vphantom {2 3}} \right. \kern-\nulldelimiterspace} 3}$</span>|
+|13|<span>$\frac{2}{3}$</span>|
 |14|1.8 m|
 |15|False|
 |16|No|
 |17|8.4|
 |18 a|DE and AB, EF and BC, and <br>DF and AC|
-|18 b|<span>$k = {{DE} \mathord{\left/ {\vphantom {{DE} {AB = {{EF} \mathord{\left/ {\vphantom {{EF} {BC = {{DF} \mathord{\left/ {\vphantom {{DF} {AC}}} \right. \kern-\nulldelimiterspace} {AC}}}}} \right. \kern-\nulldelimiterspace} {BC = {{DF} \mathord{\left/ {\vphantom {{DF} {AC}}} \right. \kern-\nulldelimiterspace} {AC}}}}}}} \right. \kern-\nulldelimiterspace} {AB = {{EF} \mathord{\left/ {\vphantom {{EF} {BC = {{DF} \mathord{\left/ {\vphantom {{DF} {AC}}} \right. \kern-\nulldelimiterspace} {AC}}}}} \right. \kern-\nulldelimiterspace} {BC = {{DF} \mathord{\left/ {\vphantom {{DF} {AC}}} \right. \kern-\nulldelimiterspace} {AC}}}}}}$</span>|
+|18 b|<span>$k = \frac{DE}{AB} = \frac{EF}{BC} = \frac{DF}{AC}$</span>|
 |18 c|Ratios of corresponding sides are equal.|
 |19 a|No|
 |19 b|<span>$\vartriangle ABC \sim \vartriangle FDE$</span>|
@@ -49,11 +49,11 @@
 |21 a|<span>$\vartriangle ACB \sim \vartriangle ECD$</span>|
 |21 b|54 and 42|
 |21 c|Yes, because as you may have learned in middle school, when two angles are on opposite sides of an “X” shape they are equal. Angles in this formation are called “vertical angles.” See problem 25 for more of these relationships.|
-|22 a|<span>${4 \mathord{\left/ {\vphantom {4 3}} \right. \kern-\nulldelimiterspace} 3}$</span>|
+|22 a|<span>$\frac{4}{3}$</span>|
 |22 b|<span>$\sqrt {21} $</span>|
 |22 c|9|
 |23|160,000 is the closest; calculated answer is 145312 mi.|
-|24 a|k|
+|24 a|$k$|
 |24 b|<span>${k^2}$</span>|
 |25 a|Each angle is either <span>${65^ \circ }$</span> or <span>${115^ \circ }$</span>.|
 |25 b|Each angle is either <span>${55^ \circ }$</span> or <span>${125^ \circ }$</span>.|
@@ -65,7 +65,7 @@
 |30|6|
 |31|3|
 |32|5|
-|33|<span>$4{\left( {AE} \right)^2} = 4{\left( {BE} \right)^2} = {\left( {DC} \right)^2} = BL = 2$</span><span>$BD = \sqrt 5 $</span>, scale factor 2|
+|33|<span>$4{\left( {AE} \right)^2} = 4{\left( {BE} \right)^2} = {\left( {DC} \right)^2} = BL = 2$, </span><span>$BD = \sqrt 5 $</span>, scale factor 2|
 |34|45 m|
 |35|Approx. 3545.32 m|
 |36 a|6 feet, 8 inches|
