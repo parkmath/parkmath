@@ -12,7 +12,7 @@ if [[ $CIRCLE_BRANCH = ${DEPLOY_BRANCH} ]] || [[ $TRAVIS_BRANCH = ${DEPLOY_BRANC
   git config user.email "travis@somewhere.com"
   git add .
   git commit -m "CI deploy"
-  git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master > /dev/null 2>&1
 else
   echo "Not a publishable branch so we're all done here"
 fi
