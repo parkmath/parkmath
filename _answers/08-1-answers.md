@@ -32,7 +32,7 @@
 |20|Yes. Here’s one example: 3, 3, 3, 3…|
 |21|No|
 |23|Answers vary, but here’s an example: 5, 10, 20, … <br>5, -10, 20, …|
-|24|Even values of n|
+|24|Even values of n |
 |25 a|126|
 |25 b|1/A|
 |25 c|Next(a, b) = b ∙ b/a = b2/a|
