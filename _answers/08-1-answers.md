@@ -5,8 +5,8 @@
 |problem|answer|
 |-------|------|
 |Problem|Answer|
-|1-3|1 and 3 both involve repeated multiplication by a ratio.|
-|4|Sequences that have a common ratio between successive terms.|
+|1-3|1 and 3 both involve repeated multiplication by a ratio. |
+|4|Sequences that have a common ratio between successive terms. |
 |5 a|T1 ∙3∙3|
 |5 b|T1 ∙33|
 |5 c|T1 ∙3n-1|
