@@ -5,7 +5,7 @@
 |problem|answer|
 |-------|------|
 |Problem|<span class="char-style-override-1">Answer</span>|
-|1|32|
+|1|32 |
 |2|77|
 |3|5|
 |4|140|
