@@ -1,4 +1,4 @@
-
++4$
 ## Defining New Symbols
 
 
@@ -42,8 +42,8 @@
 |17 e|No|
 |18|False|
 |19|Yes|
-|20 a|nm|
-|20 b|mn|
+|20 a|$nm$|
+|20 b|$mn$|
 |21|Yes|
 |22 a|Yes|
 |22 b|<span>Yes</span>|
@@ -77,8 +77,8 @@
 |33 e|If ODD $= 2k+1$, then <span>$x = 1$</span> and <span>$y = k$</span> works.|
 |34|Answers vary.|
 |35|Answers vary; one answer is $\alpha(a,b)=5a$.|
-|36 a|$\otimes\left{5,f\\} = 50+f$|
-|36 b|<img class="image" width="102" height="13" src="9-Answers-7-28-11-PRINT-web-images/Eqn102.eps" alt="Eqn102.eps">|
+|36 a|$\otimes \\{5,f\\} = 50+f$|
+|36 b|$\otimes\\{a,4\\}=10a+4$|
 |36 c|<span>$9a - 36$</span>|
 |36 d|<span>$x = 5$</span>|
 |37 a|<span>$101b + 20$</span>|
@@ -102,9 +102,8 @@
 |45|True|
 |46|Answers may vary; one answer is <span>$(a + 1)(b + 1)$</span>.|
 |47|<span>$a > b > 0$ or $b < a < 0$ or $a < 0 < b$</span>|
-|48|<span>$\left( {b > 0{\text{ and }}a &amp;lt; - b} \right)$</span> or <span>$\left( {b &amp;lt; 0{\text{ and }}a > - b} \right)$</span>|
-|49 a|<span>$\left( {y > 0{\text{ and }}x \leqslant - 1} \right)$</span> or <span>$\left( {y &amp;lt; 0{\text{ and }}x \geqslant 0} \right)$</span>|
-|49 b|<span>${y \mathord{\left/ {\vphantom {y 2}} \right. \kern-\nulldelimiterspace} 2}$</span> is even and x arbitrary.|
-|49 c|Taking <span>$y = {{21} \mathord{\left/ {\vphantom {{21} {\left( {x + {1 \mathord{\left/ {\vphantom {1 2}} \right. \kern-\nulldelimiterspace} 2}} \right)}}} \right. \kern-\nulldelimiterspace} {\left( {x + {1 \mathord{\left/ {\vphantom {1 2}} \right. \kern-\nulldelimiterspace} 2}} \right)}}$</span> gives you several options.|
+|48|($b>0$ and $a<-b$) or ($b<0$ and $a> -b$) |
+|49 b|You get an even answer when $y$ is a multiple of four.|
+|49 c|Taking $y=\frac{21}{x+\frac{1}{2}}$ gives you several options.|
 |49 d|<span>$x = - 1$</span>, <span>$y = - 2N$</span> works.|
-|50|<span class="char-style-override-6">t</span>(x) = <span>$x - \Phi \left( x \right)$</span>|
+|50|$\Phi(x) = x - \Phi \left( x \right)$|
