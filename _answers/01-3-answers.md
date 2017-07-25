@@ -56,12 +56,12 @@
 |24 b|23|
 |24 c|24|
 |24 d|50, 185, and 1535|
-|24 e|<span>$\[{M_n} = 35 + 15n\]{$</span>|
+|24 e|<span>${M_n} = 35 + 15n$</span>|
 |25 a|4|
-|25 b|<span>No. <span>$\[{C_n} = 8 + 4n\]$</span></span>|
+|25 b|<span>No. <span>${C_n} = 8 + 4n$</span></span>|
 |26 a|<span>$ - 3$</span>|
 |26 b|<span>${T_n} = 20 - 3n$</span>|
-|27 a|<span>$\[{G_n} = - 2 + 6n\]assInitGenerator$</span>|
+|27 a|<span>${G_n} = - 2 + 6n$</span>|
 |27 b|238|
 |27 c|12|
 |28 a|About 1 trillion (1 billion times 1000).|
@@ -72,7 +72,7 @@
 |33|<span>${T_1} + 8d = 12$</span>|
 |34|Yes, <span>$n = 51$</span>|
 |35a|136|
-|36|<span class="char-style-override-4">x</span> is the average of the 1st and the 3rd terms; Yes.|
+|36|<span class="char-style-override-4">$x$</span> is the average of the 1st and the 3rd terms; Yes.|
 |37|-----|
 |38|-----|
 |39|7,320|
@@ -89,8 +89,8 @@
 |43|42000, because the middle term is around the average of 123 and 717 = 420, and there are about 100 terms.|
 |44|-----|
 |45|<span>$n(2n + 1)$</span>|
-|46 a|<span>$T_1} + {T_2} + \cdot \cdot \cdot + {T_n} = \frac{{\left( {{T_1} + {T_n}} \right)n}}{2$</span>|
-|46 b|<span>${T_1} + {T_2} + \cdot \cdot \cdot + {T_n} = $</span> <span>$\frac{{\left[ {2{T_1} + \left( {n - 1} \right)d} \right]n}}{2}$</span>|
+|46 a|<span>$T_1 + T_2 + \ldots + T_n = \frac{n \left( {T_1 + T_n} \right)}{2}$</span>|
+|46 b|${T_1} + {T_2} + \ldots + {T_n} = \frac{n \left( 2T_1 + d(n-1) \right)}{2}$|
 |47|1/4|
 |48 a|Yes|
 |48 b|<span><span>${A_n} = 36 + 4n$</span>, </span> <span><span>${B_n} = - 4 + 6n$</span></span>|
