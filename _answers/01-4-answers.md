@@ -2,13 +2,13 @@
 ## Summary &amp; Review Chapter 1
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|<span class="char-style-override-1">Answer</span>|
+|**Problem**|<span class="char-style-override-1">**Answer**</span>|
 |1|<span>a) <span>$a\because b = 2a + 3b$</span><br>b) <span>$a = \frac{{103}}{2}$</span></span>|
 |2|<span>a) <span>$x \Uparrow y = 2x - xy$</span></span><span><br></span><span>b) <span>$x = \frac{{23}}{{ - 4}}$</span></span> <span>c)</span><span><span>$y = \frac{{13}}{{ - 5}}$</span></span>|
-|3|<span>a) <span>$x = \frac{{ - 22}}{5}\,\,\,or\;\,\frac{{22}}{{ - 5}}\;\;or\;\; - \frac{{22}}{5}$</span></span> <span>b) <img class="image" width="38" height="32" src="9-Answers-7-28-11-PRINT-web-images/Eqn0074.eps" alt="Eqn0074.eps"></span> <span>c) <span>$y = \frac{{15}}{{12}}$</span></span>|
-|4|<span>a) <span>$ - 12$</span></span> <span>b) <span>$14$</span></span> <span>c) <span>$ - 32$</span></span> <span>d)</span><span> <img class="image" width="91" height="13" src="9-Answers-7-28-11-PRINT-web-images/Eqn17.eps" alt="Eqn17.eps"></span> <span>e)</span><span> </span><span>No. </span><span><br></span><span><img class="image" width="91" height="13" src="9-Answers-7-28-11-PRINT-web-images/Eqn18.eps" alt="Eqn18.eps"><br><img class="image" width="90" height="13" src="9-Answers-7-28-11-PRINT-web-images/Eqn19.eps" alt="Eqn19.eps"></span><span><br><br></span><span>These are not the same.</span><span> </span> <span>f) <span>$\begin{gathered} 26 = 2y - 4x\quad ,\quad x = \frac{{2y - 26}}{4} \hfill \\ \hfill \\ \end{gathered} $</span></span>|
+|3|<span>a) <span>$x = \frac{{ - 22}}{5}$ or $\frac{{22}}{{ - 5}}$ or $- \frac{22}{5}$ b) $\frac{11}{10}$c) <span>$y = \frac{{15}}{{12}}$</span></span>|
+|4|<span>a) <span>$ - 12$</span></span> <span>b) <span>$14$</span></span> <span>c) <span>$ - 32$</span></span> <span>d) $c \oplus d = 2d-4c$ e)</span><span> </span><span>No, because $c \oplus d = 2d-4c$, but $d \oplus c = 2c-4d$. These are not the same. f) $26 = 2y - 4x$,  $x = \frac{{2y - 26}}{4}$|
 |5|Answers will vary; <br><span>$a \odot b = a + 3$</span> and <br><span>$a \odot b = 4a - 3b$</span> both work.|
 |6|<span><span>$y = 20$</span></span> <span><span>$y = \frac{{120 - 2x}}{5}$</span></span>|
 |7|<span>a) <span>$x = 37$</span></span> <span>b) <span>$y = \frac{{ - 2}}{3}$</span></span> <span>c) <span>$b = 27$</span></span>|
@@ -33,10 +33,10 @@
 |26|a) 6x6x6= 216 b) <span><span>$\frac{6}{{216}}$</span></span>|
 |27|a) <span>$3!\;7! = 30240$</span> b) <span>$3!\;7! = 30240$</span>|
 |28|a) 26x26 = 676 ; 26x26x26 = 17576 b) 2 or 18253, depending on what “must there be” means.|
-|29|a) <img class="image" width="55" height="19" src="9-Answers-7-28-11-PRINT-web-images/Eqn0552.eps" alt="Eqn0552.eps"> b) 12|
+|29|a) $2^{12} = 4096$ b) 12|
 |30|6x5x4 = 120 ways|
 |31|<span>a)</span> <span>$\frac{3}{7} \times \frac{2}{6} = \frac{1}{7}$</span>|
-|32|<span>a)</span> <span>$\frac{{16!}}{{5!}} = 174,356,582,400 \approx 1.744 \times {10^{11}}$</span> <span>b) 11! = 39,916,800</span> c) <span>$3!\;7! = 30240$</span>|
+|32|<span>a)</span> <span>$\frac{{16!}}{{5!}} = 174,356,582,400 \approx 1.744 \times {10^{11}}$</span> b) $11! = 39,916,800$ c) <span>$3!\;7! = 30240$</span>|
 |33|<span>a)</span> <span>$\frac{{4536}}{{9000}} = \frac{{63}}{{125}} = .504$</span>|
 |34|a) 26x25x24x10x10x10 = 15,600,000 b) 5x4x3x10x10x10 = 60,000 c) 5x4x3x1x1x1 = 60|
 |35|<span>$\frac{1}{2}$</span>|
