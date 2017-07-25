@@ -2,8 +2,9 @@
 ## Defining New Symbols
 
 
-|Problem|Answer|
+|||
 |-------|------|
+|**Problem**|**Answer**|
 |1|32|
 |2|77|
 |3|5|
