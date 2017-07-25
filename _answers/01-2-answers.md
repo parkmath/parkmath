@@ -2,9 +2,9 @@
 ## Combinatorics
 
 
-|problem|answer|
+|Problem|Answer|
 |-------|------|
-|Problem|<span class="char-style-override-1">Answer</span>|
+|||
 |1|15|
 |2|-----|
 |3|<span><span>$6 \times {10^6}$</span></span>|
