@@ -2,9 +2,9 @@
 ## Arithmetic Sequences and Series
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|<span class="char-style-override-1">Answer</span>|
+|**Problem**|<span class="char-style-override-1">**Answer**</span>|
 |1|14, 19, 18, 23, …|
 |2|15, 21|
 |3|58, 61|
@@ -19,24 +19,24 @@
 |6 f|No; 42, 44, and 48|
 |7 a|20|
 |7 b|40|
-|7 c|<span>$\[{B_3}\]snpp$</span>|
-|7 d|<span>$\[{A_8}\]*X/X4Xp$</span>|
-|8|<span>${T_{10}} = 40$</span>, <span>${T_{100}} = 310$</span>|
+|7 c|$B_3$|
+|7 d|$A_8$|
+|8|$T_{10} = 40, T_{100} = 310$ **SOMETHING STRANGE GOING ON** |
 |9|<span>${T_1} = - 1$</span>|
 |10|<span>${T_{20}} = 99$</span>|
 |11|Answers may vary.|
 |12|Answers may vary.|
 |13 a|20, 40, 36|
 |13 b|No, it won’t.|
-|14 a|<span>$\[{E_n}\]*X/X4Xp$</span>|
-|14 b|The straight lines containing points <span>$\left( {n,{A_n}} \right)$</span> and <span>$\[\left( {n,{E_n}} \right)\]@I{$</span> <br>have the same slope.|
+|14 a|$E_n$|
+|14 b|The straight lines containing points <span>$\left( {n,{A_n}} \right)$</span> and <span>$\left(n,E_n \right)$ have the same slope.|
 |15 a||
 |15 b|2/3, or <span>$\overline {.66} $</span>|
 |15 c|70 mm|
 |15 d|<span>$42\frac{2}{3}$</span> mm|
 |16|-----|
-|17|<span>${T_4} = 46$</span>, <span>${T_6} = 34$</span>, <span>${T_{20}} = - 50$</span>|
-|18|<span>$\[{T_b} = {T_a} + \left( {b - a} \right)d\]$</span>|
+|17|$T_4 = 46$,$T_6 = 34$, $T_{20} = - 50$ **also the strange thing**|
+|18|<span>${T_b} = {T_a} + \left( {b - a} \right)$</span>|
 |19 a|32.1 mm|
 |19 b|17.4 mm|
 |19 c|.3|
@@ -49,7 +49,7 @@
 |21 c|<span>$c = 18$</span>|
 |21 d|<span><span>$q = 35$</span></span>|
 |22|<span>The 3444th term.</span>|
-|23 a|<span><span>$\[{T_{20}} = 10 + 19d\]柾X.~$</span>,<span>${T_n} = 10 + \left( {n - 1} \right)d$</span></span>|
+|23 a|<span><span>${T_{20}} = 10 + 19$</span>,<span>${T_n} = 10 + \left( {n - 1} \right)d$</span></span>|
 |23 b|<span><span>${T_{20}} = {T_1} + 19d$</span>, <span>${T_n} = {T_1} + \left( {n - 1} \right)d$</span></span>|
 |23 c|See Part b.|
 |24 a|4|
