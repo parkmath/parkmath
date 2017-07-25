@@ -32,14 +32,14 @@
 |22 b|20|
 |22 c|<span>20/160; 140/160</span>|
 |22 d|16|
-|22 e|<span>${1 \mathord{\left/ {\vphantom {1 2}} \right. \kern-\nulldelimiterspace} 2}$</span>|
+|22 e|$\frac12$|
 |23 a|Yes, as long as they weren’t all on one side of the Mississippi.|
 |23 b|14400|
 |23 c|<span>9/1352</span>|
 |23 d|<span>1120/35152, 64/35152</span>|
-|24|336; <span>${1 \mathord{\left/ {\vphantom {1 8}} \right. \kern-\nulldelimiterspace} 8}$</span>|
+|24|336; $\frac18$|
 |25|125,000|
-|26|<span>IceCream <span>$IceCream(n) = {n^3}$</span></span>|
+|26|IceCream$(n) = {n^3}$|
 |27|1,048,576|
 |28 a|676,000|
 |28 b|39 days, 2 hours, 53 min., 20 sec.|
@@ -55,17 +55,17 @@
 |35 b|<span>54</span>|
 |36|<span>8</span>|
 |37 a|<span>$n = 1$</span> (and <span>$n = 0$</span>, but more on that later!)|
-|37 b|Any integer <span>$n \geqslant 3$</span>|
+|37 b|Any integer <span>$n \geq 3$</span>|
 |38 a|<span>${x^2}$</span>|
-|38 b|<span><span>$\left( {x - 1} \right)!{\kern 1pt} {\kern 1pt} {\kern 1pt} \cdot {\kern 1pt} {\kern 1pt} {\kern 1pt} \left( {x - 1} \right)!$</span></span>|
+|38 b|$(x-1)! \cdot (x-1)!$|
 |38 c|1|
 |39|a, d, e, f|
 |40 a|<span>${2^{100}}$</span>|
 |40 b|<span>$100!$</span>|
 |40 c|<span>$100!$</span>|
 |40 d|100!/50!|
-|41 a|14,631,321,600. Yes, <span>$\[9!\;8!\]Xp$</span>|
-|41 b|<span>${1 \mathord{\left/ {\vphantom {1 {24,310}}} \right. \kern-\nulldelimiterspace} {24,310}}$</span><span>; </span> <span>$\frac{{9!\;8!}}{{17!}}$</span>|
+|41 a|14,631,321,600. Yes, $9!8!$|
+|41 b|$\frac{1}{24,310}$; $\frac{9!8!}{17!}$|
 |41 c|14,631,321,600. No. Yes.|
 |42 a|<span>$7x + 2$</span>|
 |42 b|<span>$(x - 7)(x - 12)$</span>|
