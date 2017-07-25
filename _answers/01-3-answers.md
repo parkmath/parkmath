@@ -94,8 +94,8 @@
 |47|1/4|
 |48 a|Yes|
 |48 b|<span><span>${A_n} = 36 + 4n$</span>, </span> <span><span>${B_n} = - 4 + 6n$</span></span>|
-|48 c|<span class="char-style-override-8"><img class="image" width="72" height="48" src="images/01-answers/Image251.EPS" alt="Image251.EPS"></span>|
-|48d|Check <span class="char-style-override-4">n</span>=20 in both equations.|
-|49 a|<span>${12} \mathord{\left/ {\vphantom {{12} {18}}} \right. \kern-\nulldelimiterspace} {18}$</span>, <span>${{14} \mathord{\left/ {\vphantom {{14} 2}} \right. \kern-\nulldelimiterspace} 2}1$</span>|
+|48 c|The two lines intersect when $n=20$.|
+|48d|Check $n=20$ in both equations.|
+|49 a|$\frac{12}{18}$, $\frac{14}{21}$|
 |49 b|No|
 |49 c|It’s always 1.|
