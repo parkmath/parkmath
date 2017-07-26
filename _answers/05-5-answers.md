@@ -90,7 +90,7 @@
 |38 d|$x=11^{-6}$|
 |38 e|$p=\left( \frac{53}{253} \right)^{\frac92}$|
 |38 f|$x=10$ (Start by squaring both sides.)|
-|38 g|Start by squaring both sides. $x^ |
+|38 g|Start by squaring both sides. $x^2 = \frac 34$, so there are two answers: $x=\sqrt{\frac34}$ and $x= -\sqrt{\frac34}$.  |
 |41|180; 6! if you use different colors.|
 |42|330 ways|
 |43|256 possible sequences|
@@ -115,6 +115,6 @@
 |59|325 ways|
 |60 a|15|
 |60 b|35|
-|60 c|<img class="image" width="71" height="20" src="10-Answers-7-28-11-PRINT-web-images/ansS%26amp_R%2060c.ai" alt="ansS%26amp_R%2060c.ai">|
+|60 c|$15 \cdot 35 = 525$|
 |60 d|If we interpret this question as meaning that Ian is “trapped” by the grid and will walk only south or east when he has no choice, then the probability is one.|
 |61|700|
