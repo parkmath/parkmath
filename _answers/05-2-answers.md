@@ -58,7 +58,7 @@
 |32 g|Answers may vary.|
 |33 a|Yes. <span>$x^3y^4$</span>, <span>$x^9y^{12}$</span>, $\frac{1}{{x^{18}}{y^{24}}}$</span>|
 |33 b|<span>$2^{ - 2} \cdot 3^3$</span>, <span>$2^4 \cdot 3^{ - 6}$</span>|
-|33 c|Both are <span>${{x^{22}}} \mathord{\left/ {\vphantom {{{x^{22}}} {16{y^8}}}} \right. \kern-\nulldelimiterspace} {16{y^8}}$</span>|
+|33 c|Both are $\frac{x^{22}} {16y^8}$ |
 |33 d|<span>$\[{k^e}{x^{e\left( {a - c} \right)}}{y^{e\left( {b - d} \right)}}\]$</span>|
 |34 a|63|
 |34 b|<span>${{3^{48}}} \mathord{\left/ {\vphantom {{{3^{48}}} {{2^{16}}{g^{24}}{t^{22}}}}} \right. \kern-\nulldelimiterspace} {{2^{16}}{g^{24}}{t^{22}}}$</span>|
