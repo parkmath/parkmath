@@ -94,9 +94,8 @@
 |42 c|<span>$(x - 5)(x + 5)$</span>|
 |42 d|<span>$x = - 2{\text{ or }} - 1$</span>|
 |42 e|<span>$x = 2 \pm \sqrt {10} $</span>|
-|43|<span>${{m^{17}}} \mathord{\left/ {\vphantom {{{m^{17}}} {{n^{54}}}}} \right. \kern-\nulldelimiterspace} {{n^{54}}}$</span>|
-|44|<span>${27{x^{12}}} \mathord{\left/ {\vphantom {{27{x^{12}}} {8{y^{12}}}}} \right. \kern-\nulldelimiterspace} {8{y^{12}}}$</span>|
-|45|<span>$1014{\text{ c}}{{\text{m}}^2}$</span>|
+|43|$\frac{m^{17}}{n^{54}}$|
+|44|$\frac{27x^{12}}{8y^{12}}$|
 |46|4013|
 |47|17, 5|
 |48|Neither|
