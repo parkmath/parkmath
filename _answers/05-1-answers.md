@@ -75,6 +75,7 @@
 |48 b|Yes|
 |48 c|No|
 |48 d|Yes|
+|48 e|Yes|
 |49 a|4 moves|
 |49 b|16|
 |49 c|<span>$12n - 8$</span>|
