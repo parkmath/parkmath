@@ -32,7 +32,7 @@
 |25|---------|
 |26|a) 6x6x6= 216 b) <span><span>$\frac{6}{{216}}$</span></span>|
 |27|a) <span>$3!\;7! = 30240$</span> <br>b) <span>$3!\;7! = 30240$</span>|
-|28|a) $26\cdot25 = 650$ ; $26\cdot25\cdot24 = 15600$ <br>b) 2 or 18253, depending on what “must there be” means.|
+|28|a) $26\cdot25 = 650$ ; $26\cdot25\cdot24 = 15600$ <br>b) 18253 students.|
 |29|a) $2^{12} = 4096$ b) 12|
 |30|6x5x4 = 120 ways|
 |31|<span>a)</span> <span>$\frac{3}{7} \times \frac{2}{6} = \frac{1}{7}$</span>|
