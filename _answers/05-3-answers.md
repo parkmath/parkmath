@@ -17,7 +17,7 @@
 |5|You should get your original number back.|
 |6 f|You get Crocker|
 |6 g|You get Betty|
-|6 h|Call the numbers B and C and follow the algebra through.|
+|6 h|Call the numbers $B$ and $C$ and follow the algebra through.|
 |7 a|The complicated expression you should get is <span>$\frac{{{{(x + 4)}^2} - 16}}{x} - x$</span>.|
 |7 b|Multiply it out; it is <span>${x^2} + 8x + 16$</span>|
 |7 c|<span>$\frac{{x(x + 8)}}{x}$</span>|
