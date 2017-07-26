@@ -145,19 +145,18 @@
 |86|All such numbers are divisible by $1001 = 7 \cdot 11 \cdot 13$.|
 |87|5|
 |88|7|
-|89|<span>$\left(\fra$|
+|89|$\left( \frac{y}{x} \right)^{x-y}$|
 |90 a|Yes|
 |90 b|Answers may vary.|
 |91 a|<span>$2^{36}$</span>|
-|91 b|<span>$3^{36}$</span>|
-|91 c|<span>$2^6$</span>|
-|91 d|<span>$3^{13}$</span>|
-|91 e|<span>$7^{{{41} \mathord{\left/ {\vphantom {{41} 6}} \right. \kern-\nulldelimiterspace} 6}}$</span>|
-|91 f|1|
+|91 b|<span>$2^{6}$</span>|
+|91 c|<span>$3^{13}$</span>|
+|91 d|<span>$7^{\frac{41}{6}}$</span>|
+|91 e|<span>1</span>|
 |92 a|210|
 |92 b|---|
 |92 c|252|
-|92 d|<span>$2^{16}} \cdot {3^8$</span>|
+|92 d|<span>$2^{16} \cdot 3^8$</span>|
 |92 e|Consider the factors of <br>each number in their prime factorizations.|
 |93 a|Answers may vary.|
 |93 b|Answers may vary.|
@@ -167,15 +166,15 @@
 |94 a|lcm|
 |94 b|Addition of fractions is only possible when they have a <br>common denominator.|
 |95|8002|
-|96|Since 1, 1.4, 1.41, 1.414, 1.4142, etc approach <span>$\sqrt 2 $</span>, then <span>$4^1$</span>, <br><span>$4^{1.4}$</span>, <span>$4^{1.41}$</span>, <span>$4^{1.414}$</span>, <span>$\[{4^{1.4142}}\]y$</span> etc, approach <span>$4^{\sqrt 2 }$</span>. Thus, <span>$4 &amp;lt; {4^{\sqrt 2 }} &amp;lt; 8$</span>.|
-|97 a|<span>$\[3\sqrt {11} \]9$</span>, <span>$2\sqrt {221} $</span>|
+|96|Since 1, 1.4, 1.41, 1.414, 1.4142, etc approach <span>$\sqrt 2 $</span>, then <span>$4^1$</span>, $4^{1.4}$, <span>$4^{1.41}$</span>, <span>$4^{1.414}$</span>, <span>${4^{1.4142}}$</span> etc, approach <span>$4^{\sqrt 2 }$</span>. Thus, <span>$4 \leq 4^{\sqrt 2 } < 8$</span>.|
+|97 a|<span>$3\sqrt {11}$</span>, <span>$2\sqrt {221} $</span>|
 |97 b|Look for the square factors in its prime factorization.|
 |97 c|907 is a prime number.|
-|97 d|If for every prime <span>$p \leqslant \sqrt a $</span>, p is not a factor of a, then a is prime. <span>$\[\sqrt {907} \approx 30.1\]귱}61}H61}x61}$</span>|
-|97 e|23, <span>$\[\sqrt {551} \]9$</span>, <span>$\[\sqrt {557} \]9$</span>|
+|97 d|If, for every prime <span>$p \leq \sqrt a $</span>, $p$ is not a factor of $a$, then $a$ is prime. <span>$\sqrt {907} \approx 30.1$</span>|
+|97 e|23, <span>$\sqrt {551} $</span>, <span>$\sqrt {557} $</span>|
 |97 f|Answers may vary.|
-|97 g|<span>$\[7\sqrt 7 \]}$</span>, <span>$\sqrt {379} $</span>, <span>$\[\sqrt {403} \]9$</span>, <span>$3\sqrt {85} $</span>, <span>$\sqrt {1517} $</span>, &lt;<span>$\sqrt {1373} $</span>, <span>$\sqrt {1763} $</span>|
-|98 a|Q = product of all of the primes|
+|97 g|<span>$7\sqrt 7$</span>, <span>$\sqrt {379} $</span>, <span>$\sqrt {403}$</span>, <span>$3\sqrt {85} $</span>, <span>$\sqrt {1517} $</span>, <span>$\sqrt {1373} $</span>, <span>$\sqrt {1763} $</span>|
+|98 a|Multiply all of the primes together.|
 |98 b|None|
-|98 c|Q + 1 is prime.|
-|98 d|There would be a prime, Q + 1, greater than the greatest one.|
+|98 c|$Q + 1$ is prime.|
+|98 d|There would be a prime, $Q + 1$, greater than the greatest one.|
