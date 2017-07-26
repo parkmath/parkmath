@@ -71,14 +71,14 @@
 |36 a|6|
 |36 b|77|
 |36 c|241|
-|36 d|<span>$\[{1 \mathord{\left/ {\vphantom {1 {{9^{}}}}} \right. \kern-\nulldelimiterspace} {{9^{}}}}\]\\|^$</span>|
-|36 e|<span><span>$5 \mathord{\left/ {\vphantom {5 {{6^{}}}}} \right. \kern-\nulldelimiterspace} {{6^{}}}$</span></span>|
+|36 d|$\frac19$|
+|36 e|$\frac56$|
 |37 a|Answers may vary|
-|37 b|<span>$\[{3 \mathord{\left/ {\vphantom {3 2}} \right. \kern-\nulldelimiterspace} 2}\]ߊyHߊyxߊy$</span>|
-|37 c|<span><span>$64^{1.5}} = {64^{{3 \mathord{\left/ {\vphantom {3 2}} \right. \kern-\nulldelimiterspace} 2}}$</span></span>|
+|37 b|$\frac32$|
+|37 c|$64^{1.5} = 64^{\frac32}$|
 |37 d|<span>512</span>|
 |37 e|<span>16, 32</span>|
-|37 f|<span><span>$a^{1.3}} = {\left( {{a^{{1 \mathord{\left/ {\vphantom {1 {10}}} \right. \kern-\nulldelimiterspace} {10}}}}} \right)^{13}} = {\left( {\sqrt[{10}]{a}} \right)^{13}$</span>, <span>$7^{1.29}} = {\left( {{7^{{1 \mathord{\left/ {\vphantom {1 {10}}} \right. \kern-\nulldelimiterspace} {10}}0}}} \right)^{129}} = {\left( {\sqrt[{100}]{7}} \right)^{129}$</span></span>|
+|37 f|$a^{1.3} = \left(a^{\frac{1}{10}}\right)^{13} = \left(\sqrt[10]a \right)^{13}$, <br> $7^{1.29} = \left( 7^{\frac{1}{100}} \right)^{129} = \left(\sqrt[100]7 \right)^{129}$|
 |38 a|<span>2</span>|
 |38 b|33,554,432|
 |38 c|3|
