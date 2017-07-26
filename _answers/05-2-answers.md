@@ -16,7 +16,7 @@
 |9|12|
 |10|---|
 |11|56|
-|12|<span>$2^{13} \times 3^4$</span>|
+|12|<span>$2^{13} \cdot 3^4$</span>|
 |13|Check the prime factorizations of the numbers.|
 |14 a|Comparing their prime factorizations.|
 |14 b|She is not telling the truth.|
@@ -42,8 +42,8 @@
 |22|$x^{-4}$, $x^4$|
 |23|$\frac{1}{x^{11}}$, $\frac{1}{3^{11}}$, $x^{13}$,$\frac{1}{2^{5}}$, $\frac{1}{x^2}$, $x^{4}$  |
 |24|<span>$x^3$</span>, <span>$x^{12}$</span>, <span>$\frac{1}{x^{12}}$</span>|
-|25|${2^4} \times {3^4} \times 7 \times 11$|
-|26|<span>${2^3} \times 5$</span>|
+|25|${2^4} \cdot {3^4} \cdot 7 \cdot 11$|
+|26|<span>${2^3} \cdot 5$</span>|
 |27|It is not.|
 |28|2 and 1|
 |29|<span>$\left( { - 2} \right)^2$</span>&gt;<span>$\left( 2 \right)^{ - 2}$</span>=<span>$\left( { - 2} \right)^{ - 2}$</span>&gt;<span>$\left( 3 \right)^{ - 3}$</span>&gt; <span>$\left( { - 3} \right)^{ - 3}$</span>&gt;<span>$\left( { - 3} \right)^3$</span>|
@@ -162,7 +162,7 @@
 |93 b|Answers may vary.|
 |93 c|Answers may vary.|
 |93 d|Answers may vary.|
-|93 e|The product <span>$\gcd \cdot {\text{lcm}}$</span> contains all the factors in the prime <br>factorizations of x and y.|
+|93 e|The product <span>$\gcd \cdot {\text{lcm}}$</span> contains all the factors in the prime <br>factorizations of $x$ and $y$.|
 |94 a|lcm|
 |94 b|Addition of fractions is only possible when they have a <br>common denominator.|
 |95|8002|
