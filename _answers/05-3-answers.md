@@ -90,16 +90,17 @@
 |38 a|Yes.|
 |38 b|Calculate <span>$(x + y)(x - y)$</span>.|
 |38 c|Multiply out <span>$(x + y)(x - y)$</span>.|
-|38 d|9984 (Think of <img class="image" width="38" height="13" src="10-Answers-7-28-11-PRINT-web-images/ansNGA%2038d.ai" alt="ansNGA%2038d.ai">as the sum of 100 and 4 times their difference.)|
+|38 d|9984 (Think of as the sum of 100 and 4 times their difference.)|
 |38 e|The middle term disappears… these all illustrate the pattern <span>$(a + b)(a - b) = {a^2} - {b^2}$</span>.|
-|39 a|Hint: once you’ve written down what happens to a number x, factor that expression.|
+|39 a|Hint: once you’ve written down what happens to a number $x$, factor that expression.|
 |39 b|Jake assumes that the quantity <span>$50 - x$</span> will be positive, but if <span>$x = 99$</span> this won’t be the case.|
-|40 a|He’s right – call the two numbers a and b and check it out.|
+|40 a|He’s right – call the two numbers $a$ and $b$ and check it out.|
 |40 b|It’s probably not always quicker. Phil chose well using numbers that added up to 60, which ends in a zero and is easy to square in your head.|
 |41 a|<span>$.3674 = \frac{{3674}}{{10000}}$</span>and <span>$.1864597 = \frac{{1864597}}{{10000000}}$</span>. <br>Note that the fractions are not necessarily in lowest terms.|
 |41 b|<span>$\frac{{862862}}{{1000000}}$</span>, for instance.|
 |41 c|Yes.|
-|41 d and e|-----|
+|41 d|-----|
+|41 e|-----|
 |42 a|<span>$(x + 3)(x - 4)$</span>|
 |42 b|<span>$x = - 2 \pm \sqrt 2 $</span>|
 |42 c|<span>$\frac{{20}}{3}$</span>|
@@ -119,7 +120,7 @@
 |50|<span>${(a + b)^2} = {a^2} + 2ab + {b^2}$</span>|
 |51|Hint: imagine removing the box in the lower right corner (how do you indicate “removing” in mathematical notation?) and rotating the box in the upper right corner 90 degrees, sliding it down below the diagram so that its longer lines up with the box on the lower left. You should now have three stacked boxes: what are the dimensions of the larger box they form?|
 |52|Yes; no; yes|
-|53|When n is odd.|
+|53|When $n$ is odd.|
 |54|-----|
 |55|All odd primes can be written <br>as a difference of squares. However, they can only be <br>written one way.|
 |56|Write the two numbers <br>as <span>$10a + b$</span> and <span>$10a + (10 - b)$</span> and multiply them together to see how this works.|
