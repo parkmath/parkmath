@@ -52,12 +52,12 @@
 |32 a|Yes|
 |32 b|<span>$x^ay^a$</span>|
 |32 c|$\frac{x^a}{y^a}$|
-|32 d|<span>{x^{12}}{y^{12}}$</span>, <span>$1 \mathord{\left/ {\vphantom {1 {{x^4}{y^4}}}} \right. \kern-\nulldelimiterspace} {{x^4}{y^4}}$</span>|
-|32 e|<span>$\[{x^{a + b}}{y^{a + b}}\]"z$</span>|
-|32 f|<span>$x^{a - b}}{y^{a - b}$</span>|
+|32 d|${x^{12}}{y^{12}}$, $\frac{1}{ {{x^4}{y^4}}}$</span>|
+|32 e|<span>${x^{a + b}}{y^{a + b}}$</span>|
+|32 f|<span>$x^{a - b}y^{a - b}$</span>|
 |32 g|Answers may vary.|
-|33 a|Yes. <span>$x^3}{y^4$</span>, <span>$x^9}{y^{12}$</span>, <span>$1 \mathord{\left/ {\vphantom {1 {{x^{18}}{y^{24}}}}} \right. \kern-\nulldelimiterspace} {{x^{18}}{y^{24}}}$</span>|
-|33 b|<span>$2^{ - 2}} \times {3^3$</span>, <span>$2^4} \times {3^{ - 6}$</span>|
+|33 a|Yes. <span>$x^3y^4$</span>, <span>$x^9y^{12}$</span>, $\frac{1}{{x^{18}}{y^{24}}}$</span>|
+|33 b|<span>$2^{ - 2} \cdot 3^3$</span>, <span>$2^4 \cdot 3^{ - 6}$</span>|
 |33 c|Both are <span>${{x^{22}}} \mathord{\left/ {\vphantom {{{x^{22}}} {16{y^8}}}} \right. \kern-\nulldelimiterspace} {16{y^8}}$</span>|
 |33 d|<span>$\[{k^e}{x^{e\left( {a - c} \right)}}{y^{e\left( {b - d} \right)}}\]$</span>|
 |34 a|63|
