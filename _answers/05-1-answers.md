@@ -67,7 +67,7 @@
 |42 c|<span>$x = 2{\text{ or }}3$</span>|
 |42 d|<span>$3\frac{1}{{15}}$</span>|
 |42 e|9|
-|44|It was K3,3.|
+|44|It was $K_{3,3}$.|
 |45|Two; two|
 |46|<span>${\text{total degree }} = 2mn$</span>|
 |47|<span>$\frac{1}{9}$</span>; <span>$\frac{1}{{mn}}$</span>|
@@ -93,6 +93,6 @@
 |55|The basic insight is the same as required for the Euler circuit on a non-directed graph. Be precise in your description of what’s necessary.|
 |56|Note that “path” here is being used in the same sense as it is in “Euler path”: you need to visit all the nodes, but don’t need to end where you began. In that case, yes, every tournament has a Hamiltonian path. If there is more than one path, then using the graph will not help you rank the teams.|
 |58|9|
-|59|Use the nodes to represent <br>“decision points,” and edges as the path from one decision point to another.|
+|59|Use the nodes to represent “decision points,” and edges as the path from one decision point to another.|
 |60|Yes|
 |61|Yes|
