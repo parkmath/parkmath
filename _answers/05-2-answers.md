@@ -5,44 +5,44 @@
 |problem|answer|
 |-------|------|
 |Problem|Answer|
-|1|<span>$\[2 \times 20\]{$</span>, <span>$4 \times 10$</span>, <span>$\[8 \times 5\]~$</span>, <span>$\[40 \times 1\]{$</span>|
+|1|<span>$2 \times 20 $</span>, <span>$4 \times 10$</span>, <span>$8 \times 5$</span>, <span>$40 \times 1$</span>|
 |2|<span>$2 \times 2 \times 2 \times 3 \times 3$</span>|
-|3|<span>$\[2 \times 3 \times 5 \times 7\]z$</span>|
+|3|<span>$\[2 \times 3 \times 5 \times 7\]$</span>|
 |4|<span>165</span>|
 |5|4818, 4829, 4840, 4851|
-|6|<span>$\[2 \times 3 \times 5 \times 7 \times 11\]~$</span>|
-|7|91 = <span>$7 \times 13$</span>, <span>$221 = 13 \times 17$</span>, <br>223 is prime.|
-|8|<span>$a > 1$</span> is prime if for all prime <span>$p \leqslant \sqrt a $</span>, p is not a factor of a.|
+|6|<span>$2 \times 3 \times 5 \times 7 \times 11$</span>|
+|7|$91 = 7 \times 13$</span>, <span>$221 = 13 \times 17$</span>, <br>223 is prime.|
+|8|<span>$a > 1$</span> is prime if for all prime <span>$p \leq \sqrt a $</span>, p is not a factor of a.|
 |9|12|
 |10|---|
 |11|56|
-|12|<span>$2^{13}} \times {3^4$</span>|
+|12|<span>$2^{13} \times 3^4$</span>|
 |13|Check the prime factorizations of the numbers.|
-|14 a|Comparing their prime <br>factorizations.|
+|14 a|Comparing their prime factorizations.|
 |14 b|She is not telling the truth.|
 |14 c|<span>40</span>|
 |14 d|121|
 |14 e|Equal|
 |15|<span>$x^{a + b}$</span>, <span>$x^{a - b}$</span>, <span>$x^{ab}$</span>|
-|16|<span>$\[a > b\]{Tp"z$</span>|
+|16|<span>$a > b$</span>|
 |17 a|<span>$x^{20}$</span>|
 |17 b|<span>$3^4$</span>|
 |17 c|<span>$x^{30}$</span>|
-|17 d|<span>$\[{x^{22}}\]Ү{ђ.{$</span>|
+|17 d|<span>${x^{22}}$</span>|
 |18|Answers may vary.|
 |19 a|<span>$\left( {5,1} \right)$</span>, <span>$\left( {6,2} \right)$</span>, <span>$\left( {7,3} \right)$</span>|
 |19 b|---|
 |19 c|---|
 |19 d|---|
-|19 e|<span>$a \geqslant b$</span>|
+|19 e|<span>$a \geq b$</span>|
 |20|They are different.|
 |21 a|---|
 |21 b|---|
-|21 c|a and b are any pair of integers.|
-|22|<span>$\[{x^{ - 4}}\]\\|Ӛ*\\|$</span>, <span>$x^4$</span>|
-|23|<span>$1 \mathord{\left/ {\vphantom {1 {{x^{11}}}}} \right. \kern-\nulldelimiterspace} {{x^{11}}}$</span>, <span>$1 \mathord{\left/ {\vphantom {1 {{3^{11}}}}} \right. \kern-\nulldelimiterspace} {{3^{11}}}$</span>, <span>$x^{13}$</span>, <span>$1 \mathord{\left/ {\vphantom {1 {{2^5}}}} \right. \kern-\nulldelimiterspace} {{2^5}}$</span>, <br><span>$1 \mathord{\left/ {\vphantom {1 {{x^2}}}} \right. \kern-\nulldelimiterspace} {{x^2}}$</span>, <span>$x^4$</span>|
-|24|<span>$x^3$</span>, <span>$x^{12}$</span>, <span>$1 \mathord{\left/ {\vphantom {1 {{x^{12}}}}} \right. \kern-\nulldelimiterspace} {{x^{12}}}$</span>|
-|25|<span>$\[{2^4} \times {3^4} \times 7 \times 11\]I\\|$</span>|
+|21 c|$a$ and $b$ are any pair of integers.|
+|22|$x^{-4}$, $x^4$|
+|23|$\frac{1}{x^{11}}$, $\frac{1}{3^{11}}$, $x^{13}$,$\frac{1}{2^{5}}$, $\frac{1}{x^2}$, $x^{4}$  |
+|24|<span>$x^3$</span>, <span>$x^{12}$</span>, <span>$\frac{1}{x^{12}}$</span>|
+|25|${2^4} \times {3^4} \times 7 \times 11$|
 |26|<span>${2^3} \times 5$</span>|
 |27|It is not.|
 |28|2 and 1|
@@ -50,9 +50,9 @@
 |30|<span>$2^2$</span>, <span>$2^6$</span>, <span>$2^{ - 8}$</span>|
 |31|No|
 |32 a|Yes|
-|32 b|<span>$x^a}{y^a$</span>|
-|32 c|<span>${{x^a}} \mathord{\left/ {\vphantom {{{x^a}} {{y^a}}}} \right. \kern-\nulldelimiterspace} {{y^a}}$</span>|
-|32 d|<span>$\[{x^{12}}{y^{12}}\]$</span>, <span>$1 \mathord{\left/ {\vphantom {1 {{x^4}{y^4}}}} \right. \kern-\nulldelimiterspace} {{x^4}{y^4}}$</span>|
+|32 b|<span>$x^ay^a$</span>|
+|32 c|$\frac{x^a}{y^a}$|
+|32 d|<span>{x^{12}}{y^{12}}$</span>, <span>$1 \mathord{\left/ {\vphantom {1 {{x^4}{y^4}}}} \right. \kern-\nulldelimiterspace} {{x^4}{y^4}}$</span>|
 |32 e|<span>$\[{x^{a + b}}{y^{a + b}}\]"z$</span>|
 |32 f|<span>$x^{a - b}}{y^{a - b}$</span>|
 |32 g|Answers may vary.|
