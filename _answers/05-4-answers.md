@@ -5,9 +5,9 @@
 |problem|answer|
 |-------|------|
 |Problem|Answer|
-|1|<span>$5 \mathord{\left/ {\vphantom {5 {32}}} \right. \kern-\nulldelimiterspace} {32}$</span>|
-|2|<span>$5 \mathord{\left/ {\vphantom {5 {32}}} \right. \kern-\nulldelimiterspace} {32}$</span>|
-|3|<span>$5 \mathord{\left/ {\vphantom {5 {16}}} \right. \kern-\nulldelimiterspace} {16}$</span>|
+|1|5/32|
+|2|5/32|
+|3|5/16|
 |4|17,576,000|
 |5|11,232,000|
 |6|3,628,800, 10!|
@@ -68,7 +68,7 @@
 |42 e|<span>$\frac{{{b^2} - 4ac}}{{4{a^2}}}$</span>|
 |43|66|
 |44|43|
-|45|If a &gt;1 and <span>$\[a = p_1^{{r_1}}p_2^{{r_2}} \cdot \cdot \cdot p_k^{{r_k}}\]н\\|$</span>, <br>where the <span>$\[p_i^{}\]߁z$</span> are primes and <span>$r_i^{} > 0$</span> are integers, the number of factors of a is <span>$\left( {r_1^{} + 1} \right)\left( {r_2^{} + 1} \right) \cdot \cdot \cdot \left( {r_k^{} + 1} \right)$</span>.|
+|45|First find the prime factorization of the number. Add one to the exponent of each prime factor, then multiply the results together. For example, if the prime factorization is $2^5 \cdot 3^7$, calculate $6 \cdot 8$.|
 |46 a|15|
 |46 b|7|
 |46 c|It is always an integer.|
