@@ -84,10 +84,10 @@
 |38 c|3|
 |38 d|2|
 |38 e|27|
-|38 f|<span>$126^{{{100} \mathord{\left/ {\vphantom {{100} {271}}} \right. \kern-\nulldelimiterspace} {271}}}} = {\left( {\sqrt[{271}]{{126}}} \right)^{100}$</span>|
-|38 g|<span>$200^{{{100} \mathord{\left/ {\vphantom {{100} {387}}} \right. \kern-\nulldelimiterspace} {387}}}} = {\left( {\sqrt[{387}]{{200}}} \right)^{100}$</span>|
+|38 f|$126^{\frac{100}{271}} = \left(\sqrt[271]{126} \right)^{100} $|
+|38 g|$200^{\frac{100}{387}} = \left(\sqrt[387]{200} \right)^{100} $|
 |39|<span>$x^{27}$</span>|
-|40|<span>${{p^{15}}} \mathord{\left/ {\vphantom {{{p^{15}}} {{q^{36}}}}} \right. \kern-\nulldelimiterspace} {{q^{36}}}$</span>, <span>$\[{{{q^{36}}} \mathord{\left/ {\vphantom {{{q^{36}}} {{p^{15}}}}} \right. \kern-\nulldelimiterspace} {{p^{15}}}}\]$</span>|
+|40|<span>$\frac{p^{15}}{q^{36}}$, $\frac{q^{36}}{p^{15}}$</span>|
 |41|Yes|
 |42 a|<span>$\frac{4}{3}$</span>|
 |42 b|<span>$4{x^2}(x - 3)$</span>|
