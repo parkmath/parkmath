@@ -7,7 +7,7 @@
 |Problem|Answer|
 |1|<span>$2 \times 20 $</span>, <span>$4 \times 10$</span>, <span>$8 \times 5$</span>, <span>$40 \times 1$</span>|
 |2|<span>$2 \times 2 \times 2 \times 3 \times 3$</span>|
-|3|<span>$\[2 \times 3 \times 5 \times 7\]$</span>|
+|3|<span>$2 \times 3 \times 5 \times 7$</span>|
 |4|<span>165</span>|
 |5|4818, 4829, 4840, 4851|
 |6|<span>$2 \times 3 \times 5 \times 7 \times 11$</span>|
