@@ -100,12 +100,12 @@
 |47|17, 5|
 |48|Neither|
 |49|128|
-|50|<span>$\[{x^2}\]$</span>|
+|50|<span>${x^2}$</span>|
 |51|<span>$5^2$</span>|
 |52|<span>$r = 3$</span>|
 |53|0|
 |54|1994|
-|55|Given an integer n, either n is a multiple of 3 or n is not. If n is, both 2 and 3 divides <span>$\[n\left( {n + 1} \right)\left( {n + 2} \right)\]$</span>, since one of these factors must be even. If n is not a multiple of 3, either <span>$n + 1$</span> or <span>$n + 2$</span> is a multiple of 3. Then, <span>$n\left( {n + 1} \right)\left( {n + 2} \right)$</span> is divisible by 6.|
+|55|Given an integer $n$, either $n$ is a multiple of 3 or $n$ is not. If $n$ is, both 2 and 3 divide <span>$n \left( {n + 1} \right) \left( {n + 2} \right)$</span>, since one of these factors must be even. If $n$ is not a multiple of 3, either <span>$n + 1$</span> or <span>$n + 2$</span> is a multiple of 3. Then <span>$n\left( {n + 1} \right)\left( {n + 2} \right)$</span> is divisible by 6.|
 |56|38|
 |57|23|
 |58|<span>$6^7$</span>|
@@ -118,34 +118,34 @@
 |64 b|<span>$5^2$</span>|
 |64 c|<span>$7^2$</span>|
 |64 d|<span>$101^2$</span>|
-|65|<span>$\[{1000^{ - 1000}}\]@[ϼ$</span>= <span>$\left( {{1 \mathord{\left/ {\vphantom {1 {1000}}} \right. \kern-\nulldelimiterspace} {1000}}} \right)^{1000}$</span>&lt;<span>$\left( {{1 \mathord{\left/ {\vphantom {1 {1000}}} \right. \kern-\nulldelimiterspace} {1000}}} \right)^{{1 \mathord{\left/ {\vphantom {1 {1000}}} \right. \kern-\nulldelimiterspace} {1000}}}$</span>&lt;<span>$\[{\left( {1000} \right)^{{1 \mathord{\left/ {\vphantom {1 {1000}}} \right. \kern-\nulldelimiterspace} {1000}}}}\]`$</span>&lt;<span>$\left( {{1 \mathord{\left/ {\vphantom {1 {1000}}} \right. \kern-\nulldelimiterspace} {1000}}} \right)^{ - 1000}$</span>|
-|66|<span>$1 \mathord{\left/ {\vphantom {1 6}} \right. \kern-\nulldelimiterspace} 6$</span>|
-|67|<span>$\[{1 \mathord{\left/ {\vphantom {1 {1992}}} \right. \kern-\nulldelimiterspace} {1992}}\]e^$</span>|
-|68|<span>${25\left( {\pi - 2} \right)} \mathord{\left/ {\vphantom {{25\left( {\pi - 2} \right)} 4}} \right. \kern-\nulldelimiterspace} 4$</span>|
+|65|$1000^{-1000} = \left(\frac{1}{1000}\right)^{1000} < \left(\frac{1}{1000}\right)^{\frac{1}{1000}} < (1000)^{\frac{1}{1000}} < \left(\frac{1}{1000}\right)^{-1000}$|
+|66|$\frac16$|
+|67|$\frac{1}{1992}$|
+|68|$25(\pi-2)/4$|
 |69|<span>$2\sqrt {55} $</span>|
-|70|<span>${\sqrt 5 } \mathord{\left/ {\vphantom {{\sqrt 5 } 2}} \right. \kern-\nulldelimiterspace} 2$</span>|
-|71|After squaring the terminating <br>decimal, all digits after the decimal point would have to become zero (since 17 is an integer). But no matter which digit is last in a terminating <br>decimal, you won’t get the digit zero when you square it.|
+|70|$5/\sqrt2$|
+|71|After squaring the terminating <br>decimal, all digits after the decimal point would have to become zero (since 17 is an integer). But no matter which digit is last in a terminating decimal, you won’t get the digit zero when you square it.|
 |72|16|
 |73|8|
 |74|1985|
 |75|Negative numbers. 10th powers of integers.|
 |76|32|
 |77|210|
-|78|<span>$\[\sqrt 2 \]{/0$</span>|
+|78|$\sqrt2$|
 |79|16|
-|80|<span>$7 \mathord{\left/ {\vphantom {7 8}} \right. \kern-\nulldelimiterspace} 8$</span>|
+|80|$\frac78$</span>|
 |81 a|<span>$s(8) = 7$</span>|
 |81 b|One number, 6.|
 |81 c|12|
 |81 d|------|
-|82|<span>$2^{3000}} &amp;lt; {3^{2000}$</span>|
+|82|<span>$2^{3000}$; $3^{2000}$</span>|
 |83|<span>$5^{15}$</span>|
 |84|675|
 |85|24|
-|86|All such numbers are divisible by <img class="image" width="85" height="20" src="10-Answers-7-28-11-PRINT-web-images/ansPPE%2086.ai" alt="ansPPE%2086.ai">|
+|86|All such numbers are divisible by $1001 = 7 \cdot 11 \cdot 13$.|
 |87|5|
 |88|7|
-|89|<span>$\left( {{y \mathord{\left/ {\vphantom {y x}} \right. \kern-\nulldelimiterspace} x}} \right)^{x - y}$</span>|
+|89|<span>$\left(\fra$|
 |90 a|Yes|
 |90 b|Answers may vary.|
 |91 a|<span>$2^{36}$</span>|
