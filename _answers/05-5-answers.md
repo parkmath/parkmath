@@ -85,12 +85,12 @@
 |36 b|<span>${30^{10}}$</span>|
 |37|<span>${2^5}$</span> of them, better known as 32.|
 |38 a|$x=2$|
-|38 b|<span>${x^3} = 33\; \to \;x = \sqrt[3]{{33}} \to x = {33^{\frac{1}{3}}}$</span>|
+|38 b|$x = {33^{\frac{1}{3}}}$|
 |38 c|$x=37^{\frac54}$|
 |38 d|$x=11^{-6}$|
 |38 e|$p=\left( \frac{53}{253} \right)^{\frac92}$|
-|38 f|Squaring both sides, we get|
-|38 g|Squaring both sides, we get . <br>So there are two answers, <span>$x = \sqrt {\frac{3}{4}} $</span> and <span>$x = - \sqrt {\frac{3}{4}} $</span>.|
+|38 f|$x=10$ (Start by squaring both sides.)|
+|38 g|Start by squaring both sides. $x^ |
 |41|180; 6! if you use different colors.|
 |42|330 ways|
 |43|256 possible sequences|
