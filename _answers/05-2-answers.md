@@ -2,9 +2,9 @@
 ## Primes, Products, and Exponents
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|<span>$2 \times 20 $</span>, <span>$4 \times 10$</span>, <span>$8 \times 5$</span>, <span>$40 \times 1$</span>|
 |2|<span>$2 \times 2 \times 2 \times 3 \times 3$</span>|
 |3|<span>$2 \times 3 \times 5 \times 7$</span>|
@@ -12,7 +12,7 @@
 |5|4818, 4829, 4840, 4851|
 |6|<span>$2 \times 3 \times 5 \times 7 \times 11$</span>|
 |7|$91 = 7 \times 13$</span>, <span>$221 = 13 \times 17$</span>, <br>223 is prime.|
-|8|<span>$a > 1$</span> is prime if for all prime <span>$p \leq \sqrt a $</span>, p is not a factor of a.|
+|8|<span>$a > 1$</span> is prime if for all prime <span>$p \leq \sqrt a $</span>, $p$ is not a factor of $a$.|
 |9|12|
 |10|---|
 |11|56|
@@ -59,15 +59,15 @@
 |33 a|Yes. <span>$x^3y^4$</span>, <span>$x^9y^{12}$</span>, $\frac{1}{{x^{18}}{y^{24}}}$</span>|
 |33 b|<span>$2^{ - 2} \cdot 3^3$</span>, <span>$2^4 \cdot 3^{ - 6}$</span>|
 |33 c|Both are $\frac{x^{22}} {16y^8}$ |
-|33 d|<span>$\[{k^e}{x^{e\left( {a - c} \right)}}{y^{e\left( {b - d} \right)}}\]$</span>|
+|33 d|<span>${k^e}{x^{e\left( {a - c} \right)}}{y^{e\left( {b - d} \right)}}$</span>|
 |34 a|63|
-|34 b|<span>${{3^{48}}} \mathord{\left/ {\vphantom {{{3^{48}}} {{2^{16}}{g^{24}}{t^{22}}}}} \right. \kern-\nulldelimiterspace} {{2^{16}}{g^{24}}{t^{22}}}$</span>|
-|35 a|x|
-|35 b|<span>$1 \mathord{\left/ {\vphantom {1 {{2^{}}}}} \right. \kern-\nulldelimiterspace} {{2^{}}}$</span>|
-|35 c|<span>$1 \mathord{\left/ {\vphantom {1 {{3^{}}}}} \right. \kern-\nulldelimiterspace} {{3^{}}}$</span>|
-|35 d|<span>$p = {x^{{1 \mathord{\left/ {\vphantom {1 5}} \right. \kern-\nulldelimiterspace} 5}}}$</span>|
-|35 e|<span>$1 \mathord{\left/ {\vphantom {1 {{2^{}}}}} \right. \kern-\nulldelimiterspace} {{2^{}}}$</span>|
-|35 f|<span>$N = {x^{{1 \mathord{\left/ {\vphantom {1 n}} \right. \kern-\nulldelimiterspace} n}}}$</span>|
+|34 b|$\frac{3^{48}}{2^{16}g^{24}t^{22}}$|
+|35 a|$x$|
+|35 b|$\frac12$|
+|35 c|$\frac13$|
+|35 d|$p = x^{\frac15}$|
+|35 e|$\frac12$|
+|35 f|$N = x^\frac1n$ |
 |36 a|6|
 |36 b|77|
 |36 c|241|
