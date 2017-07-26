@@ -20,10 +20,10 @@
 |9|15,120|
 |10|30,240|
 |11|792|
-|12|<span>$7 \mathord{\left/ {\vphantom {7 {32}}} \right. \kern-\nulldelimiterspace} {32}$</span>, <span>$\[{{35} \mathord{\left/ {\vphantom {{35} {128}}} \right. \kern-\nulldelimiterspace} {128}}\]$</span>, <span>$7 \mathord{\left/ {\vphantom {7 {32}}} \right. \kern-\nulldelimiterspace} {32}$</span>|
+|12|7/32, 35/128, 7/32|
 |13|1,820|
 |14|Total number of students, <br>number of students not in the committee, and number of <br>students in the committee.|
-|15|<span>${a\left( {a - 1} \right)\left( {a - 2} \right) \cdot \cdot \cdot \left( {a - c + 1} \right)} \mathord{\left/ {\vphantom {{a\left( {a - 1} \right)\left( {a - 2} \right) \cdot \cdot \cdot \left( {a - c + 1} \right)} {c!}}} \right. \kern-\nulldelimiterspace} {c!}$</span>|
+|15|$\frac{(a)(a-1)(a-2) \ldots (a-c+1)}{c!}$|
 |16|56|
 |17 a|24|
 |17 b|144|
@@ -31,7 +31,7 @@
 |18 b|56|
 |19 a|311,875,200|
 |19 b|2,598,960|
-|19 c|Check with your calculator, <br>not back here!|
+|19 c|Check with your calculator, not back here!|
 |20|3,268,760|
 |21|34,650|
 |22|4200|
@@ -39,7 +39,7 @@
 |24|13,651,680 and 2,275,280|
 |25|336 and 56|
 |26|190|
-|27|<span>${105} \mathord{\left/ {\vphantom {{105} {512}}} \right. \kern-\nulldelimiterspace} {512}$</span> and <span>${385} \mathord{\left/ {\vphantom {{385} {1024}}} \right. \kern-\nulldelimiterspace} {1024}$</span>|
+|27|105/512 and 385/1024|
 |28|84|
 |29|1956|
 |30 a|658,008|
@@ -59,8 +59,8 @@
 |39 a|5, 3, 1, -1, -3, and -5|
 |39 b|1/32 and 5/32|
 |39 c|<span>$\frac{{15}}{8} = 1.875$</span>|
-|40|5, 9, 35, <span>${n\left( {n - 3} \right)} \mathord{\left/ {\vphantom {{n\left( {n - 3} \right)} 2}} \right. \kern-\nulldelimiterspace} 2$</span>|
-|41|66, <span>${n\left( {n - 1} \right)} \mathord{\left/ {\vphantom {{n\left( {n - 1} \right)} 2}} \right. \kern-\nulldelimiterspace} 2$</span>|
+|40|5, 9, 35, $\frac{(n)(n-3)}{2}$|
+|41|66, $\frac{(n)(n-1)}{2}$|
 |42 a|<span>$\frac{{3a}}{{2a - 3}}$</span>|
 |42 b|<span>$x = - 2{\text{ or }}7$</span>|
 |42 c|<span>$x = \frac{{1 \pm \sqrt 5 }}{2}$</span>|
@@ -72,15 +72,15 @@
 |46 a|15|
 |46 b|7|
 |46 c|It is always an integer.|
-|46 e|<img class="image" width="141" height="35" src="10-Answers-7-28-11-PRINT-web-images/Eqn48.eps" alt="Eqn48.eps">|
+|46 e|${n+1} \choose r$ = $n \choose {r-1}$ + $n \choose r$.|
 |47|252|
-|48|<span>$1 \mathord{\left/ {\vphantom {1 {10}}} \right. \kern-\nulldelimiterspace} {10}$</span> and <span>$1 \mathord{\left/ {\vphantom {1 5}} \right. \kern-\nulldelimiterspace} 5$</span>|
-|49 a|The number of paths is the coefficient of <span>$r^2}{u^3$</span>.|
-|49 b|<span>$\[{\left( {r + u} \right)^{10}}\]Hʢzxʢz$</span>|
+|48|1/10 and 1/5|
+|49 a|The number of paths is the coefficient of <span>$r^2u^3$</span>.|
+|49 b|<span>$( {r + u} )^{10}$</span>|
 |49 c|56|
 |49 d|25,344|
 |50|33,300|
 |51 a|165|
 |51 b|59|
-|52|The number of paths form the top dot (A) to the dot n dots below the top one and k dots from the left edge of its row is <span>${n!} \mathord{\left/ {\vphantom {{n!} {\left( {n - k} \right)!k!}}} \right. \kern-\nulldelimiterspace} {\left( {n - k} \right)!k!}$</span>|
+|52|The number of paths form the top dot (A) to the dot n dots below the top one and k dots from the left edge of its row is $\frac{n!}{(n-k)!k!}$|
 |53|Answers may vary.|
