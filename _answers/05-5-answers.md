@@ -80,7 +80,7 @@
 |32|<span>$ - 1 + 2x$</span>|
 |33|15|
 |34|<span>${(x - y)^2} = {x^2} - 2xy + {y^2}$</span>. Using what we were given, this equals <span>$37 - 2(24) = - 11$</span>.|
-|35|Write this out using algebra <br>and simplify in order to see that the answer is a multiple of 3 but not 6.|
+|35|Write this out using algebra and simplify in order to see that the answer is a multiple of 3 but not 6.|
 |36 a|<span>${3^{32}}$</span>|
 |36 b|<span>${30^{10}}$</span>|
 |37|<span>${2^5}$</span> of them, better known as 32.|
