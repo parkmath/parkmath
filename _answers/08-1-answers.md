@@ -55,27 +55,27 @@
 |37|$\frac{T_1 (r^n - 1)}{r-1}$|
 |38|254.54|
 |39|1.5|
-|40|No because 4,921 is not <br>divisible by 3.|
-|41 a|rn would become so small, it would basically be 0.|
+|40|No because 4,921 is not divisible by 3.|
+|41 a|$r^n$ would become so small, it would basically be 0.|
 |41 b|1|
 |41 c|1/3|
 |42 a|7/12|
 |42 b|<span>$ - 2 \pm \sqrt 5 $</span>|
 |42 c|<span>$1000\sqrt 3 $</span>|
-|42 d|(xy4 + 1)/(x3y3)|
+|42 d|$\frac{xy^4 + 1}{x^3y^3}$|
 |42 e|0|
 |43 c|1/3 unit|
 |43 e|2/27 unit|
 |43 f|16/19683|
-|43 g|(1/3)(2/9)(n-1)|
-|44|The doubling structure by \$10, 727, 418.23|
+|43 g|$\frac13 \cdot \left(\frac29 \right)^ {n-1}$|
+|44|The doubling structure would generate more money, by \$10, 727, 418.23|
 |45|\$59.81|
 |46 a|13.025 feet; 14.610 feet|
 |46 b|24.2196 feet|
 |46 c|25 feet|
-|47|<img class="image" width="84" height="16" src="images/08-answers/outline F&amp_MI answers G1.eps" alt="outline%20F%26amp_MI%20answers%20GSS%2047.eps">|
+|47|$T_n = 0.7 \cdot 10^{n-1}$|
 |48 a|6 vines|
 |48 b|30 seconds|
-|49|r = 6 or -7|
+|49|$r = 6$ or $-7$|
 |50|4; 5; infinitely many|
 |51 a|13, 21|
