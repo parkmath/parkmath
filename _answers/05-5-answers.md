@@ -116,5 +116,5 @@
 |60 a|15|
 |60 b|35|
 |60 c|$15 \cdot 35 = 525$|
-|60 d|If we interpret this question as meaning that Ian is “trapped” by the grid and will walk only south or east when he has no choice, then the probability is one.|
+|60 d|---|
 |61|700|
