@@ -47,7 +47,7 @@
 |22 a|34 ft/sec|
 |22 b|28 ft/sec|
 |22 c|No|
-|23 b|<span>$\[ - \frac{4}{3}\]{$</span>; <span>$y - 3 = - \frac{4}{3}\left( {x - 4} \right)$</span>|
+|23 b|$- \frac43$; <span>$y - 3 = - \frac{4}{3}\left( {x - 4} \right)$</span>|
 |23 c|<span>$y = \frac{3}{4}x$</span>|
 |24 c|They both get smaller and smaller.|
 |25|28 ft/sec; -4 ft/sec|
@@ -57,5 +57,5 @@
 |42 a|0|
 |42 b|<span>$\frac{{x + 27}}{{24}}$</span>|
 |42 c|<span>$\frac{1}{{{x^5}{y^5}{z^5}}}$</span>|
-|42 d|<span>$ - 8 \leqslant x \leqslant 24$</span>|
+|42 d|<span>$ - 8 \leq x \leq 24$</span>|
 |42 e|<span>$\frac{{ - 1 \pm \sqrt {11} }}{2}$</span>|
