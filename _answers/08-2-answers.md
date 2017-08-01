@@ -46,7 +46,7 @@
 |22 c|<span>${2^{({2^x})}}$</span>|
 |22 d|x|
 |22 e|1024|
-|23 a|<span>$a = 3$</span>, <img class="image" width="46" height="13" src="10-4_Answers_8-10-11_PRINT-web-images/Eqn0081.eps" alt="Eqn0081.eps">|
+|23 a|<span>$a = 3$</span>, $b=1.291$|
 |23 b|<span>$a = .8945$</span>, <span>$b = 2.236$</span>|
 |23 c|<span>$a = 4.3266$</span>, <span>$b = .8327$</span>|
 |23 d|<span>$a = 1.6818$</span>, <span>$b = .5946$</span>|
@@ -66,16 +66,16 @@
 |30 a|11,221,680|
 |30 b|18 % growth per day|
 |30 c|.692 % per hour|
-|30 d|<img class="image" width="138" height="26" src="10-4_Answers_8-10-11_PRINT-web-images/Eqn018.eps" alt="Eqn018.eps">|
+|30 d|$M(t) = 25672486 \cdot (1.00692)^t$|
 |31 a|1,599,840|
 |31 b|1,599,680|
 |31 c|1,595,207|
 |32|<span>${1.01^{12}} > 1.12$</span>|
 |33|A: <span>${\left( {\frac{2}{3}} \right)^x}$</span> B: <span>${\left( {\frac{1}{4}} \right)^x}$</span> C: <span>${3^x}$</span> D: <span>${\left( {\frac{3}{2}} \right)^x}$</span>|
 |34 a|Shifted up 2|
-|34 b|Flipped over the y-axis|
-|34 c|Flipped over the x-axis|
-|34 d|First flipped over the x-axis, then shifted up 2|
+|34 b|Flipped over the $y$-axis|
+|34 c|Flipped over the $x$-axis|
+|34 d|First flipped over the $x$-axis, then shifted up 2|
 |35|3/5 and 1/4|
 |36 a|No|
 |36 b|No|
@@ -89,7 +89,7 @@
 |38 b|\$1061.68|
 |38 c|Quarterly— \$1061.36 ; <br>Monthly— \$1061.68 ; <br>Daily— \$1061.83 ; <br>Hourly— \$1061.84 ; <br>Every minute— \$1061.84|
 |38 d|For &gt;1235 compoundings a year there is no additional gain; No.|
-|42 a|<span>$90^\circ $</span>; <span>$180^\circ $</span>; Infinite # of <br>answers|
+|42 a|<span>$90^\circ $</span>; <span>$180^\circ $</span>; Infinite # of answers|
 |42 b|<span>$x - 2$</span>|
 |42 c|<span>${a^{\left( {\frac{9}{2}} \right)}}{b^5}c$</span> or <span>${b^5}c\,{a^4}\sqrt a $</span>|
 |42 d|(3, 4)|
