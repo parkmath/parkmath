@@ -21,7 +21,7 @@
 |7 b|40|
 |7 c|$B_3$|
 |7 d|$A_8$|
-|8|$T_{10} = 40, T_{100} = 310$ **SOMETHING STRANGE GOING ON** |
+|8|$T\_{10} = 40, T\_{100} = 310$ |
 |9|<span>${T_1} = - 1$</span>|
 |10|<span>${T_{20}} = 99$</span>|
 |11|Answers may vary.|
@@ -35,7 +35,7 @@
 |15 c|70 mm|
 |15 d|<span>$42\frac{2}{3}$</span> mm|
 |16|-----|
-|17|$T_4 = 46$,$T_6 = 34$, $T_{20} = - 50$ **also the strange thing**|
+|17|$T\_4 = 46$,$T\_6 = 34$, $T\_{20} = - 50$|
 |18|<span>${T_b} = {T_a} + \left( {b - a} \right)$</span>|
 |19 a|32.1 mm|
 |19 b|17.4 mm|
