@@ -28,7 +28,7 @@
     "mathjax-node": "^0.5.1",
     "minimist": "^1.2.0",
     "next-stream": "^2.2.2",
-    "prince": "github:parkmath/node-prince#c5df49a6097ce2e3d3c98caccb1d5e9df07e770a",
+    "prince": "github:parkmath/node-prince#bb7c759de9dc6be29aa7602ba6bbf37437885421",
     "split": "^1.0.0",
     "through2": "^0.6.3",
     "trumpet": "^1.7.0",
