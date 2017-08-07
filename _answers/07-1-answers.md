@@ -1,7 +1,5 @@
 
-
 ## Circular Functions
-
 
 |||
 |-------|------|
