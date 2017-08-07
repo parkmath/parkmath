@@ -20,8 +20,8 @@
 |10 b|$x = 75$|
 |10 c|$x = 25/2$ with $r = 5$; $x = 2/25$ with $r = 1/5$|
 |10 d|For the first sequence, $\frac{25}{5} = \frac{125}{25}$ and we see that the common ratio is 5.|
-|12|$T_4 = 6.75$ ; $T_{14} = 389.24$; 28 terms|
-|13|$T_4 = 1/2$; $T_{14} = 1/(211)$. With $r = ¼$, $T_4 = 1/(24)$; $T_{14} = 1/(224)$.|
+|12|$T\_4 = 6.75$ ; $T\_{14} = 389.24$; 28 terms|
+|13|$T\_4 = 1/2$; $T\_{14} = 1/(211)$. With $r = ¼$, $T_4 = 1/(24)$; $T\_{14} = 1/(224)$.|
 |14|64|
 |15|Answers vary|
 |16|The terms will keep getting closer to 0.|
