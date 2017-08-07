@@ -47,6 +47,7 @@
 24 a|Yes
 24 b|$\sin(180^\circ - \theta) = \sin \theta$
 24 c|$\cos(180^\circ - \theta) = -\cos \theta$
+25|$\sin(180^\circ + \theta) = -\sin\theta$<br> $\cos(180^\circ+\theta)=-\cos(\theta)$<br> $\tan(180^\circ + \theta)=\tan(\theta)$<br> $\cos(360^\circ - \theta) = \cos(\theta)$<br> $\sin(360^\circ - \theta) = -\sin(\theta)$<br> $\tan(360^\circ - \theta) = -\tan(\theta)$<br> $\cos(360^\circ + \theta) = \cos(\theta)$<br> $\sin(360^\circ + \theta) = \sin(\theta)$<br> $\tan(360^\circ + \theta) = \tan(\theta)$<br> $\tan(180^\circ - \theta)=-\tan(\theta)$
 
 
 **Problem 15**
