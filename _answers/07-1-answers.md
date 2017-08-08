@@ -4,7 +4,7 @@
 |||
 |-------|------|
 |**Problem**|**Answer**|
-3|The right triangle de nitions of sine, cosine, and tangent hold only for acute angles.
+3|The right triangle definitions of sine, cosine, and tangent hold only for acute angles.
 4 a|$(0,1)$
 4 b|$(\sqrt{2}/2,\sqrt{2}/2)$
 4 c|$(\sqrt{3}/2,1/2)$
