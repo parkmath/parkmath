@@ -50,7 +50,7 @@
 |16|<span>$M = 4$</span>|
 |17 a|True when <span>$x = 0$</span>|
 |17 b|Always true|
-|17 c|True when <span>$x = - 3{\text{ or 3}}$</span>|
+|17 c|True when <span>$x = - 3$, $3$, or $-16$.</span>|
 |17 d|True when <span>$x = 1.5$</span>|
 |18 a|No|
 |18 b|No|
