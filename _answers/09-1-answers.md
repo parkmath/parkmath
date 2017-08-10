@@ -6,7 +6,7 @@
 |-------|------|
 |Problem|Answer|
 |1|In the upper half of the <br>rectangular section. <br>In the lower half of the <br>rectangular section.|
-|2 a|<img class="image" width="31" height="15" src="11-1-Answers-8-12_PRINT-web-images/Eqn001.eps" alt="Eqn001.eps">|
+|2 a|$y=5$|
 |2 b|Between <span>$y = 30$</span> and <span>$y = 45$</span>|
 |3 a|Group A’s &gt; 160<br>Groups B’s &lt; 120<br>|
 |3 b|Group A’s &gt; 93.85<br>Groups B’s = 90 approx.|
@@ -21,10 +21,10 @@
 |17 b|50|
 |18 a|24-9-13|
 |18 b|40-14-27|
-|19|If N is odd, then output <span>$N - 2$</span>.<br>Otherwise, output <span>$N \mathord{\left/ {\vphantom {N 2}} \right. \kern-\nulldelimiterspace} 2$</span>.|
+|19|If N is odd, then output $N - 2$.<br>Otherwise, output $N/2$.|
 |20|11, 12, input not possible|
 |21|13, 24, it doesn’t apply.|
-|24||
+|24|GymDecode($N$) = \ldots <br>$k$ if $N=2k$<br>$4k$ if $N=4k+1$, $2+4k$|
 |25|33|
 |26||
 |27|20, 30, and 0|
