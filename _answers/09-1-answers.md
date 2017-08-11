@@ -24,19 +24,19 @@
 |19|If N is odd, then output $N - 2$.<br>Otherwise, output $N/2$.|
 |20|11, 12, input not possible|
 |21|13, 24, it doesn’t apply.|
-|24|GymDecode($N$) = \ldots <br>$k$ if $N=2k$<br>$4k$ if $N=4k+1$, $2+4k$|
+|24|GymDecode$(N) = \ldots$ <br>$k$ if $N=2k$,<br>$4k$ if $N=4k+1$,<br> $4k+2$ if $N=4k+3$.|
 |25|33|
-|26||
+|26|Discuss. Try writing the algorthim using GymDecode and DecryptNumber.|
 |27|20, 30, and 0|
 |28|Take a number and subtract 11. Then divide your answer by 3.|
 |29|Yes|
 |30|<span>$\frac{{X - 5}}{2}$</span>|
-|31||
-|32|Let <br><br><span>$\begin{gathered} {a_i} = {\text{ the }}i{\text{th letter of the alphabet,}} \hfill \\ {\text{ }}1 \leqslant i \leqslant 26 \hfill \\ \end{gathered} $</span><br> <span>$f\left( {{a_{{k_1}}}{a_{{k_2}}} \cdot \cdot \cdot {a_{{k_r}}}} \right) = {a_{{k_1} + 1}}{a_{{k_2} + {k_1}}} \cdot \cdot \cdot {a_{{k_r} + {k_1}}}$</span> where if <span>$i + j > 26,$</span> <br><br><span>$a_{i + j}} = {a_{26 - \left( {i + j} \right)}$</span>|
-|33 a|Waking up time. Leaving time.|
-|33 b|6:25 a.m.<br>6:35 a.m.|
-|33 c|Let x be the time seen on the clock. <br><br>|
-|35|<span>$7^{10}} = {49^5$</span>. Cost: \$5|
+|31|If the number ends in a 1, subtract 1 and then divide by 10. If the number ends in 0 or 5, divide by 5.|
+|32|Shift the first letter of the word one place backward in the alphabet. B becomes A; A becomes Z. Look at this new first letter and calculate its position in the alphabet. Shift the rest of the letters in the word backward by that many places.|
+|33 a|Input: Leaving time. Output: Waking up time.|
+|33 b|6:55 a.m.<br>Hmm.|
+|33 c|If the time on the clock is before 5:45, add one hour and 15 minutes. If the time on the clock is 6:00 or after, add one hour.|
+|35|$7^{10}=49^5$. Cost: \$5|
 |36|No|
 |37 a|Reversible|
 |37 b|Reversible|
@@ -47,15 +47,15 @@
 |37 g|Not reversible|
 |40|At most <span>$2N - 3$</span>|
 |41|29|
-|42 a|<span>$\frac{2}{3}a{b^9}$</span>|
-|42 b|<span>$\[\frac{{{x^2} + 2}}{{x + 1}}\]ʗz$</span>|
+|42 a|<span>$\frac{2}{3}ab^9$</span>|
+|42 b|<span>$\frac{{{x^2} + 2}}{{x + 1}}$</span>|
 |42 c|<span>$x = {2^9}$</span>|
 |42 d|<span>$x = - 4 \pm \sqrt 7 $</span>|
 |42 e|<span>$x = \frac{{ - 7 \pm \sqrt {13} }}{6}$</span>|
 |43|No|
-|47||
+|47|Mystery($n$) gives the remainder when $n$ is divided by 5.|
 |48 a|<span>$7 = RightShift\left( {LeftShift\left( {6789,2} \right),4} \right)$</span>|
-|48 b|If <span>$N = {10^r}{a_1} + \cdot \cdot \cdot + {10^{r - d + 1}}{a_d} + \cdot \cdot \cdot + 10{a_r} + {a_{r + 1}}$</span> <span>$RightShift\left( {LeftShift\left( {N,4 - r + d} \right),4} \right) = {a_d}$</span>|
+|48 b|If $N = 10^r a \_1 + \cdot \cdot \cdot + {10^{r - d + 1}}{a_d} + \cdot \cdot \cdot + 10{a_r} + {a_{r + 1}}$</span> <span>$RightShift\left( {LeftShift\left( {N,4 - r + d} \right),4} \right) = {a_d}$
 |49|It places the first two digits of the number, to the left, as the last two.|
 |50|Yes|
 |55 a|Speech|
