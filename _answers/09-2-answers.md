@@ -5,15 +5,14 @@
 |problem|answer|
 |-------|------|
 |Problem|Answer|
-|1|Down to the left of 870-1431<br>Down to the left of deer<br>Down to the left of dog<br>Down to the left of m|
-|5|<img class="image" width="90" height="40" src="images/09-answers/11-1-2 diagram 5.tif.jpg" alt="11-1-2%20diagram%205.tif">|
+|1|Down to the left of 870-1431<br>Down to the left of deer<br>Down to the left of dog<br>Down to the left of $m$|
 |7|1 through 7, yes. 1 through 7, depending on the definition <br>being used. 1 through 15, yes.|
 |8|<span>9</span>|
-|9|64 leaves. Deep of 6.|
+|9|64 leaves. Depth of 6.|
 |10|6 if all the passwords are the same length.|
-|11|<span>$\[{5^x} = 3125\]dleExecutablePath$</span>|
+|11|${5^x} = 3125|
 |12|8: <span>${\log _2}512$</span><br>9: <span>${\log _4}4096$</span><br>10: <span>${\log _5}15625$</span>|
-|13|<img class="image" width="110" height="20" src="11-1-Answers-8-12_PRINT-web-images/Answer%20to%20Logarithms%20%2313.ai" alt="Answer%20to%20Logarithms%20%2313.ai">|
+|13|WEIRDNESS |
 |14 a|Ascending|
 |15 a|20|
 |15 b|3|
