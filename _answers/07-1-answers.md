@@ -15,9 +15,9 @@
 5 b|$(−0.292,−0.956)$ approx
 6 a|$(-1/2, \sqrt{3}/2)$
 6 b|$(-1/2, -\sqrt{3}/2)$
-6 c|$(0.921,0.391) approx
+6 c|(0.921,0.391) approx
 6 d|-1.540 approx
-6 e|(\cos \theta, -\sin \theta)
+6 e|$(\cos \theta, -\sin \theta)$
 9|-0.94 approx
 10 a|an infinite amount
 10 b|3
