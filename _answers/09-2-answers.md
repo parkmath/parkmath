@@ -72,14 +72,14 @@
 |49 a|True|
 |49 b|<span>$S = {2^{D + 1}} - 1$</span>|
 |50|<span>512</span>|
-|52|<span>$1 \mathord{\left/ {\vphantom {1 {72}}} \right. \kern-\nulldelimiterspace} {72}$</span>|
+|52|$\frac{1}{72}$|
 |54 a|<span>$x \approx 35.003$</span>|
 |54 b|<span><span>$x \approx 19.932$</span></span>|
 |54 c|<span><span>$x \approx 10.509$</span></span>|
 |55|<span>2, 100</span>|
 |56 a|<span>16, <span>$2^{m - n}$</span></span>|
-|56 b|<span><span>$9 \mathord{\left/ {\vphantom {9 5}} \right. \kern-\nulldelimiterspace} 5$</span>, <img class="image" width="22" height="19" src="11-1-Answers-8-12_PRINT-web-images/Eqn085.eps" alt="Eqn085.eps"></span>|
-|56 c|100, <img class="image" width="20" height="19" src="11-1-Answers-8-12_PRINT-web-images/Eqn086.eps" alt="Eqn086.eps">|
+|56 b|$\frac95$, $\frac{m}{n}$|
+|56 c|100, $\frac43$|
 |57|360|
 |58|<span>${\log _5}35$</span>|
 |59|5.5546 approx.|
@@ -94,8 +94,8 @@
 |64 a|At most 4|
 |64 b|At most 11<br>At most 19|
 |66|An arithmetic sequence|
-|67|The number of digits of N, if <span>$10^k} &amp;lt; N &amp;lt; {10^{k + 1}$</span>, or one less than the number of digits of N if <span>$N = {10^k}$</span>, k= 0, 1, …|
+|67|It tells you the number of digits of $N$, unless $N$ is an integer power of 10, in which case it tells you one less than number of digits.|
 |68|33 or 34|
-|71|<span>$\log _b}x = \frac{{\log x}}{{\log b}$</span>|
+|71|$log_b x = \frac{logx}{logb}$|
 |72|1 for each of them|
 |73|88,573|
