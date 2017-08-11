@@ -12,17 +12,17 @@
 |10|6 if all the passwords are the same length.|
 |11|${5^x} = 3125|
 |12|8: <span>${\log _2}512$</span><br>9: <span>${\log _4}4096$</span><br>10: <span>${\log _5}15625$</span>|
-|13|WEIRDNESS |
+|13|$y=\log_bx \Leftrightarrow b^y =x$ |
 |14 a|Ascending|
 |15 a|20|
 |15 b|3|
 |15 c|<span>${\log _6}X$</span>|
 |16 a|13|
-|16 b|Question: What is <img class="image" width="63" height="20" src="11-1-Answers-8-12_PRINT-web-images/Eqn047.eps" alt="Eqn047.eps">? Answer: 13.|
-|17 a|<span>What is <span>${\log _4}64$</span></span>|
+|16 b|Question: What is $\log_3 1594323$? Answer: 13.|
+|17 a|<span>What is <span>${\log _4}64$?</span></span>|
 |17 b|<span>${\log _3}81$</span>|
 |17 c|<span>${\log _4}1024$</span>|
-|17 d|<span>$\[{\log _6}216\]eb\\|$</span>|
+|17 d|$\log _6 216$
 |17 e|<span>${\log _2}x$</span>|
 |18 a|4|
 |18 b|2|
@@ -36,18 +36,18 @@
 |22 a|<span>$\frac{5}{2}$</span>|
 |22 b|-2|
 |22 c|-9|
-|22 d|x = 0|
+|22 d|$x = 0$|
 |23|42 is not an integer power of 2.|
-|24|1, 10, <span>$\[{10^2}\]$</span>, <span>$10^3$</span>, <span>$10^4$</span>, <span>$\[{10^5}\]$</span>, and <span>$10^6$</span>|
+|24|$1$, $10$, <span>${10^2}$</span>, <span>$10^3$</span>, <span>$10^4$</span>, <span>${10^5}$</span>, and <span>$10^6$</span>|
 |25 b|Check the integer and decimal parts of these logarithms.|
 |27|<span>$0.301 + a$</span>|
 |28|4.0000|
 |29|3.209|
-|30|2&lt;3&lt; <span>${\log _4}100$</span> &lt; <span>${\log _3}47$</span> &lt;<br>4&lt; <span>${\log _3}240$</span> &lt;5&lt; <span>${\log _2}35$</span> &lt; <span>${\log _2}47$</span>|
+|30|2&lt;3&lt; <span>${\log _4}100$</span> &lt; <span>${\log _3}47$</span> &lt;4&lt; <span>${\log _3}240$</span> &lt;5&lt; <span>${\log _2}35$</span> &lt; <span>${\log _2}47$</span>|
 |31|4 and 5. 5 is the closest.|
 |32 a|<span>$\frac{1}{2}$</span>|
 |32 b|-2|
-|32 c|<span>$\[\frac{1}{2}\]PQzRzӒz$</span>|
+|32 c|$\frac12$|
 |32 d|<span>$\frac{1}{2}$</span>|
 |34 a|4.8|
 |34 b|<span>$\frac{{19}}{3}$</span>|
@@ -59,8 +59,8 @@
 |41|3.096, 4.192|
 |42 a|32|
 |42 b|<span>$\frac{{{x^6}}}{{{y^5}}}$</span>|
-|42 c|<span>$x = 0$</span> or <span>$x = - {1 \mathord{\left/ {\vphantom {1 2}} \right. \kern-\nulldelimiterspace} 2}$</span>|
-|42 d|<span>${\sqrt {10} } \mathord{\left/ {\vphantom {{\sqrt {10} } 2}} \right. \kern-\nulldelimiterspace} 2$</span>|
+|42 c|<span>$x = 0$</span> or $x=- \frac12$|
+|42 d|$\frac{\sqrt{10}}{2}$|
 |42 e|2|
 |43|2010|
 |44 a|2.664|
@@ -68,7 +68,7 @@
 |44 c|<span>$ - 0.301$</span>|
 |45|<span>$x > {10^{1000}}$</span>|
 |46|3.2619, 1.2619, 4.2619|
-|47|<span>$\begin{array}{*{20}{c}} A&amp;{{{\log }_5}A} \\ 2&amp;{1.2204} \\ {\sqrt 5 }&amp;{0.5} \\ 4&amp;{0.8614} \\ 5&amp;1 \\ 8&amp;{1.2920} \\ {10}&amp;{1.4307} \\ {16}&amp;{1.7227} \\ {25}&amp;2 \\ {30}&amp;{2.1533} \\ {50}&amp;{2.4307} \end{array}$</span>|
+|47|$A \quad \log_5A$<br> $2 \quad 1.2204$<br> $\sqrt5 \quad 0.5$<br> $4 \quad 0.8614$<br> $5 \quad 1$<br> $8 \quad 1.2920$<br> $10 \quad 1.4307$<br> $16 \quad 1.7227$<br> $25 \quad 2$<br> $30 \quad 2.1533$<br> $50 \quad 2.4307$|
 |49 a|True|
 |49 b|<span>$S = {2^{D + 1}} - 1$</span>|
 |50|<span>512</span>|
