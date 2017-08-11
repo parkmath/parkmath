@@ -81,7 +81,7 @@
 48|area of sector $= \frac{1}{2} r^2 \theta$
 52|$13^\circ + 180^\circ n$
 53|$50^\circ + 120^\circ n$
-54a|$\theta \approx 85.26^\circ + 180^\circ n, 4.74^\circ + 360^\circ n$
+54a|$\theta \approx 85.26^\circ + 180^\circ n, 4.74^\circ + 180^\circ n$
 54b|$\theta \approx 44.23^\circ + 180^\circ n, 134.23^\circ + 180^\circ n$
 54c|$\theta = 20^\circ + 120^\circ n, 40^\circ + 120^\circ n$
 54d|$\theta = 15^\circ + 120^\circ n, 105^\circ + 120^\circ n$
