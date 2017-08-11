@@ -70,7 +70,7 @@
 42c|$\frac{y^4}{36x^{14}}$
 42d|$x^{\frac{1}{12}}$
 42e|$b^{\frac32}$
-44|$65.82^\circ$, $257.51^\circ$, and $71.08^\circ$ or $114.18^\circ$, $105.14^\circ$, and $22.72^\circ$
+44|$B=65.82^\circ$, $c=257.51$, and $C=71.08^\circ$ or $B=114.18^\circ$, $c=105.14^\circ$, and $C=22.72^\circ$
 45|Impossible
 47|33.62
 48|8.55 and 8.32
