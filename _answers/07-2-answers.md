@@ -61,7 +61,7 @@
 38|333.56 ft
 40a|No
 40b|Yes, $21^\circ$ approx
-40c|325.1 km
+40c|177,2 km, 324.9 km
 41a|No
 41b|No
 41c|Answers may vary
