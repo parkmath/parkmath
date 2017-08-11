@@ -35,4 +35,45 @@
 21c|By retracing the original route.
 22a|$11.77^\circ$
 22b|224.71 mi/h
+23|14.3
+24a|17.68 mi
+24b|44.32 mi
+24c|13.54 mi
+25|$105^\circ$, $104.41^\circ$, $53.59^\circ$
+26|6.83
+27|4.19
+28a|4.56
+28b|Max 7, min 1
+29|12.2 inches
+30|Perim 51.11, area 167.16
+31|173,668 ft$^2$
+32a|One $42^\circ$ angle, two $50^\circ$ angles, and three $65^\circ$ angles, one of which is split into a $15^\circ$ angle and a $50^\circ$ angle.
+32b|20
+33a|18 cm
+33b|53 cm
+33c|68 ft$^2$
+34a|$80^\circ$
+34b|$44.89^\circ$ and $55.11^\circ$
+34c|2.5 inches
+35|The turning angle is $77.6^\circ$ approx.<br> The lengths are 15.11, 15.11, 19.75, and 16.36.
+36|Impossible. $15.9^\circ$, $14.77^\circ$, and $7.33^\circ$
+37|7.17
+38|333.56 ft
+40a|No
+40b|Yes, $21^\circ$ approx
+40c|325.1 km
+41a|No
+41b|No
+41c|Answers may vary
+42a|$x+y$
+42b|$\frac{x-5y}{4x+5y}$
+42c|$\frac{y^4}{36x^{14}}$
+42d|$x^{\frac{1}{12}}$
+42e|$b^{\frac32}$
+44|$65.82^\circ$, $257.51^\circ$, and $71.08^\circ$ or $114.18^\circ$, $105.14^\circ$, and $22.72^\circ$
+45|Impossible
+47|33.62
+48|8.55 and 8.32
+
+
 
