@@ -48,7 +48,30 @@
 24 b|$\sin(180^\circ - \theta) = \sin \theta$
 24 c|$\cos(180^\circ - \theta) = -\cos \theta$
 25|$\sin(180^\circ + \theta) = -\sin\theta$<br> $\cos(180^\circ+\theta)=-\cos(\theta)$<br> $\tan(180^\circ + \theta)=\tan(\theta)$<br> $\cos(360^\circ - \theta) = \cos(\theta)$<br> $\sin(360^\circ - \theta) = -\sin(\theta)$<br> $\tan(360^\circ - \theta) = -\tan(\theta)$<br> $\cos(360^\circ + \theta) = \cos(\theta)$<br> $\sin(360^\circ + \theta) = \sin(\theta)$<br> $\tan(360^\circ + \theta) = \tan(\theta)$<br> $\tan(180^\circ - \theta)=-\tan(\theta)$
-
+26|$\cos(90^\circ - \theta) = \sin \theta$<br> $\sin(90^\circ + \theta) = \cos \theta$<br> $\cos (90^\circ + \theta) = - \sin \theta$
+27|Yes, $\cos(- \theta) = \cos \theta$
+28|$\cos 312^\circ$
+29|$\sin 312^\circ$
+30|$30^\circ$, $250^\circ$|
+31|$x \approx 60.83$, $y \approx 79.37$
+32|$P: (-42, 0.7431)$<br>$Q: (338, 0.7431)$<br>$R: (402, 0.7431)$
+33|An infinite amount
+34|$\frac{2 \pi}3$
+35|You'll always get 1.
+36|True
+37|False
+39a|$\frac{5}{13}$ and $\frac{12}5$
+39b|$-0.96$ and $-\frac{24}{7}$
+39c|$\frac{24}{125}$, $\frac{25}{124}$, $-\frac{7}{24}$, $-\frac{24}{7}$
+39d|$-0.6$
+39e|$\frac{5 \sqrt 26}{26}$ or $- \frac{5 \sqrt 26}{26}$
+40|Yes
+41|$223^\circ, 317^\circ, 583^\circ$
+42a|$\frac{5a-10c}{a}$ or $5 - \frac{10c}{a}$
+42b|$\frac{x^2 - 8}{x}$ or $x - \frac8x$
+42c|$x=- \frac12$ or $2$
+42d|
+42e|
 
 **Problem 15**
 
