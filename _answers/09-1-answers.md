@@ -55,15 +55,14 @@
 |43|No|
 |47|Mystery($n$) gives the remainder when $n$ is divided by 5.|
 |48 a|<span>$7 = RightShift\left( {LeftShift\left( {6789,2} \right),4} \right)$</span>|
-|48 b|If $N = 10^r a \_1 + \cdot \cdot \cdot + {10^{r - d + 1}}{a_d} + \cdot \cdot \cdot + 10{a_r} + {a_{r + 1}}$</span> <span>$RightShift\left( {LeftShift\left( {N,4 - r + d} \right),4} \right) = {a_d}$
+|48 b|If $N = 10^r a \_1$ $+ \ldots + {10^{r - d + 1}}{a\_d}$ $+ \ldots + 10a\_r + {a_{r + 1}}$, $RightShift\left( {LeftShift\left( {N,4 - r + d} \right),4} \right) = {a_d}$.
 |49|It places the first two digits of the number, to the left, as the last two.|
 |50|Yes|
 |55 a|Speech|
-|58|#5: 98, #4: 0, #3: 1, #2: 0, <br>and #1:1|
-|59|Let <span>$a_1},{a_2},...,{a_{2m + 1}$</span> be the <span>$\[n = 2m + 1\]s$</span> numbers of the list. Use any sorting algorithm to put the list into an increasing order <span>$a_1^',a_{_2}^',...,a_{2m + 1}^'$</span>. The element <span>$a_{m + 1}^'$</span> is the median.|
+|58|#5: 98, #4: 0, #3: 1, #2: 0, and #1: 1|
 |61 a|99 06|
 |61 b|ESCAPE|
-|61 c|<span>$\[26 \times 7 = 182\]Ґ{$</span> and if <span>$a_0} + 10{a_1$</span> is divisible by 7, <span>$a_0} + 10{a_1} + {10^2$</span> is not|
+|61 c|To start, subtract 1 from the two-digit number you see. Divide by 7. If the result is not an integer, then put a 1 in front of the two-digit number to make a three-digit number, and try again.|
 |62 a|85-57-8|
 |62 b|12-2-3|
-|62 c|If the initial combination is <br><br><span>$a_0} + 10{a_1$</span>, <span>$\[{b_0} + 10{b_1}\]\\|飛\\|曼H曼x曼$</span>, <br><span>$c_0} + 10{c_1$</span>, then <br><br><span>${a_0} + {b_0} + {c_0} + 10\left( {{a_1} + {b_1} + {c_1}} \right) = A$</span> <br><br><span>${a_0} + {b_0} + 10\left( {{a_1} + {b_1}} \right) = B$</span> <br><br><span>${b_0} + {c_0} + 10\left( {{b_1} + {c_1}} \right) = C$</span>|
+|62 c|If the initial combination is $a_0 + 10a_1$, $b_0 + 10b_1$, $c_0 + 10c_1$, then <br><br><span>${a_0} + {b_0} + {c_0} + 10\left( {{a_1} + {b_1} + {c_1}} \right) = A$</span> <br><br><span>${a_0} + {b_0} + 10\left( {{a_1} + {b_1}} \right) = B$</span> <br><br><span>${b_0} + {c_0} + 10\left( {{b_1} + {c_1}} \right) = C$</span>|
