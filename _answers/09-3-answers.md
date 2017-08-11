@@ -12,16 +12,16 @@
 |3 f|Yes|
 |4|Buyer: 400, 600, 650, 662.5, 665.6, 667.2, 667.4<br> Seller: 800, 700, 675, 668.75, 667.96, 667.578, 667.48|
 |4 a|650|
-|4 b|<span>$L\_{98}$</span> and <span>$L\_{99}$</span>,<br> $L\_{100) = \frac{L\_{99}+ L\_{98}}{2}$|
-|4 c|<span>$\[{L_n} = \frac{{{L_{n - 1}} + {L_{n - 2}}}}{2}\]{$</span>|
+|4 b|<span>$L\_{98}$</span> and <span>$L\_{99}$</span>,<br> $L\_{100} = \frac{L\_{99}+ L\_{98}}{2}$|
+|4 c|<span>${L\_n} = \frac{{L\_{n - 1} + L\_{n - 2}}}{2}$</span>|
 |4 d|The seller|
 |4 e|Yes|
-|5|<span>$\[{a_0} = \sqrt c \]Δz$</span>, <span>$c > 1$</span>, <br><br><span>${a_n} = \sqrt {{a_{n - 1}}} $</span>|
+|5|<span>${a\_0} = \sqrt c$</span>, <span>$c > 1$</span>, <br><span>${a\_n} = \sqrt {{a\_{n - 1}}} $</span>|
 |6 a|No|
 |6 b|Yes|
-|7 a|<span>$\begin{array}{*{20}{c}} 1&amp;2&amp;3&amp;4&amp;5&amp;6&amp;7 \\ {2000}&amp;{2500}&amp;{3100}&amp;{3820}&amp;{4684}&amp;{5720.8}&amp;{6964.96} \end{array}$</span>|
-|7 b|<span>${R_0} = 2000$</span>, <span>${R_n} = 1.2{R_{n - 1}} + 100$</span>|
-|8 a|<span>${M_0} = 270$</span>, <span>${M_n} = \frac{4}{3}{M_{n - 1}} - 100$</span>. Increases|
+|7 a|2500, 3100, 3820, 4684, 5720.8, 6964.96|
+|7 b|<span>${R\_0} = 2000$</span>, <span>${R\_n} = 1.2{R\_{n - 1}} + 100$</span>|
+|8 a|<span>${M\_0} = 270$</span>, <span>${M\_n} = \frac{4}{3}{M\_{n - 1}} - 100$</span>. Increases|
 |8 b|332|
 |8 c|300|
 |9 a|550|
@@ -30,13 +30,13 @@
 |9 d|Answers may vary|
 |10 a|12, 15, 16.5, 17.25, 17.625,|
 |10 c|18|
-|10 d|<span>${T_1} &amp;lt; 18$</span>, <span>${T_1} > 18$</span>|
+|10 d|<span>${T_1} < 18$</span>, <span>${T_1} > 18$</span>|
 |11 a|2009: Croatia will build 144 bombs and 32 missiles.<br>2010: Sweden will build 320 bombs and 64 missiles|
 |11 b|28 bombs and 8 missiles|
 |11 c|Sweden in 2004|
-|13 a|<span>${P_0} = 3$</span>, <span>$\[{P_n} = \frac{4}{3}{P_{n - 1}}\]$</span>. Yes|
+|13 a|<span>${P\_0} = 3$</span>, <span>${P\_n} = \frac{4}{3}{P\_{n - 1}}$</span>. Yes|
 |13 b|1.1443, 1.2085, 1.237|
-|13 c|<span>$A_0} = \frac{{\sqrt 3 }}{4$</span>,<br><br><span>$A_n} = {A_{n - 1}} + \frac{{{4^{n - 2}}\sqrt 3 }}{{{3^{2n - 1}}}$</span>. No|
+|13 c|$A\_0 = \frac{{\sqrt 3 }}{4}$, $A\_n = {A\_{n - 1}} + \frac{4^{n-2} \sqrt 3}{3^{2n-1}}$. No|
 |14 a|0, 500, 875, 1154, 1367|
 |14 b|40, 530, 897.5, 1173.1, 1379.8|
 |14 c|<span>${I_0} = 0$</span>, <span>${I_t} = \frac{3}{4}{I_{t - 1}} + 500$</span>|
