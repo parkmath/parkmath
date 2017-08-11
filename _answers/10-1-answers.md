@@ -59,33 +59,33 @@
 36a|$\cos 89^\circ$, $\sin 89^\circ$, $\tan 89^\circ$, all positive
 36b|$\cos 269^\circ$ (negative), $\sin 269^\circ$ (negative) $\tan 269^\circ$ (positive)
 36c|$\sin 359^\circ$ (negative), $\tan 359^\circ$ (negative) $\cos 359^\circ$ (positive)
-37a|
-37b|
-37c|
-37d|
-38a|
-38b|
-39a|
-39b|
-41|
-42a|
-42b|
-42c|
-42d|
-42e|
-43a|
-43b|
-43c|
-43d|
-47|
-48|
-52|
-53|
-54a|
-54b|
-54c|
-54d|
-55|
+37a|$\theta \approx 62.34^\circ + 360^\circ n, 297.66^\circ + 360^\circ n$
+37b|$\theta \approx 59.16^\circ + 360^\circ n, 120.84^\circ + 360^\circ n$
+37c|$\theta \approx 13.57^\circ + 360^\circ n, 193.57^\circ + 360^\circ n$
+37d|$\theta \approx 62.11^\circ + 360^\circ n, 147.89^\circ + 360^\circ n$
+38a|$x = 0^\circ + 360^\circ n, 90^\circ + 360^\circ n$
+38b|$x= \frac{\pi}3 -4 + 2\pi n$, $\frac{4 \pi}3 -4 + 2\pi n$
+39a|$\theta = 60^\circ + 180^\circ n$, $120^\circ + 180n$
+39b|$\theta = 215.26^\circ + 360^\circ n$, $324.74^\circ + 360^\circ n$, $30^\circ + 360^\circ n$, $150^\circ + 360^\circ n$
+41|$191.54^\circ$
+42a|$x=0,3,-3$
+42b|$x= \pm 3$
+42c|$6, 9, 15$
+42d|$x= -\frac{41}{13}$
+42e|$x^9$
+43a|$\approx$ 46.66 ft
+43b|$\approx$ 233.34 ft
+43c|same as part a
+43d|Approximanely $3.45 + 2\pi n$ radians or $5.98 + 2\pi n$ radians.
+47|arc length $= r \cdot \theta$
+48|area of sector $= \frac{1}{2} r^2 \theta$
+52|$13^\circ + 180^\circ n$
+53|$50^\circ + 120^\circ n$
+54a|$\theta \approx 85.26^\circ + 180^\circ n, 4.74^\circ + 360^\circ n$
+54b|$\theta \approx 44.23^\circ + 180^\circ n, 134.23^\circ + 180^\circ n$
+54c|$\theta = 20^\circ + 120^\circ n, 40^\circ + 120^\circ n$
+54d|$\theta = 15^\circ + 120^\circ n, 105^\circ + 120^\circ n$
+55|Hint: Find the length of the vertical segment.  What is the segment's relationship to the circle?
 
 
 
