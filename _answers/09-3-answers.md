@@ -6,16 +6,16 @@
 |-------|------|
 |Problem|Answer|
 |1|173|
-|3 a|<span>$\begin{array}{*{20}{c}} 0&amp;1&amp;2&amp;3&amp;4&amp;5&amp;6&amp;7 \\ {120}&amp;{130}&amp;{145}&amp;{167}&amp;{200}&amp;{250}&amp;{325}&amp;{437} \end{array}$</span>|
+|3 a|130, 145, 167, 200, 250, 325, 437|
 |3 d|Yes|
-|3 e|<span>${B_n} = 1.5{B_{n - 1}} - 50$</span>|
+|3 e|<span>${B\_n} = 1.5{B_{n - 1}} - 50$</span>|
 |3 f|Yes|
-|4 a|<span>$\begin{array}{*{20}{c}} {400}&amp;{600}&amp;{650}&amp;{662.5}&amp;{665.6}&amp;{667.2}&amp;{667.4} \\ {800}&amp;{700}&amp;{675}&amp;{668.75}&amp;{667.96}&amp;{667.578}&amp;{667.48} \end{array}$</span>|
-|4 b|650|
-|4 c|<span>$L_{98}$</span> and <span>$L_{99}$</span>, <br><br><span>$\[{L_{100}} = \frac{{{L_{98}} + {L_{99}}}}{2}\]?z$</span>|
-|4 d|<span>$\[{L_n} = \frac{{{L_{n - 1}} + {L_{n - 2}}}}{2}\]{$</span>|
-|4 e|The seller|
-|4 f|Yes|
+|4|Buyer: 400, 600, 650, 662.5, 665.6, 667.2, 667.4<br> Seller: 800, 700, 675, 668.75, 667.96, 667.578, 667.48|
+|4 a|650|
+|4 b|<span>$L\_{98}$</span> and <span>$L\_{99}$</span>,<br> $L\_{100) = \frac{L\_{99}+ L\_{98}}{2}$|
+|4 c|<span>$\[{L_n} = \frac{{{L_{n - 1}} + {L_{n - 2}}}}{2}\]{$</span>|
+|4 d|The seller|
+|4 e|Yes|
 |5|<span>$\[{a_0} = \sqrt c \]Δz$</span>, <span>$c > 1$</span>, <br><br><span>${a_n} = \sqrt {{a_{n - 1}}} $</span>|
 |6 a|No|
 |6 b|Yes|
