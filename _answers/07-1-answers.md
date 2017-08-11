@@ -70,8 +70,17 @@
 42a|$\frac{5a-10c}{a}$ or $5 - \frac{10c}{a}$
 42b|$\frac{x^2 - 8}{x}$ or $x - \frac8x$
 42c|$x=- \frac12$ or $2$
-42d|
-42e|
+42d|$\frac{7b+12a}{4b}$
+42e|$\frac{2-x}{4}$
+43a|$60^\circ, 300^\circ, 240^\circ$
+43b|No solution
+43c|$0^\circ, 180^\circ, 360^\circ, 120.96^\circ, 300.96^\circ$
+43d|$90^\circ$
+44|44.28 approx
+45|5.37 inch approx
+46|23.48% approx
+47|$\sqrt{1-k^2}$, $\frac{k}{\sqrt{1-k^2}}$
+48|Both $y=\sin{mx}$ and $y=\cos{mx}$ have a period of $\frac{2\pi}{\| m \|}$
 
 **Problem 15**
 
