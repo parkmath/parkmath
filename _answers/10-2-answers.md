@@ -34,15 +34,16 @@
 28ii|Period: 4, amp: 1, horizontal shift: 1 left, equation: $y=\sin 90(x +1)$
 28iii|Period: 360, amp: 3, vertical shift: 17 up, equation: $y=3\sin x + 17$
 28iv|Period: 360, amp: 2, vertical shift: 3 down, hprozontal shift: 40 right, equation: $y=2\sin (x-40)-3$ 
-29|
-32|
-33a|
-33b|
-35|
-36|
-37|
-38|
-39|
+29|$y=14\cos 4(x-22.5) -6$
+32|$y=6\cos 36(x-2)+3$ or $y=6\sin 36(x+\frac{1}{2})+3$
+33|Answers here use cosine, but you could also use sine.
+33a|$y=0.5\cos 10(x-5) - 7$
+33b|$y=3\cos 60(x-7) + 7$
+35|$y=\sin 9x$
+36|$y=\sin \frac{360}{91}x$
+37|$y = \sin \frac{1}{2}x$
+38|$3$
+39|Check on your calculator. Also pay attention to the differences in the form of the two equations.
 40a|
 40b|
 40c|
