@@ -65,6 +65,11 @@
 46a|$y=\cos 720x + 1$
 46b|0.19 ft
 46c|The initial two times are 0.14 and 0.36 seconds. Since the period is $0.5$ seconds, all the times can be expressed as $0.14 + 0.5n$ and $0.36+0.5n$, where $n$ is a positive integer.
+48|A reflection of the graphy of $y=\sin x$ over the $y$-axis, A reflection of the graphy of $y=\sin x$ over the $x$-axis.
+50|It is the reflection of (part of) the graph of $y=\sin x$ over the line $y=x$.
+
+
+
 
 
 
