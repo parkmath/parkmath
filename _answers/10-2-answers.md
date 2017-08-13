@@ -52,19 +52,19 @@
 42c|$\frac{y}{x} \cdot \sqrt{y}$
 42d|$x = 0, 1,$ or $2$.  Degree 6.
 42e|$k = 5$
-43a|
-43b|
-43c|
-43d|
-44a|
-44b|
-45b|
-45c|
-45d|
-45e|
-46a|
-46b|
-46c|
+43a|$y=0.3\cos (\frac{360}{11}(x-17)+0.8$
+43b|$0.51$ ft
+43c|9:30 am
+43d|4.46 hours after midnight; about 4:30 am.
+44a|Between 10.2 and 17.8 hours after midnight each day.
+44b|85$^\circ$. (Hint: think about the maximum value that $\cos \frac{\pi}{12}(x-1)$ can take on.)
+45b|$y=13\cos (\frac{360}{3.2}(x-2)) +37$
+45c|27.8 ft
+45d|27.8 ft
+45e|1.32 seconds
+46a|$y=\cos 720x + 1$
+46b|0.19 ft
+46c|The initial two times are 0.14 and 0.36 seconds. Since the period is $0.5$ seconds, all the times can be expressed as $0.14 + 0.5n$ and $0.36+0.5n$, where $n$ is a positive integer.
 
 
 
