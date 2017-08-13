@@ -3,6 +3,9 @@
 ## Modeling with Trigonometry
 
 
+|-------|------|
+|**Problem**|**Answer**|
+
 4|
 5|
 6|
@@ -64,5 +67,3 @@
 
 
 
-|-------|------|
-|**Problem**|**Answer**|
