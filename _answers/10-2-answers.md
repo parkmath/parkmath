@@ -44,14 +44,14 @@
 37|$y = \sin \frac{1}{2}x$
 38|$3$
 39|Check on your calculator. Also pay attention to the differences in the form of the two equations.
-40a|
-40b|
-40c|
-42a|
-42b|
-42c|
-42d|
-42e|
+40a|$y=\cos(2(x-45))$ or $y=\cos(2x-90)$
+40b|The $90^\circ$ shows up in the second form of the equation above.
+40c|$y=\sin(Ax-B)$ first shifts $y= \sin x$ $B$ units to the right, then compresses by a factor of $A$. $y=\sin(A(x-B))$ first compresses $y=\sin x$ by a factor of $A$, then shifts $B$ units to the right.
+42a|$x = \pm \sqrt{34}$
+42b|$2$
+42c|$\frac{y}{x} \cdot \sqrt{y}$
+42d|$x = 0, 1,$ or $2$.  Degree 6.
+42e|$k = 5$
 43a|
 43b|
 43c|
