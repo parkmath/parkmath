@@ -32,8 +32,8 @@
 27iv|Period: 1, amp: 5, equation: $y=5\cos 360x$
 28i|Period: 90, amp: 14, vertical shift: 6 down, equation: $y=14\sin 4x -6$ 
 28ii|Period: 4, amp: 1, horizontal shift: 1 left, equation: $y=\sin 90(x +1)$
-28iii|
-28iv|
+28iii|Period: 360, amp: 3, vertical shift: 17 up, equation: $y=3\sin x + 17$
+28iv|Period: 360, amp: 2, vertical shift: 3 down, hprozontal shift: 40 right, equation: $y=2\sin (x-40)-3$ 
 29|
 32|
 33a|
