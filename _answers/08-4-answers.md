@@ -2,7 +2,7 @@
 ## Summary &amp; Review
 
 
-|problem|answer|
+|||
 |-------|------|
 |Problem|Answer|
 |1a|$y=10 \cdot (.95)^t$|
