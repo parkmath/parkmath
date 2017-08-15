@@ -65,4 +65,4 @@
 |61 c|To start, subtract 1 from the two-digit number you see. Divide by 7. If the result is not an integer, then put a 1 in front of the two-digit number to make a three-digit number, and try again.|
 |62 a|85-57-8|
 |62 b|12-2-3|
-|62 c|If the initial combination is $a_0 + 10a_1$, $b_0 + 10b_1$, $c_0 + 10c_1$, then <br><span>${a_0} + {b_0} + {c_0} + 10\left( {{a_1} + {b_1} + {c_1}} \right) = A$</span> <br><br><span>${a_0} + {b_0} + 10\left( {{a_1} + {b_1}} \right) = B$</span> <br><br><span>${b_0} + {c_0} + 10\left( {{b_1} + {c_1}} \right) = C$</span>|
+|62 c|If the initial combination is <br>$a_0 + 10a_1$, $b_0 + 10b_1$, $c_0 + 10c_1$, then <br><span>${a_0} + {b_0} + {c_0} + 10\left( {{a_1} + {b_1} + {c_1}} \right) = A$</span> <br><span>${a_0} + {b_0} + 10\left( {{a_1} + {b_1}} \right) = B$</span> <br><span>${b_0} + {c_0} + 10\left( {{b_1} + {c_1}} \right) = C$</span>|
