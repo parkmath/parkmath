@@ -55,8 +55,8 @@
 |43|No|
 |47|Mystery($n$) gives the remainder when $n$ is divided by 5.|
 |48 a|<span>$7 = RightShift\left( {LeftShift\left( {6789,2} \right),4} \right)$</span>|
-|48 b|If $N = 10^r a \_1$ $+ \ldots + {10^{r - d + 1}}{a\_d}$ $+ \ldots + 10a\_r + {a_{r + 1}}$, $RightShift\left( {LeftShift\left( {N,4 - r + d} \right),4} \right) = {a_d}$.
-|49|It places the first two digits of the number, to the left, as the last two.|
+|48 b|If $N = 10^r a \_1$ $+ \ldots + {10^{r - d + 1}}{a\_d}$ $+ \ldots + 10a\_r + {a_{r + 1}}$, then $PickADigit(N)=$<br>$RightShift\left( {LeftShift\left( {N,4 - r + d} \right),4} \right) = {a_d}$.
+|49|It moves the first two digits of a number to be the last two digits.|
 |50|Yes|
 |55 a|Speech|
 |58|#5: 98, #4: 0, #3: 1, #2: 0, and #1: 1|
