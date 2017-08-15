@@ -2,9 +2,9 @@
 ## Recursion
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|173|
 |3 a|130, 145, 167, 200, 250, 325, 437|
 |3 d|Yes|
