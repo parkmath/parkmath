@@ -27,7 +27,6 @@
 12 b|$(7\cos 19^\circ, 7\sin 19^\circ)$
 13 a|Use your calculator to check your answers out
 14|$-2$, $-\frac{2}{3}\sqrt{3}$, $\sqrt{3}$
-15|See the end of this answer key
 16 a|$1.75/2$, $1/2$, $1$
 17|yes, no, no, yes, yes
 18|$\sin 27^\circ = \cos 63^\circ$
