@@ -2,7 +2,7 @@
 ## modeling with exponential functions
 
 
-|problem|answer|
+|||
 |-------|------|
 |Problem|Answer|
 |1 a|243,340; 254,401; <span>$232760 \cdot {\left( {1.0455} \right)^n}$</span>|
