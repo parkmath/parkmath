@@ -173,7 +173,7 @@
 |97 d|If, for every prime <span>$p \leq \sqrt a $</span>, $p$ is not a factor of $a$, then $a$ is prime. <span>$\sqrt {907} \approx 30.1$</span>|
 |97 e|23, <span>$\sqrt {551} $</span>, <span>$\sqrt {557} $</span>|
 |97 f|Answers may vary.|
-|97 g|<span>$7\sqrt 7$</span>, <span>$\sqrt {379} $</span>, <span>$\sqrt {403}$</span>, <span>$3\sqrt {85} $</span>, <span>$\sqrt {1517} $</span>, <span>$\sqrt {1373} $</span>, <span>$\sqrt {1763} $</span>|
+|97 g|<span>$7\sqrt 7$</span>, <span>$\sqrt {379} $</span>, <span>$\sqrt {403}$</span>, <span>$3\sqrt {85} $</span>, <span>$\sqrt {1517} $</span> <span>$\sqrt {1373} $</span>, <span>$\sqrt {1763} $</span>|
 |98 a|Multiply all of the primes together.|
 |98 b|None|
 |98 c|$Q + 1$ is prime.|
