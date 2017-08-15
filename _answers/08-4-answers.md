@@ -4,7 +4,7 @@
 
 |||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1a|$y=10 \cdot (.95)^t$|
 |1b|3.58 units|
 |1c|t = 4.35|
