@@ -2,15 +2,15 @@
 ## Introduction to Logarithms
 
 
-|problem|answer|
+|||
 |-------|------|
 |Problem|Answer|
 |1|Down to the left of 870-1431<br>Down to the left of deer<br>Down to the left of dog<br>Down to the left of $m$|
-|7|1 through 7, yes. 1 through 7, depending on the definition <br>being used. 1 through 15, yes.|
+|7|1 through 7, yes. 1 through 12, no. 1 through 15, yes.|
 |8|<span>9</span>|
 |9|64 leaves. Depth of 6.|
 |10|6 if all the passwords are the same length.|
-|11|${5^x} = 3125|
+|11|${5^x} = 3125$|
 |12|8: <span>${\log _2}512$</span><br>9: <span>${\log _4}4096$</span><br>10: <span>${\log _5}15625$</span>|
 |13|$y=\log_bx \Leftrightarrow b^y =x$ |
 |14 a|Ascending|
@@ -92,10 +92,10 @@
 |62|12 and 5999|
 |63|14 and 999,999|
 |64 a|At most 4|
-|64 b|At most 11<br>At most 19|
+|64 b|At most 11, At most 19|
 |66|An arithmetic sequence|
 |67|It tells you the number of digits of $N$, unless $N$ is an integer power of 10, in which case it tells you one less than number of digits.|
 |68|33 or 34|
-|71|$log_b x = \frac{logx}{logb}$|
+|71|$\log_b x = \frac{\log x}{\log b}$|
 |72|1 for each of them|
 |73|88,573|
