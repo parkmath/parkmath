@@ -2,9 +2,9 @@
 ## graph theory
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|Birmingham, Cottondale, <br>Tuscaloosa, Huntsville, <br>for a total of 202 miles.|
 |2|You can do it with three colors.|
 |3b|Yes, it’s possible.|
