@@ -70,7 +70,7 @@
 |30 e|<span>$x = - 5{\text{ or }}y = - 1$</span>|
 |31|Answers may vary.|
 |32 a|Answers may vary; one answer is $\unicode{x203d;}(x) = 7x - 2$</span>|
-|32 b|Answers may vary; one answer is g <span>$(x) = 4x + 6$</span>|
+|32 b|Answers may vary; one answer is $g(x) = 4x + 6$</span>|
 |33 a|<span>$ - 3$</span>|
 |33 b|Choose $y=-\frac{x}{2}$.
 |33 c|<span>$N\vartriangle N = 3{N^2}$</span>|
