@@ -9,11 +9,11 @@
 |2|<span>a) <span>$x \Uparrow y = 2x - xy$</span></span><span><br></span><span>b) <span>$x = \frac{{23}}{{ - 4}}$</span></span> <span>c)</span><span><span>$y = \frac{{13}}{{ - 5}}$</span></span>|
 |3|<span>a) <span>$x = \frac{{ - 22}}{5}$ or $\frac{{22}}{{ - 5}}$ or $- \frac{22}{5}$ <br>b) $\frac{11}{10}$<br>c) <span>$y = \frac{{15}}{{12}}$</span></span>|
 |4|<span>a) <span>$ - 12$</span></span> <span><br>b) <span>$14$</span></span> <span><br>c) <span>$ - 32$</span></span> <span><br>d) $c \oplus d = 2d-4c$ <br>e)</span><span> </span><span>No, because $c \oplus d = 2d-4c$, but $d \oplus c = 2c-4d$. These are not the same. <br>f) $26 = 2y - 4x$,  $x = \frac{{2y - 26}}{4}$|
-|5|Answers will vary. <span>$a \odot b = a + 3$</span> and <span>$a \odot b = 4a - 3b$</span> both work.|
+|5|Answers will vary. <span>$a \odot b = a + 3$</span> and $a \odot b = 4a - 3b$  both work.|
 |6|<span><span>$y = 20$</span></span> <span><span>$y = \frac{{120 - 2x}}{5}$</span></span>|
 |7|<span>a) <span>$x = 37$</span></span> <span>b) <span>$y = \frac{{ - 2}}{3}$</span></span> <span>c) <span>$b = 27$</span></span>|
 |8|a) Multiples of 3. <br>b) Numbers that are one less than a multiple of 4. <br>c) $10n-5$ or $10n+5$.|
-|9|a) 16 <br>b) 93 <br>Answers will vary. <br>d) $d = \frac{{36 - {c^2}}}{3}$<br>e)No! </span>|
+|9|a) 16 <br>b) 93 <br>Answers will vary. <br>d) $d = \frac{{36 - {c^2}}}{3}$<br>e) No! </span>|
 |10|a) 120 b) 5 c) 100 d) 9900|
 |11|a) 9! = 362880 b) 7! = 5040|
 |12|17,576,000|
@@ -42,19 +42,19 @@
 |35|$1/2$|
 |36|<span>$\frac{6}{{16}} = \frac{3}{8}$</span>|
 |37|9th and 10th: $60\cdot59\cdot58\cdot57 = 11703240$ <br>11th: $58\cdot57\cdot56\cdot55 = 10182480$ <br>12th: $56\cdot55\cdot54\cdot53 = 8814960$|
-|38a|${T_n} = 1 + 3(n - 1)$|
+|38a|${T\_n} = 1 + 3(n - 1)$|
 |38b|${T_n} = 50 - 4(n - 1)$|
-|38c|${T_n} = T_{n-1} + T_{n-2}$|
-|38c|$T_n = T_{n - 1} + T_{n - 2}$, ${T_1} = 1$ and ${T_2} = 1$|
+|38c|${T\_n} = T\_{n-1} + T\_{n-2}$|
+|38c|$T\_n = T\_{n - 1} + T\_{n - 2}$, ${T\_1} = 1$ and ${T\_2} = 1$|
 |38d|${T_n} = {n^2}$|
-|38e| Answers may vary. <br> One answer: <span>${T_1} = 3$ <br>For $n$ even,${T_n} = 3{T_{n - 1}}$, <br>for $n$ odd, <span>${T_n} = 9{T_{n - 1}}$</span>. <br>Another answer: <span>${T_1} = 3 and {T_2} = 9; {T_n} = 27{T_{n - 2}}$|
-|38f|Answers may vary.<br>One answer: <span>${T_1} = 6$</span>; For $n$ even, <span>${T_n} = 3{T_{n - 1}}$</span>, for $n$ odd, then <span>${T_n} = 9{T_{n - 1}}$</span>. <br>Another answer: <span>${T_1} = 6\;\;and\;\;{T_2} = 18;\quad {T_n} = 27{T_{n - 2}}$</span>|
+|38e| Answers may vary. <br> One answer: <span>${T\_1} = 3$. For $n$ even, ${T\_n} = 3{T\_{n - 1}}$. For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span>. <br>Another answer: <span>${T\_1} = 3$ and ${T\_2} = 9$. ${T\_n} = 27{T\_{n - 2}}$|
+|38f|Answers may vary.<br>One answer: ${T\_1} = 6$. For $n$ even, <span>${T\_n} = 3{T\_{n - 1}}$.</span> For $n$ odd, then <span>${T\_n} = 9{T\_{n - 1}}$</span>. <br>Another answer: <span>${T\_1} = 6$ and ${T\_2} = 18$. ${T\_n} = 27{T\_{n - 2}}$</span>|
 |39|a) 2418 b) 7515|
 |40|a) 4 <br>b) 5908 <br>c) 125th term <br>d) No|
 |41|a) <span>${c_{38}} = - 160$</span> <br>b) -6 <br>c) 56 <br>d) $62 -6(n-1)$ <br>e) No|
 |42|a) 5 b) No c) 23|
-|43|<span>${T_{20}} = 789$</span> <span>${T_{142}} = 1765$</span>|
-|44|<span>${T_4} = - 454$</span> <span>${T_{50}} = 144$</span>|
-|45|n = 78|
-|46|-29/7|
+|43|<span>${T\_{20}} = 789$</span> <span>${T\_{142}} = 1765$</span>|
+|44|<span>${T\_4} = - 454$</span> <span>${T\_{50}} = 144$</span>|
+|45|$n = 78$|
+|46|$-\frac{29}{7}$|
 |47|<span>a)</span> <span>$\frac{{11 - 5}}{2} = 3$</span> <br>b) -22 <br>c) 89 <br>d) Only if <span>$\frac{{Z - 11}}{3}$</span> is an integer <span>is it part of the sequence. </span>|
