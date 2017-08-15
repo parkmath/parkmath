@@ -20,7 +20,7 @@
 |13|There are more students than possible distinct birthdays (366).|
 |14|<span>$677 > {26^2}$</span>|
 |15|<span><span>${2^8} = 256$</span> possible sequences.</span>|
-|16|<span>a) 36</span> <span>b) <span>$\frac{6}{{36}} = \frac{1}{6}$</span>.</span>|
+|16|<span>a) 36</span> b) $\frac{6}{{36}} = \frac{1}{6}$
 |17|48 pairs|
 |18|<span>a) <span>$\frac{{10}}{{16}} = \frac{5}{8}$</span></span> <span>b) <span>$11$</span></span>|
 |19|<span><span>$\frac{{15!}}{{9!}}$</span> = 3,603,600</span>|
