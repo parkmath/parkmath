@@ -2,9 +2,9 @@
 ## number games and Algebra
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|-----|
 |2|You can find out their number by subtracting 5.|
 |3 a|<span>$x + 8$</span>|
