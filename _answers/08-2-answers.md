@@ -15,18 +15,10 @@
 |5|4.55 %|
 |6 a|352,947; 345,888; <span>$P(t) = 360150 \cdot {\left( {.98} \right)^t}$</span>|
 |6 b|2 %|
-|6 c|---|
 |6 d|9.045 years|
 |6 e|6.747 years|
-|7 abc|---|
 |8 a|\$1098|
 |8 b|30 % per year|
-|9|---|
-|10|---|
-|11|---|
-|12 a|<br><br><br>|
-|12 bc|---|
-|13|---|
 |14 a|13% growth|
 |14 b|2% growth|
 |14 c|18% decay|
@@ -81,10 +73,8 @@
 |36 b|No|
 |36 c|<span>${4^{\left( {\frac{7}{2}} \right)}}$</span>|
 |36 d|Closer to <span>${4^3}$</span>|
-|36 e|---|
 |37 a i|30|
 |37 a ii|380|
-|37 b|---|
 |38 a|\$1061.36|
 |38 b|\$1061.68|
 |38 c|Quarterly— \$1061.36 ; <br>Monthly— \$1061.68 ; <br>Daily— \$1061.83 ; <br>Hourly— \$1061.84 ; <br>Every minute— \$1061.84|
