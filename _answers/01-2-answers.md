@@ -6,10 +6,8 @@
 |-------|------|
 |Problem|Answer|
 |1|15|
-|2|-----|
 |3|<span><span>$6 \times {10^6}$</span></span>|
 |4|<span><span>$3 \times {10^9}$</span></span>|
-|5|-----|
 |6|<span>Assuming there are k sets of things, <span>${n_1} \cdot {n_2} \cdot {n_3} \cdot \cdot \cdot {n_k}$</span>.</span>|
 |7|<span><span>$4 \times {10^5}$</span></span>|
 |8|72|
@@ -46,7 +44,6 @@
 |28 c|13 days, 14 hours, 23 min., <br>20 sec. sooner; 441/676|
 |28 d|Yes|
 |29|<span>${5^{10}} = 9,765,625$</span>|
-|30|-----|
 |31|They’re both incorrect.|
 |32|<span>With two dice.</span>|
 |33|<span>Yes</span>|
