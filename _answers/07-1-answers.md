@@ -27,6 +27,7 @@
 12 b|$(7\cos 19^\circ, 7\sin 19^\circ)$
 13 a|Use your calculator to check your answers out
 14|$-2$, $-\frac{2}{3}\sqrt{3}$, $\sqrt{3}$
+15|See the end of this answer key
 16 a|$1.75/2$, $1/2$, $1$
 17|yes, no, no, yes, yes
 18|$\sin 27^\circ = \cos 63^\circ$
@@ -82,16 +83,36 @@
 48|Both $y=\sin{mx}$ and $y=\cos{mx}$ have a period of $\frac{2\pi}{\| m \|}$
 
 
+<style>
+   .content-table table {
+      border-collapse:collapse;
+   }
+   .content-table th {
+  		width: auto !important;
+  		border:1px solid #000000;
+        padding: 2px;
+    }
+   .content-table td {
+  		border:1px solid #000000;
+        padding: 2px;
+   }
 
-[//]:#$\theta$|$30^\circ$|$45^\circ$|$60^\circ$|$315^\circ$|$-210^\circ$
-[//]:#--------|----------|----------|----------|-----------|------------
-[//]:#$\sin\theta$|$1/2$|$\sqrt{2}/2$|$\sqrt{3}/2$|$-\sqrt{2}/2$|$1/2$
-[//]:#$\cos\theta$|$\sqrt{3}/2$|$\sqrt{2}/2$|$1/2$|$\sqrt{2}/2$|$-\sqrt{3}/2$
-[//]:#$\tan\theta$|$\sqrt{3}/3$|1|$\sqrt{3}$|$1$|$-\sqrt{3}/3$
+</style>
 
-[//]:#$\theta$|$210^\circ$|$-315^\circ$|$150^\circ$|$240^\circ$
-[//]:#--------|----------|----------|----------|-----------|------------
-[//]:#$\sin\theta$|$-1/2$|$\sqrt{2}/2$|1/2|$-\sqrt{3}/2$
-[//]:#$\cos\theta$|$-\sqrt{3}/2$|$\sqrt{2}/2$|$-\sqrt{3}/2$|$-1/2$
-[//]:#$\tan\theta$|$\sqrt{3}/3$|1|$-\sqrt{3}/3$|$\sqrt{3}$
+<div class='content-table'>
+
+$\theta$|$30^\circ$|$45^\circ$|$60^\circ$|$315^\circ$|$-210^\circ$
+--------|----------|----------|----------|-----------|------------
+$\sin\theta$|$1/2$|$\sqrt{2}/2$|$\sqrt{3}/2$|$-\sqrt{2}/2$|$1/2$
+$\cos\theta$|$\sqrt{3}/2$|$\sqrt{2}/2$|$1/2$|$\sqrt{2}/2$|$-\sqrt{3}/2$
+$\tan\theta$|$\sqrt{3}/3$|1|$\sqrt{3}$|$1$|$-\sqrt{3}/3$
+
+$\theta$|$210^\circ$|$-315^\circ$|$150^\circ$|$240^\circ$
+--------|----------|----------|----------|-----------
+$\sin\theta$|$-1/2$|$\sqrt{2}/2$|1/2|$-\sqrt{3}/2$
+$\cos\theta$|$-\sqrt{3}/2$|$\sqrt{2}/2$|$-\sqrt{3}/2$|$-1/2$
+$\tan\theta$|$\sqrt{3}/3$|1|$-\sqrt{3}/3$|$\sqrt{3}$
+
+</div>
+
 
