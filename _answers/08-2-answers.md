@@ -1,5 +1,5 @@
 
-## modeling with exponential functions
+## Modeling with exponential functions
 
 
 |||
