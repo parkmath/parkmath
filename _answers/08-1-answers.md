@@ -4,7 +4,7 @@
 
 |problem|answer|
 |-------|------|
-|Problem|Answer|
+|||
 |1-3|1 and 3 both involve repeated multiplication by a ratio. |
 |4|Sequences that have a common ratio between successive terms. |
 |5 a|$T_1 \cdot 3 \cdot 3$|
