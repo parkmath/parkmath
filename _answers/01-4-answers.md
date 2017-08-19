@@ -47,8 +47,8 @@
 |38c|${T\_n} = T\_{n-1} + T\_{n-2}$|
 |38c|$T\_n = T\_{n - 1} + T\_{n - 2}$, ${T\_1} = 1$ and ${T\_2} = 1$|
 |38d|${T_n} = {n^2}$|
-|38e| Answers may vary. <br> One answer: <span>${T\_1} = 3$. For $n$ even, ${T\_n} = 3{T\_{n - 1}}$. For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span>. <br>Another answer: <span>${T\_1} = 3$ and <nobr>${T\_2} = 9$.</nobr> ${T\_n} = 27{T\_{n - 2}}$|
-|38f|Answers may vary.<br>One answer: ${T\_1} = 6$. For $n$ even, <span>${T\_n} = 3{T\_{n - 1}}$.</span> For $n$ odd, then <span>${T\_n} = 9{T\_{n - 1}}$</span>. <br>Another answer: <span>${T\_1} = 6$ and ${T\_2} = 18$. ${T\_n} = 27{T\_{n - 2}}$</span>|
+|38e| Answers may vary. <br> One answer: <span>${T\_1} = 3$. For $n$ even, ${T\_n} = 3{T\_{n - 1}}$. For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span> <br>Another answer: <span>${T\_1} = 3$ and <nobr>${T\_2} = 9$.</nobr> ${T\_n} = 27{T\_{n - 2}}$|
+|38f|Answers may vary.<br>One answer: ${T\_1} = 6$. For $n$ even, <span>${T\_n} = 3{T\_{n - 1}}$.</span> For $n$ odd, then <span>${T\_n} = 9{T\_{n - 1}}$</span> <br>Another answer: <span>${T\_1} = 6$ and ${T\_2} = 18$. ${T\_n} = 27{T\_{n - 2}}$</span>|
 |39|a) 2418 b) 7515|
 |40|a) 4 <br>b) 5908 <br>c) 125th term <br>d) No|
 |41|a) <span>${c_{38}} = - 160$</span> <br>b) -6 <br>c) 56 <br>d) $62 -6(n-1)$ <br>e) No|
