@@ -47,14 +47,14 @@
 |38c|${T\_n} = T\_{n-1} + T\_{n-2}$|
 |38c|$T\_n = T\_{n - 1} + T\_{n - 2}$, ${T\_1} = 1$ and ${T\_2} = 1$|
 |38d|${T_n} = {n^2}$|
-|38e| Answers may vary. <br> One answer: <span>${T\_1} = 3$. For $n$ even, ${T\_n} = 3{T\_{n - 1}}$. For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span>. <br>Another answer: <span>${T\_1} = 3$ and ${T\_2} = 9$. ${T\_n} = 27{T\_{n - 2}}$|
+|38e| Answers may vary. <br> One answer: <span>${T\_1} = 3$. For $n$ even, ${T\_n} = 3{T\_{n - 1}}$. For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span>. <br>Another answer: <span>${T\_1} = 3$ and <nobr>${T\_2} = 9$.</nobr> ${T\_n} = 27{T\_{n - 2}}$|
 |38f|Answers may vary.<br>One answer: ${T\_1} = 6$. For $n$ even, <span>${T\_n} = 3{T\_{n - 1}}$.</span> For $n$ odd, then <span>${T\_n} = 9{T\_{n - 1}}$</span>. <br>Another answer: <span>${T\_1} = 6$ and ${T\_2} = 18$. ${T\_n} = 27{T\_{n - 2}}$</span>|
 |39|a) 2418 b) 7515|
 |40|a) 4 <br>b) 5908 <br>c) 125th term <br>d) No|
 |41|a) <span>${c_{38}} = - 160$</span> <br>b) -6 <br>c) 56 <br>d) $62 -6(n-1)$ <br>e) No|
 |42|a) 5 b) No c) 23|
-|43|<span>${T\_{20}} = 789$</span> <span>${T\_{142}} = 1765$</span>|
-|44|<span>${T\_4} = - 454$</span> <span>${T\_{50}} = 144$</span>|
+|43|<span>${T\_{20}} = 789$</span>, <span>${T\_{142}} = 1765$</span>|
+|44|<span>${T\_4} = - 454$</span>, <span>${T\_{50}} = 144$</span>|
 |45|$n = 78$|
 |46|$-\frac{29}{7}$|
 |47|<span>a)</span> <span>$\frac{{11 - 5}}{2} = 3$</span> <br>b) -22 <br>c) 89 <br>d) Only if <span>$\frac{{Z - 11}}{3}$</span> is an integer <span>is it part of the sequence. </span>|
