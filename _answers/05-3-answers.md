@@ -1,5 +1,5 @@
 
-## number games and Algebra
+## Number games and Algebra
 
 
 |||
