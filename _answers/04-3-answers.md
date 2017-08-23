@@ -1,10 +1,10 @@
 
-## completing the square
+## Completing the square
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|3, -3|
 |2|7 and -7; 7 and -7 are the square roots.|
 |3|<span><span>$\sqrt {50} $</span> </span><span>and</span> <span>$ - \sqrt {50} $</span><span>; approximately </span><span><span>$ \pm 7.0711$</span></span>|
@@ -40,9 +40,9 @@
 |18a|<span>$x = - 9 \pm \sqrt {181} $</span>|
 |18b|<span>$x = 2 \pm \sqrt 5 $</span>|
 |18c|<span>$x = 7 \pm \sqrt {29} $</span>|
-|18d|<span>$x = - 4$</span> <span>or -2</span>|
+|18d|<span>$x = - 4$</span> <span>or $-2$</span>|
 |19a|<span>$x = 1 \pm \sqrt {10} $</span>|
-|19b|<span>$x = - 5$</span> <span>or 1</span>|
+|19b|<span>$x = - 5$</span> <span>or $1$</span>|
 |20a|(-15, -325)|
 |20b|(9, -1)|
 |21a|Vertex is (-15, -325); $x$-intercepts are <span><span>$x = - 15 \pm \sqrt {325} $</span></span><span>; </span>$y$-intercept is (0, -100)|
@@ -81,7 +81,7 @@
 |41|<span>$\frac{{ - b}}{{2a}}$</span>|
 |42a|2|
 |42b|<span>$\frac{{ad + bc}}{{bd}}$</span>|
-|42c|<span class="char-style-override-2">x</span> = 5|
+|42c|$x$ = 5|
 |42d|2 and a half slices|
 |42e|<span>$\frac{1}{4}$</span> <span>and 1</span>|
 |43|Complete the square to get it in vertex form, where it is clear that it is a transformation of <span><span>$y = {x^2}$</span></span>|
