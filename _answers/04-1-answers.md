@@ -1,5 +1,5 @@
 
-## quadratic models and algebra
+## Quadratic models and algebra
 
 
 |problem|answer|
@@ -16,7 +16,7 @@
 |7e|<span>-1,1/3</span>|
 |7f|<span>1.25, 3, -1</span>|
 |8|<span>A or B (or both) must be zero. No.</span>|
-|9|<span><img class="image" width="73" height="22" src="9-4_Answers_10-5-PRINT-web-images/Eqn0031.eps" alt="Eqn0031.eps"></span>|
+|9|<span>$(x+2)(x+5)$</span>|
 |10|<span>-1, -6</span>|
 |11a|<span>-1,-2</span>|
 |11b|<span>-2,-6</span>|
@@ -24,8 +24,8 @@
 |11d|<span>-3</span>|
 |11e|<span>-7, 2</span>|
 |12a|<span><span>$\left( {x - 5} \right)\left( {x + 9} \right)$</span></span>|
-|12b|<span><span>$\[\left( {x - 9} \right)\left( {x + 4} \right)\]0$</span></span>|
-|12c|<span><img class="image" width="72" height="22" src="9-4_Answers_10-5-PRINT-web-images/Eqn0061.eps" alt="Eqn0061.eps"></span>|
+|12b|<span><span>$\left( {x - 9} \right)\left( {x + 4} \right)$</span></span>|
+|12c|$(x-7)(x+6)$|
 |13|<span><span>$x\left( {3x + 7} \right)$</span></span>|
 |14a|<span>0, 2/5</span>|
 |14b|<span>0, -2/3</span>|
@@ -50,7 +50,7 @@
 |25|0, 18|
 |26|<span>$\left( { - \frac{1}{2}, - \frac{{81}}{4}} \right)$</span>|
 |27|<span>$\left( {6, - 9} \right)$</span>|
-|29a|<span>$\[\left( { - 6,0} \right)\]e{$</span> <span>and </span><span>$\left( {9,0} \right)$</span>|
+|29a|<span>$\left( { - 6,0} \right)$</span> <span>and </span><span>$\left( {9,0} \right)$</span>|
 |29b|<span>$\left( {\frac{3}{2}, - \frac{{225}}{4}} \right)$</span>|
 |29c|<span>$x = \frac{3}{2}$</span>|
 |30|<span>$x = 15$</span>|
@@ -63,7 +63,7 @@
 |33c|<span>$A = l\left( {49 - l} \right)$</span>|
 |33d|24.5 meters|
 |33e|93%|
-|34a|<span>$\[N = 200 - 50P\]e {$</span>|
+|34a|<span>$N = 200 - 50P$</span>|
 |34b|25 tickets, \$87.50|
 |34c|<span>$I = PN$</span>|
 |34d|<span>$I = P\left( {200 - 50P} \right)$</span>|
@@ -71,8 +71,8 @@
 |34f|\$2; \$200|
 |35a|<span>$\left( {x + 1} \right)\left( {2x + 1} \right)$</span>|
 |35b|<span>$\left( {x + 2} \right)\left( {2x + 3} \right)$</span>|
-|35c i|<span>$\[\left( {x - 2} \right)\left( {3x + 4} \right)\]$</span>|
-|35c ii|<span>$\[2\left( {x - 3} \right)\left( {x - 2} \right)\]$</span>|
+|35c i|<span>$\left( {x - 2} \right)\left( {3x + 4} \right)$</span>|
+|35c ii|<span>$2\left( {x - 3} \right)\left( {x - 2} \right)$</span>|
 |35c iii|<span>$ - 2\left( {x - 3} \right)\left( {x - 2} \right)$</span>|
 |35c iv|<span>$\left( {2x - 3} \right)\left( {2x + 5} \right)$</span>|
 |36|One possible answer: 2 and -2|
@@ -96,11 +96,11 @@
 |41|9|
 |42a|38.5|
 |42b|0|
-|42c|<span>$\[y = - \frac{3}{5}x + 1\].apple.coreservices.asn$</span>|
+|42c|<span>$y = - \frac{3}{5}x + 1$</span>|
 |42d|<span>$x > 2$</span>|
 |43|Negative|
 |44b|7|
-|44c|<img class="image" width="36" height="22" src="9-4_Answers_10-5-PRINT-web-images/Eqn045.eps" alt="Eqn045.eps">|
+|44c|$(-4,7)$|
 |44d|<span>$\left( { - 2,3} \right)$</span>|
 |44e|<span>$\left( { - \frac{9}{2},\frac{{129}}{4}} \right)$</span>|
 |45|<span>$y = \left( {x + 5} \right)\left( {x - 2} \right)$</span>|
@@ -113,14 +113,14 @@
 |47b|25|
 |48b|<span>$A\left( x \right) = x\left( {1000 - 2x} \right)$</span>|
 |48c|250 feet|
-|49|<span>$\[\left( { - 3,0} \right)\]e޺}$</span><span>, </span><span>$\left( {8,0} \right)$</span><span>, </span><span>$\[\left( {2.5, - 30.25} \right)\]㏺$</span>|
-|50|-1, 4, 10|
+|49|<span>$\left( { - 3,0} \right)$</span><span>, </span><span>$\left( {8,0} \right)$</span><span>, </span><span>$\left( {2.5, - 30.25} \right)$</span>|
+|50|-1, 4, 2, -5|
 |51a|<span><span>${x^2} + x + 1$</span></span>|
 |51b|<span><span>${x^3} + {x^2} + x + 1$</span></span>|
-|51c|<span>$\[\left( {x + 1} \right)\left( {{x^2} + 1} \right)\]g$</span>|
-|52|<span><span>$\left( {\sqrt x + 3} \right)\left( {\sqrt x - 3} \right)$</span></span><span>. Only for positive values of </span><span class="char-style-override-2">x</span><span>.</span>|
+|51c|<span>$\left( {x + 1} \right)\left( {{x^2} + 1} \right)$</span>|
+|52|<span><span>$\left( {\sqrt x + 3} \right)\left( {\sqrt x - 3} \right)$</span></span><span>. Only for positive values of </span>$x$<span>.</span>|
 |53|72 or -72|
-|54a|<span>$ - 5 \leqslant x \leqslant 3$</span>|
-|54b|<span>$\[x &amp;lt; - 7\]$</span> <span>or</span> <span>$x > - 2$</span>|
-|54c|<span>$\[x \leqslant - 7\]v+{Ӷ+{$</span> <span>or</span> <span>$x \geqslant 6$</span>|
-|54d|<span>$ - 3 \leqslant x \leqslant 0$</span><span> or </span><span>$x \geqslant 2$</span>|
+|54a|<span>$ - 5 \leq x \leq 3$</span>|
+|54b|<span>$x \leq - 7$</span> <span>or</span> <span>$x > - 2$</span>|
+|54c|<span>$x \leq - 7$</span> <span>or</span> <span>$x \geq 6$</span>|
+|54d|<span>$ - 3 \leq x \leq 0$</span><span> or </span><span>$x \geq 2$</span>|
