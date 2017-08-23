@@ -2,9 +2,9 @@
 ## Quadratic models and algebra
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|<span class="char-style-override-1">Answer</span>|
+|**Problem**|<span class="char-style-override-1">**Answer**</span>|
 |1|<span>0; 399; 23100; 30000</span>|
 |2|<span><span>$DQ = x(400 - x)$</span></span>|
 |3|<span><span>$y = - {x^2} + 400x + 0$</span></span><span>; <br>-1, 400, 0.</span>|
