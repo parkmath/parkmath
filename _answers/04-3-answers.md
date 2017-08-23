@@ -45,7 +45,7 @@
 |19b|<span>$x = - 5$</span> <span>or $1$</span>|
 |20a|(-15, -325)|
 |20b|(9, -1)|
-|21a|Vertex is (-15, -325); $x$-intercepts are <span><span>$x = - 15 \pm \sqrt {325} $</span></span><span>; </span>$y$-intercept is (0, -100)|
+|21a|Vertex is (-15, -325); $x$-intercepts are <span><span>$x = - 15 \pm \sqrt {325} $</span></span><span>; </span><br>$y$-intercept is (0, -100)|
 |21b|Vertex is (3, -3); $x$-intercepts are $x = 3 \pm \sqrt 3 $; $y$-intercept is (0, 6)|
 |22|<span class="char-style-override-2">x</span> = 2 or 20|
 |23|<span>$x = - 2.5 \pm \sqrt {10.25} $</span>|
