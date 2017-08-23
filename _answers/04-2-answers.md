@@ -38,29 +38,26 @@
 |22|Shift it 4 right|
 |23|Shift it 3 left|
 |24|1 left; 7 right|
-|25|<table id="table-5" class="Basic-Table"> <tbody> <tr> <td> <span class="char-style-override-4">0</span> </td> <td> <span class="char-style-override-4">1</span> </td> <td> <span class="char-style-override-4">4</span> </td> <td> <span class="char-style-override-4">9</span> </td> <td> <span class="char-style-override-4">16</span> </td> <td> <span class="char-style-override-4">25</span> </td> <td> <span class="char-style-override-4">36</span> </td> </tr> <tr> <td> <span class="char-style-override-5">0</span> </td> <td> <span class="char-style-override-5">1</span> </td> <td> <span class="char-style-override-5">2</span> </td> <td> <span class="char-style-override-5">3</span> </td> <td> <span class="char-style-override-5">4</span> </td> <td> <span class="char-style-override-5">5</span> </td> <td> <span class="char-style-override-5">6</span> </td> </tr> <tr> <td> <span class="char-style-override-5">3</span> </td> <td> <span class="char-style-override-5">4</span> </td> <td> <span class="char-style-override-5">5</span> </td> <td> <span class="char-style-override-5">6</span> </td> <td> <span class="char-style-override-5">7</span> </td> <td> <span class="char-style-override-5">8</span> </td> <td> <span class="char-style-override-5">9</span> </td> </tr> </tbody> </table>|
-|0|<span class="char-style-override-4">1</span>|
-|0|<span class="char-style-override-5">1</span>|
-|3|<span class="char-style-override-5">4</span>|
+|25|$x$-values for $y=x^2$: $0, 1, 2, 3, 4, 5, 6$<br> $x-$ values for $y=(x-3)^2$: $3, 4, 5, 6, 7, 8, 9$|
 |26|To obtain the same <span class="char-style-override-2">y</span>-value, use <span class="char-style-override-2">x</span>-values with <span><span>$y = {(x - 3)^2}$</span> </span>that are 3 greater than those used for <span><span>$y = {x^2}$</span></span>.|
-|27|<span><img class="image" width="63" height="21" src="9-4_Answers_10-5-PRINT-web-images/Eqn0201.eps" alt="Eqn0201.eps"> </span><span>is a horizontal </span><span>translation of </span><span><span>$y = {x^2}$</span> </span><span>by </span><span class="char-style-override-2">h</span><span> </span><span>units to the right</span>|
-|28a|<span>P:(-2, 9) ; Q:(-2, 49) ; <br></span>R:(-6.5, 2.25)|
-|28b|<span>P:(4.5, 9) ; Q:(8.5, 49) ; <br></span>R:(0, 2.25)|
-|28c|<span>P:(3+</span><span class="char-style-override-2">h</span><span>, 9) ; Q:(7+</span><span class="char-style-override-2">h</span><span>, 49) ; <br></span>R:(-1.5+<span class="char-style-override-2">h</span>, 2.25)|
+|27|$y=(x-h)^2$ <span>is a horizontal </span><span>translation of </span><span><span>$y = {x^2}$</span> </span><span>by </span>$h$<span> </span><span>units to the right.</span>|
+|28a|<span>$P$:$(-2, 9)$ ; $Q$:$(-2, 49)$ ; </span>$R$:$(-6.5, 2.25)$|
+|28b|<span>$P$:$(4.5, 9)$ ; $Q$:$(8.5, 49)$ ; </span>$R$:$(0, 2.25)$|
+|28c|$P$:$(3+h, 9)$ ; $Q$:$(7+h, 49)$ ; $R$:$(-1.5+h, 2.25)$|
 |29|<span>3 right, 4 down; it doesn’t matter</span>|
 |30a|<span>3 left, 2 down</span>|
-|30b|<span>Reflect over the </span><span class="char-style-override-2">x</span><span>-axis, 5 right</span>|
-|30c|<span>35 right, stretch vertically away from the </span><span class="char-style-override-2">x</span><span>-axis by a factor of 110</span>|
+|30b|<span>Reflect over the </span>$x$-axis, 5 right</span>|
+|30c|<span>35 right, stretch vertically away from the </span>$x$<span>-axis by a factor of 110</span>|
 |31a|<span>One point, the vertex, is at </span>(1, 2)|
-|31b|<span>One point, the vertex, is at <br></span>(-6, 0)|
-|32a|<span>h = 3, k = -6</span>|
-|32b|<span>h = 2, k = 5</span>|
-|32c|<span>h = 7, k = 0</span>|
+|31b|<span>One point, the vertex, is at</span>(-6, 0)|
+|32a|<span>$h = 3$, $k = -6$</span>|
+|32b|<span>$h = 2$, $k = 5$</span>|
+|32c|<span>$h = 7$, $k = 0$</span>|
 |33a|<span><span>$y = - {(x - 8)^2}$</span></span>|
 |33b|<span><span>$y = {(x + 3)^2} - 2$</span></span>|
 |33c|<span><span>$y = {(x - 5)^2} - 1$</span></span>|
 |34|Many answers. Two of them: 1) Vertical Stretch by a factor of 5 2)Vertical shift up 16.|
-|35|<span class="char-style-override-2">b</span> = 3 or <span class="char-style-override-2">b</span> = 7|
+|35|$b = 3$ or $b = 7$|
 |36|-----|
 |37|-----|
 |38c|<span>Mickey’s graph is </span><span>$y = 3{x^2} + 4$</span><span>; <br>the correct graph is </span><span><span>$y = 3({x^2} + 4) = 3{x^2} + 12$</span></span>|
@@ -74,7 +71,7 @@
 |41d|<span>The graph of </span><span><span>$f(x)$</span> </span><span>is shifted 1 units to the left and shifted 5 units down.</span>|
 |42a|9/2|
 |42b|100|
-|42c|<img class="image" width="22" height="32" src="9-4_Answers_10-5-PRINT-web-images/Eqn0301.eps" alt="Eqn0301.eps">|
+|42c|$1 \frac{1}{10}$|
 |42d|<span>$x = 4{\text{ or }}10$</span><span>,</span> <span>$x = 10{\text{ or }} - 10$</span>|
 |42e|<span>$x = 2.5,y = - 3$</span>|
 |43|<span>$\sqrt {\frac{b}{a}} $</span> <span>and </span><span>$ - \sqrt {\frac{b}{a}} $</span><span>; No.</span>|
