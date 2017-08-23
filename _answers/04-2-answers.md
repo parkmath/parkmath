@@ -1,10 +1,10 @@
 
-## transformations
+## Transformations
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|<span class="char-style-override-1">Answer</span>|
+|**Problem**|**Answer**|
 |1|<span>-----</span>|
 |2a|<span>Down: </span><span>$x < 0$</span><span>; Up: </span><span><span>$x > 0$</span></span>|
 |2b|-----|
