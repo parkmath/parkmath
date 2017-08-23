@@ -56,7 +56,7 @@
 |33a|<span><span>$y = - {(x - 8)^2}$</span></span>|
 |33b|<span><span>$y = {(x + 3)^2} - 2$</span></span>|
 |33c|<span><span>$y = {(x - 5)^2} - 1$</span></span>|
-|34|Many answers. Two of them: 1) Vertical Stretch by a factor of 5 2)Vertical shift up 16.|
+|34|Many answers. Two of them: 1) Vertical Stretch by a factor of 5 2) Vertical shift up 16.|
 |35|$b = 3$ or $b = 7$|
 |36|-----|
 |37|-----|
@@ -76,10 +76,10 @@
 |42e|<span>$x = 2.5,y = - 3$</span>|
 |43|<span>$\sqrt {\frac{b}{a}} $</span> <span>and </span><span>$ - \sqrt {\frac{b}{a}} $</span><span>; No.</span>|
 |44a|3 left and 9 down|
-|44b|<span class="char-style-override-2">h</span> = -3 and <span class="char-style-override-2">k</span> = -9|
+|44b|$h = -3$ and $k = -9$|
 |44c|<span>Yes.</span>|
 |45a,b,c|-----|
-|46a|Vertex: (1, -16)<br><span class="char-style-override-2">x</span>-intercepts: (-3, 0), (5, 0)<br><span class="char-style-override-2">y</span>-intercept: (0, -15)|
+|46a|Vertex: $(1, -16)$, $x$-intercepts: $(-3, 0), (5, 0)$, $y$-intercept: $(0, -15)$|
 |46b|<span><span>$y = {(x - 1)^2} - 16$</span></span>|
 |46c|-----|
 |47|-----|
@@ -88,18 +88,18 @@
 |48c,d|<span>-----</span>|
 |48e|<span>$y = (x - 1)(x + 1)$</span>|
 |49|-----|
-|50a|First apply the vertical stretch|
+|50a|First apply the vertical stretch.|
 |50b|<span><span>$y = 2({x^2} + 2)$</span></span>|
-|50c i.|Reflect over the x-axis, <br>vertically stretch by factor of 3, shift down 2|
-|50c ii.|Shift left 4, Vertically compress by factor of 2|
-|50c iii.|Shift left 4, vertically stretch by factor of 3, shift 1 down|
-|50c iv.|Shift 3 right, Vertically compress by factor of 2, shift ½ down|
+|50c i.|Reflect over the $x$-axis, vertically stretch by factor of 3, shift down 2.|
+|50c ii.|Shift left 4, vertically compress by factor of 2.|
+|50c iii.|Shift left 4, vertically stretch by factor of 3, shift 1 down.|
+|50c iv.|Shift 3 right, vertically compress by factor of 2, shift ½ down|
 |51|Vertically shift by factor of 20, shift left 191, shift down 798380|
 |52a|<span>$y = x$</span>|
 |52b|Shift left 2, up 3|
 |52c|<span>-----</span>|
-|52d|Vertical stretch by factor of 3, and then flip over the <span class="char-style-override-2">x</span>-axis|
-|53|Compress by a factor of 3 <br>towards the <span class="char-style-override-2">y</span>-axis|
+|52d|Vertical stretch by factor of 3, and then flip over the $x$-axis|
+|53|Compress by a factor of 3 towards the $y$-axis|
 |54|<span>$p = - \frac{1}{3}$</span> <span>or</span><span> <span>$p = 2$</span></span>|
 |55a|-----|
 |55b|<span>${x^2} + {y^2} = 25$</span>|
