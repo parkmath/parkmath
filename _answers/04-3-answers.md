@@ -29,7 +29,7 @@
 |12a|(-3, -10)|
 |12b|(5, -21)|
 |12c|(1, -16)|
-|13|Vertex is (5, -21); <span class="char-style-override-2">x</span>-intercepts <span>are </span><span><span>$x = 5 \pm \sqrt {21} $</span></span><span>; </span><span class="char-style-override-2">y</span><span>-intercept is </span>(0,4)|
+|13|Vertex is (5, -21); $x$-intercepts <span>are </span><span><span>$x = 5 \pm \sqrt {21} $</span></span><span>; </span>$y$-intercept is </span>(0,4)|
 |14|20 and -20|
 |15|<span>$\sqrt {56} $</span> <span>and</span> <span>$ - \sqrt {56} $</span>|
 |16|<span>$ \pm \sqrt {61} $</span>|
@@ -45,12 +45,12 @@
 |19b|<span>$x = - 5$</span> <span>or 1</span>|
 |20a|(-15, -325)|
 |20b|(9, -1)|
-|21a|Vertex is (-15, -325); <span class="char-style-override-2">x</span>-inter<span>cepts are </span><span><span>$x = - 15 \pm \sqrt {325} $</span></span><span>; </span><span class="char-style-override-2">y</span>-intercept is (0, -100)|
-|21b|Vertex is (3, -3); <span class="char-style-override-2">x</span>-intercepts are <span><span>$x = 3 \pm \sqrt 3 $</span></span>; <span class="char-style-override-2">y</span>-intercept is (0, 6)|
+|21a|Vertex is (-15, -325); $x$-intercepts are <span><span>$x = - 15 \pm \sqrt {325} $</span></span><span>; </span>$y$-intercept is (0, -100)|
+|21b|Vertex is (3, -3); $x$-intercepts are $x = 3 \pm \sqrt 3 $; $y$-intercept is (0, 6)|
 |22|<span class="char-style-override-2">x</span> = 2 or 20|
 |23|<span>$x = - 2.5 \pm \sqrt {10.25} $</span>|
-|24|<img class="image" width="64" height="19" src="9-4_Answers_10-5-PRINT-web-images/Eqn0382.eps" alt="Eqn0382.eps">|
-|25|<img class="image" width="112" height="38" src="9-4_Answers_10-5-PRINT-web-images/Quads%20ans%20to%20L3%20prob%2025.ai" alt="Quads%20ans%20to%20L3%20prob%2025.ai">|
+|24|$x= 5 \pm \sqrt{33}$|
+|25|$x = - \frac{b}{2} \pm \sqrt{ \left( \frac{b}{2} \right) ^2 -c}$|
 |26a|<span>9;</span> <span>${(x + 3)^2} = {x^2} + 6x + 9$</span>|
 |26b|-----|
 |27|<span><span>$x = 3 \pm \sqrt {12} $</span></span>|
@@ -76,7 +76,7 @@
 |39c|No solution|
 |39d|<span>$x = 1$</span> <span>or 4</span>|
 |39e|<span>$x = \frac{3}{4} \pm \frac{{\sqrt {33} }}{4}$</span>|
-|39f|<img class="image" width="129" height="38" src="9-4_Answers_10-5-PRINT-web-images/Quads%20ans%20to%20L3%20prob%2039f.ai" alt="Quads%20ans%20to%20L3%20prob%2039f.ai">|
+|39f|$x = - \frac{b}{2a} \pm \sqrt{ \frac{-c}{a} + \left(\frac{b}{2a} \right) ^2}$|
 |40|<span>$\frac{{ - b}}{2}$</span>|
 |41|<span>$\frac{{ - b}}{{2a}}$</span>|
 |42a|2|
