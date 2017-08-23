@@ -6,34 +6,28 @@
 |-------|------|
 |Problem|<span class="char-style-override-1">Answer</span>|
 |1|<span>-----</span>|
-|2a|<span>Down: </span><span>$x &amp;lt; 0$</span><span>; <br>Up: </span><span><span>$x > 0$</span></span>|
+|2a|<span>Down: </span><span>$x < 0$</span><span>; Up: </span><span><span>$x > 0$</span></span>|
 |2b|-----|
 |3a|Yes|
-|3b|<table id="table-3" class="Basic-Table"> <tbody> <tr> <td> <span class="char-style-override-4">-2</span> </td> <td> <span class="char-style-override-4">-1</span> </td> <td> <span class="char-style-override-4">0</span> </td> <td> <span class="char-style-override-4">1</span> </td> <td> <span class="char-style-override-4">2</span> </td> <td> <span class="char-style-override-4">3</span> </td> <td> <span class="char-style-override-4">4</span> </td> </tr> <tr> <td> <span class="char-style-override-5">4</span> </td> <td> <span class="char-style-override-5">1</span> </td> <td> <span class="char-style-override-5">0</span> </td> <td> <span class="char-style-override-5">1</span> </td> <td> <span class="char-style-override-5">4</span> </td> <td> <span class="char-style-override-5">9</span> </td> <td> <span class="char-style-override-5">16</span> </td> </tr> <tr> <td> <span class="char-style-override-5">7</span> </td> <td> <span class="char-style-override-5">4</span> </td> <td> <span class="char-style-override-5">3</span> </td> <td> <span class="char-style-override-5">4</span> </td> <td> <span class="char-style-override-5">7</span> </td> <td> <span class="char-style-override-5">12</span> </td> <td> <span class="char-style-override-5">19</span> </td> </tr> </tbody> </table>|
-|-2|<span class="char-style-override-4">-1</span>|
-|4|<span class="char-style-override-5">1</span>|
-|7|<span class="char-style-override-5">4</span>|
-|4|Up 3|
-|5|<span><span>$y = {x^2} + k$</span> </span><span>is shifted up </span><span><span>$k$</span></span>|
+|3b|$y=x^2$: $4, 1, 0, 1, 4, 9, 16$<br> $y=x^2+3$: $7,4,3,4,7,12,19$
+|4|Up 3 units|
+|5|<span><span>$y = {x^2} + k$</span> </span><span>is shifted up </span><span><span>$k$ units.</span></span>|
 |6a|<span>Shift up 7; </span><span><span>$y = {x^2} + 7$</span></span>|
 |6b|<span>Shift down 93; </span><span><span>$y = {x^2} - 93$</span></span>|
 |7|-----|
-|8|<table id="table-4" class="Basic-Table"> <tbody> <tr> <td> <span class="char-style-override-4">-2</span> </td> <td> <span class="char-style-override-4">-1</span> </td> <td> <span class="char-style-override-4">0</span> </td> <td> <span class="char-style-override-4">1</span> </td> <td> <span class="char-style-override-4">2</span> </td> <td> <span class="char-style-override-4">3</span> </td> <td> <span class="char-style-override-4">4</span> </td> </tr> <tr> <td> <span class="char-style-override-5">4</span> </td> <td> <span class="char-style-override-5">1</span> </td> <td> <span class="char-style-override-5">0</span> </td> <td> <span class="char-style-override-5">1</span> </td> <td> <span class="char-style-override-5">4</span> </td> <td> <span class="char-style-override-5">9</span> </td> <td> <span class="char-style-override-5">16</span> </td> </tr> <tr> <td> <span class="char-style-override-5">12</span> </td> <td> <span class="char-style-override-5">3</span> </td> <td> <span class="char-style-override-5">0</span> </td> <td> <span class="char-style-override-5">3</span> </td> <td> <span class="char-style-override-5">12</span> </td> <td> <span class="char-style-override-5">27</span> </td> <td> <span class="char-style-override-5">48</span> </td> </tr> </tbody> </table>|
-|-2|<span class="char-style-override-4">-1</span>|
-|4|<span class="char-style-override-5">1</span>|
-|12|<span class="char-style-override-5">3</span>|
+|8|$y=x^2$: $4, 1, 0, 1, 4, 9, 16$<br> $y=3x^2$: $12, 3, 0, 3, 12, 27, 48$|
 |9a|4; 12|
-|9b|For any <span class="char-style-override-2">x</span>-value, the height of the graph (that is, the y-value) of <span><span>$y = 3{x^2}$</span> </span>is 3 times as large as the height of <span><span>$y = {x^2}$</span> </span>|
-|10|Vertical compression toward the <span class="char-style-override-2">x</span>-axis by a factor of 2, or, a vertical stretch by a factor of 1/2|
-|11|Reflect it over the <span class="char-style-override-2">x</span>-axis|
-|12|Reflect it over the <span class="char-style-override-2">x</span>-axis and then vertically stretch away from the <span class="char-style-override-2">x</span>-axis by a factor of 2|
+|9b|For any $x$-value, the height of the graph (that is, the $y$-value) of <span><span>$y = 3{x^2}$</span> </span>is 3 times as large as the height of <span><span>$y = {x^2}$</span> </span>|
+|10|Vertical compression toward the $x$-axis by a factor of 2, or, a vertical stretch by a factor of 1/2|
+|11|Reflect it over the $x$-axis|
+|12|Reflect it over the $x$-axis and then vertically stretch away from the $x$-axis by a factor of 2|
 |13|No|
-|14|<span><span>$y = a{x^2}$</span> </span><span>is a vertical stretch away from the </span><span class="char-style-override-2">x</span><span>-axis by a factor of </span><span class="char-style-override-2">a</span>|
+|14|<span><span>$y = a{x^2}$</span> </span><span>is a vertical stretch away from the </span>$x$<span>-axis by a factor of </span>$a$.|
 |15a|<span>By a factor of 4; </span><span><span>$y = 4{x^2}$</span></span>|
 |15b|<span>By a factor of 1/5; </span><span><span>$y = \frac{1}{5}{x^2}$</span></span>|
 |16|<span>$a = - \frac{1}{2}$</span>|
-|17a|Up .5|
-|17b|Reflect over the <span class="char-style-override-2">x</span>-axis, then vertically stretch by a factor of 10|
+|17a|Up 0.5|
+|17b|Reflect over the $x$-axis, then vertically stretch by a factor of 10|
 |17c|Down 10|
 |18|-----|
 |19|<span>$a = 2.5$</span>|
