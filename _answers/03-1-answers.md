@@ -2,9 +2,9 @@
 ## Similar Triangles
 
 
-|||
-|-------|------|
 |**Problem**|**Answer**|
+|-------|------|
+|||
 |1|-----|
 |2|-----|
 |3 a|About 150 miles|
