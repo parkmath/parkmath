@@ -42,7 +42,7 @@
 |9 c|<span><span>$ - 20$</span></span>|
 |9 d|<span><span>${13}/3$</span></span>|
 |10 a|<span><span>${ - 1}/3$</span></span>|
-|10 b|<span><img class="image" width="35" height="22" src="9-Answers_9-8-11-PRINT-web-images/Eqn0197.eps" alt="Eqn0197.eps"></span> and <span>$\left( {0,2.25} \right)$</span><br>|
+|10 b|<span>$(-9,0)$</span> and <span>$(0,2.25)$</span><br>|
 |11 a|\$2.08|
 |11 b|5 cents|
 |11 c|\$1.03|
