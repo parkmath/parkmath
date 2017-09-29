@@ -4,7 +4,7 @@
 
 |problem|answer|
 |-------|------|
-|Problem|<span class="char-style-override-1">Answer</span>|
+|Problem|Answer|
 |1 a|<span><span>$- 7/ 5$</span></span>|
 |1 b|<span>1</span>|
 |1 c|<span>$-1/2$</span>|
@@ -17,7 +17,7 @@
 |1 j|<span><span>$ - 1$</span></span>|
 |2|<span>$ x=\frac{1}{4}, ~ y=\frac{25}{2}$ works, as does $x=7, ~ y=-1$<span>.</span>|
 |3|Answers may vary.|
-|4|Giving either <span class="char-style-override-3">x</span> or <span class="char-style-override-3">y</span> a value, and solving the equation for the other variable.|
+|4|Giving either $x$ or $y$ a value, and solving the equation for the other variable.|
 |5|-----|
 |6|Answers may vary.|
 |7 a|No|
@@ -33,7 +33,7 @@
 |14|-----|
 |15|-----|
 |16|impossible|
-|17|<br><br><br><br><br>All ordered pairs in the shaded region.|
+|17|-----|
 |18|<span>$( - 1/2, - 1/2)$</span> is the only <br>solution.|
 |19|14|
 |20|4.5 in|
@@ -53,26 +53,23 @@
 |29|8.5|
 |30 a|20|
 |30 b|5|
-|30 c|<span><img class="image" width="18" height="13" src="9-Answers_9-8-11-PRINT-web-images/Eqn0248.eps" alt="Eqn0248.eps"></span>|
+|30 c|-3|
 |30 d|1|
 |31|7.5%|
 |32|-----|
 |33|-----|
 |34 a|Only 35 pens is possible.|
-|34 b|<span><span>$X + 6Y = 71$</span><br><br><br><br></span>|
-|35|<span><span>$X + 3 = 2Y$</span></span>, <span class="char-style-override-4">many possible ages<br><br><br><br></span>|
+|34 b|<span><span>$X + 6Y = 71$</span></span>|
+|35|<span><span>$X + 3 = 2Y$</span></span>, <span class="char-style-override-4">many possible ages</span>|
 |36|2 and <span><span>$ - 7$</span></span>|
-|37|<br>|
-|38|<br><br><br><br>|
-|39|<table id="table-4" class="Basic-Table"> <tbody> <tr> <td> a </td> <td> 1 </td> <td> 2 </td> <td> 1 </td> <td> 3 </td> <td> 2 </td> <td> 2 </td> </tr> <tr> <td> b </td> <td> 7 </td> <td> 1 </td> <td> 3 </td> <td> 2 </td> <td> 4 </td> <td> 5 </td> </tr> <tr> <td> x </td> <td> 8 </td> <td> 3 </td> <td> 4 </td> <td> 5 </td> <td> 6 </td> <td> 7 </td> </tr> </tbody> </table>|
-|a|1|
-|b|7|
-|x|8|
+|37|-----|
+|38|-----|
+|39|8, 3, 4, 5, 6, 7|
 |40 a|-----|
 |40 b|-----|
 |41|81/144 = 56.25%|
 |42 a|29/6|
 |42 b|less|
 |42 c|<span>$(x + 9)(x - 9)$</span>|
-|42 d|<img class="image" width="33" height="32" src="9-Answers_9-8-11-PRINT-web-images/Eqn031.eps" alt="Eqn031.eps">|
+|42 d|$x=\frac12$|
 |42 e|-1 or 7|
