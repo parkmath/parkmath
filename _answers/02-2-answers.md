@@ -5,17 +5,17 @@
 |problem|answer|
 |-------|------|
 |Problem|<span class="char-style-override-1">Answer</span>|
-|1 a|<span><span>${{ - 7} \mathord{\left/ {\vphantom {{ - 7} 5}} \right. \kern-\nulldelimiterspace} 5}$</span></span>|
+|1 a|<span><span>$- 7/ 5$</span></span>|
 |1 b|<span>1</span>|
-|1 c|<span><img class="image" width="28" height="19" src="9-Answers_9-8-11-PRINT-web-images/Eqn0028.eps" alt="Eqn0028.eps"></span>|
+|1 c|<span>$-1/2$</span>|
 |1 d|<span><span>$ - 1$</span></span>|
-|1 e|<span><span>${1 \mathord{\left/ {\vphantom {1 {2 &amp;lt; x}}} \right. \kern-\nulldelimiterspace} {2 &amp;lt; x}}$</span></span>|
-|1 f|<span><img class="image" width="40" height="19" src="9-Answers_9-8-11-PRINT-web-images/Eqn0059.eps" alt="Eqn0059.eps"></span>|
+|1 e|<span><span>$1/2 < x$</span>|
+  |1 f|<span><span>$ x< 3/8$</span></span>|
 |1 g|32|
 |1 h|<span><span>$ - 51$</span></span>|
 |1 i|<span><span>$ - 63$</span></span>|
 |1 j|<span><span>$ - 1$</span></span>|
-|2|<span><img class="image" width="41" height="35" src="9-Answers_9-8-11-PRINT-web-images/Ans%20Sol%20LinEQ%20%232%20eqn%201.ai" alt="Ans%20Sol%20LinEQ%20%232%20eqn%201.ai"></span><span>,</span><span> </span><span><img class="image" width="44" height="35" src="9-Answers_9-8-11-PRINT-web-images/Ans%20Sol%20LinEQ%20%232%20second%20eqn.ai" alt="Ans%20Sol%20LinEQ%20%232%20second%20eqn.ai"></span><span>works</span><span><br> as does</span><span> <span>$x = 7$</span></span><span>,</span> <img class="image" width="37" height="20" src="9-Answers_9-8-11-PRINT-web-images/Answer%20to%20Solutions%20of%20Lin%20E.ai" alt="Answer%20to%20Solutions%20of%20Lin%20EQ%20%232%20second%20eqn.ai"><span>.</span>|
+|2|<span>$ x=\frac{1}{4}, ~ y=\frac{25}{2}$ works, as does $x=7, ~ y=-1$<span>.</span>|
 |3|Answers may vary.|
 |4|Giving either <span class="char-style-override-3">x</span> or <span class="char-style-override-3">y</span> a value, and solving the equation for the other variable.|
 |5|-----|
@@ -25,9 +25,9 @@
 |8|-----|
 |9|Answers may vary.|
 |10|-----|
-|11|<span><br><br><br><br><span>$\left( {2821, - 937} \right)$</span></span> is not on the graph.|
+|11|<span><span>$(2821, - 937)$</span></span> is not on the graph.|
 |12|-----|
-|13 a|For example, <img class="image" width="51" height="15" src="9-Answers_9-8-11-PRINT-web-images/Eqn0118.eps" alt="Eqn0118.eps">|
+|13 a|For example, $x+y=1$|
 |13 b|For example, <span>$x - y = 4$</span>|
 |13 c|For example, <span>$y = - \frac{1}{3}x$</span><br>|
 |14|-----|
