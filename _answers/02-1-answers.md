@@ -4,7 +4,6 @@
 
 |problem|answer|
 |-------|------|
-|Problem|<span class="char-style-override-1">Answer</span>|
 |1 a|\$4.30|
 |1 b|7 cups|
 |1 c|\$0.70|
