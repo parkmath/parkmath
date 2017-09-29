@@ -2,7 +2,7 @@
 ## Similar Triangles
 
 
-|problem|answer|
+|||
 |-------|------|
 |Problem|Answer|
 |1|-----|
