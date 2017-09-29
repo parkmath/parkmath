@@ -2,9 +2,9 @@
 ## Solutions of linear equations
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1 a|<span><span>$- 7/ 5$</span></span>|
 |1 b|<span>1</span>|
 |1 c|<span>$-1/2$</span>|
@@ -15,7 +15,7 @@
 |1 h|<span><span>$ - 51$</span></span>|
 |1 i|<span><span>$ - 63$</span></span>|
 |1 j|<span><span>$ - 1$</span></span>|
-|2|<span>$ x=\frac{1}{4}, ~ y=\frac{25}{2}$ works, as does $x=7, ~ y=-1$<span>.</span>|
+|2|<span>$ x=\frac{1}{4}, ~ y=\frac{25}{2}$ works, as does $x=7, ~ y=-1$</span>|
 |3|Answers may vary.|
 |4|Giving either $x$ or $y$ a value, and solving the equation for the other variable.|
 |5|-----|
