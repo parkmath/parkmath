@@ -65,7 +65,7 @@
 |18 a|2.4 ounces|
 |18 b|3.5 ounces|
 |18 c|No. <span class="char-style-override-4">One with 7 ounces of jelly</span>|
-|18 d|<span><img class="image" width="71" height="22" src="9-Answers_9-8-11-PRINT-web-images/Eqn0297.eps" alt="Eqn0297.eps"></span><span><br><br><br></span>|
+|18 d|<span>$p=1.2(j-1)$</span>|
 |18 e|The <span class="char-style-override-3">y</span>-intercept|
 |18 f|No|
 |19 a|3|
@@ -73,7 +73,7 @@
 |19 c|19|
 |19 d|<span><span>$ - 1$</span></span>|
 |20 a|<span><span>$y = 80 + 8x$</span></span> and <span>$y = 108 + 4x$</span> (in cents)<br>|
-|20 b|<br><br><br>|
+|20 b|<span>-----</span>|
 |20 c|7|
 |20 d|It is the <span class="char-style-override-3">x</span>-coordinate of the point of intersection of the lines.|
 |21 a|1, 6, and <span>$ - 5$</span>|
@@ -119,9 +119,7 @@
 |42 c|<span><span>$2x + 4{x^2}$</span></span>|
 |42 d|<span><span>$6x(2x - 7)$</span></span>|
 |42 e|<span>$x^2 + 2x+1$</span>|
-|43 a|<table id="table-2" class="Basic-Table"> <tbody> <tr> <td> # of W’s </td> <td> W </td> <td> 2W </td> </tr> <tr> <td> inches </td> <td> 15.5 </td> <td> 40 </td> </tr> </tbody> </table>|
-|# of W’s|W|
-|inches|15.5|
+|43 a|<span>-----</span>
 |43 b|64.5 inches|
 |43 c|187 inches|
 |43 d|About 17 worms|
