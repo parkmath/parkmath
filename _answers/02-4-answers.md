@@ -1,7 +1,7 @@
 
 ## Coordinate Geometry
 
-|problem|answer|
+|Problem|Answer|
 |-------|------|
 |1|-----|
 |2|Side lengths and slopes|
@@ -37,7 +37,7 @@
 |25|No|
 |26|-----|
 |27|-----|
-|28||
+|28|-----|
 |29 a|Yes|
 |29 b|Yes|
 |29 c|Yes|
@@ -59,7 +59,7 @@
 |40|Yes, No|
 |41|Never|
 |42 a|73/20|
-|42 b|<img class="image" width="71" height="15" src="9-Answers_9-8-11-PRINT-web-images/Eqn012.eps" alt="Eqn012.eps">|
+|42 b|$(x-9)(x+6)$|
 |42 c|-7/4|
 |42 d|No|
 |42 e|<span>$x = 0$</span> <span>only</span>|
@@ -71,9 +71,12 @@
 |48 a|To be a parallelogram|
 |48 b|-----|
 |48 c|-----|
-|49|<span>${11} \mathord{\left/ {\vphantom {{11} 8}} \right. \kern-\nulldelimiterspace} 8$</span>,<span> <span>$ - 2$</span></span>, and <img class="image" width="22" height="19" src="9-Answers_9-8-11-PRINT-web-images/Eqn01410.eps" alt="Eqn01410.eps">; <span><span>$ - 2\sqrt 2 $</span>, 4, and <span>$\[2\left( {2 - \sqrt 2 } \right)\]g$</span>; </span> <span><span>$2\sqrt 2 $</span>, 4, and <span>$2\left( {2 + \sqrt 2 } \right)$</span></span>|
+|49|$\frac{11}{8},\;$ $-2,\;$ and $\frac{21}{8}$;|
+||$-2\sqrt{2},\;$ $4\;$, and $2\left( 2-2\sqrt{2} \right);$|
+||$2\sqrt{2},\; $ $4,\;$ and $\left( 2+\sqrt{2} \right)$|
 |50|A 90-degree angle|
-|51|If <span>$\[C\left( {u,w} \right)\]{$</span>, <span>$w = \frac{1}{3}u + \frac{{11}}{3}$</span> or <span><span>$w = \frac{1}{3}u + \frac{{27}}{3}$</span></span>|
+|51|If $C(u,w)$, $w=\frac{1}{3}u+\frac{11}{3}$ or|
+||$w=\frac{1}{3}u+\frac{27}{3}$|
 |52 a|<span>-----</span>|
 |52 b|<span>-----</span>|
 |52 c|<span>-----</span>|
