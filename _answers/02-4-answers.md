@@ -3,17 +3,8 @@
 
 |Problem|Answer|
 |-------|------|
-|1|-----|
 |2|Side lengths and slopes|
-|3|-----|
-|4|-----|
-|5 a|-----|
-|5 b|-----|
-|6|-----|
 |7|Yes|
-|8|-----|
-|9|-----|
-|10|-----|
 |11|Yes|
 |12|No|
 |13|No|
@@ -28,16 +19,10 @@
 |17|<span>$\left( {a,b} \right)$</span>|
 |18|They are equal.|
 |19|<span> $\sqrt {2053} $</span>|
-|20|-----|
 |21 a|Answers may vary. <span>$5\sqrt 2 $</span>.|
 |22 a|Answers may vary.|
 |22 b|Yes|
-|23|-----|
-|24|-----|
 |25|No|
-|26|-----|
-|27|-----|
-|28|-----|
 |29 a|Yes|
 |29 b|Yes|
 |29 c|Yes|
@@ -47,9 +32,6 @@
 |30 b|<span>$\sqrt {77} $</span>|
 |31|-----|
 |32|Yes|
-|33|-----|
-|34|-----|
-|35|-----|
 |36|Yes|
 |37|Yes|
 |38 a|-----|
@@ -77,7 +59,3 @@
 |50|A 90-degree angle|
 |51|If $C(u,w)$, $w=\frac{1}{3}u+\frac{11}{3}$ or|
 ||$w=\frac{1}{3}u+\frac{27}{3}$|
-|52 a|<span>-----</span>|
-|52 b|<span>-----</span>|
-|52 c|<span>-----</span>|
-|52 d|<span>-----</span>|
