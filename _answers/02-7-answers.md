@@ -1,9 +1,9 @@
 
 ## Summary &amp; Review
 
-
-|Problem|Answer|
-|-------|------|
+|||
+|-----|-----|
+|**Problem**|**Answer**|
 |1a|<span>$\frac{{47}}{{36}}$</span>|
 |1b|<span>$\frac{5}{{14}}$</span>|
 |1c|<span>$\frac{{ - 5}}{{22}}$</span>|
