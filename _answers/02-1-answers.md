@@ -2,7 +2,7 @@
 ## Linear Equations
 
 
-|problem|answer|
+|Problem|Answer|
 |-------|------|
 |1 a|\$4.30|
 |1 b|7 cups|
