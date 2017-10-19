@@ -8,7 +8,7 @@
 |1 b|7 cups|
 |1 c|\$0.70|
 |1 d|\$1.02|
-|1 e|<span><span>$P = 30 + 80L$</span></span> (in cents)|
+|1 e|<span><span>$P = 30 + 80L$</span></span> (in cents)|
 |2 a|-----|
 |2 b|-----|
 |2 c|4; 4 = slope of the line through the points of the sequence|
@@ -65,7 +65,7 @@
 |18 b|3.5 ounces|
 |18 c|No. <span class="char-style-override-4">One with 7 ounces of jelly</span>|
 |18 d|<span>$p=1.2(j-1)$</span>|
-|18 e|The <span class="char-style-override-3">y</span>-intercept|
+|18 e|The $y$-intercept|
 |18 f|No|
 |19 a|3|
 |19 b|4|
@@ -74,7 +74,7 @@
 |20 a|<span><span>$y = 80 + 8x$</span></span> and <span>$y = 108 + 4x$</span> (in cents)<br>|
 |20 b|<span>-----</span>|
 |20 c|7|
-|20 d|It is the <span class="char-style-override-3">x</span>-coordinate of the point of intersection of the lines.|
+|20 d|It is the $x$-coordinate of the point of intersection of the lines.|
 |21 a|1, 6, and <span>$ - 5$</span>|
 |21 b|7|
 |21 c|Yes|
