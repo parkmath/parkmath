@@ -66,7 +66,7 @@
 |42 b|<span>$15x + 3{x^2}$</span>|
 |42 c|<span>${(x - 4)^2}$</span>|
 |42 d|<span>$x = \frac{1}{2}$</span>|
-|42 e|<span class="char-style-override-3">x</span> must be between -1 and 7.|
+|42 e|$x$ must be between -1 and 7.|
 |43|Answers may vary. Check by plugging points back into the equations.|
 |44|a and c|
 |45|85|
