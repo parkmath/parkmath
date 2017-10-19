@@ -2,9 +2,9 @@
 ## Linear Systems
 
 
-|problem|answer|
+|**Problem**|**Answer**|
 |-------|------|
-|Problem|Answer|
+|||
 |1|  $ - 4x + 1 = \frac{1}{2}x + \frac{{11}}{2}, \quad x = 1$  |
 |2|  $y=5$  |
 |3| ----- |
