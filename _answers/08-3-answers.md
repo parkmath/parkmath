@@ -2,9 +2,9 @@
 ## rates of change
 
 
-|problem|answer|
+|||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|24 ft/sec|
 |2|19.2 ft/sec|
 |3|16 ft/sec|
