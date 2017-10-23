@@ -1,5 +1,5 @@
 
-## rates of change
+## Rates of change
 
 
 |||
