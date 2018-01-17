@@ -66,7 +66,11 @@
       {% for d in lessons %}
       {% assign lesson = (site.lessons | where: 'book', d.book | where: 'lesson', d.lesson | first) %}
       {% if lesson.published and lesson.lesson and lesson.type != 'summary' %}
-        {% assign habits = (site.data.habits | where: 'name', lesson.title) %}
+        {% assign habit_list_name = lesson.title %}
+        {% if habit_list_name == 'geometric tinkering' %}
+          {% assign habit_list_name = 'tinker' %}
+        {% endif %}
+        {% assign habits = (site.data.habits | where: 'name', habit_list_name) %}
         {% unless habits == empty %}
           {% assign habit = habits[0] %}
           {% assign habitclass = 'habit-lesson' %}
@@ -77,7 +81,7 @@
 
         <section class="lesson {{habitclass}}" id="{{lesson.lesson}}-{{lesson.title | slugify}}">
           {% if habit %}
-            {% include habit-header.html habit=habit %}
+            {% include habit-header.html %}
           {% endif %}
           <div class="container">
           {% unless habit %}
