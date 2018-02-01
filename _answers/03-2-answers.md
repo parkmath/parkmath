@@ -21,7 +21,7 @@
 |42 c|<span>$7{x^2}y(2{y^2} - 4{x^2}y + 1)$</span>|
 |42 d|<span>$\frac{{x + 6}}{{x + 3}}$</span>|
 |42 e|Perpendicular|
-|43|In stage number n, there are <span>${3^n}$</span> shaded triangles, with total <br>perimeter <span>${{{{3^{n + 1}}} \mathord{\left/ {\vphantom {{{3^{n + 1}}} 2}} \right. \kern-\nulldelimiterspace} 2}^n}$</span>, and total area <span>${{{3^n}\sqrt 3 } \mathord{\left/ {\vphantom {{{3^n}\sqrt 3 } {{2^{2n + 2}}}}} \right. \kern-\nulldelimiterspace} {{2^{2n + 2}}}}$</span>.|
+|43|In stage number n, there are <span>${3^n}$</span> shaded triangles, with total <br>perimeter $\frac{3^{n+1}}{2^n}$, and total area $\frac{3^n \sqrt3}{2^{2n+2}}$</span>.|
 |44|Yes|
 |45|Yes|
 |46|Yes|
