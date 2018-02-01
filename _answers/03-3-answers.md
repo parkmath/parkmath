@@ -11,7 +11,7 @@
 |4 a|-----|
 |4 b|-----|
 |4 c|-----|
-|5|<span>${{.6928} \mathord{\left/ {\vphantom {{.6928} {1.3856}}} \right. \kern-\nulldelimiterspace} {1.3856}}$</span>, <span>${{1.2} \mathord{\left/ {\vphantom {{1.2} {1.3856}}} \right. \kern-\nulldelimiterspace} {1.3856}}$</span>, <span>${{.6928} \mathord{\left/ {\vphantom {{.6928} {1.2}}} \right. \kern-\nulldelimiterspace} {1.2}}$</span>|
+|5|<span>$.6928/1.3856, 1.2/1.3856, .6928/1.2$</span>|
 |6 a|About .423, .906, and .466|
 |6 b|About .891, .454, and 1.963|
 |6 c|About .669, .743, and .900|
@@ -25,7 +25,7 @@
 |9 a|Answers may vary|
 |9 b|-----|
 |9 c|When calculating sine and cosine of angles that add up to <span>${90^ \circ }$</span>, the same ratios are taken.|
-|10 a|<span>${x \mathord{\left/ {\vphantom {x {40}}} \right. \kern-\nulldelimiterspace} {40}}$</span>|
+|10 a|<span>$\frac{x}{40}$</span>|
 |10 b|Approx. 27.92|
 |10 c|Approx. 48.78|
 |11|-----|
