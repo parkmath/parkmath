@@ -67,12 +67,12 @@
 |39 b|Pairs where <span>$a = b$</span>.|
 |39 c|-----|
 |39 d|<span>$\frac{1}{{\tan 12^\circ }}$</span> or about 4.7|
-|40 a|<img class="image" width="48" height="76" src="9-3-answers-web-images/diagram%2041a.tif" alt="diagram%2041a.tif">|
-|40 b|<span>${{\left( {1 + \sqrt 3 } \right)} \mathord{\left/ {\vphantom {{\left( {1 + \sqrt 3 } \right)} {2\sqrt 2 }}} \right. \kern-\nulldelimiterspace} {2\sqrt 2 }}$</span>|
+|40 a||
+|40 b|<span>$\frac{1+ \sqrt3}{2 \sqrt 2}$</span>|
 |41|23.11 ft|
 |42 a|<span>$ - 7{x^2} + 35x$</span>|
 |42 b|<span>$x + 5$</span>|
-|42 c|<span>$x &amp;lt; - 2$</span> or <span>$x > 12$</span>|
+|42 c|<span>$x < - 2$</span> or <span>$x > 12$</span>|
 |42 d|<span>$(x - 4)(x - 5)$</span>|
 |42 e|<span>$x = \frac{2}{9}$</span>|
 |43|<span>$\frac{{\tan 48^\circ }}{{\tan 74^\circ - 2\tan 48^\circ }}$</span>|
