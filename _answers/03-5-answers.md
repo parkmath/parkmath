@@ -98,7 +98,9 @@
 |55 b|<span>$\frac{x}{\tan {{68}^ \circ }}$</span>|
 |55 c|4.74 ft|
 |56|45.31 miles approx|
-|57|Top triangle: side 0.306, angles 40$^\circ$ and 100$^\circ$.  Middle triangle: sides .847, 1.256, 1.515, angle 56$^\circ$.  Bottom triangle: sides 0.276 and 0.215, angles 37.9$^\circ$ and 52.1$^\circ$.|
+|57|Top triangle: side 0.306, angles 40$^\circ$ and 100$^\circ$.|
+||Middle triangle: sides .847, 1.256, 1.515, angle 56$^\circ$.|  
+||Bottom triangle: sides 0.276 and 0.215, angles 37.9$^\circ$ and 52.1$^\circ$.|
 |58|<span>$(0.8,8.6)$</span>|
 |59|2.77 approx.|
 |60|807.18 ft|
