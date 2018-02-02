@@ -2,9 +2,9 @@
 ## Trig and Shapes
 
 
-|problem|answer|
-|-------|------|
 |Problem|Answer|
+|-------|------|
+|||
 |2 a|<span>${108^ \circ }$</span>|
 |2 c|The lengths of all horizontal and vertical segments|
 |3|<span>$12.25{\text{ c}}{{\text{m}}^2}$</span>|
