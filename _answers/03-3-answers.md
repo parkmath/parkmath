@@ -2,9 +2,9 @@
 ## Intro To Trig
 
 
-|problem|answer|
-|-------|------|
 |Problem|Answer|
+|-------|------|
+|||
 |1|Approx. 450 ft
 |2|-----|
 |3|Approx. 254 ft|
