@@ -2,7 +2,7 @@
 ## 
 
 
-|problem|answer|
+|Problem|Answer|
 |-------|------|
 |1a|Not sufficient information.|
 |1b|Must be similar, and in fact, must be congruent!|
