@@ -42,7 +42,7 @@
 |14 a|<span>$2x - 6y$</span>|
 |14 b|<span>$g - 2h{g^3}$</span>|
 |14 c|<span>$\frac{{ - 2x}}{y} + 3 - \frac{{5y}}{x}$</span>|
-|14 d|<span>$\frac{7}{{2{y^6}{z^{\frac{1}{2}}}}} - \frac{{13}}{2}yz + \frac{5}{{{y^3}{z^3}}}$</span>|
+|14 d|<span>$\frac{7}{{2{y^6}{z^{\frac{1}{2}}}}} - \frac{{13}}{2}yz + \frac{5}{{2{y^3}{z^3}}}$</span>|
 |15 a|<span>$\frac{{5x}}{3}$</span>|
 |15 b|<span>$\frac{{4{p^{16}}}}{{3{q^{16}}}}$</span>|
 |15 c|<span>$\frac{{3x{z^2}}}{{{y^2}}}$</span>|
