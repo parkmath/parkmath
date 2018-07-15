@@ -10,7 +10,7 @@
 |5 a|$T_1 \cdot 3 \cdot 3$|
 |5 b|$T_1 \cdot 3^3$|
 |5 c|$T_1 \cdot 3^{n-1}$|
-|6|$T_5 = 80; T_7 = 640$|
+|6|$T_5 = 80; T_7 = 320$|
 |7|The ratio between terms is not constant.|
 |8 a|13.5, 20.25|
 |8 b|$T_n = 4 \cdot 1.5^{n-1}$|
