@@ -28,7 +28,7 @@
 |16 a|Planar|
 |16 b|Planar|
 |16 c|Not planar|
-|16 d|Not planar|
+|16 d|Planar|
 |16 e|Not planar|
 |16 f|Planar|
 |17|No|
@@ -66,7 +66,7 @@
 |42 b|<span>$(x + 4)(x - 4)$</span>|
 |42 c|<span>$x = 2{\text{ or }}3$</span>|
 |42 d|<span>$3\frac{1}{{15}}$</span>|
-|42 e|9|
+|42 e|227|
 |44|It was $K_{3,3}$.|
 |45|Two; two|
 |46|<span>${\text{total degree }} = 2mn$</span>|
