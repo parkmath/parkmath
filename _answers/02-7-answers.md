@@ -24,7 +24,7 @@
 |4d|<span><span>$15.\overline 2 $</span> </span><span>ounces</span>|
 |4e|<span>$P = 36C + 200$</span>|
 |4f|<span class="char-style-override-3"><span>$C = \frac{{P - 200}}{{36}}$</span></span>|
-|5a|<span>y-intercept</span> <span>$(0,2)$</span><span>, Slope 3</span>|
+|5a|<span>y-intercept</span> <span>$(0,2)$</span><span>, Slope $-3$</span>|
 |5b|When<span> <span>$x = 2,{\text{ }}y = - 4$</span></span>. When<span> <span>$y = - 5.5,{\text{ }}x = 2.5$</span></span>.|
 |5c|<span><span>$y = - 6.1$</span></span>|
 |5d|<span><span>$x = - .7\overline 3 $</span></span>|
@@ -36,7 +36,7 @@
 |7b|<span>When </span><span><span>$x = 12,{\text{ }}y = - 25$</span> </span><span>and <span>$x = 17.2,{\text{ }}y = - 32.28$</span></span>|
 |7c|When $y=24, \;x=-23$. When $y=-16.7,\;x\approx-6.0714$|
 |7d|No.|
-|7e|<span>$7x + 5y = 41$</span>|
+|7e|<span>$7x + 5y = -41$</span>|
 |7f|A line with $y$-intercept $\frac{-41}{5}$ and slope $\frac{-7}{5}$.|
 |8a|<span>$y = 2x - 8$</span>|
 |8b|<span>$p = \frac{{22}}{3}$</span>|
