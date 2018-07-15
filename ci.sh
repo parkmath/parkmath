@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-make_site/pdf/books/01-reasoning-and-proving.pdf && ./tools/deploy.sh
+#make_site/pdf/books/01-reasoning-and-proving.pdf && ./tools/deploy.sh
 
-#make _site/pdf/books/07-trigonometry-in-the-coordinate-plane.pdf && ./tools/deploy.sh
+make _site/pdf/books/07-trigonometry-in-the-coordinate-plane.pdf && ./tools/deploy.sh
 
 #make _site/pdf/books/03-investigating-shape-and-size.pdf && ./tools/deploy.sh
 
