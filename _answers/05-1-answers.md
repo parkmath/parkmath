@@ -71,7 +71,7 @@
 |45|Two; two|
 |46|<span>${\text{total degree }} = 2mn$</span>|
 |47|<span>$\frac{1}{9}$</span>; <span>$\frac{1}{{mn}}$</span>|
-|48 a|Yes|
+|48 a|No|
 |48 b|Yes|
 |48 c|No|
 |48 d|Yes|
