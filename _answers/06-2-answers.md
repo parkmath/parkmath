@@ -83,10 +83,10 @@
 |42 d|<span>$y = \frac{1}{3}x + 7$</span>|
 |42 e|<span>$\left(\frac{26}{15}, \frac29\right)$</span>|
 |43|1055.06 approx.|
-|44 a|<span>$3 \mathord{\left/ {\vphantom {3 4}} \right. \kern-\nulldelimiterspace} 4$</span>|
+|44 a|<span>$\frac34$</span>|
 |44 c|3|
 |44 d|150|
-|44 e|<span>$\[{{61} \mathord{\left/ {\vphantom {{61} {121}}} \right. \kern-\nulldelimiterspace} {121}}\]y$</span>|
+|44 e|<span>$\frac{61}{121}$</span>|
 |45 a|<span>$\left( {5,2} \right)$</span>|
 |45 b|<span>$\left( { - 2,2} \right)$</span>|
 |46 a|7.5|
@@ -104,13 +104,13 @@
 |52 f|From Stage 2 on, the area of the previous stage|
 |54 a|x and z|
 |54 b|They are congruent.|
-|54 c|<span>$\[z + x + y\]Bzӂz$</span>|
+|54 c|<span>$z + x + y$</span>|
 |56 a|<span>$60^ \circ $</span> and <span>$120^ \circ $</span>|
-|56 b|z, x, and y|
+|56 b|$z$, $x$, and $y$|
 |58|Yes|
 |59|Yes|
-|60 a|Area: <span>$\[n\tan \left( {{\pi \mathord{\left/ {\vphantom {\pi n}} \right. \kern-\nulldelimiterspace} n}} \right)\]{$</span><br>Perimeter: <span>$2n\tan \left( {{\pi \mathord{\left/ {\vphantom {\pi n}} \right. \kern-\nulldelimiterspace} n}} \right)$</span>|
+|60 a|Area: $n\tan{\frac{\pi}{n}}$<br> Perimeter: $2n\tan{\frac{\pi}{n}}$|
 |60 b|Yes|
 |60 c|Yes|
 |60 d|It becomes circular.|
-|60 e|<span>$\[\pi {r^2}\]zӚz$</span> and <span>$2\pi r$</span>|
+|60 e|<span>$\pi {r^2}$</span> and <span>$2\pi r$</span>|
