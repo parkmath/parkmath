@@ -5,7 +5,7 @@
 |Problem|Answer|
 |-------|------|
 |||
-|9 a|AD = DB, AE = EC|
+|9 a|$AD = DB$, $AE = EC$|
 |16 a|False|
 |16 b|True|
 |16 c|True|
