@@ -2,7 +2,7 @@
 ## congruent triangles
 
 
-|problem|answer|
+|||
 |-------|------|
 |Problem|Answer|
 |1 a|One <span>$3\sqrt 2 $</span>, <span>$3\sqrt 2 $</span>, 6 triangle.<br>Two 3, 3, <span>$3\sqrt 2 :$</span> triangles.<br>Two 6, 6, <span>$6\sqrt 2$</span> triangles.<br>One 3, <span>$3\sqrt 2 $</span> parallelogram.|
@@ -56,13 +56,13 @@
 |26|6 cm and <span>$60^ \circ $</span>|
 |27|25|
 |28|11.83 approx.|
-|29|<span>$\[l > m > n\]}҆}$</span>|
+|29|<span>$l > m > n$</span>|
 |31|Side lengths: 2.65 and 5.3.<br>Angles: <span>$60^ \circ $</span>, <span>$79.1^ \circ $</span>, and <span>$40.9^ \circ $</span> in both triangles.|
 |33 a|They are congruent.|
 |33 b|Yes|
-|33 c|<span>${\left( {{c^2} + 2b\sqrt {{c^2} - {b^2}} } \right)} \mathord{\left/ {\vphantom {{\left( {{c^2} + 2b\sqrt {{c^2} - {b^2}} } \right)} 2}} \right. \kern-\nulldelimiterspace} 2$</span>|
-|34 a|<span>$\vartriangle OPE \cong \vartriangle RPN$</span><br><img class="image" width="77" height="13" src="10-2_Answers_8-19-11-PRINT-web-images/Eqn01511.eps" alt="Eqn01511.eps">|
-|34 b|<span>$\vartriangle ABE \cong \vartriangle CBD$</span><br><span>$\vartriangle ADC \cong \vartriangle CEA$</span><br><span>$\[\vartriangle APD \cong \vartriangle CPE\]XHXxX$</span>|
+|33 c|<span>$\frac12c^2 + b\sqrt{c^2-b^2}$|
+|34 a|$\vartriangle CAF \cong \vartriangle CBD$<br> $\vartriangle CDB \cong \vartriangle EDF$
+|34 b|<span>$\vartriangle ABE \cong \vartriangle CBD$</span><br><span>$\vartriangle ADC \cong \vartriangle CEA$</span><br><span>$\\vartriangle APD \cong \vartriangle CPE$</span>|
 |34 d|Yes|
 |35 a|<span>$\overline {BG} $</span>|
 |35 c|No|
