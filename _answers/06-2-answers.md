@@ -73,15 +73,15 @@
 |37 c|Total: \$39.26 approx.|
 |39 a|<span>$108^ \circ $</span>|
 |39 b|<span>$180^\circ $</span>|
-|40 a|<span>${\sqrt 3 } \mathord{\left/ {\vphantom {{\sqrt 3 } 4}} \right. \kern-\nulldelimiterspace} 4$</span>|
-|40 b|For side length n: # of tiles <span>$\[2{n^2}\]ǻdǻӤǻ$</span> and area <span>$\[{{{n^2}\sqrt 3 } \mathord{\left/ {\vphantom {{{n^2}\sqrt 3 } 2}} \right. \kern-\nulldelimiterspace} 2}\]C$</span>|
+|40 a|<span>$\frac{\sqrt3}{4}$</span>|
+|40 b|For side length n: # of tiles:$2n^2$ and area $\frac{n^2\sqrt3}{2}$</span>|
 |40 c|128|
 |41|9.66 approx.|
 |42 a|2|
-|42 b|<span>${{a^2}{c^5}} \mathord{\left/ {\vphantom {{{a^2}{c^5}} {b{d^2}}}} \right. \kern-\nulldelimiterspace} {b{d^2}}$</span>|
-|42 c|<span>${3\sqrt 3 } \mathord{\left/ {\vphantom {{3\sqrt 3 } 4}} \right. \kern-\nulldelimiterspace} 4$</span>|
+|42 b|<span>$\frac{a^2c^5}{bd^2}$</span>|
+|42 c|<span>$\frac{3\sqrt 3 }{4}$</span>|
 |42 d|<span>$y = \frac{1}{3}x + 7$</span>|
-|42 e|<span>$\left( {{{26} \mathord{\left/ {\vphantom {{26} {15,{2 \mathord{\left/ {\vphantom {2 9}} \right. \kern-\nulldelimiterspace} 9}}}} \right. \kern-\nulldelimiterspace} {15,{2 \mathord{\left/ {\vphantom {2 9}} \right. \kern-\nulldelimiterspace} 9}}}} \right)$</span>|
+|42 e|<span>$\left(\frac{26}{15}, \frac29\right)$</span>|
 |43|1055.06 approx.|
 |44 a|<span>$3 \mathord{\left/ {\vphantom {3 4}} \right. \kern-\nulldelimiterspace} 4$</span>|
 |44 c|3|
