@@ -2,9 +2,9 @@
 ## Summary &amp; Review
 
 
-|problem|answer|
-|-------|------|
 |Problem|Answer|
+|-------|------|
+|||
 |1 a|<img class="image" width="76" height="20" src="10-2_Answers_8-19-11-PRINT-web-images/Geometry%20answer%20to%20S%26amp_R%201.ai" alt="Geometry%20answer%20to%20S%26amp_R%201a.ai">by S.A.S. <br>Congruence|
 |1 b|Because <span>$\angle Y = 55^\circ $</span>, <img class="image" width="85" height="20" src="10-2_Answers_8-19-11-PRINT-web-images/Geometry%20answer%20to%20S%26amp_R%202.ai" alt="Geometry%20answer%20to%20S%26amp_R%201b%20second%20eqn.ai">by S.A.S. Similarity|
 |1 c|<span>$\angle DCE \cong \angle BCA$</span> because they are vertical angles; so <img class="image" width="79" height="20" src="10-2_Answers_8-19-11-PRINT-web-images/Geometry%20answer%20to%20S%26amp_R%203.ai" alt="Geometry%20answer%20to%20S%26amp_R%201c%20second%20eqn.ai">by A.A. S. <br>Congruence.|
