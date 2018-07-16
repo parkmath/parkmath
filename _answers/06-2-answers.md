@@ -1,5 +1,5 @@
 
-## congruent triangles
+## Congruent Triangles
 
 
 |||
