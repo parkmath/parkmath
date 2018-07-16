@@ -1,10 +1,10 @@
 
-## logic and geometry
+## Logic and Geometry
 
 
-|problem|answer|
-|-------|------|
 |Problem|Answer|
+|-------|------|
+|||
 |1|The potatoes in this dish are old.|
 |2 a|If a person is savvy, then s/he is a businessperson.|
 |4|Statement: If a quadrilateral is a parallelogram, then both pairs of opposite sides are congruent.<br>Converse: If a quadrilateral has both pairs of opposite sides congruent, then it is a parallelogram.|
