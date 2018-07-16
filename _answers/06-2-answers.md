@@ -5,7 +5,7 @@
 |problem|answer|
 |-------|------|
 |Problem|Answer|
-|1 a|One <span>$3\sqrt 2 $</span>, <span>$3\sqrt 2 $</span>, 6 triangle.<br>Two 3, 3, <span>$\[3\sqrt 2 \]:p$</span> triangles.<br>Two 6, 6, <span>$\[6\sqrt 2 \]#p$</span> triangles.<br>One 3, <span>$3\sqrt 2 $</span> parallelogram.|
+|1 a|One <span>$3\sqrt 2 $</span>, <span>$3\sqrt 2 $</span>, 6 triangle.<br>Two 3, 3, <span>$3\sqrt 2 :$</span> triangles.<br>Two 6, 6, <span>$6\sqrt 2$</span> triangles.<br>One 3, <span>$3\sqrt 2 $</span> parallelogram.|
 |1 b|Identical in shape|
 |2 a|No|
 |2 b|No|
