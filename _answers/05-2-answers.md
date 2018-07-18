@@ -13,7 +13,7 @@
 |6|<span>$2 \times 3 \times 5 \times 7 \times 11$</span>|
 |7|$91 = 7 \times 13$</span>, <span>$221 = 13 \times 17$</span>, <br>223 is prime.|
 |8|<span>$a > 1$</span> is prime if for all prime <span>$p \leq \sqrt a $</span>, $p$ is not a factor of $a$.|
-|9|12|
+|9|54|
 |10|---|
 |11|56|
 |12|<span>$2^{13} \cdot 3^4$</span>|
@@ -118,7 +118,7 @@
 |64 b|<span>$5^2$</span>|
 |64 c|<span>$7^2$</span>|
 |64 d|<span>$101^2$</span>|
-|65|$1000^{-1000} = \left(\frac{1}{1000}\right)^{1000} < \left(\frac{1}{1000}\right)^{\frac{1}{1000}} < (1000)^{\frac{1}{1000}} < \left(\frac{1}{1000}\right)^{-1000}$|
+|65|$1000^{-1000} = \left(\frac{1}{1000}\right)^{1000} < \left(\frac{1}{1000}\right)^{\frac{1}{1000}}<br> < (1000)^{\frac{1}{1000}} < \left(\frac{1}{1000}\right)^{-1000}$|
 |66|$\frac16$|
 |67|$\frac{1}{1992}$|
 |68|$25(\pi-2)/4$|
