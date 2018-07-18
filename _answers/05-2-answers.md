@@ -143,7 +143,7 @@
 |84|675|
 |85|24|
 |86|All such numbers are divisible by $1001 = 7 \cdot 11 \cdot 13$.|
-|87|5|
+|87|6|
 |88|7|
 |89|$\left( \frac{y}{x} \right)^{x-y}$|
 |90 a|Yes|
