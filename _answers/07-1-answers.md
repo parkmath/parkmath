@@ -15,14 +15,14 @@
 5 b|$(−0.292,−0.956)$ approx
 6 a|$(-1/2, \sqrt{3}/2)$
 6 b|$(-1/2, -\sqrt{3}/2)$
-6 c|(0.921,0.391) approx
+6 c|$(-0.5446,0.8388)$ approx
 6 d|-1.540 approx
 6 e|$(\cos \theta, -\sin \theta)$
 9|-0.94 approx
 10 a|an infinite amount
 10 b|3
 10 c|$113.58^\circ$, $-113.58^\circ$, $246.42^\circ$
-11|All are −0.17 approx
+11|$\cos(280^\circ) \approx 0.17$; all others are $−0.17$ approx.
 12 a|$(7\cos 48^\circ, 7\sin 48^\circ)$
 12 b|$(7\cos 19^\circ, 7\sin 19^\circ)$
 13 a|Use your calculator to check your answers out
@@ -40,7 +40,7 @@
 22 c|$225^\circ$, $315^\circ$
 22 d|$251^\circ$, $109^\circ$
 22 e|$220^\circ$, $320^\circ$
-22 f|$55.77^\circ$, $232.77^\circ$, $127.23^\circ$, $307.23^\circ$
+22 f|$60^\circ, 120^\circ, 240^\circ, 300^\circ$
 23 a|$405^\circ$, $585^\circ$
 23 b|$610^\circ$, $650^\circ$
 23 c|$390^\circ \lt t \lt 690^\circ$
@@ -54,7 +54,7 @@
 29|$\sin 312^\circ$
 30|$30^\circ$, $250^\circ$|
 31|$x \approx 60.83$, $y \approx 79.37$
-32|$P: (-42, 0.7431)$<br>$Q: (338, 0.7431)$<br>$R: (402, 0.7431)$
+32|$P: (-42, 0.7431)$<br>$Q: (318, 0.7431)$<br>$R: (402, 0.7431)$
 33|An infinite amount
 34|$\frac{2 \pi}3$
 35|You'll always get 1.
@@ -73,7 +73,7 @@
 42d|$\frac{7b+12a}{4b}$
 42e|$\frac{2-x}{4}$
 43a|$60^\circ, 300^\circ, 240^\circ$
-43b|No solution
+43b|$0^\circ$
 43c|$0^\circ, 180^\circ, 360^\circ, 120.96^\circ, 300.96^\circ$
 43d|$90^\circ$
 44|44.28 approx
