@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-#make _site/pdf/books/04-quadratics.pdf && ./tools/deploy.sh
+make _site/pdf/books/04-quadratics.pdf && ./tools/deploy.sh
 
-#make _site/pdf/books/02-analytic-geometry.pdf && ./tools/deploy.sh
+make _site/pdf/books/02-analytic-geometry.pdf && ./tools/deploy.sh
 
 #make _site/pdf/books/01-reasoning-and-proving.pdf && ./tools/deploy.sh
 
