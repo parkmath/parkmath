@@ -88,7 +88,7 @@
 |38d|-1, 9|
 |38e|-7, 3|
 |38f|-1, -3.5|
-|38g|-1, 2|
+|38g|-1 (note that $x=2$ is an <em>extraneous</em> solution)|
 |39a|Sum: -15. Product: -324|
 |39b|-2, -143|
 |40a|<span>$f\left( x \right) = x - {x^2} - 30$</span>|
