@@ -48,14 +48,14 @@
 |18 b|If you are an astronaut, then you like taffy. (Or: If you don’t like taffy, then you are not an astronaut.)|
 |18 c|If I have lost my marbles, then I always watch my favorite TV show. (Or: If I don’t watch my favorite TV show, then I have not lost my marbles)|
 |18 d|If I’m a haberdasher, then I’m a cookieholic. (Or: If I’m not a cookieholic, then I’m not a haberdasher)|
-|19|<span>$\angle KMY$</span> and <img class="image" width="62" height="16" src="10-2_Answers_8-19-11-PRINT-web-images/Eqn057.eps" alt="Eqn057.eps"> (Given) <span>$\angle Y = \angle Y$</span> (Obvious , A.K.A. “Reflexive”) <span>$KM \cong JL$</span> (Given) <img class="image" width="78" height="20" src="10-2_Answers_8-19-11-PRINT-web-images/Geometry%20answer%20to%20S%26amp_R10.ai" alt="Geometry%20answer%20to%20S%26amp_R%2019%20fifth%20eqn.ai">(A.A.S) <span>$KY \cong LY$</span> (CPCTC) <img class="image" width="34" height="20" src="10-2_Answers_8-19-11-PRINT-web-images/Geometry%20answer%20to%20S%26amp_R11.ai" alt="Geometry%20answer%20to%20S%26amp_R%2019%20seventh%20eqn.ai"> is isosceles (Triangles <br>that have two equal sides are isosceles)|
+|19|<span>$\angle KMY$</span> and $\angle LYJ = 90^\circ$ (Given)<br> <span>$\angle Y = \angle Y$</span> (Obvious , A.K.A. “Reflexive”)<br> <span>$KM \cong JL$</span> (Given)<br> $\triangle KMY \cong \triangle LJY$ (AAS)<br> <span>$KY \cong LY$</span> (CPCTC) <br> $\triangle KYL$ is isosceles (Triangles that have two equal sides are isosceles)|
 |20 a|-----|
 |20 b|It’s a rhombus.|
 |20 c|Yes, because the each transversal will generate two angles that must add up to 180 degrees.|
 |20 d|-----|
 |21|-----|
 |22|It doesn’t have to be anything special. You can draw pictures of quadrilaterals that fit this condition that don’t fit any <br>special category.|
-|23|There are many possible <br>answers. Here are some <br>possibilities. a)A pair of opposite sides is parallel. A pair of opposite sides is congruent. b)All angles equal 90 degrees. All sides are congruent. c)A pair of opposite sides is parallel and congruent.|
+|23|There are many possible answers. Here are some possibilities. <br>a)A pair of opposite sides is parallel. A pair of opposite sides is congruent. <br>b)All angles equal 90 degrees. All sides are congruent. <br>c)A pair of opposite sides is parallel and congruent.|
 |24|96|
 |25|13.5|
 |26 a|Since DF=EF, angle EDF and angle FED are equal. This means that angle CDF and CEF are equal. And this means that angle FDA and angle FEB are equal, since when added to angle CDF and angle CEF they add up to 180 degrees. Angles DFA and EFB are equal by vertical angles. Thus, triangle AFD and triangle BFE are congruent by A.S.A. So AF=FB by CPCTC. This means that triangle AFB is isosceles.|
@@ -63,7 +63,7 @@
 |27|The key to this problem is to understand that quadrilateral AEDB may not be a parallelogram; ED may be longer or shorter than AB, and BD need not be parallel to AE.|
 |27|4|
 |27 b|Not Possible|
-|27 c|<span>$\[25^\circ \]2{$</span>|
+|27 c|<span>$25^\circ$</span>|
 |27 d|Not Possible|
 |27 e|<span>$155^\circ $</span>|
 |27 f|<span>$\[80^\circ \]-z$</span>|
