@@ -14,14 +14,14 @@
 |2 c|1) <span>$\angle UCQ$</span> and <span>$\angle ZAB$</span>,  or <span>$\angle QCZ$</span> and <span>$\angle BAV$</span><br>2) <span>$\angle UCQ$</span> and <span>$\angle TAV$</span>,  or <span>$\angle UCR$</span> and $\angle BAV$<br>3) <span>$\angle YDR$</span> and <span>$\angle CDW$</span>, or some other pair of vertical angles.|
 |2 d|For example <span>$\angle RCZ \cong \angle ZAT$</span>|
 |2 e|<span>$\angle BZA,\;\angle ZAB,\;\angle ABZ$</span>, and <span>$\angle CZW,\;\angle SBX,\;\angle TAV$</span>|
-|3|<span>$\angle ACB \cong \angle ABC$</span> (Given)<br> <span>$AC \cong AB$</span> (If 2 angles in a $\triangle$ are =, the opposite sides are = )  <br> <span>$DC \cong AB$</span> (Given)<br> <span>$DC \cong AC$</span> (Substitution)<br> <span>$\angle ADC \cong \angle CAD$</span> (If 2 sides in a  $\triangle$ are =, the opposite angles are =) <span>$\angle FDA = 180 - \angle ADC$</span>, <span>$\angle GAD = 180 - \angle CAD$</span> (Two angles that make up a straight line add to 180) <br> <span>$\angle FDA \cong \angle GAD$</span> <br>(<span>$180 - \angle ADC = 180 - \angle CAD$</span> (as <span>$\angle ADC \cong \angle CAD$</span>))|
+|3|<span>$\angle ACB \cong \angle ABC$</span> (Given)<br> <span>$AC \cong AB$</span> (If 2 angles in a $\triangle$ are =, the opposite sides are = )  <br> <span>$DC \cong AB$</span> (Given)<br> <span>$DC \cong AC$</span> (Substitution)<br> <span>$\angle ADC \cong \angle CAD$</span> (If 2 sides in a  $\triangle$ are =, the opposite angles are =) <br> <span>$\angle FDA = 180 - \angle ADC$</span>, <span>$\angle GAD = 180 - \angle CAD$</span> (Two angles that make up a straight line add to 180) <br> <span>$\angle FDA \cong \angle GAD$</span> (<span>$180 - \angle ADC = 180 - \angle CAD$</span> (as <span>$\angle ADC \cong \angle CAD$</span>))|
 |4 a|If Zardon’s wife finds him attractive, then he didn’t eat sardines for lunch.|
 |4 b|Nothing can be concluded—the converse is not necessarily true.|
-|4 c|No, for the reason given in <br>part b.|
+|4 c|No, for the reason given in part b.|
 |4 d|He ate sardines for lunch.|
-|5|If the diagonals bisect each other, then <span>$DE = EB$</span> and <span>$AE = EC$</span>. By vertical angles, <span>$\angle AED = \angle CEB$</span>, and <span>$\angle AEB = \angle CED$</span>. So, by S.A.S Congruence, <img class="image" width="86" height="20" src="10-2_Answers_8-19-11-PRINT-web-images/Geometry%20answer%20to%20S%26amp_R%207.ai" alt="Geometry%20answer%20to%20S%26amp_R%205%20fifth%20eqn.ai">and also <img class="image" width="83" height="20" src="10-2_Answers_8-19-11-PRINT-web-images/Geometry%20answer%20to%20S%26amp_R%208.ai" alt="Geometry%20answer%20to%20S%26amp_R%205%20sixth%20eqn.ai">. Since Clones have identical <br>body parts, <span>$\angle EAB = \angle ECD$</span> and <span>$\angle DAE = \angle BCE$</span>. But this means that AB is parallel to DC, because if alternate interior angles are congruent, the lines are parallel. For the same reason, AD must be <br>parallel to BC, and so ABCD has been proven to be a <br>parallelogram.|
+|5|If the diagonals bisect each other, then <span>$DE = EB$</span> and <span>$AE = EC$</span>.<br> By vertical angles, <span>$\angle AED = \angle CEB$</span>, and <span>$\angle AEB = \angle CED$</span>.<br> So, by SAS congruence, $\triangle AED \cong \triangle CEB$ and also $\triangle AEB \cong \triangle CED$.<br> Since clones have identical body parts, <span>$\angle EAB = \angle ECD$</span> and <span>$\angle DAE = \angle BCE$</span>. <br>But this means that AB is parallel to DC, because if alternate interior angles are congruent, the lines are parallel. For the same reason, AD must be parallel to BC, and so ABCD has been proven to be a parallelogram.|
 |6|Angle FGH = Angle IHG because FG and HI are parallel and where GH is the transversal. So triangle FGH and triangle IHG are congruent by ASA. So FH=IG by CPCTC.|
-|7|<span>$\angle JMK = \angle JNL$</span> (Given) KM is parallel to LN (If <br>corresponding angles are =, <br>the lines are parallel) <span>$\angle JKP = \angle JLO$</span> <span>$\angle JPK = \angle JOL$</span> (If lines are parallel, <br>corresponding angles are =) <img class="image" width="72" height="20" src="10-2_Answers_8-19-11-PRINT-web-images/Geometry%20answer%20to%20S%26amp_R%209.ai" alt="Geometry%20answer%20to%20S%26amp_R%207%20fourth%20eqn.ai">(A.A. Similarity) <span>$\frac{{KP}}{{KJ}} = \frac{{LO}}{{LJ}}$</span> (Similar Triangles are proportional)|
+|7|<span>$\angle JMK = \angle JNL$</span> (Given) <br>KM is parallel to LN (If corresponding angles are =, the lines are parallel) <br><span>$\angle JKP = \angle JLO$</span> <span>$\angle JPK = \angle JOL$</span> (If lines are parallel, corresponding angles are =)<br> $\triangle JKP \sim \triangle JLO$ (AA Similarity)<br> <span>$\frac{{KP}}{{KJ}} = \frac{{LO}}{{LJ}}$</span> (similar triangles are proportional)|
 |8|All lengths are 15.|
 |9 a|<span>$\vartriangle ABC \sim \vartriangle DAC$</span>, <br><span>$\vartriangle ABD \sim \vartriangle CAD$</span>, <span>$\vartriangle ABD \sim \vartriangle CBA$</span>.|
 |9 b|The pairs of angles that are congruent aren’t corresponding angles.|
@@ -35,13 +35,13 @@
 |13 a|Perimeter = 30, Area = 40|
 |13 b|Perimeter = 54, Area = 144|
 |13 c|Perimeter = 14.28, Area = 3.43|
-|14 a|If it is Thanksgiving Day, then <br>it must be late November.|
+|14 a|If it is Thanksgiving Day, then it must be late November.|
 |14 b|If you eat marshmallows, then you do not drink Diet Coke with Lime.|
 |15 a|If you are a sophomore, then you are awesome.|
 |15 b|If you are awesome, then you are a sophomore.|
 |16 a|If you wear spandex, then you’re a real Lacrosse fan.|
-|16 b|No. The converse of a <br>statement is not necessarily true.|
-|17 a|If someone is tall, then they <br>are not handsome.|
+|16 b|No. The converse of a statement is not necessarily true.|
+|17 a|If someone is tall, then they are not handsome.|
 |17 b|If someone is not handsome, then they are not tall.|
 |17 c|No!|
 |18 a|No Theorem.|
