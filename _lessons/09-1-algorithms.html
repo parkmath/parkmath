@@ -173,7 +173,7 @@ type: content
       binary search algorithm?</p>
     </div>
 
-    <p>In addition to thinking carefully about the input, it’s also
+    <p class="new-page">In addition to thinking carefully about the input, it’s also
     helpful when working with algorithms to identify the <em class="vocab">basic operations</em> your algorithm can use. The basic operations are
     always based on the situation you’re dealing with: they are
     the
@@ -226,7 +226,7 @@ type: content
       out Aaron’s algorithm, or explain why it’s impossible.</p>
     </div>
 
-    <p>Here’s a somewhat different algorithmic puzzle that many
+    <p class="new-page">Here’s a somewhat different algorithmic puzzle that many
     consider a “modern classic.” (In fact, the story goes that,
     before it got out onto the Internet, this was a question that
     Google interviewers asked of potential employees.)</p>
@@ -257,7 +257,7 @@ type: content
       you get!</p>
     </div>
 
-    <h2>Practice</h2>
+    <h2 class="new-page">Practice</h2>
 
     <div class="problem">
       <p>You have 16 identical-looking coins. Fifteen of them have
@@ -301,11 +301,11 @@ type: content
       <p>Consider the following strategy to the egg-drop
       problem:</p>
   
-    <p class="Development---Problem-Flow">Starting at floor 1,
+    <p class="Development---Problem-Flow"><em>Starting at floor 1,
     drop the first egg off of odd-numbered floors until it breaks.
     Then, go back down one floor and drop the second egg. If it
     breaks, that’s the answer. If not, then the floor above is the
-    answer.</p>
+      answer.</em></p>
 
     <p class="Development---Problem-Flow">Say you get to decide how
     tough the eggs are, and you want to force the strategy above to
@@ -337,8 +337,9 @@ type: content
       of time to use the following algorithm to encrypt each number
       in the combination:</p>
 
-<p>      ${\mathop{\rm EncryptNumber}\nolimits} \left( N \right)$ If $N$ is odd, then output $2 + N$.
-      Otherwise, output $2 \cdot N$.</p>
+      <p>      ${\mathop{\rm EncryptNumber}\nolimits} \left( N \right)$:</p>
+      <p>If $N$ is odd, then output $2 + N$.</p>
+      <p>Otherwise, output $2 \cdot N$.</p>
  
 
     <p class="Development---Problem-Flow">Notice that the notation
@@ -414,9 +415,9 @@ type: content
     <p>You saw with the compression and encryption algorithms above
       that they’re only useful if they also have <em>de</em>compression and
       <em>de</em>cryption algorithms to go with them. These are two examples
-    of a more general type of algorithm called an inverse
-    algorithm. When you have two algorithms, and each one reverses
-    the other, then the two algorithms are called inverses of each
+      of a more general type of algorithm called an <em class="vocab">inverse</em>
+      algorithm. When you have two algorithms, and each one reverses
+      the other, then the two algorithms are called <em class="vocab">inverses</em> of each
     other. Using this language, we can say the major flaw in
     Emmett’s compression algorithm was that it has no inverse
     algorithm. (Why not?)</p>
@@ -586,10 +587,10 @@ type: content
 
     <ol class="subparts">
       <li><br><figure class="fig-50">
-          <img src="../images/09-1-algorithms/pancakes%20-%203b.tif.jpg" >
+          <img src="../images/09-1-algorithms/pancakes%20-%203a.tif.jpg" >
       </figure></li><br>
       <li><br><figure class="fig-50">
-          <img src="../images/09-1-algorithms/pancakes%20-%203a.tif.jpg" >
+          <img src="../images/09-1-algorithms/pancakes%20-%203b.tif.jpg" >
       </figure></li><br>
       <li><br><figure class="fig-50">
           <img src="../images/09-1-algorithms/pancakes%20-%203c.tif.jpg" >
@@ -642,7 +643,7 @@ type: content
       (if it IS a whole number).</p>
 
       <p class="problem-part">The FractionsAreFun algorithm takes
-      $X$, adds 10, and divides that answer by 4, and outputs the
+        <nobr>$X$,</nobr> adds 10, and divides that answer by 4, and outputs the
       result.</p>
 
       <p class="problem-part">The NoReallyTheyAre algorithm
@@ -687,8 +688,8 @@ type: content
       all the cards into descending order (i.e., line them up from
       largest to smallest). Your basic operations are (i) to ask
       your partner to compare two cards (just like last time), and
-      (ii) to swap the positions of any two cards.
-      Write an algorithm for this game. That is, create an
+        (ii) to swap the positions of any two cards.</p>
+      <p>Write an algorithm for this game. That is, create an
       algorithm that will sort a list of 5 numbers. After writing
       the algorithm, go ahead and try it out with a group member.
       Does it work?</p>
@@ -794,7 +795,7 @@ type: content
       input. ${\mathop{\rm Floor}\nolimits} (x)$ simply takes $x$ and returns the greatest integer that’s less than or equal to
       $x$. In other words, the Floor function always “rounds down.”
       Examples: ${\mathop{\rm Floor}\nolimits} (2.001) = 2$,
-      $\mathrm{Floor}(\pi ) = 3$, and .</p>
+      $\mathrm{Floor}(\pi ) = 3$, and $\mathrm{Floor}(5.9999=5)$.</p>
 
       <p>The following algorithm, which uses Floor and some basic
       arithmetic operations, only takes positive integers for its
@@ -985,10 +986,10 @@ type: content
       maximize his or her share of the gold bars. There are no
       coalitions or
       collusions between them. They are all very analytical — they
-      can think things through!
+        can think things through!</p>
 
 
-      Their process for splitting the loot is somewhat democratic.
+      <p>Their process for splitting the loot is somewhat democratic.
       It begins with the top-ranked pirate making a proposal on how
       to divvy up the loot. (Note that the gold bars cannot be
       broken up, glued
