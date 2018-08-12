@@ -1,5 +1,5 @@
 
-## Graph theory
+## Graph Theory
 
 
 |||
