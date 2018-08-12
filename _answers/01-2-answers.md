@@ -4,7 +4,7 @@
 
 |||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|15|
 |3|<span><span>$6 \times {10^6}$</span></span>|
 |4|<span><span>$3 \times {10^9}$</span></span>|
