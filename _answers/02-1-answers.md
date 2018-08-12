@@ -8,7 +8,7 @@
 |1 b|7 cups|
 |1 c|\$0.70|
 |1 d|\$1.02|
-|1 e|<span><span>$P = 30 + 80L$</span></span> (in cents)|
+|1 e|$P = 30 + 80L$  (in cents)|
 |2 a|-----|
 |2 b|-----|
 |2 c|4; 4 = slope of the line through the points of the sequence|
