@@ -30,7 +30,7 @@
 |13 b|No, it won’t.|
 |14 a|$E_n$|
 |14 b|The straight lines containing points <span>$\left( {n,{A_n}} \right)$</span> and <span>$\left(n,E_n \right)$ have the same slope.|
-|15 a||
+|15 a|$46 \frac23$, $47 \frac13$, $48 \frac23$, $49 \frac13$|
 |15 b|2/3, or <span>$\overline {.66} $</span>|
 |15 c|70 mm|
 |15 d|<span>$42\frac{2}{3}$</span> mm|
