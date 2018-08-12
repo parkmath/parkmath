@@ -1,5 +1,5 @@
 
-## Quadratic models and algebra
+## Quadratic Models and Algebra
 
 
 |||
