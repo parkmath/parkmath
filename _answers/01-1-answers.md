@@ -61,7 +61,7 @@
 |28 a|Yes|
 |28 b|No; the integers are one group that is closed under subtraction.|
 |28 c|No; the non-zero rational <br>numbers are one group that is closed under division.|
-|28 d|No; the whole numbers are one group that is closed under â.|
+|28 d|No; the whole numbers are one group that is closed under $\partial$.|
 |29|8 and -24|
 |30 a|16|
 |30 b|<span>$\left( {x + 5} \right)\left( {y + 1} \right)$</span>|
