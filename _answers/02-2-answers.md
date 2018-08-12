@@ -1,5 +1,5 @@
 
-## Solutions of linear equations
+## Solutions of Linear Equations
 
 
 |||
