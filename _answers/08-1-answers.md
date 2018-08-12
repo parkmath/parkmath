@@ -1,8 +1,8 @@
 
-## Geometric sequences and series
+## Geometric Sequences and Series
 
 
-|problem|answer|
+|**Problem**|**Answer**|
 |-------|------|
 |||
 |1-3|1 and 3 both involve repeated multiplication by a ratio. |
