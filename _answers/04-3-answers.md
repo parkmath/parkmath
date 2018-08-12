@@ -1,5 +1,5 @@
 
-## Completing the square
+## Completing the Square
 
 
 |||
