@@ -1,6 +1,10 @@
 
-|**Problem**|**Answer**|
+## The Geometry of Lines
+
+
+|||
 |-------|------|
+|**Problem**|**Answer**|
 |1|Answers may vary.|
 |2|Answers may vary.|
 |3|$\frac{2}{3}$|
