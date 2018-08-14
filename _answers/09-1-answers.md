@@ -4,7 +4,7 @@
 
 |||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|In the upper half of the <br>rectangular section. <br>In the lower half of the <br>rectangular section.|
 |2 a|$y=5$|
 |2 b|Between <span>$y = 30$</span> and <span>$y = 45$</span>|
