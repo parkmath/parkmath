@@ -4,7 +4,7 @@
 
 |||
 |-------|------|
-|Problem|Answer|
+|**Problem**|**Answer**|
 |1|Down to the left of 870-1431<br>Down to the left of deer<br>Down to the left of dog<br>Down to the left of $m$|
 |7|1 through 7, yes. 1 through 12, no. <br>1 through 15, yes.|
 |8|<span>9</span>|
