@@ -1,0 +1,18 @@
+---
+layout: custom-book
+book: 99
+title: Reasoning and Proving III
+habits-color: rgb(255, 128,0)
+lessons:
+- book: 9
+  lesson: 0
+- book: 9
+  lesson: 1
+  order: 1
+- book: 9
+  lesson: 2
+  order: 2
+- book: 5
+  lesson: 4
+  order: 3
+---
