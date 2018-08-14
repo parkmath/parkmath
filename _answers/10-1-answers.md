@@ -22,7 +22,7 @@
 15|$\theta \approx 75.33^\circ + 360^\circ n, 284.66^\circ + 360^\circ n$
 16a|$(-0.8452, 1.8126)$
 16b|$(-1.5321,-1.2856)$
-16c|$(1, -\sqrt{3}$
+16c|$(1, -\sqrt{3})$
 16d|Same as part c! (Why?)
 17a|$\frac{\sqrt{3}}{2}$
 17b|$\frac{1}{2}$
