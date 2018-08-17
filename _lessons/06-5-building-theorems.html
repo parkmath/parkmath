@@ -1,9 +1,12 @@
 ---
+layout: lesson
 published: true
 book: 6
 lesson: 5
 title: building theorems
+type: content
 ---
+
 {% raw %}
 
 <article>
@@ -29,13 +32,13 @@ title: building theorems
     <div class="problem">
       <p>In your notebook, use a compass to draw a circle. Then
       draw two chords of two different lengths that cross somewhere
-      inside the circle. Label the endpoints of one chord A and B,
-      and the endpoints of another chord C and D. The chords cross
-      at point E. Now measure $\overline {AE} $, $\overline
+      inside the circle. Label the endpoints of one chord $A$ and $B$,
+      and the endpoints of another chord $C$ and $D$. The chords cross
+      at point $E$. Now measure $\overline {AE} $, $\overline
       {EB} $, $\overline {CE} $, and $\overline {ED} $. Try
-      calculating <img src="../images/06-5-building-theorems/Building%20Theorems%20%231%20and%20%2332.svg" >
-       and <img src="../images/06-5-building-theorems/Building%20Theorems%20%231%20and%20%2331.svg" >
-      . What do you find?</p>
+      calculating $AE \cdot EB$
+       and $CE \cdot ED$.
+       What do you find?</p>
     </div>
 
     <p>In this section, most ideas that come up will probably be
@@ -63,7 +66,7 @@ title: building theorems
     a picture of the
     surrounding area. Your radar screen looks like this,</p>
 
-    <figure>
+    <figure class="fig-50">
       <img src="../images/06-5-building-theorems/Radar%20beam.svg" >
     </figure>
 
@@ -85,27 +88,33 @@ title: building theorems
     </div>
 
     <figure>
-      <img src="../images/06-5-building-theorems/Three%20radar%20beams.svg" >
+      <img src="
+      ../images/06-5-building-theorems/three radar beams replacement.png
+    " >
     </figure>
 
     <p>Recall that the ${150^ \circ }$ angle in the rightmost
-    picture above is called a central angle$.$ As you can see,
+      picture above is called a <em class="vocab">central angle</em>. As you can see,
     there’s a direct relationship between a central angle and the
-    arc it intercepts, even if the circumference of the circle is
+      arc it <em class="vocab">intercepts</em>, even if the circumference of the circle is
     not 360 millimeters.</p>
 
     <figure>
-      <img src="../images/06-5-building-theorems/Three%20central%20angles.svg" >
+      <img src="
+      ../images/06-5-building-theorems/three central angles replacement.png
+    " >
     </figure>
 
     <p>Because of this relationship, people also talk about the
-    angular measure of an arc. The measures of the arcs above are
-    ${90^ \circ }$, , and ${270^ \circ }$} . So both of the
+      angular <em class="vocab">measure of an arc</em>. The measures of the arcs above are
+    ${90^ \circ }$, $135^\circ$, and ${270^ \circ }$ . So both of the
     arcs below have measure ${90^ \circ }$, even though their
     lengths are very different.</p>
 
     <figure>
-      <img src="../images/06-5-building-theorems/Arcs.svg" >
+      <img src="
+      ../images/06-5-building-theorems/arcs replacement.png
+    " >
     </figure>
 
     <div class="problem">
@@ -125,9 +134,7 @@ title: building theorems
     </div>
 
     <p>To refer to an arc, you use the two points where the arc
-    begins and ends. Here’s arc AB, or, better yet, $ No
-    translation available for Arc. Please add a translation for
-    "arc" in the file LaTeX.tdl, or try using AMS-LaTeX.$.</p>
+    begins and ends. Here’s arc AB, or, better yet, $\newcommand{arc}[1]{\stackrel{\Large\frown}{#1}}\arc{AB}$.</p>
 
     <figure>
       <img src="../images/06-5-building-theorems/Arc%20AB.svg" >
@@ -855,4 +862,3 @@ title: building theorems
 </article>
 
 {% endraw %}
-
