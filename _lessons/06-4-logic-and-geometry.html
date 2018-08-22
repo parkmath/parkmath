@@ -8,6 +8,7 @@ type: content
 ---
 
 
+
 {% raw %}
 
 <article>
@@ -38,15 +39,15 @@ type: content
     not all rectangles are squares. We can express these statements
     in the form below.</p>
 
-    <p>If a figure is a square, then it is a rectangle. (true)<br>
-    If a figure is a rectangle, then it is a square. (false)</p>
+    <div style="margin: 3em;"><p>If a figure is a square, then it is a rectangle. (true)<br>
+      If a figure is a rectangle, then it is a square. (false)</p></div>
 
     <p>You may recall that these statements are called <em class="vocab">converses</em> of
     each other, as is true of any pair of statements of the
     form</p>
 
-    <p>If $A$ then $B$.<br>
-    If $B$ then $A$.</p>
+    <div style="margin: 3em;"><p>If $A$ then $B$.<br>
+      If $B$ then $A$.</p></div>
 
     <p>You may have seen Venn diagrams at some point in your life.
     They are handy when thinking about logic. For instance, the
@@ -497,7 +498,7 @@ type: content
       as a fraction (where both numerator and denominator are
       integers and the denominator doesn’t equal 0, or a repeating
       decimal (like 4/3, .256256256..., and 8.000000...).
-      Many $roots$(such as square roots, cube roots, and higher
+      Many <em class="vocab">roots</em> (such as square roots, cube roots, and higher
       roots) are not rational. Some roots of integers work out to
       be integers themselves, like $\sqrt[4]{{16}} = 2$.
       However, roots of integers that don’t themselves work out to
@@ -535,25 +536,30 @@ type: content
     
     <p>Many arguments have this type of structure:</p>
 
-    <p>• If a Park Student is in fall semester
+    <ul class="bulleted">
+    <li>If a Park Student is in fall semester
     of 10th grade, then they are taking a “Writing about…”
-    class.</p>
+    class.</li>
 
-    <p>• Gwendolyn is in fall semester of
-    10th grade.</p>
+    <li> Gwendolyn is in fall semester of
+    10th grade.</li>
 
-    <p>• Therefore, Gwendolyn is taking a “Writing about”
-    class.</p>
+    <li>Therefore, Gwendolyn is taking a “Writing about”
+    class.</li>
+    </ul>
 
     <p>Aristotle, a Greek philosopher who lived close
       to the time of Euclid, called this a <em class="vocab">syllogism</em>.
     A syllogism has the form</p>
+  
+	<ul class="bulleted">
+  
+    <li>If A then B</li>
 
-    <p>• If A then B</p>
+    <li>A</li>
 
-    <p>• A</p>
-
-    <p>• Therefore, B.</p>
+    <li>Therefore, B.</li>
+    </ul>
 
     <p>In this example, the statements “if A then B” and “A” are
       called <em class="vocab">premises</em> and “therefore, B” is called the <em class="vocab">conclusion</em>.
@@ -565,23 +571,28 @@ type: content
     <p>Another form of argument can lead you to form an “if/then”
     statement as the conclusion. For example,</p>
 
-    <p>• If a Park Student is in fall semester
+    <ul class="bulleted">
+    <li> If a Park Student is in fall semester
     of 10th grade, then they are taking a
-    “Writing about…” class.</p>
+    “Writing about…” class.</li>
 
-    <p>• If a student is taking a “Writing about” class, then they
-    have to write a self-reflection.</p>
+    <li>If a student is taking a “Writing about” class, then they
+    have to write a self-reflection.</li>
 
-    <p>• Therefore, if a Park student is in fall semester of 10th
-    grade, then they have to write a self-reflection.</p>
+    <li>Therefore, if a Park student is in fall semester of 10th
+    grade, then they have to write a self-reflection.</li>
+    </ul>
 
     <p>This type of argument has the form</p>
 
-    <p>• If A then B</p>
+    
+    <ul class="bulleted">
+    <li>If A then B</li>
 
-    <p>• If B then C</p>
+    <li>If B then C</li>
 
-    <p>• Therefore, if A then C.</p>
+    <li>Therefore, if A then C.</li>
+    </ul>
 
     <p>Note the important thing that allows you to
     conclude the final step is that “B” occurs as the “then” clause
@@ -593,6 +604,7 @@ type: content
     contrapositive. For example, recall the Lewis Carroll puzzle of
     problem #18:</p>
 
+    <div style="margin: 3em;">
     <p>a) All babies are illogical.</p>
 
     <p>b) Nobody is despised who can manage a crocodile.</p>
@@ -606,6 +618,8 @@ type: content
 
     <p>(from b) If you can manage a crocodile, then you are not
     despised.</p>
+      
+      </em>
 
     <p>Right now the premises are written as</p>
 
@@ -618,20 +632,25 @@ type: content
     then not-$C$,” we can make things match up in the right
     way:</p>
 
-    <p>• If you are a baby, then you are
-    despised.</p>
+    <ul style="bulleted">
+    <li>If you are a baby, then you are
+    despised.</li>
 
-    <p>• If you are despised, then you cannot manage a
-    crocodile.</p>
+    <li>If you are despised, then you cannot manage a
+    crocodile.</li>
+    </ul>
 
     <p>This allows us to easily see that we can conclude</p>
 
-    <p>• If you are a baby, then you cannot manage a crocodile.</p>
-
+    <ul style="bulleted">
+    <p>If you are a baby, then you cannot manage a crocodile.</p>
+    </ul>
+    
     <p>…which is the solution to the puzzle.</p>
 
     <p>For exercises 38-41 and 43-46, say what, if anything, you
     can conclude from the premises given.</p>
+
 
     <div class="problem">
       <p>If you are on Park’s basketball team,
