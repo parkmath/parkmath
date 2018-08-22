@@ -6,65 +6,67 @@ workflows:
       - prepare
       - build
       - deploy
-step-library:
-  - &restore_dependency_cache:
-    - restore_cache:
-        keys:
-        # This branch if available
-        - v1-dep-{{ .Branch }}-
-        # Default branch if not
-        - v1-dep-editing-
-        - v1-dep-
 jobs:
   prepare:
     docker:
-    - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
-      command: /sbin/init
+      - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
+        command: /sbin/init
     steps:
-    # Machine Setup
-    - checkout
-    # Node
-    - run: nvm install 6.2 && nvm alias default 6.2
-    - run: export PATH="~/parkmath/parkmath/node_modules/.bin:$PATH"
-    # Ruby
-    - run: rm -f .rvmrc; echo 2.1 > .ruby-version; rvm use 2.1 --default
-    # Dependencies
-    - *restore_dependency_cache
-    # Install npm and bundle dependencies
-    - run: npm install
-    - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
-        --jobs=4 --retry=3 '
-    # Save dependency cache
-    - save_cache:
-        key: v1-dep-{{ .Branch }}-{{ epoch }}
-        paths:
-        # This is a broad list of cache paths to include many possible development environments
-        # You can probably delete some of these entries
-        - vendor/bundle
-        - ~/virtualenvs
-        - ~/.m2
-        - ~/.ivy2
-        - ~/.bundle
-        - ~/.go_workspace
-        - ~/.gradle
-        - ~/.cache/bower
-        - ./node_modules
+      # Machine Setup
+      - checkout
+      # Node
+      - run: nvm install 6.2 && nvm alias default 6.2
+      - run: export PATH="~/parkmath/parkmath/node_modules/.bin:$PATH"
+      # Ruby
+      - run: rm -f .rvmrc; echo 2.1 > .ruby-version; rvm use 2.1 --default
+      # Dependencies
+      - restore_cache:
+          keys:
+          # This branch if available
+          - v1-dep-{{ .Branch }}-
+          # Default branch if not
+          - v1-dep-editing-
+          - v1-dep-
+      # Install npm and bundle dependencies
+      - run: npm install
+      - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
+          --jobs=4 --retry=3 '
+      # Save dependency cache
+      - save_cache:
+          key: v1-dep-{{ .Branch }}-{{ epoch }}
+          paths:
+          # This is a broad list of cache paths to include many possible development environments
+          # You can probably delete some of these entries
+          - vendor/bundle
+          - ~/virtualenvs
+          - ~/.m2
+          - ~/.ivy2
+          - ~/.bundle
+          - ~/.go_workspace
+          - ~/.gradle
+          - ~/.cache/bower
+          - ./node_modules
   build:
-    deploy:
-      docker:
-        - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
-          command: /sbin/init
-      steps:
-        - *restore_dependency_cache
-        - run: ./ci.sh
-        - store_artifacts:
-            path: _site/pdf
-        - store_artifacts:
-            path: _site/books
-        - persist_to_workspace:
-            root: ~/project
-            paths:
-              - _site
+    docker:
+      - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
+        command: /sbin/init
+    steps:
+      - restore_cache:
+          keys:
+          # This branch if available
+          - v1-dep-{{ .Branch }}-
+          # Default branch if not
+          - v1-dep-editing-
+          - v1-dep-
+      - run: ./ci.sh
+      - store_artifacts:
+          path: _site/pdf
+      - store_artifacts:
+          path: _site/books
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - _site
   deploy:
     docker:
     - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
