@@ -4,8 +4,12 @@ workflows:
   default:
     jobs:
       - prepare
-      - build
-      - deploy
+      - build:
+          requires:
+            - prepare
+      - deploy:
+          requires:
+            - build
 jobs:
   prepare:
     docker:
