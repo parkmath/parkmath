@@ -13,16 +13,10 @@ workflows:
 jobs:
   prepare:
     docker:
-      - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
-        command: /sbin/init
+      - image: circleci/ruby:2.3-node
     steps:
       # Machine Setup
       - checkout
-      # Node
-      - run: nvm install 6.2 && nvm alias default 6.2
-      - run: export PATH="~/parkmath/parkmath/node_modules/.bin:$PATH"
-      # Ruby
-      - run: rm -f .rvmrc; echo 2.1 > .ruby-version; rvm use 2.1 --default
       # Dependencies
       - restore_cache:
           keys:
@@ -52,8 +46,7 @@ jobs:
           - ./node_modules
   build:
     docker:
-      - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
-        command: /sbin/init
+      - image: circleci/ruby:2.3-node
     steps:
       - restore_cache:
           keys:
@@ -73,8 +66,7 @@ jobs:
             - _site
   deploy:
     docker:
-    - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
-      command: /sbin/init
+      - image: circleci/ruby:2.3-node
     steps:
       - attach_workspace:
           at: ~/project
