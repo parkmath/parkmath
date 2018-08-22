@@ -19,7 +19,7 @@ set -e
 
 #make _site/pdf/books/97-ways-of-counting-and-ways-of-modeling.pdf  && ./tools/deploy.sh
 
-#make _site/pdf/books/05-reasoning-and-proving-2.pdf  && ./tools/deploy.sh
+make _site/pdf/books/05-reasoning-and-proving-2.pdf  && ./tools/deploy.sh
 
 make _site/pdf/books/06-geometry-and-proof.pdf && ./tools/deploy.sh
 
