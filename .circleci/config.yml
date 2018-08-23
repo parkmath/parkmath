@@ -65,6 +65,7 @@ jobs:
     docker:
       - image: circleci/ruby:2.3-node
     steps:
+      - checkout
       - attach_workspace:
           at: ~/project
       - run: ./tools/deploy.sh
