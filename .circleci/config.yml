@@ -64,7 +64,7 @@ jobs:
       - run: make quick
       - run: cp -R _site/pdf/books /tmp
       - store_artifacts:
-          path: /tmp/pdf
+          path: /tmp/books
       - persist_to_workspace:
           root: ~/project
           paths:
