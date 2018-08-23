@@ -51,8 +51,6 @@ jobs:
       - restore_cache:
           keys:
           - v1-dep-{{ .Branch }}-
-          - v1-dep-editing-
-          - v1-dep-
       # This shouldn't be necessary, but bundle exec jekyll fails without it
       - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
           --jobs=4 --retry=3 '
@@ -73,8 +71,6 @@ jobs:
       - restore_cache:
           keys:
           - v1-dep-{{ .Branch }}-
-          - v1-dep-editing-
-          - v1-dep-
       # This shouldn't be necessary, but bundle exec jekyll fails without it
       - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
           --jobs=4 --retry=3 '
@@ -98,3 +94,17 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run: ./tools/deploy.sh
+      # Cache the fully-built _site directory. If dependencies haven't changed, this should
+      # give `make` a head start next time.
+      - run: ls -laR _site > _site_checksum
+      - restore_cache:
+          keys:
+          - v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+      - save_cache:
+          key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}-{{ checksum "_site_checksum" }}
+          paths:
+          - vendor/bundle
+          - .bundle
+          - ./node_modules
+          - ~/.bundle
+          - ~/yarn_cache
