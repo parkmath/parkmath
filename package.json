@@ -24,7 +24,7 @@
     "csv-write-stream": "^2.0.0",
     "ecstatic": "^0.8.0",
     "express": "^4.14.0",
-    "jsdom": "3.1.1",
+    "jsdom": "^7.0.0",
     "mathjax-node": "^0.5.1",
     "minimist": "^1.2.0",
     "next-stream": "^2.2.2",

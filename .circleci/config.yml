@@ -14,45 +14,37 @@ jobs:
   prepare:
     docker:
       - image: circleci/ruby:2.3-node
+    environment:
+      - YARN_CACHE_FOLDER: ~/yarn_cache
     steps:
       # Machine Setup
       - checkout
       # Dependencies
       - restore_cache:
           keys:
-          # This branch if available
           - v1-dep-{{ .Branch }}-
-          # Default branch if not
           - v1-dep-editing-
           - v1-dep-
       # Install npm and bundle dependencies
-      - run: npm install
+      - run: npm config set prefix ~ && npm install -g yarn
+      - run: ~/bin/yarn
       - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
           --jobs=4 --retry=3 '
       # Save dependency cache
       - save_cache:
           key: v1-dep-{{ .Branch }}-{{ epoch }}
           paths:
-          # This is a broad list of cache paths to include many possible development environments
-          # You can probably delete some of these entries
           - vendor/bundle
-          - ~/virtualenvs
-          - ~/.m2
-          - ~/.ivy2
           - ~/.bundle
-          - ~/.go_workspace
-          - ~/.gradle
-          - ~/.cache/bower
           - ./node_modules
+          - ~/yarn_cache
   build:
     docker:
       - image: circleci/ruby:2.3-node
     steps:
       - restore_cache:
           keys:
-          # This branch if available
           - v1-dep-{{ .Branch }}-
-          # Default branch if not
           - v1-dep-editing-
           - v1-dep-
       - run: ./ci.sh
