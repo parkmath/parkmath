@@ -102,11 +102,11 @@ jobs:
           - editing
           - fix-ci
     steps:
+      - attach_workspace:
+          at: ~/project
       - restore_cache:
           keys:
           - v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
-      - attach_workspace:
-          at: ~/project
       - run: ./tools/deploy.sh
       # Cache the fully-built _site directory. If dependencies haven't changed, this should
       # give `make` a head start next time.
