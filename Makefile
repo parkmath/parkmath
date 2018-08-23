@@ -1,4 +1,4 @@
-SHELL=/bin/bash -o pipefail
+SHELL=/bin/bash -eo pipefail
 
 _site/books/%.html:
 	bundle exec jekyll build
@@ -22,9 +22,28 @@ _site/pdf/%.pdf: _site/prerendered/%.html
 	mkdir -p $(dir $@)
 	./tools/render-pdf.js $^ -o $@
 
-books := $(patsubst _books/%.html,_site/pdf/books/%.pdf,$(wildcard _books/*.html))
+BOOKS.txt:
+	ls _books/*.html | sed s@_books@_site/pdf/books@ | sed s/.html/.pdf/ > $@
+
 .PHONY: all
-all: $(books)
+all: $(shell cat BOOKS.txt)
+
+.PHONY: quick not-quick list-quick list-not-quick
+# Build books listed in QUICK_LIST
+quicklist:=$(patsubst %,_site/pdf/books/%.pdf,$(shell cat QUICK_LIST))
+list-quick:
+	@echo Books in quick list:
+	@echo $(quicklist) | xargs -n1 echo
+	@echo ========================================================================
+quick: list-quick $(quicklist)
+
+# Build books NOT listed in QUICK_LIST (used for CircleCI parallelization)
+notquicklist:=$(shell cat BOOKS.txt | grep -f QUICK_LIST -v)
+list-not-quick:
+	@echo Books not in quick list:
+	@echo $(notquicklist) | xargs -n1 echo
+	@echo ========================================================================
+not-quick: list-not-quick $(notquicklist)
 
 .PHONY: clean
 clean:

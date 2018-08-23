@@ -4,12 +4,16 @@ workflows:
   default:
     jobs:
       - prepare
-      - build:
+      - build_quick:
+          requires:
+            - prepare
+      - build_the_rest:
           requires:
             - prepare
       - publish:
           requires:
-            - build
+            - build_quick
+            - build_the_rest
 jobs:
   prepare:
     docker:
@@ -61,7 +65,7 @@ jobs:
           root: ~/project
           paths:
             - _site
-  build_all:
+  build_the_rest:
     docker:
       - image: circleci/ruby:2.3-node
     steps:

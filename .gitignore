@@ -7,3 +7,4 @@ Gemfile.lock
 temp/
 node_modules/
 tools/MathTypeSDK6.9
+BOOKS.txt
