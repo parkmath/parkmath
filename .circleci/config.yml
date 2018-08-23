@@ -47,6 +47,8 @@ jobs:
           root: ~/project
           paths:
             - tools
+            - Makefile
+            - QUICK_LIST
 
   build_quick:
     docker:
@@ -78,7 +80,7 @@ jobs:
       - restore_cache:
           keys:
           - v1-dep-{{ .Branch }}-
-      - run: make _site/pdf/reasoning-and-proving-3-revised.pdf # not-quick
+      - run: make _site/pdf/books/reasoning-and-proving-3-revised.pdf # not-quick
       - persist_to_workspace:
           root: ~/project
           paths:
