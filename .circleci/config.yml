@@ -7,7 +7,7 @@ workflows:
       - build:
           requires:
             - prepare
-      - deploy:
+      - publish:
           requires:
             - build
 jobs:
@@ -39,7 +39,7 @@ jobs:
           - ./node_modules
           - ~/.bundle
           - ~/yarn_cache
-  build:
+  build_quick:
     docker:
       - image: circleci/ruby:2.3-node
     steps:
@@ -52,7 +52,7 @@ jobs:
       # This shouldn't be necessary, but bundle exec jekyll fails without it
       - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
           --jobs=4 --retry=3 '
-      - run: ./ci.sh
+      - run: make quick
       - store_artifacts:
           path: _site/pdf
       - store_artifacts:
@@ -61,9 +61,34 @@ jobs:
           root: ~/project
           paths:
             - _site
-  deploy:
+  build_all:
     docker:
       - image: circleci/ruby:2.3-node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dep-{{ .Branch }}-
+          - v1-dep-editing-
+          - v1-dep-
+      # This shouldn't be necessary, but bundle exec jekyll fails without it
+      - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
+          --jobs=4 --retry=3 '
+      - run: make not-quick
+      - store_artifacts:
+          path: _site/pdf
+      - store_artifacts:
+          path: _site/books
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - _site
+  publish:
+    docker:
+      - image: circleci/ruby:2.3-node
+    filters:
+      branches:
+        only: editing
     steps:
       - checkout
       - attach_workspace:
