@@ -60,12 +60,9 @@ jobs:
           keys:
           - v1-dep-{{ .Branch }}-
       - run: make quick
-      - run: cp -R _site/pdf /tmp
-      - run: cp -R _site/books /tmp
+      - run: cp -R _site/pdf/books /tmp
       - store_artifacts:
           path: /tmp/pdf
-      - store_artifacts:
-          path: /tmp/books
       - persist_to_workspace:
           root: ~/project
           paths:
