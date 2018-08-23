@@ -14,6 +14,7 @@ workflows:
           requires:
             - build_quick
             - build_the_rest
+
 jobs:
   prepare:
     docker:
@@ -21,85 +22,19 @@ jobs:
     environment:
       - YARN_CACHE_FOLDER: ~/yarn_cache
     steps:
-      # Machine Setup
       - checkout
-      # Dependencies
       - restore_cache:
           keys:
           - v1-dep-{{ .Branch }}-
           - v1-dep-editing-
           - v1-dep-
-      # Install npm and bundle dependencies
       - run: npm config set prefix ~ && npm install -g yarn
       - run: ~/bin/yarn
       - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
           --jobs=4 --retry=3 '
-      # Save dependency cache
-      - save_cache:
-          key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
-          paths:
-          - vendor/bundle
-          - .bundle
-          - ./node_modules
-          - ~/.bundle
-          - ~/yarn_cache
-  build_quick:
-    docker:
-      - image: circleci/ruby:2.3-node
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-          - v1-dep-{{ .Branch }}-
-      # This shouldn't be necessary, but bundle exec jekyll fails without it
-      - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
-          --jobs=4 --retry=3 '
-      - run: make quick
-      - store_artifacts:
-          path: _site/pdf
-      - store_artifacts:
-          path: _site/books
-      - persist_to_workspace:
-          root: ~/project
-          paths:
-            - _site
-  build_the_rest:
-    docker:
-      - image: circleci/ruby:2.3-node
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-          - v1-dep-{{ .Branch }}-
-      # This shouldn't be necessary, but bundle exec jekyll fails without it
-      - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
-          --jobs=4 --retry=3 '
-      - run: make not-quick
-      - store_artifacts:
-          path: _site/pdf
-      - store_artifacts:
-          path: _site/books
-      - persist_to_workspace:
-          root: ~/project
-          paths:
-            - _site
-  publish:
-    docker:
-      - image: circleci/ruby:2.3-node
-    filters:
-      branches:
-        only: editing
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run: ./tools/deploy.sh
-      # Cache the fully-built _site directory. If dependencies haven't changed, this should
-      # give `make` a head start next time.
-      - run: ls -laR _site > _site_checksum
-      - restore_cache:
-          keys:
-          - v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+      # Build HTML (_site) by running Jekyll
+      - run: bundle exec jekyll build
+      - run: ls -laR _site > _site_checksum # used for cache key
       - save_cache:
           key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}-{{ checksum "_site_checksum" }}
           paths:
@@ -108,3 +43,80 @@ jobs:
           - ./node_modules
           - ~/.bundle
           - ~/yarn_cache
+          - _site
+      # Instead of checking out the full repo every time, just persist
+      # what we need for subsequent build steps
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            # Makefile & scripts
+            - Makefile
+            - tools
+            - QUICK_LIST
+            # Fonts
+            - local-fonts.css
+            - .fonts
+            # Used for cache key in publish step
+            - Gemfile.lock
+            - yarn.lock
+
+  build_quick:
+    docker:
+      - image: circleci/ruby:2.3-node
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - restore_cache:
+          keys:
+          - v1-dep-{{ .Branch }}-
+      - run: make quick
+      - run: cp -R _site/pdf/books /tmp
+      - store_artifacts:
+          path: /tmp/books
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - _site/pdf
+
+  build_the_rest:
+    docker:
+      - image: circleci/ruby:2.3-node
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - restore_cache:
+          keys:
+          - v1-dep-{{ .Branch }}-
+      - run: make not-quick
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - _site/pdf
+
+  publish:
+    docker:
+      - image: circleci/ruby:2.3-node
+    filters:
+      branches:
+        only:
+          - editing
+          - fix-ci # for debugging
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - restore_cache:
+          keys:
+          - v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+      - run: ./tools/deploy.sh
+      # Cache the fully-built _site directory. If dependencies haven't changed, this should
+      # give `make` a head start next time.
+      - run: ls -laR _site > _site_checksum # used for cache key
+      - save_cache:
+          key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}-{{ checksum "_site_checksum" }}
+          paths:
+          - vendor/bundle
+          - .bundle
+          - ./node_modules
+          - ~/.bundle
+          - ~/yarn_cache
+          - _site
