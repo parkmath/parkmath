@@ -34,8 +34,9 @@ jobs:
           --jobs=4 --retry=3 '
       # Build HTML (_site) by running Jekyll
       - run: bundle exec jekyll build
+      - run: ls -laR _site > _site_checksum # used for cache key
       - save_cache:
-          key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+          key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}-{{ checksum "_site_checksum" }}
           paths:
           - vendor/bundle
           - .bundle
@@ -43,14 +44,21 @@ jobs:
           - ~/.bundle
           - ~/yarn_cache
           - _site
+      # Instead of checking out the full repo every time, just persist
+      # what we need for subsequent build steps
       - persist_to_workspace:
           root: ~/project
           paths:
-            - tools
+            # Makefile & scripts
             - Makefile
+            - tools
             - QUICK_LIST
+            # Fonts
             - local-fonts.css
             - .fonts
+            # Used for cache key in publish step
+            - Gemfile.lock
+            - yarn.lock
 
   build_quick:
     docker:
@@ -102,7 +110,7 @@ jobs:
       - run: ./tools/deploy.sh
       # Cache the fully-built _site directory. If dependencies haven't changed, this should
       # give `make` a head start next time.
-      - run: ls -laR _site > _site_checksum
+      - run: ls -laR _site > _site_checksum # used for cache key
       - save_cache:
           key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}-{{ checksum "_site_checksum" }}
           paths:
