@@ -49,6 +49,8 @@ jobs:
             - tools
             - Makefile
             - QUICK_LIST
+            - local-fonts.css
+            - .fonts
 
   build_quick:
     docker:
