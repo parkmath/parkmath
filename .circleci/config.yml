@@ -32,11 +32,12 @@ jobs:
           --jobs=4 --retry=3 '
       # Save dependency cache
       - save_cache:
-          key: v1-dep-{{ .Branch }}-{{ epoch }}
+          key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
           paths:
           - vendor/bundle
-          - ~/.bundle
+          - .bundle
           - ./node_modules
+          - ~/.bundle
           - ~/yarn_cache
   build:
     docker:
