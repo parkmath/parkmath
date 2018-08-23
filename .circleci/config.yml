@@ -42,11 +42,13 @@ jobs:
     docker:
       - image: circleci/ruby:2.3-node
     steps:
+      - checkout
       - restore_cache:
           keys:
           - v1-dep-{{ .Branch }}-
           - v1-dep-editing-
           - v1-dep-
+      - run: ls
       - run: ./ci.sh
       - store_artifacts:
           path: _site/pdf
