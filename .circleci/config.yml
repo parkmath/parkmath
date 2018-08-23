@@ -48,7 +48,9 @@ jobs:
           - v1-dep-{{ .Branch }}-
           - v1-dep-editing-
           - v1-dep-
-      - run: ls
+      # This shouldn't be necessary, but bundle exec jekyll fails without it
+      - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
+          --jobs=4 --retry=3 '
       - run: ./ci.sh
       - store_artifacts:
           path: _site/pdf
