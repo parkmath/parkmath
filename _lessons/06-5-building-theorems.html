@@ -1,9 +1,15 @@
 ---
+layout: lesson
 published: true
 book: 6
 lesson: 5
-title: building theorems
+title: Building Up New Theorems
+type: content
 ---
+
+
+
+
 {% raw %}
 
 <article>
@@ -29,13 +35,13 @@ title: building theorems
     <div class="problem">
       <p>In your notebook, use a compass to draw a circle. Then
       draw two chords of two different lengths that cross somewhere
-      inside the circle. Label the endpoints of one chord A and B,
-      and the endpoints of another chord C and D. The chords cross
-      at point E. Now measure $\overline {AE} $, $\overline
+      inside the circle. Label the endpoints of one chord $A$ and $B$,
+      and the endpoints of another chord $C$ and $D$. The chords cross
+      at point $E$. Now measure $\overline {AE} $, $\overline
       {EB} $, $\overline {CE} $, and $\overline {ED} $. Try
-      calculating <img src="../images/06-5-building-theorems/Building%20Theorems%20%231%20and%20%2332.svg" >
-       and <img src="../images/06-5-building-theorems/Building%20Theorems%20%231%20and%20%2331.svg" >
-      . What do you find?</p>
+      calculating $AE \cdot EB$
+       and $CE \cdot ED$.
+       What do you find?</p>
     </div>
 
     <p>In this section, most ideas that come up will probably be
@@ -57,13 +63,13 @@ title: building theorems
     rein to conjecture and prove more things about circles, and
     about geometry in general.</p>
 
-    <h2>Development</h2>
+    <h2 class="new-page">Development</h2>
 
     <p>Your submarine has a rotating radar beam that is used to get
     a picture of the
     surrounding area. Your radar screen looks like this,</p>
 
-    <figure>
+    <figure class="fig-50">
       <img src="../images/06-5-building-theorems/Radar%20beam.svg" >
     </figure>
 
@@ -85,27 +91,33 @@ title: building theorems
     </div>
 
     <figure>
-      <img src="../images/06-5-building-theorems/Three%20radar%20beams.svg" >
+      <img src="
+      ../images/06-5-building-theorems/three radar beams replacement.png
+    " >
     </figure>
 
-    <p>Recall that the ${150^ \circ }$ angle in the rightmost
-    picture above is called a central angle$.$ As you can see,
+    <p class="new-page">Recall that the ${150^ \circ }$ angle in the rightmost
+      picture on the previous page is called a <em class="vocab">central angle</em>. As you can see,
     there’s a direct relationship between a central angle and the
-    arc it intercepts, even if the circumference of the circle is
+      arc it <em class="vocab">intercepts</em>, even if the circumference of the circle is
     not 360 millimeters.</p>
 
     <figure>
-      <img src="../images/06-5-building-theorems/Three%20central%20angles.svg" >
+      <img src="
+      ../images/06-5-building-theorems/three central angles replacement.png
+    " >
     </figure>
 
     <p>Because of this relationship, people also talk about the
-    angular measure of an arc. The measures of the arcs above are
-    ${90^ \circ }$, , and ${270^ \circ }$} . So both of the
+      angular <em class="vocab">measure</em> of an arc. The measures of the arcs above are
+    ${90^ \circ }$, $135^\circ$, and ${270^ \circ }$ . So both of the
     arcs below have measure ${90^ \circ }$, even though their
     lengths are very different.</p>
 
-    <figure>
-      <img src="../images/06-5-building-theorems/Arcs.svg" >
+    <figure class="fig-50">
+      <img src="
+      ../images/06-5-building-theorems/arcs replacement.png
+    " >
     </figure>
 
     <div class="problem">
@@ -124,12 +136,10 @@ title: building theorems
       the circle?</p>
     </div>
 
-    <p>To refer to an arc, you use the two points where the arc
-    begins and ends. Here’s arc AB, or, better yet, $ No
-    translation available for Arc. Please add a translation for
-    "arc" in the file LaTeX.tdl, or try using AMS-LaTeX.$.</p>
+    <p class="new-page">To refer to an arc, you use the two points where the arc
+    begins and ends. Here’s arc AB, or, better yet, $\newcommand{arc}[1]{\stackrel{\Large\frown}{#1}}\arc{AB}$.</p>
 
-    <figure>
+    <figure class="fig-25">
       <img src="../images/06-5-building-theorems/Arc%20AB.svg" >
     </figure>
 
@@ -142,23 +152,24 @@ title: building theorems
 
     <p>…because how would we know whether we meant the arc that
     looks like it’s about ${90^ \circ }$, or the one that looks
-    like it’s about ${270^ \circ }$;{ ? When you don’t specify,
-    it’s assumed that you mean the smaller, or minor arc.</p>
+    like it’s about ${270^ \circ }$? When you don’t specify,
+      it’s assumed that you mean the smaller, or <em class="vocab">minor</em> arc.</p>
 
     <div class="problem">
-      <p>Draw a circle in your notebook. Pick points Q and Z
+      <p>Draw a circle in your notebook. Pick points $Q$ and $Z$
       anywhere on the circle. Use measuring tools (and perhaps a
-      bit of ingenuity) to find the measure of arc QZ. Then
+      bit of ingenuity) to find the measure of arc $QZ$. Then
       describe a general strategy for finding arc measure.</p>
     </div>
 
-    <p>Another type of angle in a circle is called an inscribed
-    angle. An inscribed angle has its vertex on the circumference
-    of a circle, not at the center. Inscribed angles can intercept
+    <p>Another type of angle in a circle is called an <em class="vocab">inscribed</em>
+      angle. An inscribed angle has its vertex <em>on</em> the circle, not at the center. Inscribed angles can intercept
     arcs, too.</p>
 
-    <figure>
-      <img src="../images/06-5-building-theorems/Inscribed%20and%20intercepted%20de.svg" >
+    <figure class="fig-50">
+      <img src="
+      ../images/06-5-building-theorems/inscribed angle replacement.png
+    " >
     </figure>
 
     <div class="problem">
@@ -167,7 +178,7 @@ title: building theorems
       intercepts a ${45^ \circ }$ arc?</p>
     </div>
 
-    <figure>
+    <figure class="fig-50">
       <img src="../images/06-5-building-theorems/45%20degree%20inscribed%20angle.svg" >
     </figure>
 
@@ -180,25 +191,31 @@ title: building theorems
     proof. The following problems will help you.</p>
 
     <div class="problem">
-      <p>Below is a picture of an inscribed angle BAC, which
-      intercepts the same arc as central angle BOC.</p>
-    </div>
+      <p>Below is a picture of an inscribed angle $BAC$, which
+      intercepts the same arc as central angle $BOC$.</p>
 
-    <figure>
-      <img src="../images/06-5-building-theorems/Inscribed%20angle%20proof%20diagra.svg" >
+
+    <figure class="fig-50">
+      <img src="
+      ../images/06-5-building-theorems/inscribed angle problem 10.png
+    " >
     </figure>
 
     <p class="problem-part">Using geometric tinkering, find the
-    measure of $\angle BOC$ in terms of x.</p>
+    measure of $\angle BOC$ in terms of $x$.</p>
 
     <p class="problem-part">The proof that you’ve done does not
     work for the diagram in problem 8. What goes wrong?</p>
-
+      
+    </div>
+    
     <p>Here is another diagram, one that looks more like the
     situation in problem 8.</p>
 
-    <figure>
-      <img src="../images/06-5-building-theorems/insribed%20angle%20where%20easy%20pr.svg" >
+    <figure class="fig-50">
+      <img src="
+      ../images/06-5-building-theorems/inscribed angle after prob 10 1.png
+    " >
     </figure>
 
     <p>Since we already know something about when one of the sides
@@ -206,7 +223,9 @@ title: building theorems
     the angles this way:</p>
 
     <figure>
-      <img src="../images/06-5-building-theorems/Inscribed%20angle%20proof%20diagr1.svg" >
+      <img src="
+      parkmath/images/06-5-building-theorems/inscribed angle after prob 10 2.png
+    " >
     </figure>
 
     <div class="problem">
@@ -245,31 +264,39 @@ title: building theorems
       compare with your angle in part c?</p>
     </div>
 
-    <div class="problem">
+    <div class="problem allow-break">
       <p>For each figure, find as many angles and arc measures as
       you can. A dot indicates the center of the circle.</p>
 
-      <p class="problem-part">.</p>
-    </div>
+      <p class="problem-part"></p>
 
-    <figure>
-      <img src="../images/06-5-building-theorems/Find%20as%20many%20angles%201.svg" >
+
+    <figure class="fig-50">
+      <img src="
+      ../images/06-5-building-theorems/find as many angles a.png
+    " >
     </figure>
 
-    <p class="problem-part">.</p>
+    <p class="problem-part"></p>
 
-    <figure>
+    <figure class="fig-50">
       <img src="../images/06-5-building-theorems/Find%20as%20many%20angles%202.svg" >
     </figure>
 
-    <p class="problem-part">.</p>
+    <p class="problem-part"></p>
 
-    <figure>
+    <figure class="fig-50">
       <img src="../images/06-5-building-theorems/Find%20as%20many%20angles%203.svg" >
     </figure>
 
-    <p class="problem-part">.</p>
-
+    <p class="problem-part new-page"></p>
+<aside class='continued'></aside>
+    <figure class="fig-50">
+      <img src="
+      ../images/06-5-building-theorems/Find as many angles b.png
+    " >
+    </figure>      
+</div>
     <div class="problem">
       <p>What can you say about two inscribed angles that intercept
       the same arc? Why?</p>
@@ -281,97 +308,94 @@ title: building theorems
       to intercept an arc. Make a conjecture about the measure of a
       chord-tangent angle and the measure of its intercepted
       arc.</p>
-    </div>
 
-    <figure>
+
+    <figure class="fig-50">
       <img src="../images/06-5-building-theorems/Tangent-chord.png" >
     </figure>
-
+      
+    </div>
     <div class="problem">
       <p>In the diagram below, $m\angle A = {\left( {{x^2}}
       \right)^ \circ }$ and $m\angle B = {\left( {2x + 120}
       \right)^ \circ }$. Find $x$.</p>
+      
+      <figure class="fig-50">
+        <img src="
+      ../images/06-5-building-theorems/10-2-5 diagram 17.tif.jpg
+    ">
+      </figure>
     </div>
 
     <div class="problem">
       <p>Let $m\angle A = {\left( {2x + 24} \right)^ \circ }$.
       Find $x$.</p>
-    </div>
 
-    <figure>
+
+    <figure class="fig-50">
       <img src="../images/06-5-building-theorems/find%20x%5e2.svg" >
     </figure>
-
+      
+    </div>
     <div class="problem">
-      <p>Q is the center of the circle, and $m\angle A = 25^\circ $. Find the measure of $ No translation available for Arc.
-      Please add a translation for "arc" in the file LaTeX.tdl, or
-      try using AMS-LaTeX.$.</p>
+      <p>Q is the center of the circle, and $m\angle A = 25^\circ $. Find the measure of $\arc{AB}$.</p>
     </div>
 
     <div class="problem">
       <p>Circle O has radius 12. Find</p>
 
-      <p class="problem-part">The measure of $ No translation
-      available for Arc. Please add a translation for "arc" in the
-      file LaTeX.tdl, or try using AMS-LaTeX.$.</p>
+      <p class="problem-part">The measure of $\arc{AB}$.</p>
 
-      <p class="problem-part">The actual length of $ No
-      translation available for Arc. Please add a translation for
-      "arc" in the file LaTeX.tdl, or try using AMS-LaTeX.$.</p>
+      <p class="problem-part">The actual length of $\arc{AB}$.</p>
 
-      <p class="problem-part">The area of the sector of the
-      circle COW. (What do you suppose a sector is?)</p>
-    </div>
+      <p class="problem-part">The <em>area</em> of the <em class="vocab">sector</em> of the
+        circle COW. (What do you suppose a <em class="vocab">sector</em> is?)</p>
 
-    <figure>
+    <figure class="fig-50">
       <img src="../images/06-5-building-theorems/cow.svg" >
     </figure>
+        </div>
   </section>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2.5%20diagram%2014%20d.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2-5%20diagram%2017.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2.5%20diagram%2019.tif.jpg" >
-  </figure>
 
   <section class="problems">
   <h2>Problems</h2>
     <div class="problem">
       <p>The circle below has radius 42. Find</p>
 
-      <p class="problem-part">The length of $ No translation
-      available for Arc. Please add a translation for "arc" in the
-      file LaTeX.tdl, or try using AMS-LaTeX.$</p>
+      <p class="problem-part">The length of $\arc{BG}$</p>
 
-      <p class="problem-part">The area of sector BUG</p>
-    </div>
+      <p class="problem-part">The area of sector $BUG$</p>
 
-    <figure>
 
+    <figure class="fig-50">
+<img style="width: 75%;" src="../images/06-5-building-theorems/10-2.5 diagram 21.tif.jpg">
     </figure>
-
+    </div>
+    
     <div class="problem">
-      <p>The circle below has radius r, and the central angle is
-      <img src="../images/06-5-building-theorems/Building%20Theorems%20%2322.svg" >. Find</p>
+      <p>The circle below has radius $r$, and the central angle is $\theta$. Find</p>
+      <figure>
+      <img src="
+      ../images/06-5-building-theorems/10-2.5 diagram 22.png
+    " >. 
+      </figure>
+      <p class="problem-part">The length of $\arc{AY}$.</p>
 
-      <p class="problem-part">The length of $ No translation
-      available for Arc. Please add a translation for "arc" in the
-      file LaTeX.tdl, or try using AMS-LaTeX.$.</p>
-
-      <p class="problem-part">The area of sector ANY.</p>
+      <p class="problem-part">The area of sector $ANY$.</p>
     </div>
 
     <div class="problem">
       <p>Here’s another diagram showing a central angle and an
       inscribed angle that intercept the same arc.</p>
-    </div>
 
+<figure>
+  <img src="
+      
+      ../images/06-5-building-theorems/inscribed angle after problem 23.png
+    
+    ">
+      </figure>
+      
     <p class="problem-part">Why don’t the methods of proof you
     used in problems 10 and 11 work for this inscribed
     angle/central angle pair?</p>
@@ -393,13 +417,15 @@ title: building theorems
     Describe in words the three cases you considered when you did
     the inscribed angle proof.</p>
 
+    </div>
+    
     <div class="problem">
       <p>Draw line segment AB, then accurately draw its
       perpendicular bisector.</p>
 
       <p class="problem-part">Pick a few points on the
-      perpendicular bisector and label them C, D, E, etc. Compare
-      CA vs. CB. Does this result seem to hold up consistently?</p>
+      perpendicular bisector and label them $C$, $D$, $E$, etc. Compare
+      $CA$ vs. $CB$. Does this result seem to hold up consistently?</p>
 
       <p class="problem-part">Investigate whether the converse of
       your conjecture in part a is true. If you are having trouble
@@ -419,13 +445,13 @@ title: building theorems
       <p class="problem-part">What’s the area of a 53.5-degree
       sector of the circle?</p>
 
-      <p class="problem-part">What’s the area of an n-degree
+      <p class="problem-part">What’s the area of an $n$-degree
       sector of the circle?</p>
     </div>
 
     <div class="problem">
       <p>In your notebook, draw$\angle XYZ$. Suppose you begin
-      to walk a path “inside the angle,” starting at Y. You walk in
+      to walk a path “inside the angle,” starting at $Y$. You walk in
       such a way
       that you are always the same distance
       away from $\overrightarrow {YX} $ and $\overrightarrow
@@ -434,18 +460,22 @@ title: building theorems
     </div>
 
     <div class="problem">
-      <p>Prove that <img src="../images/06-5-building-theorems/Lesson%205%20Problem%2027.pdf.jpg" ></p>
-    </div>
+      <p>Prove that $\triangle HOT \sim \triangle DOG$.
 
     <figure>
 
-
+     <img src="../images/06-5-building-theorems/10-2.5 diagram 27.tif.jpg">
+   
     </figure>
+    </div>
 
     <div class="problem">
       <p>Here is a figure designed to help you with a proof. Two
       proofs, actually.</p>
-    </div>
+      
+  <figure class="fig-50">
+    <img src="../images/06-5-building-theorems/12-2.5%20diagram%2028.tif.jpg" >
+  </figure>
 
     <p class="problem-part">Use the figure to prove that points
     on the perpendicular bisector of a segment are equidistant from
@@ -455,6 +485,8 @@ title: building theorems
     <p class="problem-part">Now use the figure to prove the
     converse. Again, be careful in selecting the given and what is
     to be proved.</p>
+      
+   </div>
 
     <div class="problem">
       <p>If you had only a compass and straightedge, but no ruler,
@@ -479,21 +511,21 @@ title: building theorems
     </div>
 
     <div class="problem">
-      <p>Here is Problem 1, reprinted:
+      <p>Here is Problem 1, reprinted:<p>
 
-      In your notebook, use a compass to draw a circle. Then draw
+      <p><em>In your notebook, use a compass to draw a circle. Then draw
       two chords that cross somewhere inside the circle; they
       needn’t cross at the center of the circle. Label the
       endpoints of one chord A and B, and the endpoints of another
       chord C and D. The chords cross at point E. Now measure
       segment $\overline {AE} $, $\overline {EB} $,
       $\overline {CE} $,and $\overline {ED} $. Try
-      calculating <img src="../images/06-5-building-theorems/Building%20Theorems%20%231%20and%20%2333.svg" >
-      and <img src="../images/06-5-building-theorems/Building%20Theorems%20%231%20and%20%2334.svg" >
-      . What do you find?
+      calculating $AE \cdot EB$
+       and $CE \cdot ED$.
+        What do you find?</em></p>
 
-      Prove the conjecture you made in Problem 1.
-      Planning this proof is a great opportunity to work backward.
+      <p>Prove the conjecture you made in Problem 1.
+        Planning this proof is a great opportunity to <em class="vocab">work backward</em>.
       What geometry tools do you have to show that two products
       equal one another?</p>
     </div>
@@ -518,11 +550,11 @@ title: building theorems
       where lines cross outside of a circle, instead of inside it.)
       As in the case of crossed chords, there is a product of
       lengths that remains constant. Which lengths are they?</p>
-    </div>
-
     <figure>
       <img src="../images/06-5-building-theorems/secant-secant%20power%20theorem.svg" >
     </figure>
+    </div>
+
 
     <div class="problem">
       <p>State and prove a theorem based on your findings in
@@ -542,25 +574,25 @@ title: building theorems
     </div>
 
     <div class="problem">
-      <p>Given triangle ABC, let F be the point where segment BC
-      meets the bisector of angle BAC. Draw the line through B that
-      is parallel to segment AF, and let E be the pointwhere this
-      parallel meets the extension of segment CA.</p>
+      <p>Given triangle $ABC$, let $F$ be the point where segment $BC$
+      meets the bisector of angle $BAC$. Draw the line through $B$ that
+      is parallel to segment $AF$, and let $E$ be the point where this
+      parallel meets the extension of segment $CA$.</p>
 
       <p class="problem-part">Find the four congruent angles in
       your diagram.</p>
 
-      <p class="problem-part">How are the lengths EA, AC, BF, and
-      FC related?</p>
+      <p class="problem-part">How are the lengths $EA$, $AC$, $BF$, and
+      $FC$ related?</p>
 
-      <p class="problem-part">How are the lengths AB, AC, BF, and
-      FC related?</p>
+      <p class="problem-part">How are the lengths $AB$, $AC$, $BF$, and
+      $FC$ related?</p>
     </div>
 
     <div class="problem">
-      <p>In the figure below, prove that<img src="../images/06-5-building-theorems/Building%20Theorems%20%2340.svg" >. Here are a few
+      <p>In the figure below, prove that $PB \cdot PA = PD \cdot PC$. Here are a few
       hints.</p>
-    </div>
+
 
     <figure>
       <img src="../images/06-5-building-theorems/secant-secant%20power%20theorem1.svg" >
@@ -575,33 +607,35 @@ title: building theorems
     $\overline {PC} $ and $\overline {PA} $. Add some lines to
     the diagram so that triangles exist with these sides.</p>
 
-    <p class="problem-part">Now prove the result.</p>
+    <p class="problem-part">Now prove the result.</p>  
+          </div>
 
-    <div class="problem">
-      <p>BACH is a kite inscribed in a circle. Find all the angles
+    <div class="problem">     
+            <p>BACH is a kite inscribed in a circle. Find all the angles
       of the kite. (Hint: find some arc measures along the
       way.)</p>
+          <img src="../images/06-5-building-theorems/10-2.5%20diagram%2041.tif.jpg" >
     </div>
 
     <div class="problem">
       <p>Don’t use a calculator for this problem.</p>
 
-      <p class="problem-part">Solve for x if $\frac{{2x -
+      <p class="problem-part">Solve for $x$ if $\frac{{2x -
       4}}{{{x^2} + 3x + 1}} = 0$</p>
 
       <p class="problem-part">Simplify $\sqrt {72} $</p>
-    </div>
 
-    <p class="Problems---Problem-Part para-style-override-2">. At
-    what point do the lines $y = 2x - 4$ and $y = \frac{{ - 4}}{7}x
+    <p class="problem-part"> At
+    what point do the lines $y = 2x - 4$ and $y = -\frac{4}{7}x
     + 5$ cross?</p>
 
-    <p class="problem-part">Solve for x if ${x^2} + 6x - 2 = 0$ r
-    .</p>
+    <p class="problem-part">Solve for $x$ if ${x^2} + 6x - 2 = 0$ 
+    </p>
 
-    <p class="problem-part">If $x + y = 1729$ and ,
+    <p class="problem-part">If $x + y = 1729$ and $\frac{1}{x} + \frac{1}{y} = 1729$,
     find $xy$.</p>
-
+    </div>
+    
     <div class="problem">
       <p>Draw several triangles of varying shapes and sizes, then
       construct the perpendicular bisectors of each side of each
@@ -610,6 +644,10 @@ title: building theorems
 
     <div class="problem">
       <p>BUCK is not a kite. Find all of its angles.</p>
+
+  <figure>
+    <img src="../images/06-5-building-theorems/BUCK%20is%20not%20a%20kite.svg" >
+  </figure>
     </div>
 
     <div class="problem">
@@ -620,7 +658,11 @@ title: building theorems
     <div class="problem">
       <p>Let $m\angle D = {\left( {{x^2} - 10x + 60} \right)^ \circ
       }$ and $m\angle E = {\left( {8x + 85} \right)^ \circ }$.
-      Find all possible values of x.</p>
+      Find all possible values of $x$.</p>
+      
+ <figure>
+    <img src="../images/06-5-building-theorems/10-2.5%20diagram%2046.tif.jpg" >
+  </figure>
     </div>
 
     <div class="problem">
@@ -644,7 +686,7 @@ title: building theorems
     </figure>
 
     <div class="problem">
-      <p>Rotate the diagram above so that P is on the bottom and
+      <p>Rotate the diagram above so that $P$ is on the bottom and
       the whole figure looks like an ice-cream cone. Make a
       conjecture about the lengths of the tangents from P.</p>
     </div>
@@ -660,26 +702,35 @@ title: building theorems
       lengths and angles marked with letters. Give a reason each
       time you deduce something. The center is marked with a dot;
       lines that appear to be tangents are tangents.</p>
-    </div>
-
-    <figure>
-      <img src="../images/06-5-building-theorems/numerical%20near%20end.svg" >
+          <figure>
+      <img src="
+      ../images/06-5-building-theorems/problem 51.png
+    " >
     </figure>
+    </div>
 
     <div class="problem">
       <p>Find the lengths and angles marked with letters.
       (Uppercase for angles; lowercase for lengths) Give a reason
       each time you deduce something. The center is marked with a
       dot; lines that appear to be tangents are tangents.</p>
-    </div>
 
     <figure>
-      <img src="../images/06-5-building-theorems/numerical%20near%20end1.svg" >
+      <img src="
+      ../images/06-5-building-theorems/problem 52 .png
+    " >
     </figure>
-
+    </div>
+    
     <div class="problem">
       <p>Find the exact value of the radius of the circle
       below.</p>
+      
+     <figure>
+       <img src="
+      ../images/06-5-building-theorems/power theorem practice.png
+    ">
+      </figure>
     </div>
 
     <div class="problem">
@@ -689,80 +740,79 @@ title: building theorems
     </div>
 
     <div class="problem">
-      <p>Find the probability that 3 points chosen at random from n
+      <p>Find the probability that 3 points chosen at random from $n$
       points evenly spaced on a circle will form a right triangle.
       (Hint: simplify the problem.)</p>
     </div>
-
+    
+    <h2>Exploring
+    in
+    Depth</h2>
+    
     <div class="problem">
-      <p>Draw in the perpendicular bisectors for sides AB and BC of
+      <p>Draw in the perpendicular bisectors for sides $AB$ and $BC$ of
       the triangle below. Then label the point where they cross
-      D.</p>
-    </div>
-
+      $D$.</p>
     <figure>
       <img src="../images/06-5-building-theorems/circumcenter.svg" >
-    </figure>
+      </figure>
 
-    <p class="problem-part">Is the point D closer to A or B?</p>
+    <p class="problem-part">Is the point $D$ closer to $A$ or $B$?</p>
 
-    <p class="problem-part">Is the point D closer to B or C?</p>
+    <p class="problem-part">Is the point $D$ closer to $B$ or $C$?</p>
 
     <p class="problem-part">Suppose, now, that you were going
     to draw the perpendicular bisector
-    of AC as well. Can you make an argument that it should pass
-    through the point D, even before you draw it?</p>
+    of $\overline{AC}$ as well. Can you make an argument that it should pass
+    through the point $D$, even before you draw it?</p>
+        </div>
 
     <div class="problem">
-      <p>In this figure, $AB = 20,{\rm{ }}BC = 11,{\rm{ and }}DC =
-      14.$ Find$AD$.
-      (Hint: pick a side length to call x, then try to write the
-      other lengths in terms of x.)</p>
-    </div>
-
+      <p>In this figure, $AB = 20,{\rm{ }}BC = 11,{\rm{ and }} DC =
+      14.$ <br>Find $AD$.
+      (Hint: pick a side length to call $x$, then try to write the
+      other lengths in terms of $x$.)</p>
     <figure>
       <img src="../images/06-5-building-theorems/walk-around%20problem.svg" >
     </figure>
-
-    <div class="problem">
-      <p>Given: $ No translation available for Arc. Please add a
-      translation for "arc" in the file LaTeX.tdl, or try using
-      AMS-LaTeX. \cong No translation available for Arc. Please add
-      a translation for "arc" in the file LaTeX.tdl, or try using
-      AMS-LaTeX.$ Prove: $\overline {AN} {\kern 1pt} {\kern 1pt} \left\|
-      {{\kern 1pt} {\kern 1pt} \overline {GL} } \right.$</p>
     </div>
 
+
+    <div class="problem">
+      <p>Given: $\arc {NG} \cong \arc {LA}$ Prove: $\overline {AN} {\kern 1pt} {\kern 1pt} \left\|
+      {{\kern 1pt} {\kern 1pt} \overline {GL} } \right.$</p>
     <figure>
       <img src="../images/06-5-building-theorems/Prove%20AN%20parallel%20to%20GL.svg" >
     </figure>
+    </div>
 
-    <p>You know that every triangle has three different heights (or
+
+    <p class="new-column">You know that every triangle has three different heights (or
     “altitudes”).</p>
 
     <div class="problem">
       <p>Use a ruler and protractor to draw in the three different
       altitudes for each triangle:</p>
 
-      <p class="problem-part">.</p>
-    </div>
+      <p class="problem-part"></p>
 
     <figure>
       <img src="../images/06-5-building-theorems/altitudes%201.svg" >
     </figure>
 
-    <p class="problem-part">.</p>
+    <p class="problem-part"></p>
 
     <figure>
       <img src="../images/06-5-building-theorems/altitudes%202.svg" >
     </figure>
 
-    <p class="problem-part">.</p>
+    <p class="problem-part"></p>
 
     <figure>
       <img src="../images/06-5-building-theorems/altitudes%203.svg" >
     </figure>
-
+    </div>
+    
     <div class="problem">
       <p>Come up with an argument for why, in a right triangle, the
       three altitudes must all meet in one point.</p>
@@ -803,56 +853,14 @@ title: building theorems
     </div>
 
     <div class="problem">
-      <p>Draw a point P outside of a circle. Then draw two line
-      segments from P: a tangent segment that hits the circle at
-      point A, and a segment that intersects the circle twice, at
-      point B (farther from P) and C (closer to P). Prove that
-      <img src="../images/06-5-building-theorems/Building%20Theorems%20%2366.svg" >.</p>
+      <p>Draw a point $P$ outside of a circle. Then draw two line
+      segments from $P$: a tangent segment that hits the circle at
+      point $A$, and a segment that intersects the circle twice, at
+      point $B$ (farther from $P$) and $C$ (closer to $P$). Prove that
+      $PA^2 = PB \cdot PC$.</p>
     </div>
-  </section>
 
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2.5%20diagram%2022.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2.5%20diagram%2021.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2-3%20diagram%2023.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2.5%20diagram%2027.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/12-2.5%20diagram%2028.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2.5%20diagram%2041.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/BUCK%20is%20not%20a%20kite.svg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/10-2.5%20diagram%2046.tif.jpg" >
-  </figure>
-
-  <figure class="fig-50">
-    <img src="../images/06-5-building-theorems/practice%20with%20power%20theorem.svg" >
-  </figure>
-
-  <section>
-    <h2>Exploring
-    in
-    Depth</h2>
   </section>
 </article>
 
 {% endraw %}
-
