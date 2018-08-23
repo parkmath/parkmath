@@ -1,0 +1,14 @@
+_site/pdf/books/01-reasoning-and-proving.pdf
+_site/pdf/books/02-analytic-geometry.pdf
+_site/pdf/books/03-investigating-shape-and-size.pdf
+_site/pdf/books/04-quadratics.pdf
+_site/pdf/books/05-reasoning-and-proving-2.pdf
+_site/pdf/books/06-geometry-and-proof.pdf
+_site/pdf/books/07-trigonometry-in-the-coordinate-plane.pdf
+_site/pdf/books/08-functions-and-models-1.pdf
+_site/pdf/books/09-reasoning-and-proving-3.pdf
+_site/pdf/books/10-functions-and-models-2.pdf
+_site/pdf/books/97-ways-of-counting-and-ways-of-modeling.pdf
+_site/pdf/books/99-custom-1.pdf
+_site/pdf/books/99-custom-2.pdf
+_site/pdf/books/reasoning-and-proving-3-revised.pdf
