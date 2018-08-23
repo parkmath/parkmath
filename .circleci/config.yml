@@ -87,7 +87,7 @@ jobs:
       - restore_cache:
           keys:
           - v1-dep-{{ .Branch }}-
-      - run: make _site/pdf/books/reasoning-and-proving-3-revised.pdf # not-quick
+      - run: make not-quick
       - persist_to_workspace:
           root: ~/project
           paths:
@@ -100,7 +100,7 @@ jobs:
       branches:
         only:
           - editing
-          - fix-ci
+          - fix-ci # for debugging
     steps:
       - attach_workspace:
           at: ~/project
