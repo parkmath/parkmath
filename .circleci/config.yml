@@ -32,8 +32,7 @@ jobs:
       - run: ~/bin/yarn
       - run: 'bundle check --path=vendor/bundle || bundle install --path=vendor/bundle
           --jobs=4 --retry=3 '
-      # Build HTML (_site) by running Jekyll
-      - run: bundle exec jekyll build
+      - run: bundle exec jekyll build # Build HTML (_site) by running Jekyll
       - run: ls -laR _site > _site_checksum # used for cache key
       - save_cache:
           key: v1-dep-{{ .Branch }}-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}-{{ checksum "_site_checksum" }}
@@ -49,10 +48,11 @@ jobs:
       - persist_to_workspace:
           root: ~/project
           paths:
-            # Makefile & scripts
+            # Makefile + scripts and data
             - Makefile
             - tools
             - QUICK_LIST
+            - _books
             # Fonts
             - local-fonts.css
             - .fonts
