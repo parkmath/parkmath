@@ -108,3 +108,6 @@
 |49 c|Taking $y=\frac{21}{x+\frac{1}{2}}$ gives you several options.|
 |49 d|<span>$x = - 1$</span>, <span>$y = - 2N$</span> works.|
 |50|$\Phi(x) = x - \Phi \left( x \right)$|
+|51|${x} = \lfloor x \div 100 \rfloor $|
+|52 a|23|
+
