@@ -5,7 +5,7 @@
 |||
 |-------|------|
 |**Problem**|**Answer**|
-|1|Birmingham, Cottondale, <br>Tuscaloosa, Huntsville, Birmingham for a total of 297 miles.|
+|1|Birmingham, Cottondale, <br>Tuscaloosa, Huntsville, Birmingham for a total of 304 miles.|
 |2|You can do it with three colors.|
 |3b|Yes, it’s possible.|
 |4|Three colors|
