@@ -56,8 +56,8 @@
 |28 d|<span>$ - 5{x^3} - 30{x^2}y - 45x{y^2}$</span>|
 |28 e|<span>$125{t^3} + 8$</span> (Notice that a lot of the like terms cancelled!)|
 |28 f|<span>${z^8} - 6{z^4} + 9$</span>|
-|28 g|$112 a^6b^6 - 28a^5b^7 + 14a^2b^5 -2ab^3 -105a^7b^5 -35a^3b^4 +5a^2b^2$|
-|28 h|$(2a+3b)(4a^2 + 12ab +9b^2) = 8a^3 + 36a^2b + 54ab^2 + 27b^3$|
+|28 g|$112 a^6b^6 - 28a^5b^7 + 14a^2b^5 -2ab^3$<br> $-105a^7b^5 -35a^3b^4 +5a^2b^2$|
+|28 h|$(2a+3b)(4a^2 + 12ab +9b^2)$<br> $= 8a^3 + 36a^2b + 54ab^2 + 27b^3$|
 |28 i|$y$|
 |29|-4|
 |30 a|<span>$7a - 9$</span>|
@@ -90,7 +90,7 @@
 |38 d|$x=11^{-6}$|
 |38 e|$p=\left( \frac{53}{253} \right)^{\frac92}$|
 |38 f|$x=10$ (Start by squaring both sides.)|
-|38 g|Start by squaring both sides. $x^2 = \frac 34$, so there are two answers: $x=\sqrt{\frac34}$ and $x= -\sqrt{\frac34}$.  |
+|38 g|Start by squaring both sides. $x^2 = \frac 34$, so there are two answers: $x=\sqrt{\frac34}$ and $x= -\sqrt{\frac34}$ .  |
 |41|180; 6! if you use different colors.|
 |42|330 ways|
 |43|256 possible sequences|
