@@ -8,7 +8,7 @@
 |1 a|Left—3 colors; <br>Right—2 colors.|
 |1 b|Odd # of nodes—3 colors ; Even # of nodes—2 colors.|
 |2|Yes.|
-|3|In your graph, use nodes to represent the chemicals, and connect two nodes with an edge if those chemicals cannot be stored together. Use coloring <br>to determine that you need 3 different storage facilities.|
+|3|In your graph, use nodes to represent the chemicals, and connect two nodes with an edge if those chemicals cannot be stored together. Use coloring to determine that you need 3 different storage facilities.|
 |4|She is mistaken. To see this, try figuring out the total degree of the graph.|
 |5|It takes $n$ colors. (Why?)|
 |6|No.|
