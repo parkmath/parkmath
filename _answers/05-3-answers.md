@@ -122,6 +122,6 @@
 |52|Yes; no; yes|
 |53|When $n$ is odd.|
 |54|-----|
-|55|All odd primes can be written <br>as a difference of squares. However, they can only be <br>written one way.|
-|56|Write the two numbers <br>as <span>$10a + b$</span> and <span>$10a + (10 - b)$</span> and multiply them together to see how this works.|
+|55|All odd primes can be written as a difference of squares. However, they can only be written one way.|
+|56|Write the two numbers as <span>$10a + b$</span> and <span>$10a + (10 - b)$</span> and multiply them together to see how this works.|
 |57|53, 61, 74, 85|
