@@ -64,23 +64,19 @@
 |31 c|1,595,207|
 |32|<span>${1.01^{12}} > 1.12$</span>|
 |33|A: <span>${\left( {\frac{2}{3}} \right)^x}$</span> B: <span>${\left( {\frac{1}{4}} \right)^x}$</span> C: <span>${3^x}$</span> D: <span>${\left( {\frac{3}{2}} \right)^x}$</span>|
-|34 a|Shifted up 2|
-|34 b|Flipped over the $y$-axis|
-|34 c|Flipped over the $x$-axis|
-|34 d|First flipped over the $x$-axis, then shifted up 2|
-|35|3/5 and 1/4|
-|36 a|No|
-|36 b|No|
-|36 c|<span>${4^{\left( {\frac{7}{2}} \right)}}$</span>|
-|36 d|Closer to <span>${4^3}$</span>|
-|37 a i|30|
-|37 a ii|380|
-|38 a|\$1061.36|
-|38 b|\$1061.68|
-|38 c|Quarterly— \$1061.36 ; <br>Monthly— \$1061.68 ; <br>Daily— \$1061.83 ; <br>Hourly— \$1061.84 ; <br>Every minute— \$1061.84|
-|38 d|For &gt;1235 compoundings a year there is no additional gain; No.|
-|42 a|<span>$90^\circ $</span>; <span>$180^\circ $</span>; Infinite # of answers|
-|42 b|<span>$x - 2$</span>|
-|42 c|<span>${a^{\left( {\frac{9}{2}} \right)}}{b^5}c$</span> or <span>${b^5}c\,{a^4}\sqrt a $</span>|
-|42 d|(3, 4)|
-|42 e|<span>$\frac{3}{2}$</span>|
+|34|3/5 and 1/4|
+|35 a|No|
+|35 b|No|
+|3 c|<span>${4^{\left( {\frac{7}{2}} \right)}}$</span>|
+|35 d|Closer to <span>${4^3}$</span>|
+|36 a i|30|
+|36 a ii|380|
+|37 a|\$1061.36|
+|37 b|\$1061.68|
+|37 c|Quarterly— \$1061.36 ; <br>Monthly— \$1061.68 ; <br>Daily— \$1061.83 ; <br>Hourly— \$1061.84 ; <br>Every minute— \$1061.84|
+|37 d|For &gt;1235 compoundings a year there is no additional gain; No.|
+|38 a|<span>$90^\circ $</span>; <span>$180^\circ $</span>; Infinite # of answers|
+|38 b|<span>$x - 2$</span>|
+|38 c|<span>${a^{\left( {\frac{9}{2}} \right)}}{b^5}c$</span> or <span>${b^5}c\,{a^4}\sqrt a $</span>|
+|38 d|(3, 4)|
+|38 e|<span>$\frac{3}{2}$</span>|
