@@ -22,7 +22,7 @@
 |7 b|Multiply it out; it is <span>${x^2} + 8x + 16$</span>|
 |7 c|<span>$\frac{{x(x + 8)}}{x}$</span>|
 |7 d|<span>$x + 8$</span>|
-|7 e|Subtracting 8 from <span>$(x + 8)$</span> (what you are asked to do in the final step of the trick) results in x, your original number. Have fun making up the trick.|
+|7 e|Subtracting 8 from <span>$(x + 8)$</span> (what you are asked to do in the final step of the trick) results in $x$, your original number. Have fun making up the trick.|
 |8|7|
 |9 g|Solve the equation <span>$H = R - 2G - 2$</span>|
 |10|You get your original number back.|
