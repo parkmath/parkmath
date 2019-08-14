@@ -33,7 +33,7 @@
 |13c|12|
 |14a|32|
 |14b|Yes, when <span>$ - 2 < x < 2$</span>.|
-|14c|Answers many vary; <br>one answer is <span>$x = 3$</span>.|
+|14c|Answers vary; <br>one answer is <span>$x = 3$</span>.|
 |15|27, and 27.|
 |16|It will always happen.|
 |17 a|Yes, it is commutative.|
@@ -48,7 +48,7 @@
 |21|Yes|
 |22 a|Yes|
 |22 b|<span>Yes</span>|
-|23 a|<span>Answers may vary.</span>|
+|23 a|<span>Answers vary.</span>|
 |23 b|<span><span>$x + xy = 120$</span> and </span><span><br></span><span><span>$y = \frac{{120 - x}}{x}$</span></span>|
 |24 a|<span>$16\pi $</span>|
 |24 b|<span>$CircleArea(x) = \pi {x^2}$</span>|
@@ -69,8 +69,8 @@
 |30 d|$x$ and $y$ both even|
 |30 e|<span>$x = - 5{\text{ or }}y = - 1$</span>|
 |31|Answers may vary.|
-|32 a|Answers may vary; one answer is $f(x) = 7x - 2$</span>|
-|32 b|Answers may vary; one answer is $g(x) = 4x + 6$</span>|
+|32 a|Answers vary; one answer is $f(x) = 7x - 2$</span>|
+|32 b|Answers vary; one answer is $g(x) = 4x + 6$</span>|
 |33 a|<span>$ - 3$</span>|
 |33 b|Choose $y=-\frac{x}{2}$.
 |33 c|<span>$N\vartriangle N = 3{N^2}$</span>|
