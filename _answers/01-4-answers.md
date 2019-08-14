@@ -44,11 +44,9 @@
 |37|9th and 10th: $60\cdot59\cdot58\cdot57 = 11703240$ <br>11th: $58\cdot57\cdot56\cdot55 = 10182480$ <br>12th: $56\cdot55\cdot54\cdot53 = 8814960$|
 |38a|${T\_n} = 1 + 3(n - 1)$|
 |38b|${T_n} = 50 - 4(n - 1)$|
-|38c|${T\_n} = T\_{n-1} + T\_{n-2}$|
 |38c|$T\_n = T\_{n - 1} + T\_{n - 2}$, ${T\_1} = 1$ and ${T\_2} = 1$|
 |38d|${T_n} = {n^2}$|
-|38e| Answers  vary. <br> One answer: <span>${T\_1} = 3$. For $n$ even, ${T\_n} = 3{T\_{n - 1}}$. For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span> <br>Another answer: <span>${T\_1} = 3$ and <nobr>${T\_2} = 9$.</nobr> ${T\_n} = 27{T\_{n - 2}}$|
-|38f|Answers  vary.<br>One answer: ${T\_1} = 6$. For $n$ even, <span>${T\_n} = 3{T\_{n - 1}}$.</span> For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span> <br>Another answer: <span>${T\_1} = 6$ and ${T\_2} = 18$. ${T\_n} = 27{T\_{n - 2}}$</span>|
+|38e|Answers vary. <br> One answer: $T\_n = 3 \cdot T_{n-1}$, $T_1 = 6$<br> Another answer: $T_n = 6 \cdot 3^{n-1}$
 |39|a) 2418 b) 7515|
 |40|a) 4 <br>b) 5908 <br>c) 125th term <br>d) No|
 |41|a) <span>${c_{38}} = - 160$</span> <br>b) -6 <br>c) 56 <br>d) $62 -6(n-1)$ <br>e) No|
