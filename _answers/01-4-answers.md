@@ -25,7 +25,7 @@
 |18|<span>a) <span>$\frac{{10}}{{16}} = \frac{5}{8}$</span></span> <span>b) <span>$11$</span></span>|
 |19|<span><span>$\frac{{15!}}{{9!}}$</span> = 3,603,600</span>|
 |20|15! = 1,307,674,368,000 <br>possible ways.|
-|21|<span>$6!\,\,9! = 261,273,600$</span> <br>possible ways.|
+|21|<span>$6!\,\,9! = 261,273,600$</span> possible ways.|
 |22|a) 9! b) <span>$6 \times 7! = 30240$</span>.|
 |23|a) 7! = 5040 <br>b) 7! <br>c) 5 letter words: 2520; 6 letter words: 5040. So 7560 5 or 6 letter words.|
 |24|a) 8x9x9= 648 b) 252|
@@ -47,8 +47,8 @@
 |38c|${T\_n} = T\_{n-1} + T\_{n-2}$|
 |38c|$T\_n = T\_{n - 1} + T\_{n - 2}$, ${T\_1} = 1$ and ${T\_2} = 1$|
 |38d|${T_n} = {n^2}$|
-|38e| Answers may vary. <br> One answer: <span>${T\_1} = 3$. For $n$ even, ${T\_n} = 3{T\_{n - 1}}$. For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span> <br>Another answer: <span>${T\_1} = 3$ and <nobr>${T\_2} = 9$.</nobr> ${T\_n} = 27{T\_{n - 2}}$|
-|38f|Answers may vary.<br>One answer: ${T\_1} = 6$. For $n$ even, <span>${T\_n} = 3{T\_{n - 1}}$.</span> For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span> <br>Another answer: <span>${T\_1} = 6$ and ${T\_2} = 18$. ${T\_n} = 27{T\_{n - 2}}$</span>|
+|38e| Answers  vary. <br> One answer: <span>${T\_1} = 3$. For $n$ even, ${T\_n} = 3{T\_{n - 1}}$. For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span> <br>Another answer: <span>${T\_1} = 3$ and <nobr>${T\_2} = 9$.</nobr> ${T\_n} = 27{T\_{n - 2}}$|
+|38f|Answers  vary.<br>One answer: ${T\_1} = 6$. For $n$ even, <span>${T\_n} = 3{T\_{n - 1}}$.</span> For $n$ odd, <span>${T\_n} = 9{T\_{n - 1}}$</span> <br>Another answer: <span>${T\_1} = 6$ and ${T\_2} = 18$. ${T\_n} = 27{T\_{n - 2}}$</span>|
 |39|a) 2418 b) 7515|
 |40|a) 4 <br>b) 5908 <br>c) 125th term <br>d) No|
 |41|a) <span>${c_{38}} = - 160$</span> <br>b) -6 <br>c) 56 <br>d) $62 -6(n-1)$ <br>e) No|
