@@ -73,7 +73,7 @@
 |32 b|Answers vary; one answer is $g(x) = 4x + 6$</span>|
 |33 a|<span>$ - 3$</span>|
 |33 b|Choose $y=-\frac{x}{2}$.
-|33 c|<span>$N\vartriangle N = 3{N^2}$</span>|
+|33 c|$N\vartriangle N = 3{N^2}$|
 |33 d|$y=\frac{20-x^2}{2x}$|
 |33 e|If ODD $= 2k+1$, then <span>$x = 1$</span> and <span>$y = k$</span> works.|
 |34|Answers vary.|
