@@ -9,8 +9,8 @@
 |2|15, 21|
 |3|58, 61|
 |4|-----|
-|5 a|One is +10, +20, +30, and so on, but answers may vary.|
-|5 b|Answers may vary.|
+|5 a|One is +10, +20, +30, and so on, but answers vary.|
+|5 b|Answers vary.|
 |6 a|No; 48 and 96|
 |6 b|Yes; 25 and 32|
 |6 c|Yes; 13 and 21|
@@ -24,8 +24,8 @@
 |8|$T\_{10} = 40, T\_{100} = 310$ |
 |9|<span>${T_1} = - 1$</span>|
 |10|<span>${T_{20}} = 99$</span>|
-|11|Answers may vary.|
-|12|Answers may vary.|
+|11|Answers vary.|
+|12|Answers vary.|
 |13 a|20, 40, 36|
 |13 b|No, it won’t.|
 |14 a|$E_n$|
