@@ -1,1 +1,2 @@
-{% include book.html lessons=page.lessons summary=page.summary answers=page.answers %}
+{% assign summary = (site.lessons | where: 'book', page.summary.book | where: 'lesson', page.summary.lesson | where: 'type', 'summary' | first) %}
+{% include book.html lessons=page.lessons summary=summary answers=page.answers %}
