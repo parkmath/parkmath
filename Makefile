@@ -35,7 +35,8 @@ quick: list-quick $(quicklist)
 ALL_BOOKS.txt:
 	ls _books/*.html | sed s@_books@_site/pdf/books@ | sed s/.html/.pdf/ > $@
 ALL_BUT_QUICK.txt: ALL_BOOKS.txt
-	cat ALL_BOOKS.txt | grep -f QUICK_LIST -v > $@
+	sed -i '/^$$/d' QUICK_LIST # remove empty lines from QUICK_LIST
+	cat ALL_BOOKS.txt | grep -f QUICK_LIST -v > $@ # filter ALL_BOOKS for ones not in QUICK_LIST
 
 .PHONY: all
 all: ALL_BOOKS.txt
