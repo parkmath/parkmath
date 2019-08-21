@@ -24,7 +24,7 @@
 10 c|$113.58^\circ$, $-113.58^\circ$, $246.42^\circ$
 11|$\cos(260^\circ) \approx 0.17$; all others are $−0.17$ approx.
 12 a|$(7\cos 48^\circ, 7\sin 48^\circ)$
-12 b|$(7\cos 19^\circ, 7\sin 19^\circ)$
+12 b|$(7\cos 109^\circ, 7\sin 109^\circ)$
 13 a|Use your calculator to check your answers out
 14|$-\frac{2}{\sqrt{3}}$, $-2$, $- \frac{1}{\sqrt{3}}$
 15|See the end of this answer key
@@ -32,9 +32,8 @@
 17|yes, no, no, yes, yes
 18|$\sin 27^\circ = \cos 63^\circ$
 19|$60^\circ$ , $120^\circ$
-20|At $(-\sqrt{2}/2,-\sqrt{2}/2)$
+20|At $(-1/\sqrt{2},-1/\sqrt{2})$
 21|$(3 + \cos\theta, 2 + \sin\theta)$
-22|The answers below are given for $0^\circ \leq \theta \leq 360^\circ$
 22 a|$150^\circ$, $210^\circ$
 22 b|$81^\circ$, $261^\circ$
 22 c|$225^\circ$, $315^\circ$
@@ -48,12 +47,12 @@
 24 b|$\sin(180^\circ - \theta) = \sin \theta$
 24 c|$\cos(180^\circ - \theta) = -\cos \theta$
 25|$\sin(180^\circ + \theta) = -\sin\theta$<br> $\cos(180^\circ+\theta)=-\cos(\theta)$<br> $\tan(180^\circ + \theta)=\tan(\theta)$<br> $\cos(360^\circ - \theta) = \cos(\theta)$<br> $\sin(360^\circ - \theta) = -\sin(\theta)$<br> $\tan(360^\circ - \theta) = -\tan(\theta)$<br> $\cos(360^\circ + \theta) = \cos(\theta)$<br> $\sin(360^\circ + \theta) = \sin(\theta)$<br> $\tan(360^\circ + \theta) = \tan(\theta)$<br> $\tan(180^\circ - \theta)=-\tan(\theta)$
-26|$\cos(90^\circ - \theta) = \sin \theta$<br> $\sin(90^\circ + \theta) = \cos \theta$<br> $\cos (90^\circ + \theta) = - \sin \theta$
-27|Yes, $\cos(- \theta) = \cos \theta$
+26|$\cos(90^\circ - \theta) = \sin \theta$<br> $\sin(90^\circ + \theta) = -\cos \theta$<br> $\cos (90^\circ + \theta) = - \sin \theta$
+27|No to sine. Yes, $\cos(- \theta) = \cos \theta$.
 28|$\cos 312^\circ$
 29|$\sin 312^\circ$
 30|$30^\circ$, $250^\circ$|
-31|approx $(100\cos165.3 ^\circ, 100\sin165.3^\circ)$, <br>or approx $(263.27^\circ, 334.62^\circ)$
+31|approx $(100\cos165.3 ^\circ, 100\sin165.3^\circ)$, <br>or approx $(263.27^\circ, 25.36^\circ)$
 32|$P: (-42, 0.7431)$<br>$Q: (318, 0.7431)$<br>$R: (402, 0.7431)$
 33|An infinite amount
 34|$\frac{2 \pi}3$
@@ -61,10 +60,10 @@
 36|True
 37|False
 39a|$\frac{5}{13}$ and $\frac{12}5$
-39b|$-0.96$ and $-\frac{24}{7}$
+39b|$-\frac{24}{25}$ and $-\frac{24}{7}$
 39c|$\frac{24}{125}$, $\frac{25}{124}$, $-\frac{7}{24}$, $-\frac{24}{7}$
 39d|$-0.6$
-39e|$\frac{5 \sqrt 26}{26}$ or $- \frac{5 \sqrt 26}{26}$
+39e|$\frac{5 }{\sqrt 26}$ or $- \frac{5}{ \sqrt 26}$
 40|Yes
 41|$223^\circ, 317^\circ, 583^\circ$
 42a|$\frac{5a-10c}{a}$ or $5 - \frac{10c}{a}$
@@ -74,9 +73,9 @@
 42e|$\frac{2-x}{4}$
 43a|$60^\circ, 300^\circ, 240^\circ$
 43b|$0^\circ$
-43c|$0^\circ, 180^\circ, 360^\circ, 120.96^\circ, 300.96^\circ$
+43c|$0^\circ, 180^\circ, 120.96^\circ, 300.96^\circ$
 43d|$90^\circ$
-44|44.28 approx
+44|88.55 seconds approx
 45|5.37 inch approx
 46|23.48% approx
 47|$\sqrt{1-k^2}$, $\frac{k}{\sqrt{1-k^2}}$
