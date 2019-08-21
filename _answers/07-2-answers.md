@@ -32,13 +32,10 @@
 19|$32^\circ$
 21a|267.13 ft
 21b|642.43 ft
-21c|By retracing the original route.
-22a|$11.77^\circ$
-22b|224.71 mi/h
-23|14.3
-24a|17.68 mi
-24b|44.32 mi
-24c|13.54 mi
+22a|Speed should increase by 0.5 mi/hr
+22b|23.65 $^\circ$ approx
+23|49.85 ft
+24|You may find that the top angle is $60.64^\circ$ and the remaining angle is $95.36^\circ$, but that is not plausible. Which step might lead you to get the wrong answer?
 25|$105^\circ$, $104.41^\circ$, $53.59^\circ$
 26|6.83
 27|4.19
