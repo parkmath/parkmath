@@ -22,11 +22,11 @@
 10 a|an infinite amount
 10 b|3
 10 c|$113.58^\circ$, $-113.58^\circ$, $246.42^\circ$
-11|$\cos(280^\circ) \approx 0.17$; all others are $−0.17$ approx.
+11|$\cos(260^\circ) \approx 0.17$; all others are $−0.17$ approx.
 12 a|$(7\cos 48^\circ, 7\sin 48^\circ)$
 12 b|$(7\cos 19^\circ, 7\sin 19^\circ)$
 13 a|Use your calculator to check your answers out
-14|$-2$, $-\frac{2}{3}\sqrt{3}$, $\sqrt{3}$
+14|$-\frac{2}{\sqrt{3}}$, $-2$, $- \frac{1}{\sqrt{3}}$
 15|See the end of this answer key
 16 a|$1.75/2$, $1/2$, $1$
 17|yes, no, no, yes, yes
@@ -36,7 +36,7 @@
 21|$(3 + \cos\theta, 2 + \sin\theta)$
 22|The answers below are given for $0^\circ \leq \theta \leq 360^\circ$
 22 a|$150^\circ$, $210^\circ$
-22 b|$81^\circ$, $216^\circ$
+22 b|$81^\circ$, $261^\circ$
 22 c|$225^\circ$, $315^\circ$
 22 d|$251^\circ$, $109^\circ$
 22 e|$220^\circ$, $320^\circ$
@@ -53,7 +53,7 @@
 28|$\cos 312^\circ$
 29|$\sin 312^\circ$
 30|$30^\circ$, $250^\circ$|
-31|$x \approx 60.83$, $y \approx 79.37$
+31|approx $(100\cos165.3 ^\circ, 100\sin165.3^\circ)$, <br>or approx $(263.27^\circ, 334.62^\circ)$
 32|$P: (-42, 0.7431)$<br>$Q: (318, 0.7431)$<br>$R: (402, 0.7431)$
 33|An infinite amount
 34|$\frac{2 \pi}3$
