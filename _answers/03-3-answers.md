@@ -17,11 +17,11 @@
 |6 c|About .669, .743, and .900|
 |7|-----|
 |8|<table id="table-4"> <tbody> <tr> <td> <span>$\theta $</span> </td> <td> <span>$\sin \theta $</span> </td> <td> <span>$\cos \theta $</span> </td> <td> <span>$\tan \theta $</span> </td> </tr> <tr> <td> <span>${70^ \circ }$</span> </td> <td> <span>$.940$</span> </td> <td> <span>$.341$</span> </td> <td> <span>$2.76$</span> </td> </tr> <tr> <td> <span>${20^ \circ }$</span> </td> <td> <span>$.341$</span> </td> <td> <span>$.940$</span> </td> <td> <span>$0.362$</span> </td> </tr> <tr> <td> <span>${35^ \circ }$</span> </td> <td> <span>$.577$</span> </td> <td> <span>$.821$</span> </td> <td> <span>$0.698$</span> </td> </tr> <tr> <td> <span>${55^ \circ }$</span> </td> <td> <span>$.821$</span> </td> <td> <span>$.577$</span> </td> <td> <span>$1.433$</span> </td> </tr> </tbody> </table>|
-|$\theta $|<span>$\sin \theta $</span>|
-|${70^ \circ }$|<span>$.940$</span>|
-|${20^ \circ }$|<span>$.341$</span>|
-|${35^ \circ }$|<span>$.577$</span>|
-|${55^ \circ }$|<span>$.821$</span>|
+||
+||
+||
+||
+||
 |9 a|Answers may vary|
 |9 b|-----|
 |9 c|When calculating sine and cosine of angles that add up to <span>${90^ \circ }$</span>, the same ratios are taken.|
@@ -53,12 +53,12 @@
 |30|7|
 |31|-----|
 |32|<table id="table-6"> <tbody> <tr> <td> <span>$\theta $</span> </td> <td> <span>$\sin \theta $</span> </td> <td> <span>$\cos \theta $</span> </td> <td> <span>$\tan \theta $</span> </td> </tr> <tr> <td> <span>${30^ \circ }$</span> </td> <td> <span>$\frac{1}{2}$</span> </td> <td> <span>$\frac{{\sqrt 3 }}{2}$</span> </td> <td> <span>$\frac{{\sqrt 3 }}{3}$</span> </td> </tr> <tr> <td> <span>${45^ \circ }$</span> </td> <td> <span>$\frac{{\sqrt 2 }}{2}$</span> </td> <td> <span>$\frac{{\sqrt 2 }}{2}$</span> </td> <td> 1 </td> </tr> <tr> <td> <span>${60^ \circ }$</span> </td> <td> <span>$\frac{{\sqrt 3 }}{2}$</span> </td> <td> <span>$\frac{1}{2}$</span> </td> <td> <span>$\sqrt 3 $</span> </td> </tr> </tbody> </table>|
-|$\theta $|<span>$\sin \theta $</span>|
-|${30^ \circ }$|<span>$\frac{1}{2}$</span>|
-|${45^ \circ }$|<span>$\frac{{\sqrt 2 }}{2}$</span>|
-|${60^ \circ }$|<span>$\frac{{\sqrt 3 }}{2}$</span>|
-|33|Yes, approx. 18.84 m|
-|34|32.64 m approx.|
+||
+||
+||
+||
+|33|Bigfoot is exactly $10 \sqrt{3}$ meters taller than Sally. His true height can't be calculated exacly because feet and meters can't be converted exactly. But adding 5 feet, converted to meters, makes approximately 18.84 meters.|
+|34|$10 \sqrt{3} \cdot \sqrt{3} = 30$m|
 |35|They’re the same.|
 |36|No|
 |37|<span>$8\sqrt 3 $</span> cm|
@@ -75,7 +75,7 @@
 |42 c|<span>$x < - 2$</span> or <span>$x > 12$</span>|
 |42 d|<span>$(x - 4)(x - 5)$</span>|
 |42 e|<span>$x = \frac{2}{9}$</span>|
-|43|<span>$\frac{{\tan 48^\circ }}{{\tan 74^\circ - 2\tan 48^\circ }}$</span>|
+|43|<span>$x= \frac{{\tan 48^\circ }}{{\tan 74^\circ - 2\tan 48^\circ }} \approx 0.371$, &nbsp; $y \approx 1.3$</span>|
 |44 a|<span>$1/9$</span>|
 |44 b|23.5% approx.|
 |45 a|Yes|
