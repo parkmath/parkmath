@@ -73,7 +73,7 @@
 |30|It is not|
 |31 a|10|
 |31 b|<span>$ - 2.5$</span>|
-|32 a|Contained in lines $y=0.38x+55$, $y=3x-2$, and $y=-0.5x+8$.|
+|32 a|Contained in lines $y=\frac{3}{8}x+\frac{11}{2}$, $y=3x-2$, and $y=- \frac12 x+8$.|
 |32 c|<span>$\left( {4,5} \right)$</span>|
 |33b|<span>$(8,1)$</span>|
 |33c|$(2+h,7-k)$|
