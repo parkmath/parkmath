@@ -11,8 +11,8 @@
 |14|No|
 |15|No|
 |16 a|Non-rectangle parallelogram|
-|16 b|Non-parallelogram quadrilateral|
-|16 c|Non-parallelogram quadrilateral|
+|16 b|Non-trapezoid quadrilateral|
+|16 c|Non-parallelogram, non-rhombus quadrilateral|
 |16 d|Non-square rhombus|
 |16 e|Square|
 |16 f|Non-rectangle parallelogram|
