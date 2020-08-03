@@ -64,9 +64,9 @@
 |34|21, 22, 23 or -24, -23, -22|
 |35a|29.77 in. x 125.76 in.|
 |35b|<span><span>$ - 4 + \sqrt {42} $</span> </span><span>ft. by </span><span><span>$4 + \sqrt {42} $</span> </span><span>ft.</span>|
-|36a|<span><span>$4x + 2y = 100$</span></span><span>; </span><span><span>$A = \frac{{\sqrt 3 }}{4}{x^2} + xy$</span></span>|
-|36b|<span>$A = \frac{{\sqrt 3 }}{4}{x^2} + 50x - 2{x^2}$</span>|
-|36c|<span>Area is largest when <span>$x = \frac{{100}}{{8 - \sqrt 3 }} \approx 15.95$</span></span>|
+|36a|<span><span>$3x + 2y = 100$</span></span><span>; </span><span><span>$A = \frac{{\sqrt 3 }}{4}{x^2} + xy$</span></span>|
+|36b|<span>$A = \frac{{\sqrt 3 }}{4}{x^2} + x \left( \frac{100-3x}{2} \right)$</span>|
+|36c|<span>Area is largest when <span>$x \approx 23.43$, &nbsp; $y \approx 38.29$</span></span>|
 |37a|Your friend|
 |37b|No.|
 |38a|<span>$\frac{x}{1} = \frac{{x + 1}}{x}$</span>|
