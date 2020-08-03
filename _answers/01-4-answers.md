@@ -41,7 +41,7 @@
 |34|a) $26 \cdot 25\cdot24\cdot10\cdot10\cdot10 = 15,600,000$ <br>b) $5\cdot4\cdot3\cdot10\cdot10\cdot10 = 60,000$ <br>c) $5\cdot4\cdot3\cdot1\cdot1\cdot1 = 60$|
 |35|$1/2$|
 |36|<span>$\frac{6}{{16}} = \frac{3}{8}$</span>|
-|37|9th and 10th: $60\cdot59\cdot58\cdot57 = 11703240$ <br>11th: $58\cdot57\cdot56\cdot55 = 10182480$ <br>12th: $56\cdot55\cdot54\cdot53 = 8814960$|
+|37|9th and 10th: $60\cdot59\cdot58 = 205320$ <br>11th: $58\cdot57\cdot56 = 185136$ <br>12th: $56\cdot55\cdot54 = 166320$|
 |38a|${T\_n} = 1 + 3(n - 1)$|
 |38b|${T_n} = 50 - 4(n - 1)$|
 |38c|$T\_n = T\_{n - 1} + T\_{n - 2}$, ${T\_1} = 1$ and ${T\_2} = 1$|
