@@ -37,9 +37,10 @@
 |15|False|
 |16|No|
 |17|8.4|
-|18 a|DE and AB, EF and BC, and <br>DF and AC|
-|18 b|<span>$k = \frac{DE}{AB} = \frac{EF}{BC} = \frac{DF}{AC}$</span>|
-|18 c|Ratios of corresponding sides are equal.|
+|18 a|DE and AB, &nbsp; EF and BC, &nbsp; and DF and AC|
+|18 b|$BC = k \cdot EF$, &nbsp; $AC = k \cdot DF$|
+|18 c|<span>$k = \frac{AB}{DE} = \frac{BC}{EF} = \frac{AB}{ED}$</span>|
+|18 d|Ratios of corresponding sides are equal.|
 |19 a|No|
 |19 b|<span>$\vartriangle ABC \sim \vartriangle FDE$</span>|
 |19 c|i), iii), vi), vii), and viii) are true.|
