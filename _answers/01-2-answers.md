@@ -53,7 +53,7 @@
 |36|<span>8</span>|
 |37 a|<span>$n = 1$</span> (and <span>$n = 0$</span>, but more on that later!)|
 |37 b|Any integer <span>$n \geq 3$</span>|
-|38 a|<span>${x^2}$</span>|
+|38 a|<span>${x}$</span>|
 |38 b|$(x-1)! \cdot (x-1)!$|
 |38 c|1|
 |39|a, d, e, f|
