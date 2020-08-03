@@ -36,7 +36,7 @@
 |18|11.43 ft|
 |19 a|273.4 miles|
 |19 b|682.78 miles|
-|20 a|0.7 m|
+|20 a|0.7 ft|
 |20 b|1432.25 ft|
 |21 b|<span>${68.2^ \circ }$</span> approx.|
 |22|<span>${11.31^ \circ }$</span> approx.|
