@@ -24,12 +24,12 @@
 |5 b|4|
 |5 c|19|
 |5 d|The 10<span class="char-style-override-2">th</span> term|
-|5 e|Yes|
+|5 e|Yes, the 30th term|
 |5 f|No|
-|6 a|Answers may vary.|
+|6 a|It looks like (4,-10) and (10,8) are on the line, though estimates may vary. The rest of the answers to this problem are based on those estimates.
 |6 b|3|
 |6 c|<span><span>${122}/{3}$</span></span>|
-|6 d|<span><span>$\left( {40,98} \right)$</span></span> would; <span>$\left( {50,158} \right)$</span> would not|
+|6 d|<span><span>$\left( {40,98} \right)$</span></span> would, using the points in part a; <span>$\left( {50,158} \right)$</span> would not, even if you used slightly different points to create your equation.|
 |7 a|<span>$(0, 45)$.</span> When there are no fish in the aquarium, 45 snails can live in there.|
 |7 b|<span>$(20,0)$.</span> When there are no snails in the aquarium, 20 fish can live in there.|
 |8 a|\$2.95|
@@ -65,7 +65,7 @@
 |18 b|3.5 ounces|
 |18 c|No. <span class="char-style-override-4">One with 7 ounces of jelly</span>|
 |18 d|<span>$p=1.2(j-1)$</span>|
-|18 e|The $y$-intercept|
+|18 e|The $j$-intercept (the vertical intercept)|
 |18 f|No|
 |19 a|3|
 |19 b|4|
