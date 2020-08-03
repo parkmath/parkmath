@@ -43,7 +43,7 @@
 |18 d|Ratios of corresponding sides are equal.|
 |19 a|No|
 |19 b|<span>$\vartriangle ABC \sim \vartriangle FDE$</span>|
-|19 c|i), iii), vi), vii), and viii) are true.|
+|19 c|i), iii), iv), vi), vii), and viii) are true.|
 |20 a|No|
 |20 b|<span>$\vartriangle QPR \sim \vartriangle TUS$</span>|
 |20 c|40 and 40|
@@ -66,7 +66,7 @@
 |30|6|
 |31|3|
 |32|5|
-|33|<span>$4{\left( {AE} \right)^2} = 4{\left( {BE} \right)^2} = {\left( {DC} \right)^2} = BL = 2$, </span><span>$BD = \sqrt 5 $</span>, scale factor 2|
+|33|The scale factor is 2. <br>$AE=EB=\sqrt{\frac12}$ <br>$BL =2$,  $BD=\sqrt{5}$<br>$DC = JF = JG = \sqrt{2}$<br> $GI = \sqrt{20}$, $IH=2 \sqrt{2}$|
 |34|45 m|
 |35|Approx. 3545.32 m|
 |36 a|6 feet, 8 inches|
