@@ -48,7 +48,7 @@
 |21 b|<span>$b = 121$</span>|
 |21 c|<span>$c = 18$</span>|
 |21 d|<span><span>$q = 35$</span></span>|
-|22|<span>The 3444th term.</span>|
+|22|<span>1435 more terms.</span>|
 |23 a|<span><span>${T_{20}} = 10 + 19$</span>,<span>${T_n} = 10 + \left( {n - 1} \right)d$</span></span>|
 |23 b|<span><span>${T_{20}} = {T_1} + 19d$</span>, <span>${T_n} = {T_1} + \left( {n - 1} \right)d$</span></span>|
 |23 c|See Part b.|
@@ -58,17 +58,17 @@
 |24 d|50, 185, and 1535|
 |24 e|<span>${M_n} = 35 + 15n$</span>|
 |25 a|4|
-|25 b|<span>No. <span>${C_n} = 8 + 4n$</span></span>|
+|25 b|<span>No. <span>${C_n} = 12 + 4(n-1)$ or ${C_n} = 8+4n$</span></span>|
 |26 a|<span>$ - 3$</span>|
-|26 b|<span>${T_n} = 20 - 3n$</span>|
-|27 a|<span>${G_n} = - 2 + 6n$</span>|
+|26 b|<span>${T_n} = 17 - 3(n-1)$ or ${T_n} = 20-3n$</span>|
+|27 a|<span>${G_n} = 4 + 6(n-1)$ or ${G_n} = - 2 + 6n$</span>|
 |27 b|238|
 |27 c|12|
 |28 a|About 1 trillion (1 billion times 1000).|
-|29|<span>${A_n} = 28 + 8n$</span>|
+|29|<span>${A_n} = 36 + 8(n-1)$ or ${A_n} = 28 + 8n$</span>|
 |30|4|
 |31|8|
-|32|<span class="char-style-override-7">♣</span>(a,b) = <span>$b + (b - a) = 2b - a$</span>|
+|32|<span class="char-style-override-7"></span>clubs(a,b) = <span>$b + (b - a) = 2b - a$</span>|
 |33|<span>${T_1} + 8d = 12$</span>|
 |34|Yes, <span>$n = 51$</span>|
 |35a|136|
