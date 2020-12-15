@@ -22,7 +22,7 @@
     "cheerio": "cheeriojs/cheerio#8ee743e89ee03f04bba971ade430490b079abdaf",
     "concat-stream": "^1.5.0",
     "csv-write-stream": "^2.0.0",
-    "ecstatic": "^0.8.0",
+    "ecstatic": "^4.1.4",
     "express": "^4.14.0",
     "jsdom": "^7.0.0",
     "mathjax-node": "^0.5.1",
